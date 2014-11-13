@@ -5,7 +5,7 @@ layout: post
 excerpt: At our recent Chemical Biology in Oxford symposium, we conducted a lightning survey to find out more about what people wanted from ChemBio Hub.
 ---
 
-The recent ChemBio Hub symposium - entitled **Chemical Biology across the University of Oxford** - was a great multidisciplinary event bringing together PIs and researchers with an interest in chemical biology. They represented at least 15 departments. The presentations throughout the day sparked a number of conversations and ideas in the breaks and beyond. You can find out more about how the day progressed in another blog post soon and you can also find the posters from the day [here](https://chembiohub.ox.ac.uk/symposium).
+The recent ChemBio Hub symposium - entitled **Chemical Biology across the University of Oxford** - was a great multidisciplinary event bringing together PIs and researchers with an interest in chemical biology. They represented at least 15 departments. The presentations throughout the day sparked a number of conversations and ideas in the breaks and beyond. You can find out more about how the day progressed in [this blog post](/blog/2014/11/13/oxcbh-symposium.html) and you can also find the posters from the day [here](https://chembiohub.ox.ac.uk/symposium).
 
 ChemBio Hub set up a survey to capture interest in aspects of chemical biology research. We used a Yes/No question system on a touchscreen to make it appealing and easy for people to take part. A lot of people were very willing participants - thank you again if you took part! 
 
