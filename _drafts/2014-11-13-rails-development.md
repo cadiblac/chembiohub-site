@@ -19,17 +19,27 @@ The spec for the application was as follows:
 
 I began by creating a new Rails app 
 
+<<<<<<< HEAD
 I created objects called interest (the question) and preference (the answer). Each preference belonged to a single interest. An interest could have many preferences. I created these from the command line as directed by the Rails tutorial.
 
 I created controllers for interests and preferences to handle the flow of input into the application. Again this was done via the command line.
 
 The key functionality of the app is located in `preferences_controller.rb`. When an answer is given, a preference must be created representing that answer and cause a redirect to the next question - or if this is the last question, direct to the completion page (which is also the start page!):
+=======
+I created objects called interest (the question) and preference (the answer). Each preference belonged to a single interest. An interest could have many preferences.
+
+I created controllers for interests and preferences to handle the flow of input into the application
+>>>>>>> 05adb846d5c040f03843218fde541ac108fca706
 
 ```ruby
   def create
     @interest = Interest.find(params[:interest_id])
     pref = false
+<<<<<<< HEAD
     if params[:submit] == "yes"
+=======
+    if params[:submit] == "no"
+>>>>>>> 05adb846d5c040f03843218fde541ac108fca706
     	pref = true
     end
     @preference = @interest.preferences.create(is_preferred: pref)
@@ -40,5 +50,9 @@ The key functionality of the app is located in `preferences_controller.rb`. When
     end
   end
 ```
+<<<<<<< HEAD
 
 All of the code for this application is available at <a href="https://github.com/thesgc/chembiohub-qanda" onclick="return !window.open(this.href);"></a>. You may fork this code as you wish and use it in your own applications or for learning purposes.
+=======
+The application needed to loop to show a start/finish page - this meant the addition of a route.
+>>>>>>> 05adb846d5c040f03843218fde541ac108fca706
