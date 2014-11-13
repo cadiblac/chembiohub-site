@@ -19,6 +19,26 @@ The spec for the application was as follows:
 
 I began by creating a new Rails app 
 
-I created objects called interest (the question) and preference (the answer). Each preference belonged to a single interest. An interest could have many preferences.
+I created objects called interest (the question) and preference (the answer). Each preference belonged to a single interest. An interest could have many preferences. I created these from the command line as directed by the Rails tutorial.
 
-I created controllers for interests and preferences 
+I created controllers for interests and preferences to handle the flow of input into the application. Again this was done via the command line.
+
+The key functionality of the app is located in `preferences_controller.rb`. When an answer is given, a preference must be created representing that answer and cause a redirect to the next question - or if this is the last question, direct to the completion page (which is also the start page!):
+
+```ruby
+  def create
+    @interest = Interest.find(params[:interest_id])
+    pref = false
+    if params[:submit] == "yes"
+    	pref = true
+    end
+    @preference = @interest.preferences.create(is_preferred: pref)
+    if @interest.next
+      redirect_to @interest.next
+    else
+      redirect_to completed_path
+    end
+  end
+```
+
+All of the code for this application is available at <a href="https://github.com/thesgc/chembiohub-qanda" onclick="return !window.open(this.href);"></a>. You may fork this code as you wish and use it in your own applications or for learning purposes.
