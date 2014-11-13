@@ -2,7 +2,6 @@
 title: Chemical biology across the University of Oxford - what happened?
 author: michael
 layout: post
-excerpt: As part of ou comitment to stay up to date with technology, our recent touchscreen surver app was built in Rails - which I had never developed in before.
 ---
 
 On 10th November 2014 the ChemBio Hub team held a cross-departmental symposium at the Saïd Business School in the centre of Oxford. Attendees from a broad range of departments in the chemical and biological sciences met to hear about cutting-edge research projects happening across the University. This started lots of useful conversations that generated ideas for new research collaborations.<!-- more -->
