@@ -1,5 +1,5 @@
+title: The first ChemBio Hub symposium - what happened?
 ---
-title: Chemical biology across the University of Oxford - what happened?
 author: michael
 layout: post
 ---
