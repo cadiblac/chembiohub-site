@@ -12,7 +12,7 @@ One interesting idea was that of the **persona**, complementary to a user story.
 
 Another concept was that of the **Product Canvas**. This image is taken directly from the slideshare presentation linked above.
 
-<iframe src="//www.slideshare.net/slideshow/embed_code/35561129?startSlide=19" height="500" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px; text-align: center"> <strong> <a href="https://www.slideshare.net/romanpichler/ux-and-scrum" title="UX and Scrum" target="_blank">UX and Scrum</a> </strong> from <strong><a href="http://www.slideshare.net/romanpichler" target="_blank">Roman Pichler</a></strong> </div>
+<iframe src="//www.slideshare.net/slideshow/embed_code/35561129?startSlide=19" height="500" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px; text-align: center"> <strong> <a href="https://www.slideshare.net/romanpichler/ux-and-scrum" title="UX and Scrum" target="_blank">UX and Scrum</a> </strong> from <strong><a href="http://www.slideshare.net/romanpichler" target="_blank">Roman Pichler</a></strong> </div>
 
 The idea is to list personas next to high level ideas and functionality, epics and any other "regular" aspect of project or sprint planning, as well as work to be done in the next sprint or fully visualised UX designs. This canvas layout is intended for the early stages of planning but is useful for keeping track of initial good ideas which can be lost due to early difficulty in implementing or lying slightly outside the scope of the project at the start.
 
