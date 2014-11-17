@@ -4,12 +4,7 @@
 	<div class="row">
 		<!-- Introductory paragraph -->
 		<h2 class="subheading">Talks and Slides</h2>
-		<p>Any introductory text here? Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Slides for each talk which was given will be displayed here. More slides will be published soon. Check back later.</p>
 	</div>
 
 	<div class="row">
@@ -17,6 +12,7 @@
 		
 				
 				{% for speaker in site.speakers | sort:"talk_order" %}
+				{% if speaker.embed_code != "" %}
 					<div class="col-xs-6 col-md-3 talkholder">
 						<div class="row">
 							<div class="hidden-xs col-sm-6 col-lg-4">
@@ -26,9 +22,10 @@
 							<div class="hidden-xs col-sm-6 col-lg-8">
 								<!-- download link -->
 								<div class="btn-group">
-								  <button class="btn btn-default" data-toggle="modal" data-target="#slides_{{ speaker.last_name }}">
+								  <!-- <button class="btn btn-default" data-toggle="modal" data-target="#slides_{{ speaker.last_name }}">
 								    <span class="glyphicon glyphicon-picture"></span> View slides
-								  </button>
+								  </button> -->
+								  <a href="/assets/files/slides/oxford_only/{{speaker.embed_code}}" class="btn btn-default" role="button"><span class="glyphicon glyphicon-picture"></span> View Slides</a>
 								</div>
 							</div>
 						</div>
@@ -37,7 +34,7 @@
 							<p>{{ speaker.talk_title }}</p>
 						</div>
 						
-					</div>
+					</div><!-- 
 					<div id="slides_{{speaker.last_name}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 						<div class="modal-dialog">
 
@@ -51,7 +48,8 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> -->
+					{% endif %}
 				{% endfor %}
 
 				
