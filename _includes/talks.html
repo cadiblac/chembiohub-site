@@ -4,7 +4,6 @@
 	<div class="row">
 		<!-- Introductory paragraph -->
 		<h2 class="subheading">Talks and Slides</h2>
-		<p>Slides for each talk which was given will be displayed here. More slides will be published soon. Check back later.</p>
 	</div>
 
 	<div class="row">
@@ -25,7 +24,7 @@
 								  <!-- <button class="btn btn-default" data-toggle="modal" data-target="#slides_{{ speaker.last_name }}">
 								    <span class="glyphicon glyphicon-picture"></span> View slides
 								  </button> -->
-								  <a href="/assets/files/slides/oxford_only/{{speaker.embed_code}}" class="btn btn-default" role="button"><span class="glyphicon glyphicon-picture"></span> View Slides</a>
+								  <a href="/assets/files/slides/oxford_only/{{speaker.embed_code}}" class="btn btn-default" role="button" onclick='return !window.open(this.href);'><span class="glyphicon glyphicon-picture" ></span> View Slides</a>
 								</div>
 							</div>
 						</div>
@@ -61,6 +60,6 @@
 		
 
 	</div>
-
+	<h2 class="blue centered">More slides from the symposium presentations will be available shortly - check back soon</h2>
 </div>
 
