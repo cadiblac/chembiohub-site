@@ -1,37 +1,17 @@
 <div class="row">
 	<h2 class="subheading">Symposium Summary</h2>
 
-	<div class="col-xs-4">
-		<!-- numbers of attendees etc -->
-		<div class="row">
-			<h3 class="blue centered">Here are some event numbers...</h3>
-		</div>
-		{% for stat in site.topstats %}
-		<div class="row">
-				<div class="img-circle col-xs-3 blue-bg symp-stat">
-					<h2>{{ stat.number }}</h2>
-				</div>
-				<div class="col-xs-9">
-					<p class="blue nexa">{{ stat.description }}</p>
-				</div>
-		</div>
-		{% endfor %}
+	
 
-		<div class="row hidden-sm">
-				<div id="hshtags_embed" data-hashtag="oxcbh" data-theme="grey" data-width="350" data-height="900">Hshtags Tag Feed</div><script type="text/javascript">!function(e,t){var s=e.createElement(t),r=e.getElementsByTagName(t)[0];s.src="//hshtags.com/webroot/js/widgets/embed-tags.js",r.parentNode.insertBefore(s,r)}(document,"script");</script>
-		</div>
-
-	</div>
-
-	<div class="col-xs-8">
+	<div class="col-xs-12">
 
 		
-		<h2 class="blue">What did our 100 attendees get out of this symposium?</h2>
+		<h2 class="blue">What did our attendees get out of this symposium?</h2>
 		<div class="row">
 			<div class="col-xs-4">
 				<div class="row takehome">
 					<div class="img-circle col-xs-3 blue-bg symp-stat">
-						<h2>10</h2>
+						<h2>7</h2>
 					</div>
 					<div class="col-xs-9">
 						<p class="blue nexa">New collaboration ideas</p>
@@ -47,7 +27,7 @@
 			<div class="col-xs-4">
 				<div class="row takehome">
 					<div class="img-circle col-xs-3 blue-bg symp-stat">
-						<h2>10</h2>
+						<h2>11</h2>
 					</div>
 					<div class="col-xs-9">
 						<p class="blue nexa">New research connections or contacts</p>
@@ -63,7 +43,7 @@
 			<div class="col-xs-4">
 				<div class="row takehome">
 					<div class="img-circle col-xs-3 blue-bg symp-stat">
-						<h2>10</h2>
+						<h2>18</h2>
 					</div>
 					<div class="col-xs-9">
 						<p class="blue nexa">Improved awareness of research in other departments</p>
@@ -81,7 +61,7 @@
 		<div class="row alt-bg top-margin">
 			<div class="col-xs-8">
 				<div class="img-circle col-xs-3 blue-bg symp-stat">
-					<h2>20</h2>
+					<h2>19</h2>
 				</div>
 				<div class="col-xs-9">
 					<p class="blue nexa"><strong>are interested in using our ChemBio Crunch utility to improve their workflow</strong></p>
@@ -89,7 +69,7 @@
 			</div>
 			<div class="col-xs-4">
 				<!-- image of us demoing crunch at the symposium here -->
-				<img src="#" style="width:100%; height:50px; margin-top:20px;" class="img-thumbnail">
+				<img src="/assets/img/andrew-demo.png" style="width:100%; margin-top:20px;" class="img-thumbnail">
 			</div>
 		</div>
 
@@ -106,8 +86,8 @@
 				</div> -->
 				<div class="row ">
 					<blockquote class="blockquote-reverse">
-						<p><em>"I would like Crunch to be able to handle some of my screening data and remove a processing step"</em></p>
-					  <footer>AN Other<small>Dept of Chemistry</small></footer>
+						<p><em>"[I would use Crunch for] Analysis of physicochemical properties for drug development"</em></p>
+					  <footer>Tharindi Panduwawala<small>Dept of Chemistry</small></footer>
 					</blockquote>
 				</div>
 			</div>
@@ -121,8 +101,8 @@
 				</div> -->
 				<div class="row ">
 					<blockquote class="blockquote-reverse">
-						<p><em>"It would be useful to use Crunch to share my screening data with a related department in the university"</em></p>
-					  <footer>AN Other<small>Dept of Wherever</small></footer>
+						<p><em>"I need a database of disease-associated mutations in secreted protein, with patients in Oxford and info from assays on the same protein..."</em></p>
+					  <footer>Pietro Roversi<small>Dept of Wherever</small></footer>
 					</blockquote>
 				</div>
 			</div>
@@ -136,8 +116,8 @@
 				</div> -->
 				<div class="row ">
 					<blockquote class="blockquote-reverse">
-						<p><em>"I would like to link Crunch to our specific piece of equipment and share data with group members"</em></p>
-					  <footer>AN Other<small>Dept of Wherever</small></footer>
+						<p><em>"I would like ways to compare novel protein targets to drug databases as an initial computer-based screening method"</em></p>
+					  <footer>Tom Milne<small>Dept of Wherever</small></footer>
 					</blockquote>
 				</div>
 			</div>
@@ -149,7 +129,7 @@
 			<div class="col-xs-6">
 				<div class="row" style="padding:10px;">
 					<div class="img-circle col-xs-3 blue-bg symp-stat">
-						<h2>72</h2>
+						<h2>18</h2>
 					</div>
 					<div class="col-xs-9">
 						<p class="blue nexa"><strong>agree this type of event should be run more regularly</strong></p>
@@ -166,9 +146,11 @@
 			<div class="col-xs-6 centered">
 				<!-- image of us demoing crunch at the symposium here -->
 				<p class="blue nexa">Here are some event suggestions from the day...</p>
-				<div class="suggestion"><p class="blue"><em>"What happens if we make this an enormous paragraph that has to wrap around a couple of times?"</em></p></div>
-				<div class="suggestion"><p class="blue"><em>"An event idea would go here"</em></p></div>
-				<div class="suggestion"><p class="blue"><em>"An event idea would go here"</em></p></div>
+				<div class="suggestion"><p class="blue"><em>"More detail on the different compound libraries size/ throughput/ cost/ applications"</em></p></div>
+				<div class="suggestion"><p class="blue"><em>"Antibacterial drug discovery: overcoming resistance. Phenotypic screens/ target-based screens for antibacterial drug candidates"</em></p></div>
+				<div class="suggestion"><p class="blue"><em>"Diseases associated with mutations that impair fold but do not abrogate function. This way I will meet the authors contributing to the above database."</em></p></div>
+				<div class="suggestion"><p class="blue"><em>"Nucleic acid cell visualisation techniques"</em></p></div>
+				<div class="suggestion"><p class="blue"><em>"specific molecule themes (eg demethylases, methyl transferases)"</em></p></div>
 				
 			</div>
 

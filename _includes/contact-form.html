@@ -32,7 +32,7 @@
 	<input type="file" class="form-control" id="contact-image" name="contact-image"></input>
 	<label class="white" for="contact-struc">Optional Chemical Structure (SD format)</label>
 	<input type="file" class="form-control" id="contact-struc" name="contact-struc"></input> -->
-	<input type="hidden" id="subject" name="subject" value="{{ include.subject_value }}">
+	<input type="hidden" id="subject-{{ include.form_id_slug }}" name="subject" value="{{ include.subject_value }}">
 	<button class="btn btn-success btn-block top-margin">Send Your Message</button>
 	<div class="alert alert-success contact-submit-success" role="alert" style="display:none;">
 	  <strong>Thanks for your message!</strong> The team will be in touch with you shortly.
