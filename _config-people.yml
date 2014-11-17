@@ -45,8 +45,8 @@ speakers:
     link: http://www.chem.ox.ac.uk/oc/cjschofield/
     photo: /assets/img/people/Chris_Schofield_Chem.png
     dept: Chemistry
-    talk_title: Title TBC
-    embed_code: ""
+    talk_title: Chemical Biology – starting points for discussion
+    embed_code: "Schofield.pptx"
     talk_order: 2
 
   - first_name: Daniel 
