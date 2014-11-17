@@ -6,7 +6,7 @@ speakers:
     photo: "/assets/img/people/Angela_Russell_Chem.png"
     dept: "Oncology"
     talk_title: Drug screening for Duchenne Muscular Dystrophy
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 12
 
   - first_name: Benedikt
@@ -16,7 +16,7 @@ speakers:
     photo: /assets/img/people/Benedikt_Kessler_TDI.png
     dept: TDI
     talk_title: Chemical probes and applications in the ubiquitin system
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 14
 
   - first_name: Brian 
@@ -26,7 +26,7 @@ speakers:
     photo: /assets/img/people/Brian_Marsden_SGC.png
     dept: SGC
     talk_title: Title TBC
-    embed_code: 39713029
+    embed_code: "Marsden.pptx"
     talk_order: 1
 
   - first_name: Chas 
@@ -36,7 +36,7 @@ speakers:
     photo: /assets/img/people/Chas_Bountra_SGC.png
     dept: SGC
     talk_title: Title TBC
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 3
 
   - first_name: Chris 
@@ -46,7 +46,7 @@ speakers:
     photo: /assets/img/people/Chris_Schofield_Chem.png
     dept: Chemistry
     talk_title: Title TBC
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 2
 
   - first_name: Daniel 
@@ -56,7 +56,7 @@ speakers:
     photo: /assets/img/people/Daniel_Ebner_TDI.png
     dept: TDI
     talk_title: Cell-based phenotypic screening at the Target Discovery Institute
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 4
 
   - first_name: Geoff 
@@ -66,7 +66,7 @@ speakers:
     photo: /assets/img/people/Geoff_Higgins_Oncology.png
     dept: Oncology
     talk_title: Identification of drug targets to increase tumour radio sensitivity
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 9
 
   - first_name: Grigory 
@@ -76,7 +76,7 @@ speakers:
     photo: /assets/img/people/Grigory_Dianov_Oncology.png
     dept: Oncology
     talk_title: Title TBC
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 14
 
   - first_name: Karen 
@@ -86,7 +86,7 @@ speakers:
     photo: /assets/img/people/Karen_Porter_CBH.png
     dept: ChemBio Hub
     talk_title: The ChemBio Hub project - supporting world class chemical biology research
-    embed_code: 39713029
+    embed_code: "Porter.pptx"
     talk_order: 8
 
   - first_name: Kay 
@@ -96,7 +96,7 @@ speakers:
     photo: /assets/img/people/Kay_Davies_DPAG.png
     dept: DPAG
     talk_title: Title TBC
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 12
 
   - first_name: Nicole 
@@ -106,7 +106,7 @@ speakers:
     photo: /assets/img/people/Nicole_Zitzmann_Biochem.png
     dept: Biochemistry
     talk_title: Iminosugars as antivirals
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 11
 
   - first_name: Paul 
@@ -116,7 +116,7 @@ speakers:
     photo: /assets/img/people/Paul_brennan_SGC.png
     dept: SGC
     talk_title: Chemical probes for epigenetic proteins
-    embed_code: 39713029
+    embed_code: "Brennan.pdf"
     talk_order: 6
 
   - first_name: Stefan 
@@ -126,7 +126,7 @@ speakers:
     photo: /assets/img/people/Stefan_Knapp_TDI.png
     dept: TDI
     talk_title: Title TBC
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 11
 
   - first_name: Stuart 
@@ -136,7 +136,7 @@ speakers:
     photo: /assets/img/people/Stuart_Conway_Chem.png
     dept: Chemistry
     talk_title: Hypoxia-activated prodrugs
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 5
 
   - first_name: Tom 
@@ -146,7 +146,7 @@ speakers:
     photo: /assets/img/people/Tom_Brown_Oncology.png
     dept: Oncology
     talk_title: Extending the boundaries of nucleic acid chemistry
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 7
 
   - first_name: Tom 
@@ -156,7 +156,7 @@ speakers:
     photo: /assets/img/people/Tom_Milne_WIMM.png
     dept: WIMM
     talk_title: Title TBC
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 13
 
   - first_name: Grant
@@ -166,7 +166,7 @@ speakers:
     photo: /assets/img/people/Grant_Churchill_Pharma.png
     dept: WIMM
     talk_title: Title TBC
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 14
 
   - first_name: Graham
@@ -176,7 +176,7 @@ speakers:
     photo: /assets/img/people/default_user_icon.png
     dept: WIMM
     talk_title: Title TBC
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 15
 
   - first_name: Susanne 
@@ -186,7 +186,7 @@ speakers:
     photo: /assets/img/people/Susanne_Muller_Knapp_SGC.png
     dept: SGC
     talk_title: A chemical probe for the chromatin remodeller BAZ2B and its potential application
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 13
   
   - first_name: Richard 
@@ -196,5 +196,5 @@ speakers:
     photo: /assets/img/people/Richard_Wade_Martins_DPAG.png
     dept: DPAG
     talk_title: Identifying novel small molecule therapeutics by cell phenotype screening - three short stories from brain and heart
-    embed_code: 39713029
+    embed_code: ""
     talk_order: 10
