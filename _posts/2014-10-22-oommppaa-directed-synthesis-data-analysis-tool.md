@@ -26,7 +26,7 @@ OOMMPPAA uses 3D matched molecular pairs to contextualise both activity and inac
 **What doesn't it do?**
 It is important to note - OOMMPPAA does not predict anything. It doesn't itself extrapolate from the data. It doesn't train a model. It doesn't do any machine learning. It simply shows the data, as it stands, and highlights the key features within it. We have tips as to how to get the most out of it - but the most important thing is that you use it
 
-<iframe width="100%" height="500" src="//www.youtube.com/embed/eUm9c_Dlw5o" frameborder="0" allowfullscreen></iframe>
+<iframe height="500" src="//www.youtube.com/embed/eUm9c_Dlw5o" style="width:100%;" allowfullscreen></iframe>
 
 **How can I use it?**
 Integral to all of this was making the tools user friendly and easy to install.

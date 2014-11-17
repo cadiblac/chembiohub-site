@@ -15,7 +15,7 @@ The results from respondents on the day were as follows:
 
 <div class="row" style="width:100%;">
 	<div class="col-xs-12 col-sm-6 no-padding-right" style="overflow:hidden; height:250px; vertical-align:bottom;">
-		<img src="{{ result.photopath }}" style="width:100%;">
+		<img src="{{ result.photopath }}" style="width:100%;" alt="{{ result.title }}">
 	</div>
 	<div class="col-xs-12 col-sm-6" style="background-color:#444; height:250px; color:#fff;">
 		<h3 class="centered subheading">{{ result.title }}</h3>
