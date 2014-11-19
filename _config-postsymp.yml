@@ -8,223 +8,6 @@ topstats:
   - description: Event photos shared
     number: 103
 
-attendees:
-  - first_name: Martin 
-    last_name: Cohn
-    email: ""
-    link: ""
-    photo: ""
-    dept: Biochemistry
-
-  - first_name: Shona 
-    last_name: Murphy
-    email: ""
-    link: ""
-    photo: ""
-    dept: Pathology
-
-  - first_name: Mark 
-    last_name: Howarth
-    email: ""
-    link: ""
-    photo: ""
-    dept: Biochemistry
-
-  - first_name: Robert 
-    last_name: Gilbert
-    email: ""
-    link: ""
-    photo: ""
-    dept: STRUBI
-
-  - first_name: Chris 
-    last_name: Norbury
-    email: ""
-    link: ""
-    photo: ""
-    dept: Pathology
-
-  - first_name: Grant 
-    last_name: Churchill
-    email: ""
-    link: ""
-    photo: ""
-    dept: Pharmacology
-
-  - first_name: David 
-    last_name: Vaux
-    email: ""
-    link: ""
-    photo: ""
-    dept: Pathology
-
-  - first_name: Trevor 
-    last_name: Sharp
-    email: ""
-    link: ""
-    photo: ""
-    dept: Pharmacology
-
-  - first_name: Christina 
-    last_name: Redfield
-    email: ""
-    link: ""
-    photo: ""
-    dept: Biochemistry
-
-  - first_name: Darren 
-    last_name: Dixon
-    email: ""
-    link: ""
-    photo: ""
-    dept: Chemistry
-
-  - first_name: Mark 
-    last_name: Moloney
-    email: ""
-    link: ""
-    photo: ""
-    dept: Chemistry
-
-  - first_name: Simon 
-    last_name: Kollnberger
-    email: ""
-    link: ""
-    photo: ""
-    dept: NDORMS
-
-  - first_name: Francis 
-    last_name: Szele
-    email: ""
-    link: ""
-    photo: ""
-    dept: DPAG
-
-  - first_name: Peter 
-    last_name: O'Neill
-    email: ""
-    link: ""
-    photo: ""
-    dept: Oncology
-
-  - first_name: Skirmantas 
-    last_name: Kriaucionis
-    email: ""
-    link: ""
-    photo: ""
-    dept: Oncology
-
-  - first_name: Veronica 
-    last_name: Buckle
-    email: ""
-    link: ""
-    photo: ""
-    dept: WIMM
-
-  - first_name: Ester 
-    last_name: Hammond
-    email: ""
-    link: ""
-    photo: ""
-    dept: Oncology
-
-  - first_name: Terry
-    last_name: Rabbitts
-    email: ""
-    link: ""
-    photo: ""
-    dept: WIMM
-
-  - first_name: Richard
-    last_name: Gibbons
-    email: ""
-    link: ""
-    photo: ""
-    dept: WIMM
-
-  - first_name: Sridhar 
-    last_name: Vasudevan
-    email: ""
-    link: ""
-    photo: ""
-    dept: Pharmacology
-
-  - first_name: Michael 
-    last_name: Willis
-    email: ""
-    link: ""
-    photo: ""
-    dept: Chemistry
-
-  - first_name: Konstantinos
-    last_name: Lefkemmiatis
-    email: ""
-    link: ""
-    photo: ""
-    dept: DPAG
-
-  - first_name: Holger
-    last_name: Kramer
-    email: ""
-    link: ""
-    photo: ""
-    dept: DPAG
-
-  - first_name: James 
-    last_name: Kennedy
-    email: ""
-    link: ""
-    photo: ""
-    dept: RDM
-
-  - first_name: Francesca
-    last_name: Buffa
-    email: ""
-    link: ""
-    photo: ""
-    dept: Oncology
-
-  - first_name: Peter
-    last_name: McHugh
-    email: ""
-    link: ""
-    photo: ""
-    dept: Oncology
-
-  - first_name: Adrian
-    last_name: Harris
-    email: ""
-    link: ""
-    photo: ""
-    dept: Oncology
-
-  - first_name: Alison 
-    last_name: Woollard
-    email: ""
-    link: ""
-    photo: ""
-    dept: Biochemistry
-
-  - first_name: Katja
-    last_name: Simon
-    email: ""
-    link: ""
-    photo: ""
-    dept: Experimental Medicine
-
-  - first_name: Jeremy
-    last_name: Robertson
-    email: ""
-    link: ""
-    photo: ""
-    dept: Chemistry
-
-  - first_name: Mike
-    last_name: Stratford
-    email: ""
-    link: ""
-    photo: ""
-    dept: Oncology
 
 walkupsurvey:
   - title: Validation and Cleansing of raw data
@@ -347,3 +130,781 @@ posters:
     thumbnail: "ebner2-poster.png"
     pdf: "Ebner2.pdf"
     num: 12
+
+
+attendees:
+  - first_name: Martin 
+    last_name: Cohn
+    email: ""
+    link: "http://www.bioch.ox.ac.uk/aspsite/index.asp?pageid=669"
+    photo: ""
+    dept: Biochemistry
+    bio: "Genomic stability in humans."
+
+  - first_name: Mark 
+    last_name: Howarth
+    email: ""
+    link: "http://www.bioch.ox.ac.uk/aspsite/index.asp?pageid=582"
+    photo: ""
+    dept: Biochemistry
+    bio: "Protein engineering, bioconjugation, circulating tumour cells."
+
+  - first_name: Robert 
+    last_name: Gilbert
+    email: ""
+    link: "https://www.strubi.ox.ac.uk/research/robert-gilbert"
+    photo: ""
+    dept: STRUBI
+    bio: "Looking to find chemical scaffolds of interest; contacts for chemical biology development of screening hits; building collaborations."
+
+  - first_name: Chris 
+    last_name: Norbury
+    email: ""
+    link: "http://www.path.ox.ac.uk/research/cell-biology-and-pathology/chris-norbury-group"
+    photo: ""
+    dept: Pathology
+    bio: "We are keen to identify small molecule drug-like inhibitors of RNA uridyl transferases implicated in cancer development, and are developing HTS-compatible screens for this purpose."
+
+  - first_name: Grant 
+    last_name: Churchill
+    email: ""
+    link: "http://www.pharm.ox.ac.uk/research/grant-churchill"
+    photo: ""
+    dept: Pharmacology
+    bio: "We are interested in small molecules that modulate calcium signalling inside cells based on targets of nucleotides and inositol phosphates. We are interested in both basic biology of these processes and their potential for treating disease. We use physical and computational screening as well as repurposing. Our drug repurposing-rescuing effort with inositol monophosphatase inhibitors has resulted in a proof-of-concept study in man and soon will be tested in phase 2 trials for efficacy for the treatment of bipolar disorder."
+
+  - first_name: David 
+    last_name: Vaux
+    email: ""
+    link: "http://www.path.ox.ac.uk/research/cell-biology-and-pathology/david-vaux-group"
+    photo: ""
+    dept: Pathology
+    bio: ""
+
+  - first_name: Christina 
+    last_name: Redfield
+    email: ""
+    link: "http://www.bioch.ox.ac.uk/aspsite/index.asp?pageid=596"
+    photo: ""
+    dept: Biochemistry
+    bio: "I'm an NMR spectroscopist using solution-state NMR to study the structure, dynamics, interactions and folding of proteins.  NMR is an ideal technique for the study of weak protein-ligand interactions and can provide detailed information about ligand binding sites. This may be of interest to others in the ChemBio Hub."
+
+  - first_name: Simon 
+    last_name: Kollnberger
+    email: ""
+    link: "http://www.ndorms.ox.ac.uk/profiles.php?profile=skollnberger"
+    photo: ""
+    dept: NDORMS
+    bio: "My group is studying the effect of HLA-B27 and other HLA-class 1 heavy chains binding to KIR3DL2 and LILRB2 on immune function in arthritis and infection and dissecting the molecular mechanisms involved."
+
+  - first_name: Peter 
+    last_name: O'Neill
+    email: ""
+    link: "http://www.oncology.ox.ac.uk/research/peter-oneill"
+    photo: ""
+    dept: Oncology
+    bio: "Research focuses on the chemistry of the types of DNA damage induced by ionizing radiation, from the early free radical processes to the complexities of damage, and how these may contribute to carcinogenesis or radiation cytotoxicity. Focused on understanding the challenges that radiation-induced clustered DNA damage sites present to the repair pathways and as a consequence contribute to carcinogenesis at environmental radiation levels or to the killing of tumour cells."
+
+  - first_name: Skirmantas 
+    last_name: Kriaucionis
+    email: ""
+    link: "http://www.ndm.ox.ac.uk/principal-investigators/researcher/skirmantas-kriaucionis"
+    photo: ""
+    dept: Oncology
+    bio: "We are working on the function of DNA modifying enzymes, proteins which recognize DNA modifications and pyrimidine nucleotide salvage. Our current disease interests are AML, MDS and Rett Syndrome."
+
+  - first_name: Veronica 
+    last_name: Buckle
+    email: ""
+    link: "http://www.rdm.ox.ac.uk/principal-investigators/researcher/veronica-buckle"
+    photo: ""
+    dept: WIMM
+    bio: "I hold a BBSRC grant with Prof Tom Brown to develop new methods of labelling DNA for use as hybridisation probes. These will help us define the compartment of chromatin interaction around the alpha globin genes that is necessary for transcription."
+
+  - first_name: Ester 
+    last_name: Hammond
+    email: ""
+    link: "http://www.oncology.ox.ac.uk/research/ester-hammond"
+    photo: ""
+    dept: Oncology
+    bio: "In collaboration with Prof Stuart Conway we have been designing, synthesising and testing molecularly targeted hypoxia activated prodrugs (HAPs). These are compounds which show no activity in normal oxygen levels but when oxygen is limited, such as in the hypoxic regions of tumours, the compound is reduced to release an active inhibitor."
+
+  - first_name: Richard
+    last_name: Gibbons
+    email: ""
+    link: "http://www.rdm.ox.ac.uk/principal-investigators/researcher/richard-gibbons"
+    photo: ""
+    dept: WIMM
+    bio: "My research is focused on the function of the chromatin remodelling protein ATRX  and how this is perturbed by disease causing mutations.  I have a particular interest in how ATRX interacts with tandem repetitive DNA and histone H3."
+
+  - first_name: Sridhar 
+    last_name: Vasudevan
+    email: ""
+    link: ""
+    photo: ""
+    dept: Pharmacology
+    bio: "Phenotypic assays, drug repurposing, computer aided drug design."
+
+  - first_name: Michael 
+    last_name: Willis
+    email: ""
+    link: "http://research.chem.ox.ac.uk/michael-willis.aspx"
+    photo: ""
+    dept: Chemistry
+    bio: "New chemical tools to modify bio-active molecules."
+
+  - first_name: Konstantinos
+    last_name: Lefkemmiatis
+    email: ""
+    link: "http://www.dpag.ox.ac.uk/team/group-leaders/konstantinos-lefkimmiatis"
+    photo: ""
+    dept: DPAG
+    bio: "Live cell imaging of second messengers. Particular interest in the study of cAMP compartmentalisation with the use of FRET-based sensors. Localised kinase and phosphatase activity."
+
+  - first_name: Holger
+    last_name: Kramer
+    email: ""
+    link: ""
+    photo: ""
+    dept: DPAG
+    bio: "Ubiquitin and ubiquitin-derived probes, cysteine proteases."
+
+  - first_name: Peter
+    last_name: McHugh
+    email: ""
+    link: "http://www.oncology.ox.ac.uk/research/peter-mchugh"
+    photo: ""
+    dept: Oncology
+    bio: "Structure and function of DNA repair nucleases in collaboration with Opher Gileadi (SGC) and Chris Schofield (Chemistry). We have in-depth expertise in the characterisation of nucleases of both the XPF family and those that contain metallo-beta-lactamase folds. Candidate small molecule inhibitors of the later class have been identified and a major programme to develop these with our Oxford collaborators is ongoing. Ultimately, it is hoped that modulation of these factors will lead to selective chemo- and radiosensitisation of solid and haematological tumours."
+
+  - first_name: Katja
+    last_name: Simon
+    email: ""
+    link: "http://www.ndm.ox.ac.uk/principal-investigators/researcher/anna-katharina-katja-simon"
+    photo: ""
+    dept: WIMM
+    bio: "My lab is interested in the role of autophagy in the hematopoietic system. We have identified a drug that can reverse immune ageing through upregulating autophagy. Moreover we are conducting a drug and shRNA screen in primary HSCs and T cells."
+
+  - first_name: Mike
+    last_name: Stratford
+    email: ""
+    link: "http://www.rob.ox.ac.uk/research/mike-stratford"
+    photo: ""
+    dept: Oncology
+    bio: "I am Head of the Bioanalysis Core in the Oxford Institute for Radiation Oncology, on the Old Road Campus. We provide expertise in the determination of small molecules, including both cellular biochemicals and experimental drugs (in pre-clinical studies and clinical trials), using high performance liquid chromatography (HPLC) with mass spectroscopic, absorbance, fluorescence and electrochemical detection techniques. We carry out small-scale preparative HPLC, and have many years’ experience in the development of analytical methods, expertise in drug formulation and stability studies, and confirmation of compound identity. We also operate a flow cytometry facility, and will be offering proteomics support in the near future."
+
+  - first_name: Sangeeta
+    last_name: Aditya
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: ""
+
+  - first_name: Khalid
+    last_name: Al-Qahtani
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: "I’m interested to apply systems biology approaches to study metabolic pathways in cancer cells with a focus on understanding metabolic regulation in cancer cells.  Metabolism encompasses the biochemical reactions that our cells and bodies use to generate energy and the molecular building blocks for growth.  By understanding how metabolic pathways function in tumors and other diseases we can better identify therapeutic targets for intervention in cancer and other diseases. Currently I’m investigating the regulation and function of reductive tricarboxylic acid (TCA) metabolism in human cells, the role of hypoxia and extracellular matrix in reprogramming metabolic pathways by using a combination of computational and analytical tools including stable isotope tracers and mass spectrometry to quantify metabolic fluxes in cells."
+
+  - first_name: Roberta
+    last_name: Baronio
+    email: ""
+    link: ""
+    photo: ""
+    dept: Target Discovery Institute
+    bio: "We identify drug targets, molecules or molecular interactions at a critical point in a disease-causing pathway that are predicted to being amenable to therapeutic manipulation."
+
+  - first_name: Paul
+    last_name: Barrett
+    email: ""
+    link: ""
+    photo: ""
+    dept: ChemBio Hub
+    bio: "Web Developer on the ChemBio Hub project, responsible for the chembiohub.ox.ac.uk site and also development on ChemBio Crunch. I specialise in front-end development and design and work on user experience (UX)."
+
+  - first_name: James
+    last_name: Bennett
+    email: ""
+    link: ""
+    photo: ""
+    dept: Target Discovery Institute
+    bio: "I develop and run screening assays for small molecule inhibitors against epigenetic targets including bromodomains, tudordomains and demethylases. These compounds are from internal (SGC) chemists as well from academic and pharmaceutical partners."
+
+  - first_name: Chas
+    last_name: Bountra
+    email: ""
+    link: "http://www.ndm.ox.ac.uk/principal-investigators/researcher/chas-bountra"
+    photo: ""
+    dept: SGC
+    bio: "Using X ray structures of novel human proteins to generate small molecule inhibitors, screening in human cells to identify novel targets for drug discovery, and then developing clinical candidates for evaluation in patients, pre-competitively. ii) focussing on epigenetic and genetically identified proteins, because these are likely to represent better targets for drug discovery, for many cancer, inflammatory, metabolic and neuro-psychiatric diseases iii) working with colleagues in Oxford to build major programmes in rare diseases and  in Alzheimers Disease, and creating a “BioEscalator” for the rapid translation of SGC science and iv) building stronger links with local hospitals, patient groups, regulatory agencies, private investors, CROs, biotechs and large pharma companies, to create a new, more efficient ecosystem for pioneer drug discovery."
+
+  - first_name: Andrew
+    last_name: Bowen
+    email: ""
+    link: ""
+    photo: ""
+    dept: Isis Innovation
+    bio: "Isis Innovation is the technology transfer company of the University of Oxford.  Our role is to support researchers who wish to create impact through the commercialisation of their research.  We can provide help and advice on intellectual property, translational funding, licensing, consultancy, materials sales and spin-outs or software start-ups."
+
+  - first_name: Anthony
+    last_name: Bradley
+    email: ""
+    link: ""
+    photo: ""
+    dept: SGC
+    bio: "I work between the Structural Genomics Consortium, Statistics and industrial collaborators GlaxoSmithKline, developing computational tools to aid drug discovery."
+
+  - first_name: Paul
+    last_name: Brennan
+    email: ""
+    link: "http://www.ndm.ox.ac.uk/principal-investigators/researcher/paul-brennan"
+    photo: ""
+    dept: SGC
+    bio: "The medicinal chemistry group at the SGC is focussed on the design and synthesis of small molecules as chemical probes for epigenetics proteins.  We rely heavily on fragment based drug discovery (FBDD) for hit identification and structure based drug design (SBDD) for lead optimization.   We collaborate extensively with medicinal chemists and synthetic chemists. The chemical probes developed in the group will decipher the function of epigenetic proteins in disease and provide starting points for drug discovery.  By using epigenetic chemical probes in target discovery, we will dramatically accelerate drug discovery in one of the most promising new areas of biomedical research."
+
+  - first_name: Tom
+    last_name: Brown
+    email: ""
+    link: "http://research.chem.ox.ac.uk/professor-tom-brown.aspx"
+    photo: ""
+    dept: Oncology
+    bio: "Nucleic acid chemistry and biological applications including diagnostic and forensic applications."
+
+  - first_name: Julia
+    last_name: Busch
+    email: ""
+    link: ""
+    photo: ""
+    dept: Biochemistry
+    bio: "Computational search and design of small molecules to inhibit protein dimerisation interactions. Assay development for in vitro screens, as well as structural and biophysical research into target proteins."
+
+  - first_name: Samuel
+    last_name: Cahill
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: "Structural and mechanistic elucidation in the Metallo-beta-lactamase family of enzymes, including chemical synthesis for the development of novel assays for their study."
+
+  - first_name: Rebecca
+    last_name: Carter
+    email: ""
+    link: ""
+    photo: ""
+    dept: Oncology
+    bio: "Developing novel therapeutics and improving personalised therapy."
+
+  - first_name: Rod
+    last_name: Chalk
+    email: ""
+    link: ""
+    photo: ""
+    dept: SGC
+    bio: "Measuring changes in target protein surface area and shape in response to ligand binding; assessing ligand binding properties for potential use in co-crystallization; developing native mass spectrometry as a high throughput primary screening tool."
+
+  - first_name: Rod
+    last_name: Chalk
+    email: ""
+    link: ""
+    photo: ""
+    dept: SGC
+    bio: "Measuring changes in target protein surface area and shape in response to ligand binding; assessing ligand binding properties for potential use in co-crystallization; developing native mass spectrometry as a high throughput primary screening tool."
+
+  - first_name: Stuart
+    last_name: Conway
+    email: ""
+    link: "http://research.chem.ox.ac.uk/stuart-conway.aspx"
+    photo: ""
+    dept: SGC
+    bio: "Development of small molecule tools and probes that allow exploration of biological systems. Tools developed to date include bromodomain inhibitors, hypoxia-targeted kinase inhibitors, inositol polyphosphates and light-activated molecules."
+
+  - first_name: James
+    last_name: Crowe
+    email: ""
+    link: ""
+    photo: ""
+    dept: SGC
+    bio: ""
+
+  - first_name: Melissa
+    last_name: D'Ascenzio
+    email: ""
+    link: ""
+    photo: ""
+    dept: Target Discovery Institute
+    bio: "Activity-based protein profiling applied to bromodomains (BRDs). Interrogating the proteome in vivo represents one of the most recent challenges in chemical biology. The aim of my project is to develop a methodology that will allow quantification of BRD activity in living cells, which can be applied to both comparative and competitive profiling. The scope of this strategy is being addressed by synthesizing a range of novel irreversible probes, testing their selectivity against BRDs belonging to different families by RapidFire MS, and mapping the specific site of interaction by LC-MS/MS."
+
+  - first_name: Luigi
+    last_name: De Collibus
+    email: ""
+    link: ""
+    photo: ""
+    dept: STRUBI
+    bio: "I’m combining structural analysis of the complete virus and quantum mechanics-enhanced ligand docking to guide the design of Enterovirus 71 (HEV71) inhibitors. HEV71 infection results mainly in mild symptoms, but sporadically it’s lethal with most of the cases reported in the Asia-Pacific region. At the present no therapies are available. I successfully designed two powerful inhibitors against HEV71 and one of them has been proved to be the best inhibitor currently available. I do believe that this conference is a great opportunity to meet outstanding scientists and discuss cutting-edge technologies extremely relevant to my research."
+
+  - first_name: Sara
+    last_name: De Omellas
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: "New fluorescent probes for labelling nucleic acids to investigate alpha globin gene regulation."
+
+  - first_name: Grigory
+    last_name: Dianov
+    email: ""
+    link: "http://www.rob.ox.ac.uk/research/grigory-dianov"
+    photo: ""
+    dept: Oncology
+    bio: "Our long-term goal is to study the proteins and mechanisms involved in the coordination and regulation of base excision repair, to unravel their role in the repair of radiation induced DNA damage and to examine the relationship to human diseases, such as cancer."
+
+  - first_name: Peter
+    last_name: Dobson
+    email: ""
+    link: "http://www.rob.ox.ac.uk/research/grigory-dianov"
+    photo: ""
+    dept: Engineering Science
+    bio: "The role of nanotechnology in medicine."
+
+  - first_name: Daniel
+    last_name: Ebner
+    email: ""
+    link: "http://www.tdi.ox.ac.uk/high-throughput-screening"
+    photo: ""
+    dept: Target Discovery Institute
+    bio: "The aim of our high throughput screening facility at the SGC is to provide research scientists' access to a comprehensive, cost-effective facility capable of running high throughput cell based small compound and RNAi screens and biochemical small compound screens. A broad range of screens have been run in our facility and our scientists have extensive knowledge of high throughput screening. The centre collaborates closely with each researcher and we are available for consultation at the earliest stages of assay conception and we will work closely with each investigator through all stages of assay development, optimization, automation, and screening drug libraries currently totaling several thousand compounds."
+
+  - first_name: Jonathan
+    last_name: Elegheert
+    email: ""
+    link: ""
+    photo: ""
+    dept: STRUBI
+    bio: "The aim of our high throughput screening facility at the SGC is to provide research scientists' access to a comprehensive, cost-effective facility capable of running high throughput cell based small compound and RNAi screens and biochemical small compound screens. A broad range of screens have been run in our facility and our scientists have extensive knowledge of high throughput screening. The centre collaborates closely with each researcher and we are available for consultation at the earliest stages of assay conception and we will work closely with each investigator through all stages of assay development, optimization, automation, and screening drug libraries currently totaling several thousand compounds."
+
+  - first_name: Oleg
+    last_name: Fedorov
+    email: ""
+    link: ""
+    photo: ""
+    dept: Target Discovery Institute
+    bio: ""
+
+  - first_name: Lisa
+    last_name: Folkes
+    email: ""
+    link: ""
+    photo: ""
+    dept: Oncology
+    bio: "As part of the Bioanalysis Core we determine concentrations and metabolites of small molecules using high performance liquid chromatography (HPLC) with mass spectroscopy, absorbance and fluorescence detection techniques. Experimental drugs and cellular biochemicals are measured. For example the metabolism of novel hypoxic radiosensitizers following reaction with reducing radicals and reductases and the reactivity of DNA nucleotides with ionizing radiation in the presence of a radiosensitizer have been studied. In addition cellular antioxidants and nucleotides are measured in collaboration with a variety of groups within the department and university. We also measure drug pharmacokinetics for a variety of clinical trials."
+
+  - first_name: Thomas
+    last_name: Folliard
+    email: ""
+    link: ""
+    photo: ""
+    dept: Biochemistry
+    bio: ""
+
+  - first_name: Matteo
+    last_name: Gianella-Borradori
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: "My current (postdoctoral) area of research is in making peptidomimetics of beta-sheet structures to target diseases through inhibition of protein-protein interactions. Previously (PhD) I have worked in developing small molecules for use in the fields of antibacterials and inflammation."
+
+  - first_name: Thorsten
+    last_name: Hauler
+    email: ""
+    link: ""
+    photo: ""
+    dept: "Physiology, Anatomy and Genetics"
+    bio: "I can help you get in touch with researchers from DPAG and find funding for potential joint projects in the broad area of target and drug discovery. I have a close network of other research support staff across the Medical Sciences and MPLS to enable the most efficient support of your ideas."
+
+  - first_name: Geoff
+    last_name: Higgins
+    email: ""
+    link: "http://www.oncology.ox.ac.uk/research/geoff-higgins-1"
+    photo: ""
+    dept: Oncology
+    bio: "I am interested in the pre-clinical and clinical testing of drugs likely to alter tumour radiation sensitivity."
+
+  - first_name: Richard
+    last_name: Hopkinson
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: ""
+
+  - first_name: Richard
+    last_name: Hopkinson
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: ""
+
+  - first_name: Marie W 
+    last_name: Johannsen
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: "Probes for DNA methylation, epigenetics, nucleic acid chemistry, DNA."
+
+  - first_name: Laia
+    last_name: Josa Culleré
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: ""
+
+  - first_name: Alastair
+    last_name: Kerr
+    email: ""
+    link: ""
+    photo: ""
+    dept: "Physiology, Anatomy and Genetics"
+    bio: ""
+
+  - first_name: Benedikt
+    last_name: Kessler
+    email: ""
+    link: "http://www.ndm.ox.ac.uk/principal-investigators/researcher/benedikt-kessler"
+    photo: ""
+    dept: Target Discovery Institute
+    bio: "In our group, we are focused on using proteomics, mass spectrometry and biochemical approaches to understand disease processes. The group has expertise in proteomics based methodologies and hosts a platform containing a variety of chromatography equipment and mass spectrometers. We collaborate with many researchers across the campus and elsewhere, applying this methodology to biomedical problems."
+
+  - first_name: Stefan
+    last_name: Knapp
+    email: ""
+    link: "http://www.ndm.ox.ac.uk/principal-investigators/researcher/stefan-knapp"
+    photo: ""
+    dept: Target Discovery Institute
+    bio: "My research group works on the development if protein-protein interaction inhibitors targeting bromodomains as well as inhibitors targeting kinases."
+
+  - first_name: Olga
+    last_name: Konopatskaya
+    email: ""
+    link: "http://www.ndm.ox.ac.uk/principal-investigators/researcher/stefan-knapp"
+    photo: ""
+    dept: SGC
+    bio: "The SGC’s primary objectives are to produce and characterise the 3-dimensional structures of soluble proteins and of integral membrane proteins, to generate selective chemical probes for epigenetic proteins and kinases, and to release these into the public domain. My role is to work with the Epigenetics Project Manager and Principal Investigators to  optimize the coordination of project activities, outputs and communication between the SGC and its funding pharma partners."
+
+  - first_name: Wen Hwa
+    last_name: Lee
+    email: ""
+    link: ""
+    photo: ""
+    dept: SGC
+    bio: "I am responsible for Strategic Alliances at SGC Oxford, a global leader in open access drug discovery. We have been at the nexus of Oxford-Pharma interactions and will be more than happy to help colleagues from academia and industry to identify synergies and innovative ways to explore the Open Access model."
+
+  - first_name: Michele
+    last_name: Lufino
+    email: ""
+    link: ""
+    photo: ""
+    dept: DPAG
+    bio: ""
+
+  - first_name: Brian
+    last_name: Marsden
+    email: ""
+    link: "http://www.ndm.ox.ac.uk/principal-investigators/researcher/brian-marsden"
+    photo: ""
+    dept: SGC
+    bio: ""
+
+  - first_name: James
+    last_name: McCullagh
+    email: ""
+    link: "http://research.chem.ox.ac.uk/james-mccullagh-.aspx"
+    photo: ""
+    dept: Chemistry
+    bio: "Metabolomics, stable isotope studies, cancer metabolism, dietary studies."
+
+  - first_name: Michaael
+    last_name: McDonough
+    email: ""
+    link: "http://research.chem.ox.ac.uk/james-mccullagh-.aspx"
+    photo: ""
+    dept: Chemistry
+    bio: "Structural biology, biophysics, structure based drug design, protein engineering, biocatalysis, protein-protein interactions, protein-ligand interactions, metallo-enzymes, nulceic acid structure, antibiotics."
+
+  - first_name: Joanna
+    last_name: McGouran
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: "DNA crosslink repair."
+
+  - first_name: Tom
+    last_name: Milne
+    email: ""
+    link: "http://www.rdm.ox.ac.uk/principal-investigators/researcher/thomas-milne"
+    photo: ""
+    dept: WIMM
+    bio: "Patients with mutations in the Mixed Lineage Leukaemia (MLL) gene do not respond well to conventional therapies and thus have very poor survival rates. This is likely due to the fact that MLL is a master regulator that modifies the “epigenetic” information content of a cell. The overall goal of the Milne lab is to use MLL leukaemias as a system to identify and analyze novel epigenetic pathways in leukaemia and to understand how they interact with transcription factor networks. The end goal will be to use this information to identify potentially novel druggable targets."
+
+  - first_name: Octovia
+    last_name: Monteiro
+    email: ""
+    link: ""
+    photo: ""
+    dept: WIMM
+    bio: "I carry out screening assays for compounds of interest to the SGC."
+
+  - first_name: Kenny
+    last_name: Moore
+    email: ""
+    link: ""
+    photo: ""
+    dept: Sir William Dunn School of Pathology
+    bio: "We are investigating induced pluripotent stem cell biology and exploiting the genetic tractability of these cells to explore HIV-1 infection of macrophages. We have developed a protocol to derive authentic macrophages from pluripotent stem cells and have used these cells to genetically and chemically unpick the mechanism by which HIV-1 enters these cells. We are also pursuing CRISPR-based technology to identify novel genes involved in HIV-1 infection of macrophages, as well as those required for stem cell maintenance - which could provide excellent drug targets to improve stem cell culture as well as identify potential therapeutic targets."
+
+  - first_name: Keith
+    last_name: Moyse
+    email: ""
+    link: ""
+    photo: ""
+    dept: Biochemistry
+    bio: "Angiogenesis modulation - interested in modulators of all types, including small molecules and biologics."
+
+  - first_name: Shubhash
+    last_name: Mukhopadhyay
+    email: ""
+    link: ""
+    photo: ""
+    dept: SGC
+    bio: "My current chemical biology based research involves improvising baculovirus vector based protein expression using better transfection reagents, electroporation or lipid based reagents; improving protein expression using suggestions from metabolic engineering like supplementing insect medium with TCA cycle intermediates. This involves down-regulating cellular stress response which has affects baculoviral titres and hence expression.  Also an ongoing effort on determining new methods of titrating virus concentration, which is qPCR based, or spectrophotometric methods employing dyes, comparing methods to get a workable high throughput method."
+
+  - first_name: Susanne
+    last_name: Müller-Knapp
+    email: ""
+    link: "http://www.ndm.ox.ac.uk/principal-investigators/researcher/susanne-muller-knapp"
+    photo: ""
+    dept: SGC
+    bio: "The Epigenetic team is generating tool compounds with defined specificity and selectivity for epigenetic targets. My group is focussed on validating the cellular activity of the generated inhibitors. The focus is on demonstrating first the on-target effect of the characterised compounds in cells to provide a well validated compound. We then explore the biology and disease relevance of the targets and dissect findings obtained by genetic methods."
+
+  - first_name: Michael
+    last_name: O'Hagan
+    email: ""
+    link: ""
+    photo: ""
+    dept: ChemBio Hub
+    bio: ""
+
+  - first_name: Ray
+    last_name: Owens
+    email: ""
+    link: "https://www.strubi.ox.ac.uk/research/ray-owens"
+    photo: ""
+    dept: STRUBI
+    bio: "Protein design and engineering, structure of protein-ligand complexes, recombinant protein expression technology."
+
+  - first_name: Tharindi
+    last_name: Panduwawala
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: ""
+
+  - first_name: Patel
+    last_name: Radhika
+    email: ""
+    link: ""
+    photo: ""
+    dept: Biochemistry
+    bio: "Antisense transcripts encoded on the opposite strand of protein-coding genes are a major focus for the regulation of gene expression and are suspected to modulate the expression of their corresponding sense transcripts. We have identified an antisense transcript, which overlaps the 3’ end of the α-synuclein gene (SNCA) which is implicated in Parkinson’s Disease (PD). Here, the expression of this antisense transcript was studied and we confirmed its expression in HEK293, SH-SY5Y neuroblastoma cells and induced pluripotent stem cells (iPS) derived from PD patient fibroblasts. Investigating the role of this antisense transcript in healthy individuals and PD patients may give insights into a previously unknown mechanism of SNCA regulation."
+
+  - first_name: Hayden
+    last_name: Peacock
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: "My current (post-doctoral) research work involves (1) the synthesis and conformational analysis of a new class of peptidomimetic scaffolds, and (2) the design and synthesis of small molecules that mimic the function of antibodies against post-translational modifications. My previous (doctoral) work involved the design, synthesis and biological evaluation of chemically-modified short interfering RNA (siRNA) reagents."
+
+  - first_name: Dan
+    last_name: Pinkas
+    email: ""
+    link: ""
+    photo: ""
+    dept: SGC
+    bio: ""
+
+  - first_name: Karen
+    last_name: Porter
+    email: ""
+    link: ""
+    photo: ""
+    dept: ChemBio Hub
+    bio: "I am the project manager responsible for delivering the ChemBio Hub. I am particularly interested in talking to anyone who would like to see improvements in how collaborations and sharing of expertise happens within the University. If you have suggestions for technical toolsets; improvements to standard protocols and laboratory processes; or community-building activities please get in touch. The success of the project is dependent on us addressing the right problems in the right way so input from chemical biology and medicinal chemistry researchers is absolutely critical."
+
+  - first_name: Carolyn
+    last_name: Porter
+    email: ""
+    link: ""
+    photo: ""
+    dept: Isis Innovation
+    bio: "Isis Innovation is the technology transfer company of the University of Oxford.  Our role is to support researchers who wish to create impact through the commercialisation of their research.  We can provide help and advice on intellectual property, translational funding, licensing, consultancy, materials sales and spin-outs or software start-ups."
+
+  - first_name: Kathryn
+    last_name: Pugh
+    email: ""
+    link: ""
+    photo: ""
+    dept: Target Discovery Institute
+    bio: "Using small molecules and LCMS/MS to investigate proteins in epigenetics. Of current interest is developing a chemoproteomic pulldown assay to analyse the potency of inhibitors of the bromodomain BRPF1B in mammalian cells. Using immobilised derivatives of a BRPF1B inhibitor, BRPF1B can be isolated from cell lysate and detected using Western blot and quantified using LCMS/MS. The inhibition of BRPF1B by small molecules in cells can, therefore, be observed and quantified using LCMS/MS."
+
+  - first_name: Jieqiong
+    last_name: Qiu
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: ""
+
+  - first_name: Xioamei
+    last_name: Ren
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: "Enzymatic incorporation of modified triphosphates into DNA or RNA, which could be labelled with related reactive groups via copper-free click chemistry. It might be potential method to make nucleic acid probes."
+
+  - first_name: Pamela
+    last_name: Reynolds
+    email: ""
+    link: ""
+    photo: ""
+    dept: Oncology
+    bio: "The Advanced Technology Group has developed a 6 MeV linear accelerator to induce low LET DNA damage from a sub-microsecond ionising radiation pulse, for the real time study of DNA repair protein kinetics in live mammalian cells at early times post irradiation. We have used cell cycle markers and specific small molecule inhibitors of DNA repair proteins to investigate the effects on DNA repair kinetics by visualising fluorescently tagged proteins in real time. Future development of the 6 MeV linear accelerator into a medium throughput radiation and imaging facility will allow potential cellular targets to be investigated in live mammalian cells."
+
+  - first_name: Pietro
+    last_name: Roversi
+    email: ""
+    link: ""
+    photo: ""
+    dept: Biochemistry
+    bio: "My research interests are biomolecular structure and function, and specifically glycosylation-dependent quality control in the Endoplasmic Reticulum (ERQC).  In particular, we are trying to understand how UGGT (the enzyme responsible for the quality control of all proteins secreted by eukaryotic cells) can do its job at all: imagine a single molecule in charge of checking on hundreds of differently shaped molecules, and being able to flag them for retention in the cell if they are incorrectly folded. A molecular mystery! That, or the current model about UGGT needs improving. My colleagues and I think we should find a drug to inhibit UGGT in individuals suffering from certain genetic diseases. We hope to be able to prove this idea right or wrong."
+
+  - first_name: Schaefer
+    last_name: Phillipp
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: "Caspases are cysteine proteases that play an important role in the process of apoptosis. These enzymes are inactive in normal cells and they become activated through cleavage of an inactive precursor that constitute the active enzymes and engage in cell digestion of anticancer cells. Betulinic acid is a pentacyclic triterpenoid of natural origin and was isolated from plants such as Tryphyllum peltatum. Treatment of cancer cell lines with betulinic acid results in cell shrinkage, DNA fragmentation and caspase activation. Ferruginol is a structurally related tricyclic diterpene and also showed caspase activation by affecting the apoptosis inducing factor and its translocalisation into the nucleus."
+
+  - first_name: Schofield
+    last_name: Chris
+    email: ""
+    link: "http://research.chem.ox.ac.uk/christopher-schofield.aspx"
+    photo: ""
+    dept: Chemistry
+    bio: "The research of our group is driven by a desire to apply chemical principles and techniques to understanding biology. Most research projects in our group aim to combine interesting chemistry with important biomedicinal problems. Current projects involve investigations into how human cells respond to variations in oxygen supply, how complex antibiotics are made by biosynthesis in a few steps, how small molecules regulate transcription in humans, and on the chemical basis of epigenetics."
+
+  - first_name: Scozzafava
+    last_name: Giuseppe
+    email: ""
+    link: ""
+    photo: ""
+    dept: Target Discovery Institute
+    bio: "I carry out screening assays for compounds of interest to the SGC histone demethylases and epigenetics programme. The compounds are provided by academic and pharmaceutical collaborators."
+
+  - first_name: Shubhash
+    last_name: Mukhopadhyay
+    email: ""
+    link: ""
+    photo: ""
+    dept: SGC
+    bio: ""
+
+  - first_name: Lea
+    last_name: Sefer
+    email: ""
+    link: ""
+    photo: ""
+    dept: Biochemistry
+    bio: ""
+
+  - first_name: Andrew
+    last_name: Stretton
+    email: ""
+    link: ""
+    photo: ""
+    dept: ChemBio Hub
+    bio: "As a developer for the ChemBio Hub platform I will be around to answer questions about the ChemBioHub software. I am also interested in finding out what issues people have when processing and searching for chemical biology data around the university."
+
+  - first_name: Sam
+    last_name: Thompson
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: "Protein-protein interactions, peptidomimetics, intrinsically disordered proteins, neurodegeneration, rational drug design."
+
+  - first_name: Agnes
+    last_name: Tyburn
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: ""
+
+  - first_name: Richard
+    last_name: Wade-Martins
+    email: ""
+    link: "http://www.dpag.ox.ac.uk/team/group-leaders/richard-wade-martins"
+    photo: ""
+    dept: DPAG
+    bio: "My research group works on the molecular mechanisms of disease to identify disease targets and develop novel therapeutics. Three areas of interest are Parkinson's disease (PD), Friedreich's ataxia (FRDA) and familial hypercholesterolaemia (FH). All three projects use phenotype-based cellular screens to identify new targets or new therapeutic small molecules. We have recently published a screen to identify a novel therapeutic compound for FRDA; we have identified and worked up a new therapeutic small molecule for FH with potential advantages over statins; and in PD, we have developed a major program in disease modelling using patient-derived induced pluripotent stem cells (iPSCs) and have identified phenotypes in patient-derived neurons suitable for target discovery screens."
+
+  - first_name: Quin
+    last_name: Wills
+    email: ""
+    link: ""
+    photo: ""
+    dept: Wellcome Trust Centre for Human Genetics
+    bio: "My interest is high resolution genomics (e.g. single-cell sequencing), specifically applied to screening and pharmacogenomics."
+
+  - first_name: Graham
+    last_name: Wynne
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: ""
+
+  - first_name: Toru
+    last_name: Yamashita
+    email: ""
+    link: ""
+    photo: ""
+    dept: Chemistry
+    bio: "Chemical scaffolds and druglikeness."
+
+  - first_name: Sheng
+    last_name: Yu
+    email: ""
+    link: ""
+    photo: ""
+    dept: Oncology
+    bio: "Computational biology, methods development."
+
+  - first_name: Nicole
+    last_name: Zitzmann
+    email: ""
+    link: "http://www.bioch.ox.ac.uk/aspsite/index.asp?pageid=608"
+    photo: ""
+    dept: Biochemistry
+    bio: "My group is interested in small molecule inhibitors, mostly iminosugars and natural product hybrids, as antivirals against a range of viruses including dengue, Ebola, HCV and HIV."

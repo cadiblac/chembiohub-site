@@ -49,12 +49,17 @@ p.speaker-name {
 	margin-top: 50px;
 }
 .img-circle.blue-bg.symp-stat {
-	height: 50px;
-	width: 50px;
+	height: 80px;
+	width: 80px;
 }
 .symp-stat {
 	padding: 12px 0;
 	text-align: center;
+}
+.symp-stat h2 {
+font-size: 3.5em;
+text-align: center;
+padding-left: 5px;
 }
 .vert-center {
 	position: relative;
@@ -69,6 +74,11 @@ p.speaker-name {
 }
 .takehome .img-circle.blue-bg {
 	background-color: green;
+}
+p.vert-middle {
+	display: table-cell;
+	vertical-align: middle;
+	height: 80px;
 }
 blockquote {
 	min-height:150px;

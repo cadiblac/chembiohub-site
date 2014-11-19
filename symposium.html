@@ -27,7 +27,7 @@ title: Symposium - Chemical biology across the University of Oxford
 					<h2 class="silver">A symposium by ChemBio Hub to strengthen interdepartmental research connections</h2>
 				</div>
 			<ul class="nav centered">
-			  <li class="symp-section col-xs-12 col-sm-4"><a href="#overview">
+			  <li class="symp-section col-xs-12 col-sm-3"><a href="#overview">
 			  	<div class="entry-point">
 						<div class="row hidden-xs">
 							<div class="img-circle blue-bg">
@@ -57,7 +57,7 @@ title: Symposium - Chemical biology across the University of Oxford
 						</div>
 				</div>
 			  </a></li> -->
-			  <li class="symp-section col-xs-12 col-sm-4"><a href="#agenda">
+			  <li class="symp-section col-xs-12 col-sm-3"><a href="#agenda">
 			  	<div class="entry-point">
 						<div class="row hidden-xs">
 							<div class="img-circle blue-bg">
@@ -72,7 +72,7 @@ title: Symposium - Chemical biology across the University of Oxford
 						</div>
 				</div>
 			  </a></li>
-			  <li class="symp-section col-xs-12 col-sm-4"><a href="#talks">
+			  <li class="symp-section col-xs-12 col-sm-3"><a href="#talks">
 			  	<div class="entry-point">
 						<div class="row hidden-xs">
 							<div class="img-circle blue-bg">
@@ -87,7 +87,7 @@ title: Symposium - Chemical biology across the University of Oxford
 						</div>
 				</div>
 			  </a></li>
-			  <!-- <li class="symp-section col-xs-12 col-sm-3"><a href="#summary">
+			  <li class="symp-section col-xs-12 col-sm-3"><a href="#summary">
 			  	<div class="entry-point">
 						<div class="row hidden-xs">
 							<div class="img-circle blue-bg">
@@ -101,11 +101,17 @@ title: Symposium - Chemical biology across the University of Oxford
 							</div>
 						</div>
 				</div>
-			  </a></li> -->
+			  </a></li>
 			</ul>
 
 			<!-- Tab panes -->
-			
+			<div class="row">
+					<div class="col-xs-12 well centered">
+						<span class="blue nexa">If you want to discuss the symposium or ideas you’ve had since... <button class="btn btn-primary">Get in touch</button></span>
+					</div>
+				</div>
+
+
 			  <div class="large top-margin row">
 			  	<a id="overview"></a>
 			  	<h2 class="subheading">Symposium Overview</h2>
@@ -475,12 +481,17 @@ title: Symposium - Chemical biology across the University of Oxford
 			  	{% include posters.html %}
 
 			  </div>
-
+			   <div class="row">
+			  	<button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
+			  </div>
 			  <div class="large top-margin">
-			  	<a id="post-symp"></a>
+			  	<a id="summary"></a>
 			  	<!-- post-symp page as an include -->
-			  	
+			  	{% include post-symp.html %}
 
+			  </div>
+			  <div class="row">
+			  	<button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
 			  </div>
 
 

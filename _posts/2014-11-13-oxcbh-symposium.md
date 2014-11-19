@@ -2,6 +2,7 @@
 title: The first ChemBio Hub symposium - what happened?
 author: michael
 layout: post
+tags: oxcbh
 ---
 
 On 10th November 2014 the ChemBio Hub team held a cross-departmental symposium at the Saïd Business School in the centre of Oxford. Attendees from a broad range of departments in the chemical and biological sciences met to hear about cutting-edge research projects happening across the University. This started lots of useful conversations that generated ideas for new research collaborations.<!-- more -->

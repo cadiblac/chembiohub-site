@@ -5,125 +5,6 @@
 
 	<div class="col-xs-12">
 
-		
-		<h2 class="blue">What did our attendees get out of this symposium?</h2>
-		<div class="row">
-			<div class="col-xs-4">
-				<div class="row takehome">
-					<div class="img-circle col-xs-3 blue-bg symp-stat">
-						<h2>7</h2>
-					</div>
-					<div class="col-xs-9">
-						<p class="blue nexa">New collaboration ideas</p>
-					</div>
-				</div>
-				<div class="row">
-					<blockquote class="blockquote-reverse">
-					  <p><em>"I met someone from a nearby department who is working on X which is similar to a project I've just received funding for"</em></p>
-					  <footer>AN Other<small>Dept of Chemistry</small></footer>
-					</blockquote>
-				</div>
-			</div>
-			<div class="col-xs-4">
-				<div class="row takehome">
-					<div class="img-circle col-xs-3 blue-bg symp-stat">
-						<h2>11</h2>
-					</div>
-					<div class="col-xs-9">
-						<p class="blue nexa">New research connections or contacts</p>
-					</div>
-				</div>
-				<div class="row">
-					<blockquote class="blockquote-reverse">
-					  <p><em>""I'm going to collaborate with dept X on a novel targetting strategy""</em></p>
-					  <footer>AN Other<small>Dept of Chemistry</small></footer>
-					</blockquote>
-				</div>
-			</div>
-			<div class="col-xs-4">
-				<div class="row takehome">
-					<div class="img-circle col-xs-3 blue-bg symp-stat">
-						<h2>18</h2>
-					</div>
-					<div class="col-xs-9">
-						<p class="blue nexa">Improved awareness of research in other departments</p>
-					</div>
-				</div>
-				<div class="row">
-					<blockquote class="blockquote-reverse">
-					  <p><em>"I discovered that Dept X does research in area Y which our group is just starting on"</em></p>
-					  <footer>AN Other<small>Dept of Chemistry</small></footer>
-					</blockquote>
-				</div>
-			</div>
-		</div>
-
-		<div class="row alt-bg top-margin">
-			<div class="col-xs-8">
-				<div class="img-circle col-xs-3 blue-bg symp-stat">
-					<h2>19</h2>
-				</div>
-				<div class="col-xs-9">
-					<p class="blue nexa"><strong>are interested in using our ChemBio Crunch utility to improve their workflow</strong></p>
-				</div>
-			</div>
-			<div class="col-xs-4">
-				<!-- image of us demoing crunch at the symposium here -->
-				<img src="/assets/img/andrew-demo.png" style="width:100%; margin-top:20px;" class="img-thumbnail">
-			</div>
-		</div>
-
-		<div class="row alt-bg">
-
-
-			<div class="col-xs-4 clearfix">
-				<!-- <div class="row takehome">
-					<div class="img-circle col-xs-3 blue-bg symp-stat">
-					</div>
-					<div class="col-xs-12">
-						<p class="blue nexa"><em>"I would like Crunch to be able to handle some of my screening data and remove a processing step"</em></p>
-					</div>
-				</div> -->
-				<div class="row ">
-					<blockquote class="blockquote-reverse">
-						<p><em>"[I would use Crunch for] Analysis of physicochemical properties for drug development"</em></p>
-					  <footer>Tharindi Panduwawala<small>Dept of Chemistry</small></footer>
-					</blockquote>
-				</div>
-			</div>
-			<div class="col-xs-4">
-				<!-- <div class="row takehome">
-					<div class="img-circle col-xs-3 blue-bg symp-stat">
-					</div>
-					<div class="col-xs-12">
-						<p class="blue nexa"><em>"It would be useful to use Crunch to share my screening data with a related department in the university"</em></p>
-					</div>
-				</div> -->
-				<div class="row ">
-					<blockquote class="blockquote-reverse">
-						<p><em>"I need a database of disease-associated mutations in secreted protein, with patients in Oxford and info from assays on the same protein..."</em></p>
-					  <footer>Pietro Roversi<small>Dept of Wherever</small></footer>
-					</blockquote>
-				</div>
-			</div>
-			<div class="col-xs-4">
-				<!-- <div class="row takehome">
-					<div class="img-circle col-xs-3 blue-bg symp-stat">
-					</div>
-					<div class="col-xs-12">
-						<p class="blue nexa"><em>"I would like to link Crunch to our specific piece of equipment and share data with group members"</em></p>
-					</div>
-				</div> -->
-				<div class="row ">
-					<blockquote class="blockquote-reverse">
-						<p><em>"I would like ways to compare novel protein targets to drug databases as an initial computer-based screening method"</em></p>
-					  <footer>Tom Milne<small>Dept of Wherever</small></footer>
-					</blockquote>
-				</div>
-			</div>
-		</div>
-
-
 		<div class="row top-margin" style="padding:10px;">
 
 			<div class="col-xs-6">
@@ -132,14 +13,25 @@
 						<h2>18</h2>
 					</div>
 					<div class="col-xs-9">
-						<p class="blue nexa"><strong>agree this type of event should be run more regularly</strong></p>
+						<p class="blue nexa vert-middle"><strong>agree this type of event should be run more regularly</strong></p>
 					</div>
 				</div>
+				
 				<div class="row">
-					<div class="col-xs-12 well centered">
-						<p class="blue nexa">If you want to discuss the symposium or ideas you’ve had since...</p>
-						<p><button class="btn btn-primary">Get in touch</button></p>
-					</div>
+					{% for post in site.posts %}
+						{% assign author = site.authors[post.author] %}
+						 {% for tag in post.tags %}
+  							{% if tag == "oxcbh" %}
+								
+								<div class="text-left"><div><h2 class="blue"><a href="{{ post.url | remove_first:'/' }}">{{ post.title }}</a></h2>
+									<small><abbr>{{ post.date | date_to_string }}</abbr> by <a href="mailto:{{author.email}}">{{author.display_name}}</a></small></div>
+									<div>
+										<p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a class="pull-right" href="{{ post.url | remove_first:'/' }}">[more]</a></p>
+									</div>
+								</div>
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
 				</div>
 
 			</div>
@@ -156,6 +48,192 @@
 
 		</div>
 
+		<h2 class="blue centered">What did our attendees get out of this symposium?</h2>
+		
+
+		<div class="row mt centered">
+
+				<div class="col-sm-4 entry-point">
+					<a href="#capabilities">
+						<div class="row">
+							<div class="img-circle blue-bg " style="background-color:#038B14">
+								
+								<span class="date-number" style="display:inherit; line-height: 160px;">7</span>
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<!-- <h2 class="blue">Capabilities</h2> -->
+								<p class="nexa blue">New collaboration ideas</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-sm-4 entry-point">
+					<a href="#data">
+						<div class="row">
+							<div class="img-circle blue-bg "  style="background-color:#038B14">
+								<span class="date-number" style="display:inherit; line-height: 160px;">11</span>
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<!-- <h2 class="blue">Data</h2> -->
+								<p class="nexa blue">New research connections or contacts</p>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-sm-4 entry-point">
+					<a href="/symposium">
+						<div class="row">
+							<div class="img-circle blue-bg " style="background-color:#038B14">
+								<span class="date-number" style="display:inherit; line-height: 160px;">18</span>
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<!-- <h2 class="blue">Symposium</h2> -->
+								<p class="nexa blue">Improved awareness of research in other departments</p>
+							</div>
+						</div>
+					</a>
+				</div>   
+
+			</div>
+
+
+<div class="row">
+
+	<h2 class="subheading">Here's what people thought about the symposium...</h2>
+
+	<div class="col-xs-12">
+
+		<div class="row">
+
+
+			<div class="col-xs-6 clearfix">
+				<div class="row ">
+					<blockquote class="blockquote-reverse">
+						<p><em>"The packed programme had excellent speakers and gave our students the opportunity to network and see how some other cross-collaborative projects, such as ours, work successfully"</em></p>
+					  <footer>Dr Tracey Marr<small>OxIOSCR programme, Department of Chemistry</small></footer>
+					</blockquote>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="row ">
+					<blockquote class="blockquote-reverse">
+						<p><em>"Many thanks - I thought the day was very good"</em></p>
+					  <footer>Prof Chris Schofield<small>Dept of Chemistry</small></footer>
+					</blockquote>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="row ">
+					<blockquote class="blockquote-reverse">
+						<p><em>"The talks I attended gave a good overview of what is going on in the University."</em></p>
+					  <footer>PI<small>Dept of Biochemistry</small></footer>
+					</blockquote>
+				</div>
+			</div>
+
+			
+		</div>
+		<div class="row mt">
+			<div class="col-xs-3">
+				<div class="row ">
+					<blockquote class="blockquote-reverse">
+						<p><em>"I now have a better understanding of the drug discovery research in place in Oxford"</em></p>
+					  <footer>PI<small>Dept of Physiology, Anatomy &amp; Genetics</small></footer>
+					</blockquote>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="row ">
+					<blockquote class="blockquote-reverse">
+						<p><em>"It was a great day on the whole and the crowd turn up was really good. I also liked the posters [and not to forget the food!]"</em></p>
+					  <footer>Octovia Monteiro<small>Target Discovery Institute</small></footer>
+					</blockquote>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="row ">
+					<blockquote class="blockquote-reverse">
+						<p><em>"I have better ideas of who has what expertise and how this may be synergistic with my own research"</em></p>
+					  <footer>Postdoc<small>Dept of Chemistry</small></footer>
+					</blockquote>
+				</div>
+			</div>
+			<div class="col-xs-3">
+				<div class="row ">
+					<blockquote class="blockquote-reverse">
+						<p><em>"I had a great day at the ChemBioHub symposium – really useful. Many thanks."</em></p>
+					  <footer>PI<small>WIMM</small></footer>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+
+</div>
+
+
+		<div class="row alt-bg top-margin">
+			<div class="col-xs-12">
+				<div class="img-circle col-xs-3 blue-bg symp-stat">
+					<h2>19</h2>
+				</div>
+				<div class="col-xs-9">
+					<p class="blue nexa vert-middle"><strong>are interested in using our <a href="/crunch/" style="border-radius: 5px; background-color:#002147; color: #fff; padding:6px; ">ChemBio Crunch</a> utility to improve their workflow</strong></p>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<!-- image of us demoing crunch at the symposium here -->
+				<img src="/assets/img/crunch-grab-1.png" style="width:100%; margin-top:20px;" class="img-thumbnail" alt="ChemBio Crunch screenshot">
+			</div>
+			<div class="col-xs-4">
+				<!-- image of us demoing crunch at the symposium here -->
+				<img src="/assets/img/andrew-demo.png" style="width:100%; margin-top:20px;" class="img-thumbnail" alt="Crunch being demoed by Andrew">
+			</div>
+			<div class="col-xs-4">
+				<!-- image of us demoing crunch at the symposium here -->
+				<img src="/assets/img/crunch-grab-2.png" style="width:100%; margin-top:20px;" class="img-thumbnail" alt="ChemBio Crunch screenshot">
+			</div>
+		</div>
+
+		<div class="row alt-bg">
+
+
+			<div class="col-xs-4 clearfix">
+				<div class="row ">
+					<blockquote class="blockquote-reverse">
+						<p><em>"[I would use Crunch for] Analysis of physicochemical properties for drug development"</em></p>
+					  <footer>Tharindi Panduwawala<small>Dept of Chemistry</small></footer>
+					</blockquote>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="row ">
+					<blockquote class="blockquote-reverse">
+						<p><em>"I need a database of disease-associated mutations in secreted protein, with patients in Oxford and info from assays on the same protein..."</em></p>
+					  <footer>Pietro Roversi<small>Dept of Wherever</small></footer>
+					</blockquote>
+				</div>
+			</div>
+			<div class="col-xs-4">
+				<div class="row ">
+					<blockquote class="blockquote-reverse">
+						<p><em>"I would like ways to compare novel protein targets to drug databases as an initial computer-based screening method"</em></p>
+					  <footer>Tom Milne<small>Dept of Wherever</small></footer>
+					</blockquote>
+				</div>
+			</div>
+		</div>
+
 
 
 
@@ -165,27 +243,20 @@
 
 	</div>
 
-<div class="row">
 
-	<h2 class="subheading">Here's what people thought about the symposium...</h2>
-
-
-
-
-</div>
 
 <div class="row">
 
 	<h2 class="subheading">Symposium attendees</h2>
-
-				{% for person in site.attendees | sort:"last_name" %}
+				{% assign sorted_attendees = site.attendees | sort: 'last_name' %}
+				{% for person in sorted_attendees %}
 					<div class="col-xs-6 col-md-3 attendee">
 						<div class="row">
 							<div class="hidden-xs col-sm-6 col-lg-4">
 								<!-- photo -->
-								<img {% if person.photo != "" %}src="{{ person.photo }}"{% else %}src="/assets/img/people/default_user_icon.png"{% endif %} data-name="{{ person.first_name }} {{ person.last_name }}" data-dept="{{ person.dept }}" data-weblink="{{ person.link }}" class="ppl-thumb" style="width:100%"> 
+								<img {% if person.photo != "" %}src="{{ person.photo }}"{% else %}src="/assets/img/people/default_user_icon.png"{% endif %} data-name="{{ person.first_name }} {{ person.last_name }}" data-dept="{{ person.dept }}" data-weblink="{{ person.link }}" class="ppl-thumb" style="width:100%" title="{{ person.bio }}"> 
 							</div>
-							<div class="hidden-xs col-sm-6 col-lg-8">
+							<div class="col-sm-6 col-lg-8">
 								<p class="person-name nexa"><a href="{{ person.link }}">{{ person.first_name }}<br/>{{ person.last_name }}</a></p>
 								<p class="nexa"><small>{{ person.dept }}</small></p>
 							</div>

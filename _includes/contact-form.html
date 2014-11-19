@@ -8,7 +8,7 @@
 		data-bv-regexp-regexp="[A-Za-z0-9._%+-]+@[A-Za-z0-9._%+-]+\.ox\.ac\.uk" 
 		data-bv-regexp="true" 
 		data-bv-message="This is not valid" 
-		data-bv-regexp-message="You must use a 'ox.ac.uk' email address to use this message system. If you are from outside the University, please use the main <a href='/#contact' style='text-decoration: underline;''>Contact email</a>" required />
+		data-bv-regexp-message="You must use a 'ox.ac.uk' email address to use this message system. If you are from outside the University, please use the main <a href='/#contact' style='text-decoration: underline;' tabindex=0>Contact email</a>" required />
 		<!-- <div class="alert alert-warning alert-dismissible hidden" role="alert" id="non-oxford-email">
 		  <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 		  <strong>Warning!</strong> You must use a 'ox.ac.uk' email address to use this message system. If you are from outside the University, please use the main <a href="/#contact" style="text-decoration: underline;">Contact email</a>
@@ -34,10 +34,10 @@
 	<input type="file" class="form-control" id="contact-struc" name="contact-struc"></input> -->
 	<input type="hidden" id="subject-{{ include.form_id_slug }}" name="subject" value="{{ include.subject_value }}">
 	<button class="btn btn-success btn-block top-margin">Send Your Message</button>
-	<div class="alert alert-success contact-submit-success" role="alert" style="display:none;">
+	<div class="alert alert-success contact-submit-success" role="alert" style="visibility:hidden;">
 	  <strong>Thanks for your message!</strong> The team will be in touch with you shortly.
 	</div>
-	<div class="alert alert-danger contact-submit-error" role="alert" style="display:none;">
+	<div class="alert alert-danger contact-submit-error" role="alert" style="visibility:hidden;">
 	  <strong>There has been a problem!</strong> Please try again.
 	</div>
 	<!-- chembiohub.ox.ac.uk/app/... -->
