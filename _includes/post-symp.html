@@ -4,51 +4,6 @@
 	
 
 	<div class="col-xs-12">
-
-		<div class="row top-margin" style="padding:10px;">
-
-			<div class="col-xs-6">
-				<div class="row" style="padding:10px;">
-					<div class="img-circle col-xs-3 blue-bg symp-stat">
-						<h2>18</h2>
-					</div>
-					<div class="col-xs-9">
-						<p class="blue nexa vert-middle"><strong>agree this type of event should be run more regularly</strong></p>
-					</div>
-				</div>
-				
-				<div class="row mt">
-					<h2 class="subheading">We have blogged about the symposium...</h2>
-					{% for post in site.posts %}
-						{% assign author = site.authors[post.author] %}
-						 {% for tag in post.tags %}
-  							{% if tag == "oxcbh" %}
-								
-								<div class="text-left"><div><h2 class="blue"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-									<small><abbr>{{ post.date | date_to_string }}</abbr> by <a href="mailto:{{author.email}}">{{author.display_name}}</a></small></div>
-									<div>
-										<p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a class="pull-right" href="{{ post.url }}">[more]</a></p>
-									</div>
-								</div>
-							{% endif %}
-						{% endfor %}
-					{% endfor %}
-				</div>
-
-			</div>
-			<div class="col-xs-6 centered">
-				<!-- image of us demoing crunch at the symposium here -->
-				<p class="blue nexa">Here are some event suggestions from the day...</p>
-				<div class="well"><p class="blue" style="margin-bottom: 0;"><em>"More detail on the different compound libraries size/ throughput/ cost/ applications"</em></p></div>
-				<div class="well"><p class="blue" style="margin-bottom: 0;"><em>"Antibacterial drug discovery: overcoming resistance. Phenotypic screens/ target-based screens for antibacterial drug candidates"</em></p></div>
-				<div class="well"><p class="blue" style="margin-bottom: 0;"><em>"Diseases associated with mutations that impair fold but do not abrogate function. This way I will meet the authors contributing to the above database."</em></p></div>
-				<div class="well"><p class="blue" style="margin-bottom: 0;"><em>"Nucleic acid cell visualisation techniques"</em></p></div>
-				<div class="well"><p class="blue" style="margin-bottom: 0;"><em>"...specific molecule themes (eg demethylases, methyl transferases)"</em></p></div>
-				
-			</div>
-
-		</div>
-
 		<h2 class="blue centered">What did our attendees get out of this symposium?</h2>
 		
 
@@ -104,6 +59,53 @@
 				</div>   
 
 			</div>
+		<div class="row top-margin" style="padding:10px;">
+
+			<div class="col-xs-6">
+				
+				
+				<div class="row">
+					<h2 class="subheading">We have blogged about the symposium...</h2>
+					{% for post in site.posts %}
+						{% assign author = site.authors[post.author] %}
+						 {% for tag in post.tags %}
+  							{% if tag == "oxcbh" %}
+								
+								<div class="text-left"><div><h2 class="blue"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+									<small><abbr>{{ post.date | date_to_string }}</abbr> by <a href="mailto:{{author.email}}">{{author.display_name}}</a></small></div>
+									<div>
+										<p>{{ post.excerpt | remove: '<p>' | remove: '</p>' }} <a class="pull-right" href="{{ post.url }}">[more]</a></p>
+									</div>
+								</div>
+							{% endif %}
+						{% endfor %}
+					{% endfor %}
+				</div>
+
+				<div class="row mt" style="padding:10px;">
+					<div class="img-circle col-xs-3 blue-bg symp-stat">
+						<h2>18</h2>
+					</div>
+					<div class="col-xs-9">
+						<p class="blue nexa vert-middle"><strong>attendees agreed this type of event should be run more regularly</strong></p>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-xs-6 centered">
+				<!-- image of us demoing crunch at the symposium here -->
+				<p class="blue nexa">Here are some event suggestions from the day...</p>
+				<div class="well"><p class="blue" style="margin-bottom: 0;"><em>"More detail on the different compound libraries size/ throughput/ cost/ applications"</em></p></div>
+				<div class="well"><p class="blue" style="margin-bottom: 0;"><em>"Antibacterial drug discovery: overcoming resistance. Phenotypic screens/ target-based screens for antibacterial drug candidates"</em></p></div>
+				<div class="well"><p class="blue" style="margin-bottom: 0;"><em>"Diseases associated with mutations that impair fold but do not abrogate function. This way I will meet the authors contributing to the above database."</em></p></div>
+				<div class="well"><p class="blue" style="margin-bottom: 0;"><em>"Nucleic acid cell visualisation techniques"</em></p></div>
+				<div class="well"><p class="blue" style="margin-bottom: 0;"><em>"...specific molecule themes (eg demethylases, methyl transferases)"</em></p></div>
+				
+			</div>
+
+		</div>
+
+		
 
 
 <div class="row">
