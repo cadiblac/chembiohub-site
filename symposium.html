@@ -57,17 +57,17 @@ title: Symposium - Chemical biology across the University of Oxford
 						</div>
 				</div>
 			  </a></li> -->
-			  <li class="symp-section col-xs-12 col-sm-3"><a href="#agenda">
+			  <li class="symp-section col-xs-12 col-sm-3"><a href="#summary">
 			  	<div class="entry-point">
 						<div class="row hidden-xs">
 							<div class="img-circle blue-bg">
 								<span class="img-helper"></span>
-								<img src="/assets/img/schedule.png" alt="Click for Programme" />
+								<img src="/assets/img/stats.png" />
 							</div>
 						</div>
 						<div class="row">
 							<div>
-								<h2 class="blue">Programme</h2>
+								<h2 class="blue">Event Summary</h2>
 							</div>
 						</div>
 				</div>
@@ -87,21 +87,23 @@ title: Symposium - Chemical biology across the University of Oxford
 						</div>
 				</div>
 			  </a></li>
-			  <li class="symp-section col-xs-12 col-sm-3"><a href="#summary">
+			  
+			  <li class="symp-section col-xs-12 col-sm-3"><a href="#agenda">
 			  	<div class="entry-point">
 						<div class="row hidden-xs">
 							<div class="img-circle blue-bg">
 								<span class="img-helper"></span>
-								<img src="/assets/img/stats.png" />
+								<img src="/assets/img/schedule.png" alt="Click for Programme" />
 							</div>
 						</div>
 						<div class="row">
 							<div>
-								<h2 class="blue">Event Summary</h2>
+								<h2 class="blue">Programme</h2>
 							</div>
 						</div>
 				</div>
 			  </a></li>
+			  
 			</ul>
 
 			<!-- Tab panes -->
@@ -215,6 +217,30 @@ title: Symposium - Chemical biology across the University of Oxford
 						</div>
 					</div>
 			  <div class="row">
+			  	<button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
+			  </div>
+
+			  <div class="large top-margin">
+			  	<a id="summary"></a>
+			  	<!-- post-symp page as an include -->
+			  	{% include post-symp.html %}
+
+			  </div>
+			  <div class="row">
+			  	<button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
+			  </div>
+
+
+
+			  <div class="large top-margin">
+			  	<a id="talks"></a>
+			  	<!-- posters page as an include? -->
+			  	{% include talks.html %}
+
+			  	{% include posters.html %}
+
+			  </div>
+			   <div class="row">
 			  	<button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
 			  </div>
 
@@ -469,27 +495,8 @@ title: Symposium - Chemical biology across the University of Oxford
 
 			  </div>
 
-			  <div class="row">
-			  	<button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
-			  </div>
-
-			  <div class="large top-margin">
-			  	<a id="talks"></a>
-			  	<!-- posters page as an include? -->
-			  	{% include talks.html %}
-
-			  	{% include posters.html %}
-
-			  </div>
-			   <div class="row">
-			  	<button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
-			  </div>
-			  <div class="large top-margin">
-			  	<a id="summary"></a>
-			  	<!-- post-symp page as an include -->
-			  	{% include post-symp.html %}
-
-			  </div>
+			  
+			  
 
 
 
