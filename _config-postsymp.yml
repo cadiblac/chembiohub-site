@@ -813,8 +813,8 @@ attendees:
     dept: Chemistry
     bio: "The research of our group is driven by a desire to apply chemical principles and techniques to understanding biology. Most research projects in our group aim to combine interesting chemistry with important biomedicinal problems. Current projects involve investigations into how human cells respond to variations in oxygen supply, how complex antibiotics are made by biosynthesis in a few steps, how small molecules regulate transcription in humans, and on the chemical basis of epigenetics."
 
-  - first_name: Scozzafava
-    last_name: Giuseppe
+  - first_name: Giuseppe 
+    last_name: Scozzafava
     email: ""
     link: ""
     photo: ""
