@@ -179,6 +179,9 @@ p.overlay {
 .caption h3 {
 	height: 80px;
 }
+.grey {
+	color: #999;
+}
 
 @media (min-width: 768px) { 
 

@@ -266,10 +266,12 @@
 						<div class="row">
 							<div class="hidden-xs col-sm-6 col-lg-3" style="padding-right: 0;">
 								<!-- photo -->
-								<img {% if person.photo != "" %}src="{{ person.photo }}"{% else %}src="/assets/img/people/default_user_icon.png"{% endif %} data-name="{{ person.first_name }} {{ person.last_name }}" data-dept="{{ person.dept }}" data-weblink="{{ person.link }}" class="ppl-thumb" style="width:100%" title="{{ person.bio }}"> 
+								
+								<img {% if person.photo != "" %}src="{{ person.photo }}"{% else %}src="/assets/img/people/default_user_icon.png"{% endif %} data-name="{{ person.first_name }} {{ person.last_name }}" data-dept="{{ person.dept }}" data-weblink="{{ person.link }}" class="ppl-thumb" style="width:100%" > 
+								{% if person.bio != "" %}<span class="glyphicon glyphicon-info-sign text-right blue" style="position: absolute;right: 0;font-size: 1.3em;" title="{{ person.bio }}"></span>{% endif %}
 							</div>
 							<div class="col-sm-6 col-lg-9">
-								<p class="person-name nexa"><a href="{{ person.link }}">{{ person.first_name }}<br/>{{ person.last_name }}</a></p>
+								<p class="person-name nexa">{% if person.link != "" %}<a href="{{ person.link }}">{{ person.first_name }}<br/>{{ person.last_name }}</a>{% else %}<span class="grey">{{ person.first_name }}<br/>{{ person.last_name }}</span>{% endif %}</p>
 								<p class="nexa" style="line-height:1.2em;"><small>{{ person.dept }}</small></p>
 							</div>
 						</div>
