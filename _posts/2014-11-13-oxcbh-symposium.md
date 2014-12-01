@@ -1,5 +1,5 @@
 ---
-title: The first ChemBio Hub symposium - what happened?
+title: The first ChemBio Hub Symposium - what happened?
 author: michael
 layout: post
 tags: oxcbh

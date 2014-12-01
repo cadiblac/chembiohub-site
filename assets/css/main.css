@@ -550,6 +550,12 @@ form.contact-form {
   cursor: pointer;
 }
 
+h2.further.subheading {
+  color: #999;
+  background-color: white;
+  padding: 10px 0;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 

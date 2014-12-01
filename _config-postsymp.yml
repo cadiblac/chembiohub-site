@@ -533,14 +533,6 @@ attendees:
     dept: Chemistry
     bio: ""
 
-  - first_name: Richard
-    last_name: Hopkinson
-    email: ""
-    link: ""
-    photo: ""
-    dept: Chemistry
-    bio: ""
-
   - first_name: Marie W 
     last_name: Johannsen
     email: ""
@@ -812,14 +804,6 @@ attendees:
     photo: ""
     dept: Target Discovery Institute
     bio: "I carry out screening assays for compounds of interest to the SGC histone demethylases and epigenetics programme. The compounds are provided by academic and pharmaceutical collaborators."
-
-  - first_name: Shubhash
-    last_name: Mukhopadhyay
-    email: ""
-    link: ""
-    photo: ""
-    dept: SGC
-    bio: ""
 
   - first_name: Lea
     last_name: Sefer
