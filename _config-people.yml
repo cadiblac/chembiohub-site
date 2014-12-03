@@ -146,7 +146,7 @@ speakers:
     photo: /assets/img/people/Tom_Brown_Oncology.png
     dept: Oncology
     talk_title: Extending the boundaries of nucleic acid chemistry
-    embed_code: ""
+    embed_code: "Brown.pptx"
     talk_order: 7
 
   - first_name: Tom 
@@ -176,7 +176,7 @@ speakers:
     photo: /assets/img/people/default_user_icon.png
     dept: WIMM
     talk_title: Title TBC
-    embed_code: ""
+    embed_code: "Wynne.pdf"
     talk_order: 15
 
   - first_name: Susanne 
