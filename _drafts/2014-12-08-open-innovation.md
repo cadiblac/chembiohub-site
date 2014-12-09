@@ -12,7 +12,7 @@ Much early stage drug discovery has traditionally taken place behind closed door
  
 But there’s a growing consensus that this might not be the best way forward, at least not all the time. Working in this closed way means that exploring blind alleys in one research organisation may be duplicated by another. Since so many drug candidates fail in at the clinical trial stage (check out [this paper](http://www.nature.com/nbt/journal/v32/n1/full/nbt.2786.html#close)) this duplication is clearly extremely inefficient.
 
-Open innovation is that idea that certain stages of the drug discovery pipeline are carried out in a collaborative, non-competitive way. Sharing knowledge and know-how at the early stages reduces wastage and duplication of effort. Thanks to the pooling of resources from industry, academia and patient groups, the competitive process to develop a marketable drug can begin from a much more viable starting point. 
+Open innovation is that idea that certain stages of the drug discovery pipeline are carried out in a collaborative, non-competitive way. Sharing knowledge and know-how at the early stages reduces wastage and duplication of effort later on. Thanks to the pooling of resources from industry, academia and patient groups, the competitive process to develop a marketable drug can begin from a much more viable starting point. 
 
 So what did the six speakers have to say about open innovation? 
  
