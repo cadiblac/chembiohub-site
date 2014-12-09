@@ -16,7 +16,7 @@ Open innovation is that idea that certain stages of the drug discovery pipeline 
 
 So what did the six speakers have to say about open innovation? 
  
-From the **University of Oxford, Professor Andrew Hamilton (Vice Chancellor)** spoke of some key developments at Oxford in recent months that cement the University’s role as a centre of drug discovery. These include the Target Discovery Institute, The Precision Cancer Medicine Initiative and the opening of the Kennedy Institute. Links between these cutting-edge research centres, the city of Oxford and wider industry will drive innovation in new medicine development in the coming years.
+From the **University of Oxford, Professor Andrew Hamilton (Vice Chancellor)** spoke of some key developments that cement the University’s role as a centre of drug discovery. These include the [Target Discovery Institute](http://www.tdi.ox.ac.uk/home), The [Precision Cancer Medicine Initiative](http://www.hefce.ac.uk/whatwedo/rsrch/howfundr/ukrpif/precisioncancermedicineinstitute/) and the [Kennedy Institute](http://www.kennedy.ox.ac.uk/). Links between these cutting-edge research centres, the city of Oxford and wider industry will drive innovation in new medicine development in the coming years.
 
 Next followed three speakers from the pharmaceutical industry. The theme of their talks? How their organisations are adapting to include open innovation in their business models.
 
@@ -29,4 +29,3 @@ Next followed three speakers from the pharmaceutical industry. The theme of thei
 ### ChemBio Hub: our place in open innovation
 
 Professors Hamilton and Bountra were clear: **Oxford is a leading centre for open innovation drug discovery in the UK**. Our research generates a vast quantity of reagents, data and knowhow that can drive innovation in the development of new medicines. ChemBio Hub will collect this knowledge into one place. Drug discovery organisations will have a single location where they can find the Oxford research they need to know about. We’re already talking to pharma and biotech about how they can become involved and what they need from the project. Ultimately, ChemBio Hub will connect the right people so that they can create mutually beneficial relationships. The effect? **Increasing the role of Oxford research in innovation and speeding up the drug discovery process**.
-
