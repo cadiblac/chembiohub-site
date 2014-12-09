@@ -24,7 +24,7 @@ Next followed three speakers from the pharmaceutical industry. The theme of thei
 
 **Professor Birgitte Andersen** then spoke about some of the work of the **Big Data Institute** in supporting and developing policy to turn the UK into a global innovation hub over the next decade.
 
-**Professor Chas Bountra** gave the final talk - a tour-de-force of the success of the **Oxford SGC** open innovation model. In making all their reagents and know-how available, free from patents and IP, the SGC are able to collaborate extensively with academic and industrial groups across the world. This access to a vast range of industrial groups, clinicians and patients has unearthed applications of SGC work to diseases far beyond the initial project focus.
+**Professor Chas Bountra** gave the final talk - a tour-de-force of the success of the **Oxford SGC** open innovation model. In making all their reagents and know-how available, free from patents and IP, the SGC are able to collaborate extensively with academia and industry across the world. This access to a vast range of industrial groups, clinicians and patients has unearthed applications of SGC work to diseases far beyond the initial project focus.
 
 ### ChemBio Hub: our place in open innovation
 
