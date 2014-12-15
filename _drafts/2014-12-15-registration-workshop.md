@@ -56,6 +56,7 @@ These may be known at the outset or might become available over time, but import
 -	Mass spectrum
 -	Melting point 
 -	1H and 13C NMR spectra  
+
 ### System needs
 There were some needs identified which are unrelated to managing the chemical and biological information. These are none-the-less very important to potential users.  Those identified in this first workshop include:
 -	Being able to change data held in the system but with a log of what has been changed
