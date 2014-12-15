@@ -29,7 +29,7 @@ The values which need to be captured (or generated) are:
 -	Relevant Pan Assay Interference Compounds (PAINS) warnings
 -	Intended targets or target class
 
-### Searching and filtering
+## Searching and filtering
 Once data is in the system, it needs to be able to be found simply and comprehensively.  As well as the basic information recorded above, searching needs to include:
 -	Awareness of stereoisomers
    -	Depending on what is needed we may want to specify that we are interested in search results related to a single enantiomer, or a racemic mixture, or all isomers
@@ -38,7 +38,7 @@ Once data is in the system, it needs to be able to be found simply and comprehen
 -	The ability to search by chemical fingerprints
 -	The ability to apply successive CNS Multi Parameter Optimisation criteria
 
-### Batch-specific information
+## Batch-specific information
 Over time, some batch-specific information may also be available related to screening compounds in assays, including:
 -	Physical form
 -	Location and amount
@@ -49,7 +49,7 @@ Over time, some batch-specific information may also be available related to scre
 -	Purity 
 -	Storage conditions
 
-### Physical properties
+## Physical properties
 These may be known at the outset or might become available over time, but important properties to be recorded are:
 -	cLogP
 -	Polar Surface Area (PSA)
@@ -57,7 +57,7 @@ These may be known at the outset or might become available over time, but import
 -	Melting point 
 -	1H and 13C NMR spectra  
 
-### System needs
+##System needs
 There were some needs identified which are unrelated to managing the chemical and biological information. These are none-the-less very important to potential users.  Those identified in this first workshop include:
 -	Being able to change data held in the system but with a log of what has been changed
 -	Limiting the values in some drop-down lists depending on which group the user belongs to and their recent activity
