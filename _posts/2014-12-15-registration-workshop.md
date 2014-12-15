@@ -28,7 +28,7 @@ The values which need to be captured (or generated) are:
 -	Relevant Pan Assay Interference Compounds (PAINS) warnings
 -	Intended targets or target class
 
-** Searching and filtering**
+**Searching and filtering**
 
 Once data is in the system, it needs to be able to be found simply and comprehensively.  As well as the basic information recorded above, searching needs to include:
 -	Awareness of stereoisomers
@@ -38,7 +38,7 @@ Once data is in the system, it needs to be able to be found simply and comprehen
 -	The ability to search by chemical fingerprints
 -	The ability to apply successive CNS Multi Parameter Optimisation criteria
 
-** Batch-specific information**
+**Batch-specific information**
 
 Over time, some batch-specific information may also be available related to screening compounds in assays, including:
 -	Physical form
@@ -50,7 +50,7 @@ Over time, some batch-specific information may also be available related to scre
 -	Purity 
 -	Storage conditions
 
-** Physical properties**
+**Physical properties**
 
 These may be known at the outset or might become available over time, but important properties to be recorded are:
 -	cLogP
