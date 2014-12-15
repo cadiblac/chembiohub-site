@@ -1,8 +1,8 @@
 ---
-published: false
+title: Workshop on recording and managing data related to small molecules  - 9th December 2014
+author: karen
+layout: post
 ---
-
-##Workshop on recording and managing data related to small molecules  - 9th December 2014
 
 The ultimate goal for the ChemBio Hub project is to deliver a University-wide Chemical Biology website and data sharing platform. This will address problems researchers have in capturing and sharing all of their research data, knowing what previous approaches have been tried, finding collaborators, and ensuring they can efficiently manage the wealth of data that their research produces.
 
