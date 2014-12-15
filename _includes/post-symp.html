@@ -266,8 +266,8 @@
 
 	<h2 class="further subheading">Symposium attendees</h2>
 	<p class="nexa centered">Click an attendee name to see their personal profile page. <br/>Hover over the information symbol to see their brief biography.</p>
-				{% assign sorted_attendees = site.attendees | sort: 'last_name' %}
-				{% for person in sorted_attendees %}
+				
+				{% for person in site.attendees %}
 					<div class="col-xs-6 col-md-3 attendee">
 						<div class="row">
 							<div class="hidden-xs col-sm-6 col-lg-3" style="padding-right: 0;">
