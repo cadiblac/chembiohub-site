@@ -34,6 +34,7 @@ The values which need to be captured (or generated) are:
 **Searching and filtering**
 
 Once data is in the system, it needs to be able to be found simply and comprehensively.  As well as the basic information recorded above, searching needs to include:
+
 -	Awareness of stereoisomers
    -	Depending on what is needed we may want to specify that we are interested in search results related to a single enantiomer, or a racemic mixture, or all isomers
 -	The ability to search by specific substructure or scaffolds 
@@ -44,6 +45,7 @@ Once data is in the system, it needs to be able to be found simply and comprehen
 **Batch-specific information**
 
 Over time, some batch-specific information may also be available related to screening compounds in assays, including:
+
 -	Physical form
 -	Location and amount
 -	Plate and well identifiers
@@ -56,6 +58,7 @@ Over time, some batch-specific information may also be available related to scre
 **Physical properties**
 
 These may be known at the outset or might become available over time, but important properties to be recorded are:
+
 -	cLogP
 -	Polar Surface Area (PSA)
 -	Mass spectrum
@@ -65,6 +68,7 @@ These may be known at the outset or might become available over time, but import
 **System needs**
 
 There were some needs identified which are unrelated to managing the chemical and biological information. These are none-the-less very important to potential users.  Those identified in this first workshop include:
+
 -	Being able to change data held in the system but with a log of what has been changed
 -	Limiting the values in some drop-down lists depending on which group the user belongs to and their recent activity
 -	File attachments need to be handled simply and logically
@@ -74,6 +78,7 @@ There were some needs identified which are unrelated to managing the chemical an
 **Later requirements**
 
 Workshop attendees agreed that the features above were the key needs in the first instance, but they had a number of ideas for further useful functionality which we would deliver later, including:
+
 -	External data links (to ChemBL, SciFinder, Reaxys)
 -	Links to commercial suppliers (such as eMolecules and Aldrich)
 -	Publication references
