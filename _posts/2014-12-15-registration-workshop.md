@@ -1,11 +1,11 @@
 ---
-title: "Workshop on recording and managing data related to small molecules  - 9th December 2014"
+title: Workshop on recording and managing data related to small molecules - 9th December 2014
 author: karen
 layout: post
 published: true
 ---
 
-The ultimate goal for the ChemBio Hub project is to deliver a University-wide Chemical Biology website and data sharing platform. This will address problems researchers have in capturing and sharing all of their research data, knowing what previous approaches have been tried, finding collaborators, and ensuring they can efficiently manage the wealth of data that their research produces.
+The ultimate goal for the ChemBio Hub project is to deliver a University-wide Chemical Biology website and data sharing platform. This will address problems researchers have in capturing and sharing all of their research data, knowing what previous approaches have been tried, finding collaborators, and ensuring they can efficiently manage the wealth of data that their research produces.<!-- more -->
 
 In order to start the process of delivering some simple, effective tools that go some way towards addressing these problems, the project team has decided first of all to tackle the problem of recording and managing information about the small molecules used in research. We therefore hosted a workshop to understand the main functionality users would need to have in an electronic system that would support this need.
 
@@ -31,6 +31,7 @@ The values which need to be captured (or generated) are:
 -	Relevant Pan Assay Interference Compounds (PAINS) warnings
 -	Intended targets or target class
 
+
 **Searching and filtering**
 
 Once data is in the system, it needs to be able to be found simply and comprehensively.  As well as the basic information recorded above, searching needs to include:
@@ -41,6 +42,7 @@ Once data is in the system, it needs to be able to be found simply and comprehen
 -	PAINS filtering 
 -	The ability to search by chemical fingerprints
 -	The ability to apply successive CNS Multi Parameter Optimisation criteria
+
 
 **Batch-specific information**
 
@@ -55,6 +57,7 @@ Over time, some batch-specific information may also be available related to scre
 -	Purity 
 -	Storage conditions
 
+
 **Physical properties**
 
 These may be known at the outset or might become available over time, but important properties to be recorded are:
@@ -64,6 +67,7 @@ These may be known at the outset or might become available over time, but import
 -	Mass spectrum
 -	Melting point 
 -	1H and 13C NMR spectra  
+
 
 **System needs**
 
@@ -75,6 +79,7 @@ There were some needs identified which are unrelated to managing the chemical an
 -	Functionality which could show ‘publication readiness’ for a compound or group of compounds would be very helpful (i.e. showing which key values are in the system and which are missing)
 -	Links to relevant safety information (this requirement came up after the workshop)
 
+
 **Later requirements**
 
 Workshop attendees agreed that the features above were the key needs in the first instance, but they had a number of ideas for further useful functionality which we would deliver later, including:
@@ -85,6 +90,7 @@ Workshop attendees agreed that the features above were the key needs in the firs
 -	Association of more detailed biological assay data (e.g. via PubChem)
 -	Registration and management of macromolecules
 -	Integration of several data processing tools into one single interface
+
 
 **What’s happening next**
 
