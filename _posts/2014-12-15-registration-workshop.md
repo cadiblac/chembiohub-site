@@ -1,7 +1,8 @@
 ---
-title: Workshop on recording and managing data related to small molecules  - 9th December 2014
+title: "Workshop on recording and managing data related to small molecules  - 9th December 2014"
 author: karen
 layout: post
+published: true
 ---
 
 The ultimate goal for the ChemBio Hub project is to deliver a University-wide Chemical Biology website and data sharing platform. This will address problems researchers have in capturing and sharing all of their research data, knowing what previous approaches have been tried, finding collaborators, and ensuring they can efficiently manage the wealth of data that their research produces.
@@ -11,7 +12,9 @@ In order to start the process of delivering some simple, effective tools that go
 This first workshop brought together people from various departments (SGC, Chemistry, Pharmacology, Cardiovascular Medicine and the TDI) with a variety of experience and needs.  This was useful in allowing us to understand key features that are common to multiple groups.  We will follow this up with more in-depth meetings with targeted users such as those whose primary focus is pure synthetic chemistry.
 
 The key themes that we identified then were:
-Initial data capture
+
+**Initial data capture**
+
 This needs to be as simple as possible, without putting off potential users by demanding a lot of information that they may not know at the outset. It needs to allow addition of single molecules as well as processing large batches at a time.
 
 The values which need to be captured (or generated) are:
@@ -71,13 +74,16 @@ There were some needs identified which are unrelated to managing the chemical an
 **Later requirements**
 
 Workshop attendees agreed that the features above were the key needs in the first instance, but they had a number of ideas for further useful functionality which we would deliver later, including:
--	External data links (to ChemBL, SciFinder, Beilsten)
+-	External data links (to ChemBL, SciFinder, Reaxys)
 -	Links to commercial suppliers (such as eMolecules and Aldrich)
 -	Publication references
 -	Association of more detailed biological assay data (e.g. via PubChem)
 -	Registration and management of macromolecules
 -	Integration of several data processing tools into one single interface
-What’s happening next
+
+**What’s happening next**
+
 The ChemBio Hub team are now working on an initial tool to meet these needs.  Before Christmas we plan to show users what we have done so far to check that we are on the right track.  We will invite the people who attended the workshop, and those who planned to attend but were unable to.  It will also be open to any others who would like to see what has been developed up to this point.  We will do further work to release a tool that pilot groups can then test, collect more feedback and further tighten up the application before making it widely available.
 
 If you have any questions or suggestions about the registration of small molecules, get in touch…!
+
