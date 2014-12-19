@@ -82,6 +82,11 @@ svg.bar-graph{
     padding-left: 0;
 }
 
+.post h3 {
+    color: #002148;
+    font-size: 1.3em;
+}
+
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */

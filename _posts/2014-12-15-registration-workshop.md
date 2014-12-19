@@ -13,7 +13,7 @@ This first workshop brought together people from various departments (SGC, Chemi
 
 The key themes that we identified then were:
 
-**Initial data capture**
+###Initial data capture
 
 This needs to be as simple as possible, without putting off potential users by demanding a lot of information that they may not know at the outset. It needs to allow addition of single molecules as well as processing large batches at a time.
 
@@ -32,7 +32,7 @@ The values which need to be captured (or generated) are:
 -	Intended targets or target class
 
 
-**Searching and filtering**
+###Searching and filtering
 
 Once data is in the system, it needs to be able to be found simply and comprehensively.  As well as the basic information recorded above, searching needs to include:
 
@@ -44,7 +44,7 @@ Once data is in the system, it needs to be able to be found simply and comprehen
 -	The ability to apply successive CNS Multi Parameter Optimisation criteria
 
 
-**Batch-specific information**
+###Batch-specific information
 
 Over time, some batch-specific information may also be available related to screening compounds in assays, including:
 
@@ -58,7 +58,7 @@ Over time, some batch-specific information may also be available related to scre
 -	Storage conditions
 
 
-**Physical properties**
+###Physical properties
 
 These may be known at the outset or might become available over time, but important properties to be recorded are:
 
@@ -69,7 +69,7 @@ These may be known at the outset or might become available over time, but import
 -	1H and 13C NMR spectra  
 
 
-**System needs**
+###System needs
 
 There were some needs identified which are unrelated to managing the chemical and biological information. These are none-the-less very important to potential users.  Those identified in this first workshop include:
 
@@ -80,7 +80,7 @@ There were some needs identified which are unrelated to managing the chemical an
 -	Links to relevant safety information (this requirement came up after the workshop)
 
 
-**Later requirements**
+###Later requirements
 
 Workshop attendees agreed that the features above were the key needs in the first instance, but they had a number of ideas for further useful functionality which we would deliver later, including:
 
@@ -92,7 +92,7 @@ Workshop attendees agreed that the features above were the key needs in the firs
 -	Integration of several data processing tools into one single interface
 
 
-**What’s happening next**
+###What’s happening next
 
 The ChemBio Hub team are now working on an initial tool to meet these needs.  Before Christmas we plan to show users what we have done so far to check that we are on the right track.  We will invite the people who attended the workshop, and those who planned to attend but were unable to.  It will also be open to any others who would like to see what has been developed up to this point.  We will do further work to release a tool that pilot groups can then test, collect more feedback and further tighten up the application before making it widely available.
 

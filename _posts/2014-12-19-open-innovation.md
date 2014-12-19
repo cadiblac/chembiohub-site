@@ -1,10 +1,10 @@
 ---
-published: false
+title: The Future of Drug Discovery - Open Innovation
+author: michael
+layout: post
 ---
 
-## The Future of Drug Discovery: Open Innovation
-
-Last week <a href="http://oxfordbiotech.org/" onclick='return !window.open(this.href);'>Oxford Biotech</a> ran a great conference on <a href="http://oxfordbiotech.org/ob-approach/events-networking/upcoming-events/open-innovation-event/" onclick='return !window.open(this.href);'>"The Future of Drug Discovery: Open Innovation"</a>. A top line-up of speakers from academia and industry gave their views on how open innovation drug discovery is developing and what the opportunities are for the future.
+Last week <a href="http://oxfordbiotech.org/" onclick='return !window.open(this.href);'>Oxford Biotech</a> ran a great conference on <a href="http://oxfordbiotech.org/ob-approach/events-networking/upcoming-events/open-innovation-event/" onclick='return !window.open(this.href);'>"The Future of Drug Discovery: Open Innovation"</a>. A top line-up of speakers from academia and industry gave their views on how open innovation drug discovery is developing and what the opportunities are for the future.<!-- more -->
 
 ### What is open innovation drug discovery…? 
 
