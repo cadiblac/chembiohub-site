@@ -701,8 +701,8 @@ attendees:
     dept: Chemistry
     bio: ""
 
-  - first_name: Patel
-    last_name: Radhika
+  - first_name: Radhika
+    last_name: Patel
     email: ""
     link: ""
     photo: ""
