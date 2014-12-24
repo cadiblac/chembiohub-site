@@ -357,7 +357,7 @@ h1.tablehead, h2.tablehead, h3.tablehead, h4.tablehead {
 /* Footer css */
 @media (max-width: 767px) {
   .footer {
-    text-decoration: underline; } }
+    /*text-decoration: underline;*/ } }
 @media (min-width: 767px) {
   .footer {
     min-height: 90px; } }
