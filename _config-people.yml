@@ -198,3 +198,95 @@ speakers:
     talk_title: Identifying novel small molecule therapeutics by cell phenotype screening - three short stories from brain and heart
     embed_code: ""
     talk_order: 10
+
+
+speakers2015:
+  - first_name: Chas
+    last_name: Bountra
+    email: ""
+    link: ""
+    position: "Professor of Translational Medicine"
+    dept: "SGC"
+    research_interests: "Research interests: using X ray structures of novel human proteins to generate small molecule inhibitors, screening in human cells to identify novel targets for drug discovery, and then developing clinical candidates for evaluation in patients, pre-competitively."
+    talk_title: ""
+    talk_order: 1
+
+  - first_name: Tom
+    last_name: Brown
+    email: ""
+    link: ""
+    position: "Professor of Nucleic Acid Chemistry"
+    dept: "Dept of Chemistry"
+    research_interests: ""
+    talk_title: ""
+    talk_order: 2
+
+  - first_name: Daniel
+    last_name: Ebner
+    email: ""
+    link: ""
+    position: ""
+    dept: "Target Discovery Institute"
+    research_interests: ""
+    talk_title: ""
+    talk_order: 3
+
+  - first_name: Simon
+    last_name: Lovestone
+    email: ""
+    link: ""
+    position: "Professor of Translational Neuroscience"
+    dept: "Department of Psychiatry"
+    research_interests: "Seeking new targets for therapy in Alzheimer's disease through understanding of basic mechanisms, in disease modification trials and experimental medicine and in the search for biomarkers for early diagnosis."
+    talk_title: ""
+    talk_order: 4
+
+  - first_name: Frances
+    last_name: Platt
+    email: ""
+    link: ""
+    position: "Professor of Biochemistry and Pharmacology"
+    dept: "Department of Pharmacology"
+    research_interests: "Identifying small molecule drugs to target unique steps in the pathogenic cascade of lysosomal disorders, and testing them as mono-therapies or in combination with other therapies. These are evaluated in a pre-clinical setting prior to translational studies in patients with our clinical collaborators."
+    talk_title: ""
+    talk_order: 5
+
+  - first_name: Angela
+    last_name: Russell
+    email: ""
+    link: ""
+    position: ""
+    dept: "Department of Chemistry"
+    research_interests: ""
+    talk_title: ""
+    talk_order: 6
+
+  - first_name: Kevin
+    last_name: Talbot
+    email: ""
+    link: ""
+    position: "Professor of Translational Neuroscience"
+    dept: "Nuffield Department of Clinical Neuroscience"
+    research_interests: "Identifying the earliest pathological pathways activated in motor neuron disease in order to define the most therapeutically tractable areas for drug therapy and to apply these findings to clinical studies in patients."
+    talk_title: ""
+    talk_order: 7
+
+  - first_name: Richard
+    last_name: "Wade-Martins"
+    email: ""
+    link: ""
+    position: "Associate Professor of Biomedical Science"
+    dept: "Department of Physiology, Anatomy and Genetics"
+    research_interests: "Understanding molecular mechanisms of age-related neurodegenerative diseases to generate novel molecular therapies."
+    talk_title: ""
+    talk_order: 8
+
+  - first_name: Cathy
+    last_name: Ye
+    email: ""
+    link: ""
+    position: "University Lecturer in Engineering Science"
+    dept: "Department of Engineering Science"
+    research_interests: "Stem cell technologies and stem cell based screening platforms."
+    talk_title: ""
+    talk_order: 9
