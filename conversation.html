@@ -12,6 +12,7 @@ title: Current expertise and future directions in drug discovery&col; an Oxford-
 		    		Current expertise and future directions in drug discovery
 				</h1>
 				<h2 class="silver centered">An Oxford-Industry conversation</h2>
+
 			</div>
 			<div class="col-md-3 col-sm-4 col-xs-12 text-left symp-info">
 				<p>
@@ -26,8 +27,13 @@ title: Current expertise and future directions in drug discovery&col; an Oxford-
 						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 					</div>
+
+
 				</div>
+
+
 			</div>
+			<div id="floating-register" data-spy="affix" data-offset-top="60" ><div class="row centered"><a href="https://www.eventbrite.co.uk/e/current-expertise-and-future-directions-in-drug-discovery-an-oxford-industry-conversation-tickets-15943271755" role="button" class="btn-lg btn-primary text-center">Register</a></div></div>
 
 
 		</div>
@@ -113,12 +119,20 @@ title: Current expertise and future directions in drug discovery&col; an Oxford-
 			  
 			</ul>
 			<div class="row centered">
-				<div class="alert alert-success">
-					<h2 class="blue nexa">Industry Early Bird Registration <a role="button" class="btn-lg btn-primary" href="https://www.eventbrite.co.uk/e/current-expertise-and-future-directions-in-drug-discovery-an-oxford-industry-conversation-tickets-15943271755" target="_blank">OPEN NOW</a></h2>
-				</div>
-				<div class="alert alert-info">
-					<h2 class="blue nexa">Official registration opens Tuesday 31st March 2015 <a role="button" class="btn-lg btn-primary" href="/assets/files/conversation-2015-regopen.ics" target="_blank">Save The Date</a></h2>
-				</div>
+				<!-- Time sensitive banners -->
+				{% for banner in site.symp2015.banners %}
+					{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+					{% capture starttime %}{{banner.date_start | date: '%s'}}{% endcapture %}
+					{% capture endtime %}{{banner.date_end | date: '%s'}}{% endcapture %}
+
+					{% if starttime < nowunix && nowunix <= endtime %}
+					<div class="alert alert-{{banner.banner_class}}">
+						<h2 class="blue nexa">{{banner.message_text}} <a role="button" class="btn-lg btn-primary" href="{{banner.button_link}}" target="_blank">{{banner.button_text}}</a></h2>
+					</div>
+					{% endif %}
+
+				{% endfor %}
+
 			</div>
 			
 
@@ -127,16 +141,9 @@ title: Current expertise and future directions in drug discovery&col; an Oxford-
 			  	<h2 class="subheading">Overview</h2>
 					
 			  	<div class="col-md-6">
-			  		<p>This event will showcase top chemical biology research from labs at Oxford. Focus topics will include disease-agnostic technologies to aid drug discovery, target and pathway expertise across diseases, and therapeutic intervention for neurodegenerative illnesses. Particular emphasis will be placed on linking basic chemical biology research to work in the clinic.</p>
-
-					<p>The symposium will bring together 200 delegates including Oxford researchers, industry colleagues and technology transfer professionals. In doing so, it will provide the ideal forum for discussion and lead to lasting collaborative relationships.</p>
-
-					<p>Each session will feature top-class science from a broad range of Oxford’s biomedical and physical science departments. Complementary speakers from industry will also give their perspective throughout the day, setting the stage for a round-table discussion between opinion leaders from across Oxford and industry. This conversation will focus on how we can best work together to translate new ideas into pioneer medicines.</p>
-
-					<p>The day will conclude with a networking wine reception in the common room of the state-of-the-art Andrew Wiles building.</p>
-
-					
-
+					{% for para in site.symp2015.overview | sort: "order" %}
+						<p class="nexa">{{para.paragraph}}</p>
+					{% endfor %}
 			    </div>
 				
 				<div id="sponsors" class="col-md-6">
@@ -146,22 +153,28 @@ title: Current expertise and future directions in drug discovery&col; an Oxford-
 						<p class="centered nexa"><strong>Discuss</strong> the best way for Oxford and Industry to work together to speed up drug discovery.</p>
 
 						<!-- New themes please! -->
-						<div class="col-xs-6">
-							<img src="/assets/img/discover-telescope.png" class="col-xs-12 nomargin" alt="Discover cutting-edge chemical biology from Oxford.">
-							<p class="overlay nexa centered"><strong>Discover</strong><br> cutting-edge chemical biology from Oxford.</p>
-						</div>
-						<div class="col-xs-6">
-							<img src="/assets/img/link-chain.png" class="col-xs-12 nomargin" alt="Link with people at Oxford who can make collaboration">
-							<p class="overlay nexa centered"><strong>Link</strong><br> with people at Oxford who can make collaboration</p>
-						</div>
-						<div class="col-xs-6">
-							<img src="/assets/img/network-atom.png" class="col-xs-12 nomargin" alt="Network with industry to maximise the impact of your science.">
-							<p class="overlay nexa centered"><strong>Network</strong><br> with industry to maximise the impact of your science.</p>
-						</div>
-						<div class="col-xs-6">
-							<img src="/assets/img/connect-bridge.png" class="col-xs-12 nomargin" alt="Connect with colleagues across Oxford departments.">
-							<p class="overlay nexa centered"><strong>Connect</strong><br> with colleagues across Oxford departments.</p>
-						</div>
+						<fieldset style="border: 4px #002147 solid; border-radius: 10px; padding-bottom:20px;">
+							<legend style="  width: inherit; padding: 0 10px; border-bottom: none; text-align: center;">Industry</legend>
+							{% for reason in site.symp2015.why_attend %}
+								{% if reason.category == "industry" %}
+								<div class="col-xs-6">
+									<img src="/assets/img/{{reason.picture_url}}" class="col-xs-12 nomargin" alt="{{reason.caption_header}}&nbsp;{{reason.caption_text}}.">
+									<p class="overlay nexa centered"><strong>{{reason.caption_header}}</strong><br>{{reason.caption_text}}</p>
+								</div>
+								{% endif %}
+							{% endfor %}
+						</fieldset>
+						<fieldset style="border: 4px #002147 solid; border-radius: 10px; padding-bottom:20px;">
+							<legend style="  width: inherit; padding: 0 10px; border-bottom: none; text-align: center;">Oxford</legend>
+							{% for reason in site.symp2015.why_attend %}
+								{% if reason.category == "oxford" %}
+								<div class="col-xs-6">
+									<img src="/assets/img/{{reason.picture_url}}" class="col-xs-12 nomargin" alt="{{reason.caption_header}}&nbsp;{{reason.caption_text}}.">
+									<p class="overlay nexa centered"><strong>{{reason.caption_header}}</strong><br>{{reason.caption_text}}</p>
+								</div>
+								{% endif %}
+							{% endfor %}
+						</fieldset>
 
 					</div>
 
@@ -194,21 +207,17 @@ title: Current expertise and future directions in drug discovery&col; an Oxford-
 
 				
 			  </div>
-			  <div class="row" style="margin-top:20px;">
-						<h2 class="blue centered">This event is generously supported by:</h2>
+				<div class="row" style="margin-top:20px;">
+					<h2 class="blue centered">This event is generously supported by:</h2>
+					<div class="row">
 						<div class="col-xs-6 col-sm-3 centered">
-							<img src="/assets/img/funders/chem-dept.jpg" alt="Department of Chemistry" title="Department of Chemistry" style="width:100%;margin-top: 40px;">
+							<img src="/assets/img/funders/hefce.png" alt="HEFCE logo" title="Higher Education Funding Council" class="img-responsive" >
 						</div>
-						<div class="col-xs-6 col-sm-3 centered">
-							<img src="/assets/img/funders/johnfell.png" alt="John Fell OUP Research Fund" title="John Fell OUP Research Fund" style="width:100%;margin-top: 40px;">
-						</div>
-						<div class="col-xs-6 col-sm-3 centered">
-							<img src="/assets/img/funders/cruk.jpg" alt="Cancer Research UK" title="Cancer Research UK" style="width:100%;">
-						</div>
-						<div class="col-xs-6 col-sm-3 centered">
-							<img src="/assets/img/funders/ocrc.jpg" alt="Oxford Cancer Research Centre" title="Oxford Cancer Research Centre" style="width:50%;">
+						<div class="col-xs-6 col-sm-9">
+							<p class="nexa"><strong>The Higher Education Funding Council</strong> (HEFCE) provides funding for knowledge exchange through <strong>Higher Education Innovation Funding</strong> (HEIF). HEIF supports and develops a broad range of knowledge-based interactions between universities and colleges and the wider world. These collaborations benefit the UK economically and socially.</p>
 						</div>
 					</div>
+				</div>
 			  <div class="row">
 			  	<button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
 			  </div>
@@ -217,19 +226,12 @@ title: Current expertise and future directions in drug discovery&col; an Oxford-
 			  	<a id="agenda"></a> 
 			  	<div class="row">
 					<!-- Introductory paragraph -->
-					<h2 class="subheading">Agenda</h2>
+					<h2 class="subheading">Programme</h2>
 				</div>
 				<div class="row">
 					<p>Registration will take place from 9am at the Andrew Wiles Building. The evening wine reception will conclude at 7pm. The full programme for the day is currently being finalised and will appear here in due course.</p>
 					<h2 class="nexa blue centered">Confirmed speakers include:</h2>
-					<!-- <ul>
-						<li><strong>Richard Wade-Martins</strong> / Department of Physiology, Anatomy and Genetics</li>
-						<li><strong>Simon Lovestone</strong> / Department of Psychiatry</li>
-						<li><strong>Kevin Talbot</strong> / Clinical Neuroscience</li>
-						<li><strong>Cathy Ye</strong> / Department of Engineering Science</li>
-						<li><strong>Fran Platt</strong> / Department of Pharmacology</li>
-						<li><strong>Chas Bountra</strong> / SGC</li>
-					</ul> -->
+					
 					{% for speaker in site.speakers2015 | sort:"talk_order" %}
 						<div class="row mt">
 							<div class="centered">
@@ -249,5 +251,4 @@ title: Current expertise and future directions in drug discovery&col; an Oxford-
 
 	</div>
 </div>
-
-<script type="text/javascript" src="/assets/js/slide-down-links.js"></script> 
+<script type="text/javascript" src="/assets/js/slide-down-links.js"></script>

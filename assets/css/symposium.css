@@ -183,6 +183,22 @@ p.overlay {
 	color: #999;
 }
 
+.affix{
+	
+	top:30px;
+	right:30px;
+} 
+.affix-top{
+	
+}
+.affix-top a {
+	margin-top: 20px;
+} 
+.affix-bottom {
+	
+	
+}
+
 @media (min-width: 768px) { 
 
   p.overlay {

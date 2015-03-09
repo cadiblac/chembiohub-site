@@ -1,0 +1,172 @@
+speakers2015:
+  - first_name: Chas
+    last_name: Bountra
+    email: ""
+    link: ""
+    position: "Professor of Translational Medicine"
+    dept: "SGC"
+    research_interests: "Research interests: using X ray structures of novel human proteins to generate small molecule inhibitors, screening in human cells to identify novel targets for drug discovery, and then developing clinical candidates for evaluation in patients, pre-competitively."
+    talk_title: ""
+    talk_order: 1
+
+  - first_name: Tom
+    last_name: Brown
+    email: ""
+    link: ""
+    position: "Professor of Nucleic Acid Chemistry"
+    dept: "Dept of Chemistry"
+    research_interests: ""
+    talk_title: ""
+    talk_order: 2
+
+  - first_name: Daniel
+    last_name: Ebner
+    email: ""
+    link: ""
+    position: ""
+    dept: "Target Discovery Institute"
+    research_interests: ""
+    talk_title: ""
+    talk_order: 3
+
+  - first_name: Simon
+    last_name: Lovestone
+    email: ""
+    link: ""
+    position: "Professor of Translational Neuroscience"
+    dept: "Department of Psychiatry"
+    research_interests: "Seeking new targets for therapy in Alzheimer's disease through understanding of basic mechanisms, in disease modification trials and experimental medicine and in the search for biomarkers for early diagnosis."
+    talk_title: ""
+    talk_order: 4
+
+  - first_name: Frances
+    last_name: Platt
+    email: ""
+    link: ""
+    position: "Professor of Biochemistry and Pharmacology"
+    dept: "Department of Pharmacology"
+    research_interests: "Identifying small molecule drugs to target unique steps in the pathogenic cascade of lysosomal disorders, and testing them as mono-therapies or in combination with other therapies. These are evaluated in a pre-clinical setting prior to translational studies in patients with our clinical collaborators."
+    talk_title: ""
+    talk_order: 5
+
+  - first_name: Angela
+    last_name: Russell
+    email: ""
+    link: ""
+    position: ""
+    dept: "Department of Chemistry"
+    research_interests: ""
+    talk_title: ""
+    talk_order: 6
+
+  - first_name: Kevin
+    last_name: Talbot
+    email: ""
+    link: ""
+    position: "Professor of Translational Neuroscience"
+    dept: "Nuffield Department of Clinical Neuroscience"
+    research_interests: "Identifying the earliest pathological pathways activated in motor neuron disease in order to define the most therapeutically tractable areas for drug therapy and to apply these findings to clinical studies in patients."
+    talk_title: ""
+    talk_order: 7
+
+  - first_name: Richard
+    last_name: "Wade-Martins"
+    email: ""
+    link: ""
+    position: "Associate Professor of Biomedical Science"
+    dept: "Department of Physiology, Anatomy and Genetics"
+    research_interests: "Understanding molecular mechanisms of age-related neurodegenerative diseases to generate novel molecular therapies."
+    talk_title: ""
+    talk_order: 8
+
+  - first_name: Cathy
+    last_name: Ye
+    email: ""
+    link: ""
+    position: "University Lecturer in Engineering Science"
+    dept: "Department of Engineering Science"
+    research_interests: "Stem cell technologies and stem cell based screening platforms."
+    talk_title: ""
+    talk_order: 9
+
+symp2015:  
+  title: Current expertise and future directions in drug discovery
+  overview:
+    - paragraph: "This event will showcase top chemical biology research from labs at Oxford. Focus topics will include disease-agnostic technologies to aid drug discovery, target and pathway expertise across diseases, and therapeutic intervention for neurodegenerative illnesses. Particular emphasis will be placed on linking basic chemical biology research to work in the clinic."
+      order: 1
+
+    - paragraph: "The symposium will bring together 200 delegates including Oxford researchers, industry colleagues and technology transfer professionals. In doing so, it will provide the ideal forum for discussion and lead to lasting collaborative relationships."
+      order: 2
+
+    - paragraph: "Each session will feature top-class science from a broad range of Oxford’s biomedical and physical science departments. Complementary speakers from industry will also give their perspective throughout the day, setting the stage for a round-table discussion between opinion leaders from across Oxford and industry. This conversation will focus on how we can best work together to translate new ideas into pioneer medicines."
+      order: 3
+
+    - paragraph: "The day will conclude with a networking wine reception in the common room of the state-of-the-art Andrew Wiles building."
+      order: 4
+  why_attend:
+    - picture_url: "discover-telescope.png"
+      caption_header: "Discover"
+      caption_text: "cutting-edge chemical biology from Oxford"
+      category: "industry"
+    - picture_url: "link-chain.png"
+      caption_header: "Link"
+      caption_text: "with people at Oxford who can make collaboration"
+      category: "industry"
+    - picture_url: "network-atom.png"
+      caption_header: "Network"
+      caption_text: "with industry to maximise the impact of your science."
+      category: "oxford"
+    - picture_url: "connect-bridge.png"
+      caption_header: "Connect"
+      caption_text: "with colleagues across Oxford departments"
+      category: "oxford"
+  banners:
+    - message_text: "Industry Early Bird Registration"
+      date_start: "2015-03-01"
+      date_end: "2015-04-01"
+      button_text: "Open Now"
+      banner_class: "success"
+      button_link: "https://www.eventbrite.co.uk/e/current-expertise-and-future-directions-in-drug-discovery-an-oxford-industry-conversation-tickets-15943271755"
+
+    - message_text: "Official registration opens Tuesday 31st March 2015"
+      date_start: "2015-03-01"
+      date_end: "2015-04-01"
+      button_text: "Set Reminder"
+      banner_class: "info"
+      button_link: "/assets/files/conversation-2015-regopen.ics"
+
+    - message_text: "Registration for Industry and Oxford PIs"
+      date_start: "2015-03-31"
+      date_end: "2015-04-30"
+      button_text: "Open Now"
+      banner_class: "success"
+      button_link: ""
+
+    - message_text: "Registration for Oxford post-docs and research assistants opens 30th April 2015"
+      date_start: "2015-03-31"
+      date_end: "2015-04-30"
+      button_text: "Set Reminder"
+      banner_class: "info"
+      button_link: ""
+
+    - message_text: "Registration for Oxford students opens 31st May 2015"
+      date_start: "2015-03-31"
+      date_end: "2015-06-01"
+      button_text: "Set Reminder"
+      banner_class: "info"
+      button_link: ""
+
+    - message_text: "Registration for Industry, Oxford PIs, Oxford research assistants"
+      date_start: "2015-03-31"
+      date_end: "2015-06-01"
+      button_text: "Open Now"
+      banner_class: "success"
+      button_link: ""
+
+    - message_text: "Registration for Industry and Oxford"
+      date_start: "2015-05-31"
+      date_end: "2015-07-01"
+      button_text: "Open Now"
+      banner_class: "info"
+      button_link: ""
+

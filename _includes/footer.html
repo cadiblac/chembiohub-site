@@ -136,6 +136,15 @@ $(document).ready(function() {
         $('html, body').animate({scrollTop : 0},800);
         return false;
     });
+    $('#floating-register').affix({
+      /*offset: {
+        top: 100,
+        bottom: function () {
+          return (this.bottom = $('.footer').outerHeight(true) + 40)
+        }
+      }*/
+    })
+
 });
 </script>
 
