@@ -1,0 +1,29 @@
+---
+title: Creating a custom fields feature
+author: andy
+layout: post
+---
+In order to curate data from scientists it is often nessecary to implement custom fields and tagging features.
+
+A succesful custom fields feature needs all of these characteristics:
+
+<ul>
+<li>
+Easy to curate - as new fields and values are added it should be possible to update these if done incorrectly and check that they are compatiblle.
+</li>
+<li>
+Easy to use - there should be as little friction as reasonable for those who add data to the system, including editing dropdown lists.
+</li>
+<li>
+Decoupling of data storage in JSON documents from custom fields schema - allows for faster search and keeps database lean.
+</li>
+<li>
+Schema works for validation in front end, back end and potentially NoSQL databases.
+</li>
+<li>
+Forms are derived from the schema without having to code up each variant individually.
+</li>
+<li>
+Schema is extensible to include scientific metadata and is of a well-known standard format.
+</li>
+</ul>
