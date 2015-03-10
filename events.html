@@ -1,0 +1,43 @@
+---
+permalink: /events/
+layout: website
+title: ChemBio Hub Events and Symposia
+---
+<div class="row mt">
+	<h2 class="blue">Events</h2>
+	<p class="nexa">As part of our commitment to providing a collaboration-rich network of chemical biology, ChemBio Hub runs a number of events to help networking and awareness.</p>
+</div>
+
+<!-- Upcoming events -->
+<div class="row mt">
+	<h2 class="blue">Upcoming Events</h2>
+	{% for event in site.events %}
+		{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+		{% capture starttime %}{{event.date_start | date: '%s'}}{% endcapture %}
+		{% capture endtime %}{{event.date_end | date: '%s'}}{% endcapture %}
+
+		{% if nowunix <= endtime %}
+		<div class="alert alert-success">
+			<a role="button" class="btn-lg btn-primary pull-right" href="{{event.link}}" target="_blank">Details</a>
+			<h2 class="blue nexa">{{event.title}} <br><small>{{event.subtitle}}</small></h2>
+		</div>
+		{% endif %}
+
+	{% endfor %}
+</div>
+<div class="row mt">
+	<h2 class="blue">Past Events</h2>
+	{% for event in site.events %}
+		{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+		{% capture starttime %}{{event.date_start | date: '%s'}}{% endcapture %}
+		{% capture endtime %}{{event.date_end | date: '%s'}}{% endcapture %}
+
+		{% if nowunix > endtime %}
+		<div class="alert alert-info">
+			<a role="button" class="btn-lg btn-primary pull-right" href="{{event.link}}" target="_blank">Details</a>
+			<h2 class="blue nexa">{{event.title}} <br><small>{{event.subtitle}}</small></h2>
+		</div>
+		{% endif %}
+
+	{% endfor %}
+</div>
