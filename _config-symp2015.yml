@@ -14,7 +14,7 @@ speakers2015:
     email: ""
     link: ""
     position: "Professor of Nucleic Acid Chemistry"
-    dept: "Dept of Chemistry"
+    dept: "Department of Chemistry"
     research_interests: ""
     talk_title: ""
     talk_order: 2
@@ -23,11 +23,31 @@ speakers2015:
     last_name: Ebner
     email: ""
     link: ""
-    position: ""
+    position: "Operational Cell Screening Officer"
     dept: "Target Discovery Institute"
     research_interests: ""
     talk_title: ""
     talk_order: 3
+
+  - first_name: David
+    last_name: Greaves
+    email: ""
+    link: ""
+    position: "Professor of Inflammation Biology"
+    dept: "Sir William Dunn School of Pathology"
+    research_interests: ""
+    talk_title: ""
+    talk_order: 4
+
+  - first_name: Geoff
+    last_name: Higgins
+    email: ""
+    link: ""
+    position: "Cancer Research UK Clinician Scientist"
+    dept: "Department of Oncology"
+    research_interests: "Research interests: Cancer drug discovery."
+    talk_title: ""
+    talk_order: 5
 
   - first_name: Simon
     last_name: Lovestone
@@ -37,7 +57,7 @@ speakers2015:
     dept: "Department of Psychiatry"
     research_interests: "Seeking new targets for therapy in Alzheimer's disease through understanding of basic mechanisms, in disease modification trials and experimental medicine and in the search for biomarkers for early diagnosis."
     talk_title: ""
-    talk_order: 4
+    talk_order: 6
 
   - first_name: Frances
     last_name: Platt
@@ -47,7 +67,7 @@ speakers2015:
     dept: "Department of Pharmacology"
     research_interests: "Identifying small molecule drugs to target unique steps in the pathogenic cascade of lysosomal disorders, and testing them as mono-therapies or in combination with other therapies. These are evaluated in a pre-clinical setting prior to translational studies in patients with our clinical collaborators."
     talk_title: ""
-    talk_order: 5
+    talk_order: 7
 
   - first_name: Angela
     last_name: Russell
@@ -57,7 +77,7 @@ speakers2015:
     dept: "Department of Chemistry"
     research_interests: ""
     talk_title: ""
-    talk_order: 6
+    talk_order: 8
 
   - first_name: Kevin
     last_name: Talbot
@@ -67,7 +87,7 @@ speakers2015:
     dept: "Nuffield Department of Clinical Neuroscience"
     research_interests: "Identifying the earliest pathological pathways activated in motor neuron disease in order to define the most therapeutically tractable areas for drug therapy and to apply these findings to clinical studies in patients."
     talk_title: ""
-    talk_order: 7
+    talk_order: 9
 
   - first_name: Richard
     last_name: "Wade-Martins"
@@ -77,7 +97,7 @@ speakers2015:
     dept: "Department of Physiology, Anatomy and Genetics"
     research_interests: "Understanding molecular mechanisms of age-related neurodegenerative diseases to generate novel molecular therapies."
     talk_title: ""
-    talk_order: 8
+    talk_order: 10
 
   - first_name: Cathy
     last_name: Ye
@@ -87,7 +107,7 @@ speakers2015:
     dept: "Department of Engineering Science"
     research_interests: "Stem cell technologies and stem cell based screening platforms."
     talk_title: ""
-    talk_order: 9
+    talk_order: 11
 
 symp2015:  
   title: Current expertise and future directions in drug discovery
@@ -110,11 +130,11 @@ symp2015:
       category: "industry"
     - picture_url: "link-chain.png"
       caption_header: "Link"
-      caption_text: "with people at Oxford who can make collaboration"
+      caption_text: "with people at Oxford who can make collaboration happen"
       category: "industry"
     - picture_url: "network-atom.png"
       caption_header: "Network"
-      caption_text: "with industry to maximise the impact of your science."
+      caption_text: "with industry to maximise the impact of your science"
       category: "oxford"
     - picture_url: "connect-bridge.png"
       caption_header: "Connect"
