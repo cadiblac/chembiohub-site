@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 ##Introducing ChemReg: The ChemBio Hub compound registration system
