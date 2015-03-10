@@ -19,6 +19,10 @@ authors:
     display_name: Anthony Bradley
     email: oommppaa.help@gmail.com
     github: abradle
+  adam:
+    display_name: Adam Hendry
+    email: adam.hendry@chembiohub.ox.ac.uk
+    github: aekhendry
 
 name: Chembio Hub Blog
 description: A team blog about the technology and stories behind the chembio hub project
