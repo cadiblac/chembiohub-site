@@ -4,6 +4,7 @@
 	color: white;
 	font-family: NexaLight;
 	border-radius: 5px;
+	margin-bottom: 20px;
 }
 
 .symp-info p {
@@ -191,12 +192,14 @@ p.overlay {
 .affix-top{
 	
 }
-.affix-top a {
-	margin-top: 20px;
-} 
+
 .affix-bottom {
 	
 	
+}
+
+legend {
+	font-family:NexaBold;
 }
 
 @media (min-width: 768px) { 

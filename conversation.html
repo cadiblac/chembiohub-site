@@ -33,7 +33,7 @@ title: Current expertise and future directions in drug discovery&col; an Oxford-
 
 
 			</div>
-			<div id="floating-register" data-spy="affix" data-offset-top="60" ><div class="row centered"><a href="https://www.eventbrite.co.uk/e/current-expertise-and-future-directions-in-drug-discovery-an-oxford-industry-conversation-tickets-15943271755" role="button" class="btn-lg btn-primary text-center">Register</a></div></div>
+			<div id="floating-register" data-spy="affix" data-offset-top="490" ><div class="row centered"><a href="https://www.eventbrite.co.uk/e/current-expertise-and-future-directions-in-drug-discovery-an-oxford-industry-conversation-tickets-15943271755" role="button" class="btn-lg btn-primary text-center"><span class="glyphicon glyphicon-pencil"></span> Sign Up</a></div></div>
 
 
 		</div>
@@ -144,6 +144,8 @@ title: Current expertise and future directions in drug discovery&col; an Oxford-
 					{% for para in site.symp2015.overview | sort: "order" %}
 						<p class="nexa">{{para.paragraph}}</p>
 					{% endfor %}
+					<p></p>
+					<iframe src="https://www.google.com/maps/d/embed?mid=z0vsb5Y0B9jw.k7XZuDDtwm8Y" width="550" height="300"></iframe>
 			    </div>
 				
 				<div id="sponsors" class="col-md-6">
@@ -175,30 +177,32 @@ title: Current expertise and future directions in drug discovery&col; an Oxford-
 								{% endif %}
 							{% endfor %}
 						</fieldset>
+						<div id="contacts" class="centered row mt">
+							<h2 class="blue">
+					    		Contacts
+							</h2>
+							<div class="col-xs-6">
+
+
+								<h4>Michael<br/>O'Hagan</h4><br/>
+								<a href="mailto:michael.ohagan@chembiohub.ox.ac.uk" class="btn btn-default" role="button"><span class="glyphicon glyphicon-envelope"></span> Email Michael</a> <!--   <span class="glyphicon glyphicon-phone-alt"></span> phone -->
+
+
+							</div>
+							<div class="col-xs-6">
+
+
+								<h4>Karen<br/>Porter</h4><br/>
+								<a href="mailto:karen.porter@chembiohub.ox.ac.uk" class="btn btn-default" role="button"><span class="glyphicon glyphicon-envelope"></span> Email Karen</a> <!-- | <span class="glyphicon glyphicon-phone-alt"></span> phone -->
+
+							</div>
+						</div>
 
 					</div>
 
 					
-					<div id="contacts" class="row centered">
-						<h2 class="blue">
-			    		Contacts
-					</h2>
-						<div class="col-xs-6">
-
-
-							<h4>Michael<br/>O'Hagan</h4><br/>
-							<a href="mailto:michael.ohagan@chembiohub.ox.ac.uk" class="btn btn-default" role="button"><span class="glyphicon glyphicon-envelope"></span> Email Michael</a> <!--   <span class="glyphicon glyphicon-phone-alt"></span> phone -->
-
-
-						</div>
-						<div class="col-xs-6">
-
-
-							<h4>Karen<br/>Porter</h4><br/>
-							<a href="mailto:karen.porter@chembiohub.ox.ac.uk" class="btn btn-default" role="button"><span class="glyphicon glyphicon-envelope"></span> Email Karen</a> <!-- | <span class="glyphicon glyphicon-phone-alt"></span> phone -->
-
-						</div>
-					</div>
+					
+					
 					
 
 
@@ -207,6 +211,34 @@ title: Current expertise and future directions in drug discovery&col; an Oxford-
 
 				
 			  </div>
+
+			  <!-- <div class="row mt">
+
+					<div class="col-sm-6">
+				  		<iframe src="https://www.google.com/maps/d/embed?mid=z0vsb5Y0B9jw.k7XZuDDtwm8Y" width="550" height="300"></iframe>
+				  	</div>
+			  		<div id="contacts" class="centered col-sm-6">
+						<h2 class="blue">
+				    		Contacts
+						</h2>
+						<div class="col-xs-6">
+
+
+							<h4>Michael<br/>O'Hagan</h4><br/>
+							<a href="mailto:michael.ohagan@chembiohub.ox.ac.uk" class="btn btn-default" role="button"><span class="glyphicon glyphicon-envelope"></span> Email Michael</a>
+
+
+						</div>
+						<div class="col-xs-6">
+
+
+							<h4>Karen<br/>Porter</h4><br/>
+							<a href="mailto:karen.porter@chembiohub.ox.ac.uk" class="btn btn-default" role="button"><span class="glyphicon glyphicon-envelope"></span> Email Karen</a>
+
+						</div>
+					</div>
+			  </div> -->
+
 				<div class="row" style="margin-top:20px;">
 					<h2 class="blue centered">This event is generously supported by:</h2>
 					<div class="row">
@@ -229,7 +261,7 @@ title: Current expertise and future directions in drug discovery&col; an Oxford-
 					<h2 class="subheading">Programme</h2>
 				</div>
 				<div class="row">
-					<p>Registration will take place from 9am at the Andrew Wiles Building. The evening wine reception will conclude at 7pm. The full programme for the day is currently being finalised and will appear here in due course.</p>
+					<p class="nexa">Registration will take place from 9am at the Andrew Wiles Building. The evening wine reception will conclude at 7pm. The full programme for the day is currently being finalised and will appear here in due course.</p>
 					<h2 class="nexa blue centered">Confirmed speakers include:</h2>
 					
 					{% for speaker in site.speakers2015 | sort:"talk_order" %}
