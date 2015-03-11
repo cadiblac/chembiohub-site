@@ -1,4 +1,14 @@
 speakers2015:
+  - first_name: "Introduced by Professor Andrew Hamilton, FRS"
+    last_name: ""
+    email: ""
+    link: ""
+    position: "Vice-Chancellor"
+    dept: "University of Oxford"
+    research_interests: ""
+    talk_title: ""
+    talk_order: 1
+
   - first_name: Chas
     last_name: Bountra
     email: ""
@@ -7,7 +17,7 @@ speakers2015:
     dept: "SGC"
     research_interests: "Research interests: using X ray structures of novel human proteins to generate small molecule inhibitors, screening in human cells to identify novel targets for drug discovery, and then developing clinical candidates for evaluation in patients, pre-competitively."
     talk_title: ""
-    talk_order: 1
+    talk_order: 2
 
   - first_name: Tom
     last_name: Brown
@@ -17,7 +27,7 @@ speakers2015:
     dept: "Department of Chemistry"
     research_interests: "Nucleic acid chemistry, DNA sequence recognition and application of nucleic acids to nanotechnology, diagnostics and biology."
     talk_title: ""
-    talk_order: 2
+    talk_order: 3
 
   - first_name: Ian
     last_name: Churcher
@@ -27,7 +37,7 @@ speakers2015:
     dept: "GlaxoSmithKline"
     research_interests: ""
     talk_title: ""
-    talk_order: 3
+    talk_order: 4
 
   - first_name: Daniel
     last_name: Ebner
@@ -37,7 +47,7 @@ speakers2015:
     dept: "Target Discovery Institute"
     research_interests: "Phenotypic screening and the UK National Phenotypic Screening Centre."
     talk_title: ""
-    talk_order: 4
+    talk_order: 5
 
   - first_name: David
     last_name: Greaves
@@ -47,7 +57,7 @@ speakers2015:
     dept: "Sir William Dunn School of Pathology"
     research_interests: "Chemokines in the recruitment and activation of macrophages and smooth muscle cells in chronic inflammation. Particularly the role chemokines play in atherosclerosis - a disease process in arteries that leads to angina, heart attacks, strokes and peripheral arterial disease."
     talk_title: ""
-    talk_order: 5
+    talk_order: 6
 
   - first_name: Geoff
     last_name: Higgins
@@ -57,7 +67,7 @@ speakers2015:
     dept: "Department of Oncology"
     research_interests: "Laboratory and clinical research that aims to better understand the molecular basis of tumour cell resistance to radiation treatment with the long term aim of developing treatments to make radiotherapy more effective."
     talk_title: ""
-    talk_order: 6
+    talk_order: 7
 
   - first_name: Simon
     last_name: Lovestone
@@ -67,7 +77,7 @@ speakers2015:
     dept: "Department of Psychiatry"
     research_interests: "Seeking new targets for therapy in Alzheimer's disease through understanding of basic mechanisms, in disease modification trials and experimental medicine and in the search for biomarkers for early diagnosis."
     talk_title: ""
-    talk_order: 7
+    talk_order: 8
 
   - first_name: Frances
     last_name: Platt
@@ -77,7 +87,7 @@ speakers2015:
     dept: "Department of Pharmacology"
     research_interests: "Identifying small molecule drugs to target unique steps in the pathogenic cascade of lysosomal disorders, and testing them as mono-therapies or in combination with other therapies. These are evaluated in a pre-clinical setting prior to translational studies in patients with our clinical collaborators."
     talk_title: ""
-    talk_order: 8
+    talk_order: 9
 
   - first_name: Angela
     last_name: Russell
