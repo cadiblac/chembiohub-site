@@ -18,10 +18,10 @@ module.exports = function(grunt) {
 		  my_target: {
 		   files: [{
 		     expand: true,
-		     cwd: 'assets/css/',
-		     src: ['*.css', '!*.min.css'],
-		     dest: 'assets/css/min/',
-      	  	ext: '.min.css'
+		     cwd: '_site/assets/css/',
+		     src: ['clean.css'],
+		     dest: '_site/assets/css/min/',
+      	  	 ext: '.min.css'
 		   }]
 		  }
 		},
@@ -34,11 +34,41 @@ module.exports = function(grunt) {
 		          dest: 'assets/js/min/'
 		      }]
 		    }
-		}
+		},
+		//from yotfh...
+	    imagemin: {
+	      options: {
+	        optimizationLevel: 7 // 7 = 240 trials
+	      },
+	      files: {
+	        expand: true, // Enable dynamic expansion
+	        cwd: '_site/assets/img', // Where to find images
+	        src: '*.{png,PNG,jpg,JPG,gif,GIF,jpeg,JPEG}', // Search for all image types
+	        dest: '_site/assets/img' // Where to save compressed images to (overwrite)
+	      }
+	    },
+	    uncss: {
+	      dist: {
+	        options: {
+	          stylesheets: ['assets/css/bootstrap.css',
+	          				//'assets/css/cbh_template_header.css',
+	          				'assets/css/font.css', 
+	          				'assets/css/main.css', 
+	          				'assets/css/symposium.css', ] // List of stylesheets to clean up
+	        },
+	        files: {
+	          '_site/css/clean.css': ['_site/index.html','_site/about/index.html','_site/events/index.html','_site/symposium2014/index.html','_site/blog/**/*.html',], // What files to check for usage
+	        }
+	      }
+	    }
 	});
 	//grunt.loadNpmTasks('grunt-contrib-sass');
 	//grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.registerTask('default',['cssmin','uglify']);
+	grunt.loadNpmTasks('grunt-contrib-imagemin');
+	grunt.loadNpmTasks('grunt-uncss');
+
+	grunt.registerTask('default',['uglify', 'imagemin', 'uncss','cssmin',]);
+	grunt.registerTask('css',['uncss','cssmin',]);
 }

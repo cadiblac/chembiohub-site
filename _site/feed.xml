@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Chembio Hub Blog</title>
+<description>A team blog about the technology and stories behind the chembio hub project</description>	
+<link>http//chembiohub.ox.ac.uk</link>
+<atom:link href="http//chembiohub.ox.ac.uk/feed.xml" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Pan-Assay Interference Compounds (PAINS) - what they are &amp; why they matter</title>
+<description>&lt;p&gt;PAINS compounds are a real issue which we faced as part of developing our ChemReg application - here are some thoughts from Oakley Cox, a Chemistry DPhil student at the University Of Oxford.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Pan-Assay Interference Compounds (PAINS) are defined by their ability to show activity across a range of assay platforms and against a range of proteins. The most common causes of PAINS activity are metal chelation, chemical aggregation, redox activity, compound fluorescence, cysteine oxidation or promiscuous binding. Many PAINS have multiple functionalities, causing different types of interference and resulting in in vitro and in vivo activity.&lt;/p&gt;
+
+&lt;h3 id=&quot;why-are-they-a-problem&quot;&gt;Why are they a problem?&lt;/h3&gt;
+
+&lt;p&gt;PAINS have been known for a number of years, and have been well documented in the past.&lt;sup&gt;1,2&lt;/sup&gt; Computational filters exist to remove known PAINS from chemical libraries and an experienced medicinal chemist will be quickly able to identify a PAINS-type structure. Even so, the scientific literature is plagued by publications containing ‘selective, potent chemical probes’ with clear PAINS-like structures (see Figure 1).&lt;/p&gt;
+
+&lt;p class=&quot;text-center&quot;&gt;&lt;img src=&quot;/assets/img/pains-1.png&quot; alt=&quot;Compounds reported in the literature as bioactives, but which contain PAINS-like functionalities&quot; /&gt;&lt;/p&gt;
+&lt;div&gt;&lt;p class=&quot;text-center&quot;&gt;&lt;em&gt;Figure 1: Compounds reported in the literature as bioactives, but which contain PAINS-like functionalities.&lt;sup&gt;3-7&lt;/sup&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;p&gt;The pressure to produce impactful science on academics seems to be the most likely cause of PAINS publications. Biologists with little or no chemistry training are, understandably, unlikely to spot suspect structures, but know the inclusion of a small molecule ligand significantly improves the impact of their research. The prevalence of such research also indicates reviewers are not aware of the problem.&lt;/p&gt;
+
+&lt;p&gt;The problem is further compounded by the methods employed by academics to discover small molecule ligands. Commercial libraries are bought by research groups for convenience, meaning the same areas of chemical space are repeatedly explored. Computational PAINS filters are far from comprehensive and vendors still include many PAINS-type structures in their catalogues. Many researchers will knowingly screen PAINS to find valid starting points, citing the prevalence of PAINS features in approved drugs (around 7%) as evidence to back their strategy. Yet many of these drugs are special cases and were not developed using a modern screening triage.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-can-the-scientific-community-overcome-the-problem&quot;&gt;How can the scientific community overcome the problem?&lt;/h3&gt;
+
+&lt;p&gt;Every year, funders money is wasted following-up futile starting points or obtaining pointless intellectual property. Better awareness is needed of PAINS-like behaviour. Full characterisation and publication of PAINS if and when they are detected, akin to the work completed by Dahlin et al. earlier this year,&lt;sup&gt;8&lt;/sup&gt; would be a big step forwards. The results would quickly generate better understanding and improve cheminformatic filters.&lt;/p&gt;
+
+&lt;p&gt;Perhaps the most effective way to weed out PAINS publications would be to put pressure on reviewers and journal editors to spot problematic structures. It is relatively straightforward to spot PAINS (see Figure 2) and it would not be unreasonable for reviewers to ask for more rigorous evidence for an inhibitor to be described as selective and potent. At this point, it is important to emphasise the difference between rejecting a compound based on scientific evidence rather than simply dismissing a compound because it appears to be PAIN-like.&lt;/p&gt;
+
+&lt;p class=&quot;text-center&quot;&gt;&lt;img src=&quot;/assets/img/pains-2.png&quot; alt=&quot;How a PAINS compound can be identified&quot; /&gt;&lt;/p&gt;
+&lt;div&gt;&lt;p class=&quot;text-center&quot;&gt;&lt;em&gt;Figure 2: How a PAINS compound can be identified.&lt;sup&gt;3&lt;/sup&gt;&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;p&gt;If you’re a researcher with an exciting new hit, how can you be sure it’s not a PAIN? Rigorous structure activity relationship (SAR) studies highlight the role of different parts of the compound for binding. Activity cliffs and nanomolar in vitro activity are good indicators of a genuine inhibitor. Synthesis of upward of 100 analogues would paint an accurate picture of a binding site as well as lead to improvements in both activity and selectivity. It may seem a daunting undertaking, but careful and well-planned SAR exploration can be both effective and attainable in an academic setting.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Oakley is a DPhil student studying at the Structural Genomics Consortium, University of Oxford. He is supervised by &lt;a href=&quot;http://www.thesgc.org/profile/paul&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Dr Paul Brennan&lt;/a&gt; in the Target Discovery Institute (TDI) and is co-supervised by &lt;a href=&quot;http://www.diamond.ac.uk/Beamlines/Mx/I04-1/Staff/von-Delft.html&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Prof Frank von Delft&lt;/a&gt; at Diamond Light Source.&lt;/em&gt; &lt;a href=&quot;http://www.tdi.ox.ac.uk/oakley-cox-dphil-candidate&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Read more here&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;references&quot;&gt;References&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Walters, W. P.; Stahl, M. T.; Murcko, M. A. Drug Discovery Today 1998, 3, 160.&lt;/li&gt;
+  &lt;li&gt;Baell, J. B.; Holloway, G. A. J. Med. Chem. 2010, 53, 2719.&lt;/li&gt;
+  &lt;li&gt;Baell, J. B. ACS Med. Chem. Lett. 2015, Ahead of Print.&lt;/li&gt;
+  &lt;li&gt;Xin, M.; Li, R.; Xie, M.; Park, D.; Owonikoko, T. K.; Sica, G. L.; Corsino, P. E.; Zhou, J.; Ding, C.; White, M. A.; Magis, A. T.; Ramalingam, S. S.; Curran, W. J.; Khuri, F. R.; Deng, X. Nat. Commun. 2014, 5, 4935.&lt;/li&gt;
+  &lt;li&gt;Chen, F.; Liu, J.; Huang, M.; Hu, M.; Su, Y.; Zhang, X.-k. ACS Med. Chem. Lett. 2014, 5, 736.&lt;/li&gt;
+  &lt;li&gt;Evelyn, C. R.; Duan, X.; Biesiada, J.; Seibel, W. L.; Meller, J.; Zheng, Y. Chem. Biol. (Oxford, U. K.) 2014, 21, 1618.&lt;/li&gt;
+  &lt;li&gt;Nicolaes, G. A. F.; Kulharia, M.; Voorberg, J.; Kaijen, P. H.; Wroblewska, A.; Wielders, S.; Schrijver, R.; Sperandio, O.; Villoutreix, B. O. Blood 2014, 123, 113.&lt;/li&gt;
+  &lt;li&gt;Dahlin, J. L.; Nissink, J. W. M.; Strasser, J. M.; Francis, S.; Higgins, L.; Zhou, H.; Zhang, Z.; Walters, M. A. J. Med. Chem. 2015, Ahead of Print.&lt;/li&gt;
+&lt;/ol&gt;
+
+</description>
+<pubDate>Tue, 10 Mar 2015 00:00:00 +0000</pubDate>
+<link>http//chembiohub.ox.ac.uk/blog/2015/03/10/pains.html</link>
+<guid isPermaLink="true">http//chembiohub.ox.ac.uk/blog/2015/03/10/pains.html</guid>
+</item>
+
+<item>
+<title>ChemBio Crunch - A simple tool to analyse and manipulate ChemBio assay data</title>
+<description>&lt;h3 id=&quot;introducing-chemreg-the-chembio-hub-compound-registration-system&quot;&gt;Introducing ChemReg: The ChemBio Hub compound registration system&lt;/h3&gt;
+&lt;p&gt;The ChemBio Hub team is pleased to announce our new compound registration system – &lt;strong&gt;ChemReg&lt;/strong&gt; – &lt;strong&gt;is now open for initial user testing&lt;/strong&gt;. ChemReg is the first step in our mission to capture all chemical biology data from around Oxford University. Following last December’s workshop (see previous &lt;a href=&quot;https://chembiohub.ox.ac.uk/blog/2014/12/15/registration-workshop.html&quot; title=&quot;Workshop on recording and managing data related to small molecules - 9th December 2014&quot;&gt;blog post&lt;/a&gt;) we have developed the key functionality suggested by prospective users. &lt;/p&gt;
+
+&lt;p&gt;Current features of ChemReg:
+-	Flexible and easy to use
+-	Compounds can be uploaded individually or by their thousands in minutes
+-	Compound data is rigorously organised and easily searchable
+-	Users can organise their data within their own project folders
+-	Searching and exporting data is quick and simple
+-	Secure login and IP protection&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Upload of compound information is simple.&lt;/strong&gt; You can draw your compound, copy and paste SMILES and InCHIs or upload whole files (we currently accept .xml, .sdf and .cdx formats). This flexibility is key to ensuring ChemReg works for users from any background or discipline. We have developed functionality that is intuitive – to serve chemists and non-chemists alike.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The goal is not just to capture information, but to make it well defined and easily searchable.&lt;/strong&gt; Organisation and presentation of data is therefore just as important as the quality of information itself, and ChemReg meets these high data management standards. The project management system allows you to organise your data in project folders, and project security settings allow you to control who can see your sensitive information.&lt;/p&gt;
+
+&lt;h3 id=&quot;so-why-start-with-chemreg&quot;&gt;So why start with ChemReg?&lt;/h3&gt;
+&lt;p&gt;ChemReg is our first step to capturing all of the University’s chemical biology data.
+Starting here means:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Users will  quickly gain benefit in managing their research data, without having to wait for other functionality to be available&lt;/li&gt;
+  &lt;li&gt;We can prove we have the right technology and approach – meaning what we provide next will be sustainable for the future&lt;/li&gt;
+  &lt;li&gt;Users of ChemReg will be able to give their feedback on the sort of functionality we develop – and the community will shape the final set of tools available&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;We know from the positive response so far that we are on the right track.  With more feedback and a larger community of users we will be able to deliver regular improvements to ChemReg. We are also in good shape to face the challenge of developing assay capture functionality.&lt;/p&gt;
+
+&lt;h3 id=&quot;back-to-the-future&quot;&gt;Back to the future&lt;/h3&gt;
+&lt;p&gt;ChemBio Hub is developing quickly, and right now we need your help.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;We are currently recruiting pilot users of ChemReg.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;We need researchers to use the ChemReg utility to provide honest feedback on what they wish was (or wasn’t) there. If you would like trial access to ChemReg, then please get in touch. &lt;/p&gt;
+
+&lt;p&gt;A number of users have already expressed their interest, a promising sign of things to come. Over the next few months we will continue to listen to your feedback and together shape ChemReg into the perfect tool for organising and sharing your compound data.&lt;/p&gt;
+</description>
+<pubDate>Tue, 10 Mar 2015 00:00:00 +0000</pubDate>
+<link>http//chembiohub.ox.ac.uk/blog/2015/03/10/introducing-chemreg-compound-registration-system.html</link>
+<guid isPermaLink="true">http//chembiohub.ox.ac.uk/blog/2015/03/10/introducing-chemreg-compound-registration-system.html</guid>
+</item>
+
+<item>
+<title>The Future of Drug Discovery - Open Innovation</title>
+<description>&lt;p&gt;Last week &lt;a href=&quot;http://oxfordbiotech.org/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Oxford Biotech&lt;/a&gt; ran a great conference on &lt;a href=&quot;http://oxfordbiotech.org/ob-approach/events-networking/upcoming-events/open-innovation-event/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;“The Future of Drug Discovery: Open Innovation”&lt;/a&gt;. A top line-up of speakers from academia and industry gave their views on how open innovation drug discovery is developing and what the opportunities are for the future.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;what-is-open-innovation-drug-discovery&quot;&gt;What is open innovation drug discovery…?&lt;/h3&gt;
+
+&lt;p&gt;Much early stage drug discovery has traditionally taken place behind closed doors. Groups work to identify a drug target and find chemical structures that modulate its activity. As these groups are in competition, details of targets and chemical spaces under study are often left undisclosed. If a promising lead is found, it’s likely to be patented, granting the group exclusive rights over the intellectual property. This is understandable - it takes a lot of time and money to get to this point. Previous assumptions were that the patent protection gives the group time to turn the lead into a clinical molecule, recoup their investment and make profit.&lt;/p&gt;
+
+&lt;p&gt;But there’s a growing consensus that this might not be the best way forward, at least not all the time. Working in this closed way means that exploring blind alleys in one research organisation may be duplicated by another. Since so many drug candidates fail at the clinical trial stage (check out &lt;a href=&quot;http://www.nature.com/nbt/journal/v32/n1/full/nbt.2786.html#close&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;this paper&lt;/a&gt;) this duplication is clearly extremely inefficient.&lt;/p&gt;
+
+&lt;p&gt;Open innovation is that idea that certain stages of the drug discovery pipeline are carried out in a collaborative, non-competitive way. Sharing knowledge and know-how at the early stages reduces wastage and duplication of effort later on. Thanks to the pooling of resources from industry, academia and patient groups, the competitive process to develop a marketable drug can begin from a much more viable starting point. &lt;/p&gt;
+
+&lt;p&gt;So what did the six speakers have to say about open innovation? &lt;/p&gt;
+
+&lt;p&gt;From the &lt;strong&gt;University of Oxford, Professor Andrew Hamilton (Vice Chancellor)&lt;/strong&gt; spoke of some key developments that cement the University’s role as a centre for drug discovery. These include the &lt;a href=&quot;http://www.tdi.ox.ac.uk/home&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Target Discovery Institute&lt;/a&gt;, The &lt;a href=&quot;http://www.hefce.ac.uk/whatwedo/rsrch/howfundr/ukrpif/precisioncancermedicineinstitute/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Precision Cancer Medicine Initiative&lt;/a&gt; and the &lt;a href=&quot;http://www.kennedy.ox.ac.uk/&quot;&gt;Kennedy Institute&lt;/a&gt;. Links between these cutting-edge research centres, the city of Oxford and wider industry will drive innovation in new medicine development in the coming years.&lt;/p&gt;
+
+&lt;p&gt;Next followed three speakers from the pharmaceutical industry. The theme of their talks? How their organisations are adapting to include open innovation in their business models.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Dr Trevor Howe&lt;/strong&gt; spoke about &lt;strong&gt;Janssen&lt;/strong&gt;’s Innovation Centres and JLABS. Based in the US, JLABS provide entrepreneurs with kit, infrastructure and management to bring innovative ideas to fruition. &lt;strong&gt;Dr Mark Whittaker (Evotec)&lt;/strong&gt; argued that ‘closed innovation’ doesn’t always create value, as many small-molecule patent applications are not granted. Evotec now take novel concepts from academia and push them through their well-developed drug discovery platform. &lt;strong&gt;Dr Hitesh Sanganee&lt;/strong&gt; discussed &lt;strong&gt;AstraZeneca&lt;/strong&gt;’s Open Innovation web portal. Launched back in March, this is a one-stop shop for anyone to find out what compounds and targets are available for collaborative work with AZ. Already, innovative solutions to difficult problems have been posed from bright students and early-career researchers as well as seasoned professors.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Professor Birgitte Andersen&lt;/strong&gt; then spoke about some of the work of the &lt;strong&gt;Big Data Institute&lt;/strong&gt; in supporting and developing policy to turn the UK into a global innovation hub over the next decade.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Professor Chas Bountra&lt;/strong&gt; gave the final talk - a tour-de-force of the success of the &lt;strong&gt;Oxford SGC&lt;/strong&gt; open innovation model. In making all their reagents and know-how available, free from patents and IP, the SGC are able to collaborate extensively with academia and industry across the world. This access to a vast range of industrial groups, clinicians and patients has unearthed applications of SGC work to diseases far beyond the initial project focus.&lt;/p&gt;
+
+&lt;h3 id=&quot;chembio-hub-our-place-in-open-innovation&quot;&gt;ChemBio Hub: our place in open innovation&lt;/h3&gt;
+
+&lt;p&gt;Professors Hamilton and Bountra were clear: &lt;strong&gt;Oxford is a leading centre for open innovation drug discovery in the UK&lt;/strong&gt;. Our research generates a vast quantity of reagents, data and know-how that can drive innovation in the development of new medicines. ChemBio Hub will collect this knowledge into one place. Drug discovery organisations will have a single location where they can find the Oxford research they need to know about. We’re already talking to pharma and biotech about how they can become involved and what they need from the project. Ultimately, ChemBio Hub will connect the right people so that they can create mutually beneficial relationships. The effect? &lt;strong&gt;Increasing the role of Oxford research in innovation and speeding up the drug discovery process&lt;/strong&gt;.&lt;/p&gt;
+</description>
+<pubDate>Fri, 19 Dec 2014 00:00:00 +0000</pubDate>
+<link>http//chembiohub.ox.ac.uk/blog/2014/12/19/open-innovation.html</link>
+<guid isPermaLink="true">http//chembiohub.ox.ac.uk/blog/2014/12/19/open-innovation.html</guid>
+</item>
+
+<item>
+<title>Workshop on recording and managing data related to small molecules - 9th December 2014</title>
+<description>&lt;p&gt;The ultimate goal for the ChemBio Hub project is to deliver a University-wide Chemical Biology website and data sharing platform. This will address problems researchers have in capturing and sharing all of their research data, knowing what previous approaches have been tried, finding collaborators, and ensuring they can efficiently manage the wealth of data that their research produces.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;In order to start the process of delivering some simple, effective tools that go some way towards addressing these problems, the project team has decided first of all to tackle the problem of recording and managing information about the small molecules used in research. We therefore hosted a workshop to understand the main functionality users would need to have in an electronic system that would support this need.&lt;/p&gt;
+
+&lt;p&gt;This first workshop brought together people from various departments (SGC, Chemistry, Pharmacology, Cardiovascular Medicine and the TDI) with a variety of experience and needs.  This was useful in allowing us to understand key features that are common to multiple groups.  We will follow this up with more in-depth meetings with targeted users such as those whose primary focus is pure synthetic chemistry.&lt;/p&gt;
+
+&lt;p&gt;The key themes that we identified then were:&lt;/p&gt;
+
+&lt;h3 id=&quot;initial-data-capture&quot;&gt;Initial data capture&lt;/h3&gt;
+
+&lt;p&gt;This needs to be as simple as possible, without putting off potential users by demanding a lot of information that they may not know at the outset. It needs to allow addition of single molecules as well as processing large batches at a time.&lt;/p&gt;
+
+&lt;p&gt;The values which need to be captured (or generated) are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;A unique identifier plus synonyms for the molecule (including CAS Registry Number)&lt;/li&gt;
+  &lt;li&gt;Its structure&lt;/li&gt;
+  &lt;li&gt;What is known about its tautomeric and stereochemical forms&lt;/li&gt;
+  &lt;li&gt;An identifier for the physical batch of the compound &lt;/li&gt;
+  &lt;li&gt;Who made / bought it and why&lt;/li&gt;
+  &lt;li&gt;How much was synthesised / bought and when&lt;/li&gt;
+  &lt;li&gt;Its molecular weight&lt;/li&gt;
+  &lt;li&gt;Salt / hydrate details&lt;/li&gt;
+  &lt;li&gt;Who can see information about the molecule&lt;/li&gt;
+  &lt;li&gt;Relevant Pan Assay Interference Compounds (PAINS) warnings&lt;/li&gt;
+  &lt;li&gt;Intended targets or target class&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;searching-and-filtering&quot;&gt;Searching and filtering&lt;/h3&gt;
+
+&lt;p&gt;Once data is in the system, it needs to be able to be found simply and comprehensively.  As well as the basic information recorded above, searching needs to include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Awareness of stereoisomers&lt;/li&gt;
+  &lt;li&gt;Depending on what is needed we may want to specify that we are interested in search results related to a single enantiomer, or a racemic mixture, or all isomers&lt;/li&gt;
+  &lt;li&gt;The ability to search by specific substructure or scaffolds &lt;/li&gt;
+  &lt;li&gt;PAINS filtering &lt;/li&gt;
+  &lt;li&gt;The ability to search by chemical fingerprints&lt;/li&gt;
+  &lt;li&gt;The ability to apply successive CNS Multi Parameter Optimisation criteria&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;batch-specific-information&quot;&gt;Batch-specific information&lt;/h3&gt;
+
+&lt;p&gt;Over time, some batch-specific information may also be available related to screening compounds in assays, including:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Physical form&lt;/li&gt;
+  &lt;li&gt;Location and amount&lt;/li&gt;
+  &lt;li&gt;Plate and well identifiers&lt;/li&gt;
+  &lt;li&gt;Bar codes&lt;/li&gt;
+  &lt;li&gt;Solvent, volume and concentration of material&lt;/li&gt;
+  &lt;li&gt;Known contaminants&lt;/li&gt;
+  &lt;li&gt;Purity &lt;/li&gt;
+  &lt;li&gt;Storage conditions&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;physical-properties&quot;&gt;Physical properties&lt;/h3&gt;
+
+&lt;p&gt;These may be known at the outset or might become available over time, but important properties to be recorded are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;cLogP&lt;/li&gt;
+  &lt;li&gt;Polar Surface Area (PSA)&lt;/li&gt;
+  &lt;li&gt;Mass spectrum&lt;/li&gt;
+  &lt;li&gt;Melting point &lt;/li&gt;
+  &lt;li&gt;1H and 13C NMR spectra  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;system-needs&quot;&gt;System needs&lt;/h3&gt;
+
+&lt;p&gt;There were some needs identified which are unrelated to managing the chemical and biological information. These are none-the-less very important to potential users.  Those identified in this first workshop include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Being able to change data held in the system but with a log of what has been changed&lt;/li&gt;
+  &lt;li&gt;Limiting the values in some drop-down lists depending on which group the user belongs to and their recent activity&lt;/li&gt;
+  &lt;li&gt;File attachments need to be handled simply and logically&lt;/li&gt;
+  &lt;li&gt;Functionality which could show ‘publication readiness’ for a compound or group of compounds would be very helpful (i.e. showing which key values are in the system and which are missing)&lt;/li&gt;
+  &lt;li&gt;Links to relevant safety information (this requirement came up after the workshop)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;later-requirements&quot;&gt;Later requirements&lt;/h3&gt;
+
+&lt;p&gt;Workshop attendees agreed that the features above were the key needs in the first instance, but they had a number of ideas for further useful functionality which we would deliver later, including:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;External data links (to ChemBL, SciFinder, Reaxys)&lt;/li&gt;
+  &lt;li&gt;Links to commercial suppliers (such as eMolecules and Aldrich)&lt;/li&gt;
+  &lt;li&gt;Publication references&lt;/li&gt;
+  &lt;li&gt;Association of more detailed biological assay data (e.g. via PubChem)&lt;/li&gt;
+  &lt;li&gt;Registration and management of macromolecules&lt;/li&gt;
+  &lt;li&gt;Integration of several data processing tools into one single interface&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;whats-happening-next&quot;&gt;What’s happening next&lt;/h3&gt;
+
+&lt;p&gt;The ChemBio Hub team are now working on an initial tool to meet these needs.  Before Christmas we plan to show users what we have done so far to check that we are on the right track.  We will invite the people who attended the workshop, and those who planned to attend but were unable to.  It will also be open to any others who would like to see what has been developed up to this point.  We will do further work to release a tool that pilot groups can then test, collect more feedback and further tighten up the application before making it widely available.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions or suggestions about the registration of small molecules, get in touch…!&lt;/p&gt;
+
+</description>
+<pubDate>Mon, 15 Dec 2014 00:00:00 +0000</pubDate>
+<link>http//chembiohub.ox.ac.uk/blog/2014/12/15/registration-workshop.html</link>
+<guid isPermaLink="true">http//chembiohub.ox.ac.uk/blog/2014/12/15/registration-workshop.html</guid>
+</item>
+
+<item>
+<title>Some thoughts from Open Con 2014&amp;#58; discovery tools</title>
+<description>&lt;p&gt;ChemBio Hub aims to make life easier for chemical biologists at Oxford. We’ve already designed &lt;a href=&quot;https://chembiohub.ox.ac.uk/crunch/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;ChemBio Crunch&lt;/a&gt; a new app to speed up assay data processing. But sometimes we find out about cool tools that are out there already for people to use for free and we just need to recommend them! We don’t want to reinvent the wheel.&lt;/p&gt;
+
+&lt;p&gt;One thing I heard about at OpenCon is &lt;a href=&quot;http://www.sparrho.com/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Sparrho&lt;/a&gt;. These guys realised that linear keyword searching doesn’t always turn up all the results you need from a scientific literature search. You have to make non-linear connections too. And that’s how it works – Sparrho asks users to rate its search results as relevant to their interests or not. These choices, aggregated and anonymised, allow Sparrho to build a bird’s-eye view of different research disciplines. It then uses this to recommend useful results beyond the confines of the search keywords. Clever stuff – try it out for yourself!&lt;/p&gt;
+</description>
+<pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
+<link>http//chembiohub.ox.ac.uk/blog/2014/12/09/opencon-2.html</link>
+<guid isPermaLink="true">http//chembiohub.ox.ac.uk/blog/2014/12/09/opencon-2.html</guid>
+</item>
+
+<item>
+<title>Some thoughts from OpenCon 2014&amp;#58; open data</title>
+<description>&lt;p&gt;Last Wednesday I attended the &lt;a href=&quot;http://www.eventbrite.com/e/opencon-2014-london-tickets-13952172323&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;OpenCon 2014 London meetup&lt;/a&gt;. I went to find out a bit more about how students and early career researchers view open data, and think about how this might fit in with the goals of ChemBio Hub. I also wanted to get an idea of what tools are out there to help people discover science and make their work more efficient!&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;Many aspects of open science were discussed during the day: &lt;a href=&quot;http://en.wikipedia.org/wiki/Open_access&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;open access&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Peer_review#Open_peer_review&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;open peer review&lt;/a&gt; and &lt;a href=&quot;http://en.wikipedia.org/wiki/Open_education&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;open education&lt;/a&gt; all featured at various points. Open data was perhaps the most relevant topic to our work at ChemBio Hub, so here a few thoughts on this. &lt;/p&gt;
+
+&lt;p&gt;What does open data mean in the context of science? It’s the idea that experimental data should be available for everyone to use and republish as they wish. This includes being free from restrictions like copyright and patents. It means ALL data and not just the best results or good story!&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/rmounce&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Ross Mounce&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/protohedgehog&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Jon Tennant&lt;/a&gt; talked about the relevance of this to the biological sciences. They argued the benefits of open data include addressing reproducibility issues and building confidence in results. I liked their observation that a PDF is a document meant for reading, not reuse – and so it can’t be the vehicle for open data.&lt;/p&gt;
+
+&lt;p&gt;In the discussion session that followed people spoke about the challenges and opportunities of open data. One point that stuck in my mind was the need to develop infrastructure and standard methods for sharing data. Another was that effective data sharing requires particular skills that might not be routinely taught to early career researchers right now.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-about-chembio-hub&quot;&gt;What about ChemBio Hub?&lt;/h3&gt;
+
+&lt;p&gt;ChemBio Hub aims to become a University-wide resource for researchers to manage their compound and assay data and share it with collaborators. Our approach to this is to provide the right (you guessed it) infrastructure and training. But will all data in the Hub be “open”?&lt;/p&gt;
+
+&lt;p&gt;From talking to the research community, our view is that you should decide what data you share, when you share it and who you share it with. Our job is to provide the simple and secure tools for you to do this with minimal effort and fuss. &lt;/p&gt;
+
+&lt;p&gt;But “open data” is becoming a big thing for public research funding organisations. Some now mandate that data is made publicly available as a condition of their grants (check out the recent announcement from the &lt;a href=&quot;http://www.theregister.co.uk/2014/11/27/gates_foundation_to_insist_on_open_access_science/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Gates Foundation&lt;/a&gt;). The talks at OpenCon suggest a growing recognition of the value of open data, and support for it, amongst the scientific community. So as well as offering secure data management, ChemBio Hub will allow scientists to make their data public available when they choose – such as by publishing straight to &lt;a href=&quot;https://www.ebi.ac.uk/chembl/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;ChEMBL&lt;/a&gt; or &lt;a href=&quot;https://pubchem.ncbi.nlm.nih.gov/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;PubChem&lt;/a&gt; at the press of a button. Best of both worlds!&lt;/p&gt;
+
+&lt;p&gt;If you have any thoughts on open data or research data management, we’d love to hear them. Get in touch at our usual address: &lt;a href=&quot;mailto:info@chembiohub.ox.ac.uk&quot;&gt;info@chembiohub.ox.ac.uk&lt;/a&gt;.&lt;/p&gt;
+</description>
+<pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
+<link>http//chembiohub.ox.ac.uk/blog/2014/12/01/opencon-1.html</link>
+<guid isPermaLink="true">http//chembiohub.ox.ac.uk/blog/2014/12/01/opencon-1.html</guid>
+</item>
+
+<item>
+<title>Beginning developing in Rails</title>
+<description>&lt;p&gt;ChemBio Hub is committed to building a wide variety of tools and applications for scientists across the spectrum of chemical biology in Oxford. In order to do this we need to keep up to date in terms of programming techniques and languages.&lt;/p&gt;
+
+&lt;p&gt;An opportunity to do this came up recently when we needed an application to allow a brief walk-up survey at the recent ChemBio Hub symposium. It was decided that a simple yes/no system should be used to ask people about a small number of concepts which ChemBio Hub could provide applications or information for, which we could then narrow down based on the results of the survey.&lt;/p&gt;
+
+&lt;p&gt;Since it was a small application, it fitted well as a tutorial application for Ruby on Rails, additionally, it was similar to one of the existing official Rails tutorials at [link].&lt;/p&gt;
+
+&lt;p&gt;The spec for the application was as follows:
+- users should be able to walk up without entering any personal information to take the survey;
+- the survey should be a linear app, displaying a new question when an answer is given;
+- the survey should have a set number of questions (interests), each with a title, descriptive photo and help text;
+- each question should have multiple true or false (&lt;em&gt;boolean&lt;/em&gt;) answers (preferences) associated with it, which make up the results of the survey;
+- on reaching the end of the survey, the user should be informed they have completed and the next person should use the same screen to start the survey.&lt;/p&gt;
+
+&lt;p&gt;I began by creating a new Rails app via the command line&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;rails&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;questionapp&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I created objects called interest (the question) and preference (the answer). Each preference belonged to a single interest. An interest could have many preferences. I created these from the command line as directed by the Rails tutorial.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;rails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Interest&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;img_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;help_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;rails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Preference&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;is_preferred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;interest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;references&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;timestamp&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;I created controllers for interests and preferences to handle the flow of input into the application. Again this was done via the command line.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;rails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;interests&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;rails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Preferences&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;The key functionality of the app is located in &lt;code&gt;preferences_controller.rb&lt;/code&gt;. When an answer is given, a preference must be created representing that answer and cause a redirect to the next question - or if this is the last question, direct to the completion page (which is also the start page!):&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;create&lt;/span&gt;
+  &lt;span class=&quot;vi&quot;&gt;@interest&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Interest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:interest_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;pref&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:submit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;yes&amp;quot;&lt;/span&gt;
+	  &lt;span class=&quot;n&quot;&gt;pref&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;vi&quot;&gt;@preference&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@interest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;preferences&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;is_preferred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@interest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;redirect_to&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@interest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;redirect_to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;completed_path&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;All of the code for this application is available at &lt;a href=&quot;https://github.com/thesgc/chembiohub-qanda&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;&lt;/a&gt;. You may fork this code as you wish and use it in your own applications or for learning purposes.&lt;/p&gt;
+</description>
+<pubDate>Thu, 13 Nov 2014 00:00:00 +0000</pubDate>
+<link>http//chembiohub.ox.ac.uk/blog/2014/11/13/rails-development.html</link>
+<guid isPermaLink="true">http//chembiohub.ox.ac.uk/blog/2014/11/13/rails-development.html</guid>
+</item>
+
+<item>
+<title>The first ChemBio Hub Symposium - what happened?</title>
+<description>&lt;p&gt;On 10th November 2014 the ChemBio Hub team held a cross-departmental symposium at the Saïd Business School in the centre of Oxford. Attendees from a broad range of departments in the chemical and biological sciences met to hear about cutting-edge research projects happening across the University. This started lots of useful conversations that generated ideas for new research collaborations.&lt;!-- more --&gt;&lt;/p&gt;
+
+&lt;p&gt;We decided to use Twitter as a way to reach out to those who weren’t able to attend the symposium. We chose a hashtag (#OxCBH) in advance and publicised this to participants. This allowed us to use Storify to collate the tweets and images from the event - perfect for embedding into our blog. Take a look at what happened below. If you want to know more, just get in touch with us!&lt;/p&gt;
+
+&lt;div class=&quot;storify&quot;&gt;&lt;iframe src=&quot;//storify.com/OxChemBioHub/chemical-biology-across-the-university-of-oxford-o/embed?border=false&quot; height=&quot;750&quot; style=&quot;width:100%; border: 0;&quot;&gt;&lt;/iframe&gt;&lt;script src=&quot;//storify.com/OxChemBioHub/chemical-biology-across-the-university-of-oxford-o.js?border=false&quot;&gt;&lt;/script&gt;&lt;noscript&gt;[&lt;a href=&quot;//storify.com/OxChemBioHub/chemical-biology-across-the-university-of-oxford-o&quot; target=&quot;_blank&quot;&gt;View the story &quot;Chemical Biology across the University of Oxford - #OxCBH 2014&quot; on Storify&lt;/a&gt;]&lt;/noscript&gt;&lt;/div&gt;
+
+&lt;!-- --&gt;
+</description>
+<pubDate>Thu, 13 Nov 2014 00:00:00 +0000</pubDate>
+<link>http//chembiohub.ox.ac.uk/blog/2014/11/13/oxcbh-symposium.html</link>
+<guid isPermaLink="true">http//chembiohub.ox.ac.uk/blog/2014/11/13/oxcbh-symposium.html</guid>
+</item>
+
+<item>
+<title>ChemBio Hub 2014 Symposium walk-up survey results</title>
+<description>&lt;p&gt;The recent ChemBio Hub symposium - entitled &lt;strong&gt;Chemical Biology across the University of Oxford&lt;/strong&gt; - was a great multidisciplinary event bringing together PIs and researchers with an interest in chemical biology. They represented at least 15 departments. The presentations throughout the day sparked a number of conversations and ideas in the breaks and beyond. You can find out more about how the day progressed in &lt;a href=&quot;/blog/2014/11/13/oxcbh-symposium.html&quot;&gt;this blog post&lt;/a&gt; and you can also find the posters from the day &lt;a href=&quot;https://chembiohub.ox.ac.uk/symposium&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;ChemBio Hub set up a survey to capture interest in aspects of chemical biology research. We used a Yes/No question system on a touchscreen to make it appealing and easy for people to take part. A lot of people were very willing participants - thank you again if you took part! &lt;/p&gt;
+
+&lt;p&gt;The results from respondents on the day were as follows:&lt;/p&gt;
+
+&lt;div class=&quot;row&quot; style=&quot;width:100%;&quot;&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-6 no-padding-right&quot; style=&quot;overflow:hidden; height:250px; vertical-align:bottom;&quot;&gt;
+		&lt;img src=&quot;/assets/img/survey-metaphors/Cleansing_raw_data.jpg&quot; style=&quot;width:100%;&quot; alt=&quot;Validation and Cleansing of raw data&quot; /&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-6&quot; style=&quot;background-color:#444; height:250px; color:#fff;&quot;&gt;
+		&lt;h3 class=&quot;centered subheading&quot;&gt;Validation and Cleansing of raw data&lt;/h3&gt;
+		&lt;svg class=&quot;bar-graph&quot; data-graph-values=&quot;[ { &amp;quot;label&amp;quot;: &amp;quot;Yes&amp;quot;, &amp;quot;number&amp;quot;: 22 } , { &amp;quot;label&amp;quot;: &amp;quot;No&amp;quot;, &amp;quot;number&amp;quot;: 10 } ]&quot;&gt;
+
+		&lt;/svg&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot; style=&quot;width:100%;&quot;&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-6 no-padding-right&quot; style=&quot;overflow:hidden; height:250px; vertical-align:bottom;&quot;&gt;
+		&lt;img src=&quot;/assets/img/survey-metaphors/Comparing_datasets.jpg&quot; style=&quot;width:100%;&quot; alt=&quot;Combining and Comparing Datasets&quot; /&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-6&quot; style=&quot;background-color:#444; height:250px; color:#fff;&quot;&gt;
+		&lt;h3 class=&quot;centered subheading&quot;&gt;Combining and Comparing Datasets&lt;/h3&gt;
+		&lt;svg class=&quot;bar-graph&quot; data-graph-values=&quot;[ { &amp;quot;label&amp;quot;: &amp;quot;Yes&amp;quot;, &amp;quot;number&amp;quot;: 24 } , { &amp;quot;label&amp;quot;: &amp;quot;No&amp;quot;, &amp;quot;number&amp;quot;: 8 } ]&quot;&gt;
+
+		&lt;/svg&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot; style=&quot;width:100%;&quot;&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-6 no-padding-right&quot; style=&quot;overflow:hidden; height:250px; vertical-align:bottom;&quot;&gt;
+		&lt;img src=&quot;/assets/img/survey-metaphors/Curve_fitting.jpg&quot; style=&quot;width:100%;&quot; alt=&quot;Curve Fitting&quot; /&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-6&quot; style=&quot;background-color:#444; height:250px; color:#fff;&quot;&gt;
+		&lt;h3 class=&quot;centered subheading&quot;&gt;Curve Fitting&lt;/h3&gt;
+		&lt;svg class=&quot;bar-graph&quot; data-graph-values=&quot;[ { &amp;quot;label&amp;quot;: &amp;quot;Yes&amp;quot;, &amp;quot;number&amp;quot;: 22 } , { &amp;quot;label&amp;quot;: &amp;quot;No&amp;quot;, &amp;quot;number&amp;quot;: 10 } ]&quot;&gt;
+
+		&lt;/svg&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot; style=&quot;width:100%;&quot;&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-6 no-padding-right&quot; style=&quot;overflow:hidden; height:250px; vertical-align:bottom;&quot;&gt;
+		&lt;img src=&quot;/assets/img/survey-metaphors/Data_visualisation.jpg&quot; style=&quot;width:100%;&quot; alt=&quot;Visualisation of Assay Data&quot; /&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-6&quot; style=&quot;background-color:#444; height:250px; color:#fff;&quot;&gt;
+		&lt;h3 class=&quot;centered subheading&quot;&gt;Visualisation of Assay Data&lt;/h3&gt;
+		&lt;svg class=&quot;bar-graph&quot; data-graph-values=&quot;[ { &amp;quot;label&amp;quot;: &amp;quot;Yes&amp;quot;, &amp;quot;number&amp;quot;: 28 } , { &amp;quot;label&amp;quot;: &amp;quot;No&amp;quot;, &amp;quot;number&amp;quot;: 4 } ]&quot;&gt;
+
+		&lt;/svg&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot; style=&quot;width:100%;&quot;&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-6 no-padding-right&quot; style=&quot;overflow:hidden; height:250px; vertical-align:bottom;&quot;&gt;
+		&lt;img src=&quot;/assets/img/survey-metaphors/Image_analysis.jpg&quot; style=&quot;width:100%;&quot; alt=&quot;Image Analysis&quot; /&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-6&quot; style=&quot;background-color:#444; height:250px; color:#fff;&quot;&gt;
+		&lt;h3 class=&quot;centered subheading&quot;&gt;Image Analysis&lt;/h3&gt;
+		&lt;svg class=&quot;bar-graph&quot; data-graph-values=&quot;[ { &amp;quot;label&amp;quot;: &amp;quot;Yes&amp;quot;, &amp;quot;number&amp;quot;: 18 } , { &amp;quot;label&amp;quot;: &amp;quot;No&amp;quot;, &amp;quot;number&amp;quot;: 14 } ]&quot;&gt;
+
+		&lt;/svg&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot; style=&quot;width:100%;&quot;&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-6 no-padding-right&quot; style=&quot;overflow:hidden; height:250px; vertical-align:bottom;&quot;&gt;
+		&lt;img src=&quot;/assets/img/survey-metaphors/Sharing_data.jpg&quot; style=&quot;width:100%;&quot; alt=&quot;Data Sharing&quot; /&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-6&quot; style=&quot;background-color:#444; height:250px; color:#fff;&quot;&gt;
+		&lt;h3 class=&quot;centered subheading&quot;&gt;Data Sharing&lt;/h3&gt;
+		&lt;svg class=&quot;bar-graph&quot; data-graph-values=&quot;[ { &amp;quot;label&amp;quot;: &amp;quot;Yes&amp;quot;, &amp;quot;number&amp;quot;: 30 } , { &amp;quot;label&amp;quot;: &amp;quot;No&amp;quot;, &amp;quot;number&amp;quot;: 2 } ]&quot;&gt;
+
+		&lt;/svg&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;row&quot; style=&quot;width:100%;&quot;&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-6 no-padding-right&quot; style=&quot;overflow:hidden; height:250px; vertical-align:bottom;&quot;&gt;
+		&lt;img src=&quot;/assets/img/survey-metaphors/Assay.jpg&quot; style=&quot;width:100%;&quot; alt=&quot;Assay-specific tools e.g. qPCR or ELISA&quot; /&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;col-xs-12 col-sm-6&quot; style=&quot;background-color:#444; height:250px; color:#fff;&quot;&gt;
+		&lt;h3 class=&quot;centered subheading&quot;&gt;Assay-specific tools e.g. qPCR or ELISA&lt;/h3&gt;
+		&lt;svg class=&quot;bar-graph&quot; data-graph-values=&quot;[ { &amp;quot;label&amp;quot;: &amp;quot;Yes&amp;quot;, &amp;quot;number&amp;quot;: 22 } , { &amp;quot;label&amp;quot;: &amp;quot;No&amp;quot;, &amp;quot;number&amp;quot;: 10 } ]&quot;&gt;
+
+		&lt;/svg&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;em&gt;What do these results mean for ChemBio Hub?&lt;/em&gt; - It’s clear that &lt;strong&gt;visualisation of assay results&lt;/strong&gt; is a key requirement of a great many chemical biology researchers - and that &lt;strong&gt;image processing&lt;/strong&gt; is less of a priority for Oxford’s ChemBio community. We will use the survey results, along with other feedback, to determine the order of priorities that we work on in future.&lt;/p&gt;
+
+&lt;p&gt;Did you attend and not have chance to take our survey? Or do you otherwise have a strong wish to see one of these areas prioritised? Let us know in the thread comments below.&lt;/p&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+
+var labelFn = function(d) { return d.label }
+var numberFn = function(d) { return d.number }
+
+$(document).ready(function() {
+
+	d3.selectAll(&quot;.bar-graph&quot;).each( function(d, i){
+
+		var data = JSON.parse(d3.select(this).attr(&quot;data-graph-values&quot;));
+
+		var width = 320,
+		    barHeight = 40;
+
+		var x = d3.scale.linear()
+		    .domain([0, 40])
+		    .range([0, width]);
+
+		var chart = d3.select(this)
+		    .attr(&quot;width&quot;, width)
+		    .attr(&quot;height&quot;, 150);
+
+		var gradient = chart.append(&quot;linearGradient&quot;)
+		    .attr(&quot;y1&quot;, &quot;0&quot;)
+		    .attr(&quot;y2&quot;, &quot;0&quot;)
+		    .attr(&quot;x1&quot;, &quot;40&quot;)
+		    .attr(&quot;x2&quot;, &quot;200&quot;)
+		    .attr(&quot;id&quot;, &quot;gradient&quot;)
+		    .attr(&quot;gradientUnits&quot;, &quot;userSpaceOnUse&quot;);
+
+		gradient
+		    .append(&quot;stop&quot;)
+		    .attr(&quot;offset&quot;, &quot;0&quot;)
+		    .attr(&quot;stop-color&quot;, &quot;#444&quot;);
+
+		gradient
+		    .append(&quot;stop&quot;)
+		    .attr(&quot;offset&quot;, &quot;0.5&quot;)
+		    .attr(&quot;stop-color&quot;, &quot;#eee&quot;);
+
+		var bar = chart.selectAll(&quot;g&quot;)
+		    .data(data)
+		  .enter().append(&quot;g&quot;)
+		    .attr(&quot;transform&quot;, function(d, i) { return &quot;translate(0,&quot; + i * barHeight + &quot;)&quot;; });
+
+		bar.append(&quot;text&quot;)
+		    .attr(&quot;x&quot;, &quot;0&quot;)
+		    .attr(&quot;y&quot;, barHeight / 2)
+		    .attr(&quot;class&quot;, &quot;white&quot;)
+		    .text(function(d) { return labelFn(d); });
+
+		bar.append(&quot;rect&quot;)
+		    .attr(&quot;width&quot;,function(d) { var num = numberFn(d); return x(num) })
+		    .attr(&quot;height&quot;, barHeight - 10)
+		    .attr(&quot;x&quot;, &quot;50&quot;)
+		    .attr(&quot;fill&quot;, &quot;url(#gradient)&quot;);
+
+		bar.append(&quot;text&quot;)
+		    .attr(&quot;x&quot;, &quot;300px&quot;)
+		    .attr(&quot;y&quot;, barHeight / 2)
+		    .attr(&quot;class&quot;, &quot;white&quot;)
+		    .text(function(d) { return numberFn(d); });
+
+	    
+
+	});
+	
+});
+&lt;/script&gt;
+
+</description>
+<pubDate>Tue, 11 Nov 2014 00:00:00 +0000</pubDate>
+<link>http//chembiohub.ox.ac.uk/blog/2014/11/11/symp-survey.html</link>
+<guid isPermaLink="true">http//chembiohub.ox.ac.uk/blog/2014/11/11/symp-survey.html</guid>
+</item>
+
+<item>
+<title>OOMMPPAA - directed synthesis and data analysis tool</title>
+<description>&lt;h3 id=&quot;motivation&quot;&gt;Motivation&lt;/h3&gt;
+&lt;p&gt;The ambition of this work is to help chemists to decide which compound to make next. Currently a chemist will use the available protein structures and activity data, find trends in this data and use this to inform future compound design. When I started my project it became clear there were two ways this is currently done.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/oommppaa.png&quot; style=&quot;width:100%&quot; alt=&quot;Screenshot of Anthony Bradley's OOMMPPAA tool&quot; /&gt;&lt;/p&gt;
+&lt;div&gt;&lt;p class=&quot;text-center&quot;&gt;&lt;em&gt;Screenshot of Anthony Bradley's OOMMPPAA tool&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;subjective-visualisation&quot;&gt;Subjective visualisation&lt;/h3&gt;
+&lt;p&gt;On one side scientists would look at bound ligands and activity data seperately and manually. They would then juggle the two sides in their mind and use their experience to generate hypotheses and suggestions on which compounds to make next. Clearly this mode of working is highly subjective and reliant on decades of experience.&lt;/p&gt;
+
+&lt;h3 id=&quot;black-boxes&quot;&gt;Black boxes&lt;/h3&gt;
+&lt;p&gt;On the other side computational tools would take in all this data and spit out, using complex algorithms, an answer of what compound to make next. Largely these would be seen as black boxes. If they worked great - if they didn’t what have you learned? &lt;/p&gt;
+
+&lt;h3 id=&quot;a-third-way&quot;&gt;A third way?&lt;/h3&gt;
+&lt;p&gt;It struck me that tools could be applied to work with the chemist. They could run through ever enlarging datasets and condense and visualise this data to allow for easier and more objective analysis. They could highlight conflicting aspects of the data and features the chemist may have missed. In this way experienced chemists could work faster and inexperienced ones could work at all.&lt;/p&gt;
+
+&lt;h3 id=&quot;what-does-oommppaa-do&quot;&gt;What does OOMMPPAA do?&lt;/h3&gt;
+&lt;p&gt;OOMMPPAA uses 3D matched molecular pairs to contextualise both activity and inactivity data in its relevant protein environment. It then identifies pharmacophoric transformations between pairs of compounds and associates them with their relevant activity changes. OOMMPPAA presents this data in an interactive application providing the user with a visual summary of important interactions in the context of the binding site. &lt;/p&gt;
+
+&lt;h3 id=&quot;what-doesnt-it-do&quot;&gt;What doesn’t it do?&lt;/h3&gt;
+&lt;p&gt;It is important to note - OOMMPPAA does not predict anything. It doesn’t itself extrapolate from the data. It doesn’t train a model. It doesn’t do any machine learning. It simply shows the data, as it stands, and highlights the key features within it. We have tips as to how to get the most out of it - but the most important thing is that you use it&lt;/p&gt;
+
+&lt;iframe height=&quot;500&quot; src=&quot;//www.youtube.com/embed/eUm9c_Dlw5o&quot; style=&quot;width:100%;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;how-can-i-use-it&quot;&gt;How can I use it?&lt;/h3&gt;
+&lt;p&gt;Integral to all of this was making the tools user friendly and easy to install.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Firstly you can trial the &lt;a href=&quot;http://oommppaa.sgc.ox.ac.uk/OOMMPPAA/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;tool online&lt;/a&gt; - we even made a demo!&lt;/li&gt;
+  &lt;li&gt;Secondly windows users can download the tool using our &lt;a href=&quot;https://bitbucket.org/abradley/oommppaa/downloads/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;three click windows installer&lt;/a&gt;. This has full functionality and allows the user to process their own datasets&lt;/li&gt;
+  &lt;li&gt;Thirdly you can get the &lt;a href=&quot;https://bitbucket.org/abradley/oommppaa/src&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;full source code&lt;/a&gt;. Licensed under Apache. Pull it  from bitbucket. Branch it. Merge it. Use it. We’d love anyone to get involved.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;More details about all of these options are &lt;a href=&quot;https://bitbucket.org/abradley/oommppaa/wiki/Home&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;available here&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;how-can-i-learn-more&quot;&gt;How can I learn more?&lt;/h3&gt;
+&lt;p&gt;If you want to know more about the tool. How we’ve used it. How it works in more detail &lt;a href=&quot;http://pubs.acs.org/doi/pdfplus/10.1021/ci500245d&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;go here&lt;/a&gt;. If that’s still not enough, email me at oommppaa.help@gmail.com. &lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Anthony is a DPhil student at the University of Oxford. He works between the Structural Genomics Consortium, Statistics and industrial collaborators GlaxoSmithKline. Anthony develops computational tools to aid drug discovery. &lt;a href=&quot;http://www.dtc.ox.ac.uk/people/11/bradley/&quot;&gt;Learn more here&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
+</description>
+<pubDate>Wed, 22 Oct 2014 00:00:00 +0100</pubDate>
+<link>http//chembiohub.ox.ac.uk/blog/2014/10/22/oommppaa-directed-synthesis-data-analysis-tool.html</link>
+<guid isPermaLink="true">http//chembiohub.ox.ac.uk/blog/2014/10/22/oommppaa-directed-synthesis-data-analysis-tool.html</guid>
+</item>
+
+</channel>
+</rss>
