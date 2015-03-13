@@ -60,6 +60,12 @@ module.exports = function(grunt) {
 	          '_site/css/clean.css': ['_site/index.html','_site/about/index.html','_site/events/index.html','_site/symposium2014/index.html','_site/blog/**/*.html',], // What files to check for usage
 	        }
 	      }
+	    },
+	    usemin: {
+
+	    },
+	    processhtml: {
+	    	
 	    }
 	});
 	//grunt.loadNpmTasks('grunt-contrib-sass');
@@ -68,7 +74,9 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-uncss');
+	grunt.loadNpmTasks('grunt-usemin');
+	grunt.loadNpmTasks('grunt-processhtml');
 
-	grunt.registerTask('default',['uglify', 'imagemin', 'uncss','cssmin',]);
+	grunt.registerTask('default',['imagemin', 'uncss', 'cssmin', 'uglify']);
 	grunt.registerTask('css',['uncss','cssmin',]);
 }
