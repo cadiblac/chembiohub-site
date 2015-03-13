@@ -15,7 +15,7 @@ speakers2015:
     link: ""
     position: "Professor of Translational Medicine"
     dept: "SGC"
-    research_interests: "Research interests: using X ray structures of novel human proteins to generate small molecule inhibitors, screening in human cells to identify novel targets for drug discovery, and then developing clinical candidates for evaluation in patients, pre-competitively."
+    research_interests: "Using X ray structures of novel human proteins to generate small molecule inhibitors, screening in human cells to identify novel targets for drug discovery, and then developing clinical candidates for evaluation in patients."
     talk_title: ""
     talk_order: 2
 
@@ -65,7 +65,7 @@ speakers2015:
     link: ""
     position: "Cancer Research UK Clinician Scientist"
     dept: "Department of Oncology"
-    research_interests: "Laboratory and clinical research that aims to better understand the molecular basis of tumour cell resistance to radiation treatment with the long term aim of developing treatments to make radiotherapy more effective."
+    research_interests: "Laboratory and clinical research to better understand the molecular basis of tumour cell resistance to radiation treatment with the long term aim of developing treatments to make radiotherapy more effective."
     talk_title: ""
     talk_order: 7
 
@@ -75,7 +75,7 @@ speakers2015:
     link: ""
     position: "Professor of Translational Neuroscience"
     dept: "Department of Psychiatry"
-    research_interests: "Seeking new targets for therapy in Alzheimer's disease through understanding of basic mechanisms, in disease modification trials and experimental medicine and in the search for biomarkers for early diagnosis."
+    research_interests: "Seeking new targets for therapy in Alzheimer's disease by understanding basic mechanisms, in disease modification trials and experimental medicine and in the search for biomarkers for early diagnosis."
     talk_title: ""
     talk_order: 8
 
@@ -85,7 +85,7 @@ speakers2015:
     link: ""
     position: "Professor of Biochemistry and Pharmacology"
     dept: "Department of Pharmacology"
-    research_interests: "Identifying small molecule drugs to target unique steps in the pathogenic cascade of lysosomal disorders, and testing them as mono-therapies or in combination with other therapies. These are evaluated in a pre-clinical setting prior to translational studies in patients with our clinical collaborators."
+    research_interests: "Identifying drugs to target steps in the pathogenic cascade of lysosomal disorders, and testing them as mono-therapies or in combination with other therapies. Evaluating these in a pre-clinical setting before conducting translational studies in patients with clinical collaborators."
     talk_title: ""
     talk_order: 9
 
@@ -95,7 +95,7 @@ speakers2015:
     link: ""
     position: ""
     dept: "Department of Chemistry"
-    research_interests: "Development of small molecule modulators to study developmental signalling pathways, e.g. Hedgehog, Wnt/wingless and Bone Morphogenetic Protein. Development of inhibitors to target challenging proteins, e.g. phosphatases or proteins where a physiological role is not clearly defined, e.g. acetyl transferases. Development of new techniques and methodologies for compound library design and synthesis."
+    research_interests: "Developing small molecule modulators to study developmental signalling pathways, e.g. Hedgehog, Wnt/wingless and Bone Morphogenetic Protein. Developing inhibitors to target challenging proteins, e.g. phosphatases or proteins where a physiological role is not clearly defined, e.g. acetyl transferases. Developing new techniques and methodologies for compound library design and synthesis."
     talk_title: ""
     talk_order: 9
 
@@ -132,17 +132,20 @@ speakers2015:
 symp2015:  
   title: Current expertise and future directions in drug discovery
   overview:
-    - paragraph: "This event will showcase top chemical biology research from labs at Oxford. Focus topics will include disease-agnostic technologies to aid drug discovery, target and pathway expertise across diseases, and therapeutic intervention for neurodegenerative illnesses. Particular emphasis will be placed on linking basic chemical biology research to work in the clinic."
+    - paragraph: "This event will showcase top chemical biology research from labs at Oxford.  Particular emphasis will be placed on linking basic chemical biology research to work in the clinic."
       order: 1
-
-    - paragraph: "The symposium will bring together 200 delegates including Oxford researchers, industry colleagues and technology transfer professionals. In doing so, it will provide the ideal forum for discussion and lead to lasting collaborative relationships."
+      
+    - paragraph: "The first session of the day looks at disease-agnostic technologies to aid drug discovery. The second session features work on target and pathway expertise applied to a variety of illnesses. The third session focuses on therapeutic interventions for neurodegenerative diseases."
       order: 2
 
-    - paragraph: "Each session will feature top-class science from a broad range of Oxford’s biomedical and physical science departments. Complementary speakers from industry will also give their perspective throughout the day, setting the stage for a round-table discussion between opinion leaders from across Oxford and industry. This conversation will focus on how we can best work together to translate new ideas into pioneer medicines."
+    - paragraph: "Each session will feature top-class science from a broad range of Oxford’s biomedical and physical science departments, with speakers from industry giving their perspective throughout the day. This will set the stage for a round-table discussion between opinion leaders from across Oxford and industry. This conversation will focus on how we can best work together to translate ideas into new medicines."
       order: 3
 
-    - paragraph: "Networking breaks and poster sessions will facilitate discussion and idea exchange outside of the lecture theatre. The day will conclude with a wine reception in the common room of the state-of-the-art Andrew Wiles building."
+    - paragraph: "The symposium will bring together 200 delegates including Oxford researchers, industry colleagues and technology transfer professionals. In doing so, it will provide the ideal forum for discussion and lead to lasting collaborative relationships."
       order: 4
+
+    - paragraph: "Networking breaks and poster sessions will facilitate discussion outside of the lecture theatre. The day will conclude with a wine reception in the common room of the state-of-the-art Andrew Wiles building."
+      order: 5
 
   why_attend:
     - picture_url: "discover-telescope.png"
