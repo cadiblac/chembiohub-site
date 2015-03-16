@@ -67,14 +67,19 @@ module.exports = function(grunt) {
 
 	    	},
 	    	dist: {
-		      files: {
-		        '_site/index.html': ['_site/index.html'],
-		        '_site/about/index.html': ['_site/about/index.html'],
-		        '_site/events/index.html': ['_site/events/index.html'],
-		        '_site/symposium2014/index.html': ['_site/symposium2014/index.html'],
-		        '_site/blog/**/*.html': ['_site/blog/**/*.html'],
+		      files: [
+			      {
+			      	expand: true,
+			      	cwd: '_site/',      // Src matches are relative to this path.
+	          		src: ['**/*.html'],
+	          		dest: '_site/',
+			        /*'_site/index.html': ['_site/index.html'],
+			        '_site/about/index.html': ['_site/about/index.html'],
+			        '_site/events/index.html': ['_site/events/index.html'],
+			        '_site/symposium2014/index.html': ['_site/symposium2014/index.html'],*/
 
-		      }
+			      },
+		      ]
 		    }
 	    }
 	});
@@ -89,5 +94,5 @@ module.exports = function(grunt) {
 
 	//limit to used css in one file, minify and change reference in html to new file. Also compress images.
 	grunt.registerTask('default',['imagemin', 'uncss', 'cssmin', 'uglify', 'processhtml']);
-	grunt.registerTask('css',['uncss','cssmin',]);
+	grunt.registerTask('css',['uncss','cssmin', 'processhtml']);
 }
