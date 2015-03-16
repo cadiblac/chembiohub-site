@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 		   files: [{
 		     expand: true,
 		     cwd: '_site/assets/css/',
-		     src: ['*.css', '!*.min.css'],
+		     src: ['clean.css'],
 		     dest: '_site/assets/css/min/',
       	  	 ext: '.min.css'
 		   }]
@@ -34,7 +34,7 @@ module.exports = function(grunt) {
 		          dest: 'assets/js/min/'
 		      }]
 		    }
-		}
+		},
 		//from yotfh...
 	    imagemin: {
 	      options: {
@@ -51,15 +51,31 @@ module.exports = function(grunt) {
 	      dist: {
 	        options: {
 	          stylesheets: ['assets/css/bootstrap.css',
-	          				'assets/css/cbh_template_header.css',
+	          				//'assets/css/cbh_template_header.css',
+	          				'assets/css/bootstrapValidator.min.css',
 	          				'assets/css/font.css', 
-	          				'assets/css/main.css', 
-	          				'assets/css/symposium.css', ] // List of stylesheets to clean up
+	          				'assets/css/main.css', ]
+	          				//'assets/css/symposium.css', ] // List of stylesheets to clean up
 	        },
 	        files: {
-	          '_site/css/clean.css': ['_site/index.html','_site/about/index.html','_site/events/index.html','_site/symposium2014/index.html','_site/blog/**/*.html',], // What files to check for usage
+	          '_site/assets/css/clean.css': ['_site/index.html','_site/about/index.html','_site/events/index.html','_site/symposium2014/index.html','_site/blog/**/*.html',], // What files to check for usage
 	        }
 	      }
+	    },
+	    processhtml: {
+	    	options: {
+
+	    	},
+	    	dist: {
+		      files: {
+		        '_site/index.html': ['_site/index.html'],
+		        '_site/about/index.html': ['_site/about/index.html'],
+		        '_site/events/index.html': ['_site/events/index.html'],
+		        '_site/symposium2014/index.html': ['_site/symposium2014/index.html'],
+		        '_site/blog/**/*.html': ['_site/blog/**/*.html'],
+
+		      }
+		    }
 	    }
 	});
 	//grunt.loadNpmTasks('grunt-contrib-sass');
@@ -68,6 +84,10 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-imagemin');
 	grunt.loadNpmTasks('grunt-uncss');
+	//grunt.loadNpmTasks('grunt-usemin');
+	grunt.loadNpmTasks('grunt-processhtml');
 
-	grunt.registerTask('default',['cssmin','uglify']);
+	//limit to used css in one file, minify and change reference in html to new file. Also compress images.
+	grunt.registerTask('default',['imagemin', 'uncss', 'cssmin', 'uglify', 'processhtml']);
+	grunt.registerTask('css',['uncss','cssmin',]);
 }
