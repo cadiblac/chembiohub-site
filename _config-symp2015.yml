@@ -49,6 +49,16 @@ speakers2015:
     talk_title: ""
     talk_order: 5
 
+  - first_name: Christophe
+    last_name: Genicot
+    email: ""
+    link: ""
+    position: "Senior Director, Global Chemistry"
+    dept: "UCB"
+    research_interests: ""
+    talk_title: ""
+    talk_order: 6
+
   - first_name: David R.
     last_name: Greaves
     email: ""
@@ -57,7 +67,7 @@ speakers2015:
     dept: "Sir William Dunn School of Pathology"
     research_interests: "My lab studies the role of monocytes and macrophages in the initiation and resolution of chronic inflammation. We are particularly interested in the role chemokines and other chemoattractants play in atherosclerosis - a disease process in arteries that leads to angina, heart attacks and strokes."
     talk_title: ""
-    talk_order: 6
+    talk_order: 7
 
   - first_name: Geoff
     last_name: Higgins
@@ -67,7 +77,7 @@ speakers2015:
     dept: "Department of Oncology"
     research_interests: "Laboratory and clinical research to better understand the molecular basis of tumour cell resistance to radiation treatment with the long term aim of developing treatments to make radiotherapy more effective."
     talk_title: ""
-    talk_order: 7
+    talk_order: 8
 
   - first_name: Simon
     last_name: Lovestone
@@ -77,7 +87,7 @@ speakers2015:
     dept: "Department of Psychiatry"
     research_interests: "Seeking new targets for therapy in Alzheimer's disease by understanding basic mechanisms, in disease modification trials and experimental medicine and in the search for biomarkers for early diagnosis."
     talk_title: ""
-    talk_order: 8
+    talk_order: 9
 
   - first_name: Frances
     last_name: Platt
@@ -87,7 +97,7 @@ speakers2015:
     dept: "Department of Pharmacology"
     research_interests: "Identifying drugs to target steps in the pathogenic cascade of lysosomal disorders, and testing them as mono-therapies or in combination with other therapies. Evaluating these in a pre-clinical setting before conducting translational studies in patients with clinical collaborators."
     talk_title: ""
-    talk_order: 9
+    talk_order: 10
 
   - first_name: Angela
     last_name: Russell
@@ -97,7 +107,7 @@ speakers2015:
     dept: "Department of Chemistry"
     research_interests: "Developing small molecule modulators to study developmental signalling pathways, e.g. Hedgehog, Wnt/wingless and Bone Morphogenetic Protein. Developing inhibitors to target challenging proteins, e.g. phosphatases or proteins where a physiological role is not clearly defined, e.g. acetyl transferases. Developing new techniques and methodologies for compound library design and synthesis."
     talk_title: ""
-    talk_order: 9
+    talk_order: 11
 
   - first_name: Kevin
     last_name: Talbot
@@ -107,7 +117,7 @@ speakers2015:
     dept: "Nuffield Department of Clinical Neuroscience"
     research_interests: "Identifying the earliest pathological pathways activated in motor neuron disease in order to define the most therapeutically tractable areas for drug therapy and to apply these findings to clinical studies in patients."
     talk_title: ""
-    talk_order: 10
+    talk_order: 12
 
   - first_name: Richard
     last_name: "Wade-Martins"
@@ -117,7 +127,7 @@ speakers2015:
     dept: "Department of Physiology, Anatomy and Genetics"
     research_interests: "Understanding molecular mechanisms of age-related neurodegenerative diseases to generate novel molecular therapies."
     talk_title: ""
-    talk_order: 11
+    talk_order: 13
 
   - first_name: Cathy
     last_name: Ye
@@ -127,7 +137,7 @@ speakers2015:
     dept: "Department of Engineering Science"
     research_interests: "Stem cell technologies and stem cell based screening platforms."
     talk_title: ""
-    talk_order: 12
+    talk_order: 14
 
 symp2015:  
   title: Current expertise and future directions in drug discovery
