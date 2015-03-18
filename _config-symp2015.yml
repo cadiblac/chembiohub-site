@@ -49,13 +49,13 @@ speakers2015:
     talk_title: ""
     talk_order: 5
 
-  - first_name: David
+  - first_name: David R.
     last_name: Greaves
     email: ""
     link: ""
     position: "Professor of Inflammation Biology"
     dept: "Sir William Dunn School of Pathology"
-    research_interests: "Chemokines in the recruitment and activation of macrophages and smooth muscle cells in chronic inflammation. Particularly the role chemokines play in atherosclerosis - a disease process in arteries that leads to angina, heart attacks, strokes and peripheral arterial disease."
+    research_interests: "My lab studies the role of monocytes and macrophages in the initiation and resolution of chronic inflammation. We are particularly interested in the role chemokines and other chemoattractants play in atherosclerosis - a disease process in arteries that leads to angina, heart attacks and strokes."
     talk_title: ""
     talk_order: 6
 
@@ -123,7 +123,7 @@ speakers2015:
     last_name: Ye
     email: ""
     link: ""
-    position: "University Lecturer in Engineering Science"
+    position: "Associate Professor in Engineering Science"
     dept: "Department of Engineering Science"
     research_interests: "Stem cell technologies and stem cell based screening platforms."
     talk_title: ""
