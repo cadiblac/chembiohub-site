@@ -134,7 +134,7 @@ symp2015:
   overview:
     - paragraph: "This event showcases top chemical biology research from labs at Oxford.  Particular emphasis is placed on linking basic chemical biology research to work in the clinic."
       order: 1
-      
+
     - paragraph: "The first session of the day looks at disease-agnostic technologies to aid drug discovery. The second session features work on target and pathway expertise applied to a variety of illnesses. The third session focuses on therapeutic interventions for neurodegenerative diseases."
       order: 2
 
@@ -146,7 +146,7 @@ symp2015:
 
     - paragraph: "Networking breaks and poster sessions will allow discussion to continue outside of the lecture theatre. The day will finish with a wine reception in the common room of the Andrew Wiles building, which provides a beautiful view of the 18th century Radcliffe Observatory."
       order: 5
-
+  programme_intro: "We are finalising the agenda and will publish it here on Wednesday 15th April. On the day, coffee will be served from 9am at the Andrew Wiles Building. Andrew Hamilton (Vice Chancellor of the University of Oxford) will open the event at 9.30am. The evening wine reception will finish at 7pm."
   why_attend:
     - picture_url: "discover-telescope.png"
       caption_header: "Discover"

@@ -78,7 +78,7 @@ function loadSearch() {
 function redirect_search(){
   var v = $("input#equip-search").val();
   if(v){
-      href = "https://www.research-facilities.ox.ac.uk/account/webauth/?next=/search/?q=" + v + "&filter.basedNear.uri=&filter.formalOrganisation.uri=http%3A%2F%2Foxpoints.oucs.ox.ac.uk%2Fid%2F00000000";
+      href = "https://www.research-facilities.ox.ac.uk/search/?q=" + v + "&filter.basedNear.uri=&filter.formalOrganisation.uri=http%3A%2F%2Foxpoints.oucs.ox.ac.uk%2Fid%2F00000000";
       ga('send', {
         'hitType': 'event',
       'eventCategory': 'outbound',

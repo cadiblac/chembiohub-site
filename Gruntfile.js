@@ -93,6 +93,6 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-processhtml');
 
 	//limit to used css in one file, minify and change reference in html to new file. Also compress images.
-	grunt.registerTask('default',['imagemin', 'uncss', 'cssmin', 'uglify', 'processhtml']);
+	grunt.registerTask('default',['imagemin', 'uncss', 'cssmin', 'processhtml']);
 	grunt.registerTask('css',['uncss','cssmin', 'processhtml']);
 }
