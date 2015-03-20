@@ -50,8 +50,8 @@ permalink: /blog/:year/:month/:day/:title.html
 events:
   - title: "Chemical biology across the University of Oxford"
     subtitle: "A symposium by ChemBio Hub to strengthen interdepartmental research connections"
-    date_start: "2014-10-10"
-    date_end: "2014-10-10"
+    date_start: "2014-11-10"
+    date_end: "2014-11-10"
     link: "/symposium2014"
 
   - title: "Current expertise and future directions in drug discovery"
