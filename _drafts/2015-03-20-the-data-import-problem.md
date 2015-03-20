@@ -25,3 +25,5 @@ flexible vs easy to use
 precision vs probabalistic
 
 
+<blockquote class="twitter-tweet" lang="en"><p>The world runs on Excel, and we should be afraid <a href="http://t.co/hBj9wcJi">http://t.co/hBj9wcJi</a> (via <a href="https://twitter.com/alexismadrigal">@alexismadrigal</a>)</p>&mdash; Hilary Mason (@hmason) <a href="https://twitter.com/hmason/status/300721573340524544">February 10, 2013</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
