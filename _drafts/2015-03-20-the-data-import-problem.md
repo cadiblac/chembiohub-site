@@ -15,4 +15,4 @@ Assuming we are not going to build a web application for every possible use case
 Approach 1:
 
 Use Excel with Macros to prepare the data:
-
+python in excel
