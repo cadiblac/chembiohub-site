@@ -18,3 +18,8 @@ Use Excel with Macros to prepare the data:
 python in excel
 block.ly
 
+text / web data focussed
+tab data focussed
+commercial/open source/ active
+
+
