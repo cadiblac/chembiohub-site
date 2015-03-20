@@ -21,5 +21,7 @@ block.ly
 text / web data focussed
 tab data focussed
 commercial/open source/ active
+flexible vs easy to use
+precision vs probabalistic
 
 
