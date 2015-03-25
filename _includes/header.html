@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
+    <meta content="{{ site.title }}" property="og:site_name">
+    {% if page.title %}
+	  <meta content="{{ page.title }}" property="og:title">
+	{% else %}
+	  <meta content="{{ site.title }}" property="og:title">
+	{% endif %}
+	{% if page.image %}
+	  <meta content="/assets/img/{{ page.image }}" property="og:image">
+	{% else %}
+	  <meta content="/assets/img/ox_brand1_rev_rect.gif" property="og:image">
+	{% endif %}
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
