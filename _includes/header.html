@@ -15,7 +15,10 @@
 	{% if page.image %}
 	  <meta content="/assets/img/{{ page.image }}" property="og:image">
 	{% else %}
-	  <meta content="/assets/img/ox_brand1_rev_rect.gif" property="og:image">
+	  <meta content="/assets/img/cbh_og_logo.png" property="og:image">
+	{% endif %}
+	{% if page.permalink %}
+	  <meta content="{{ site.url }}{{ page.permalink }}" property="og:url">
 	{% endif %}
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
