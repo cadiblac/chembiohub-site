@@ -13,9 +13,9 @@
 	  <meta content="{{ site.title }}" property="og:title">
 	{% endif %}
 	{% if page.image %}
-	  <meta content="{{ site.url }}/assets/img/{{ page.image }}" property="og:image">
+	  <meta content="{{ site.non_https_url }}/assets/img/{{ page.image }}" property="og:image">
 	{% else %}
-	  <meta content="{{ site.url }}/assets/img/cbh_og_logo.png" property="og:image">
+	  <meta content="{{ site.non_https_url }}/assets/img/cbh_og_logo.png" property="og:image">
 	{% endif %}
 	{% if page.permalink %}
 	  <meta content="{{ site.url }}{{ page.permalink }}" property="og:url">
