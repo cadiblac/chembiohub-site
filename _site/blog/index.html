@@ -10,6 +10,24 @@
     <meta content="ChemBio Hub Website" property="og:site_name">
     <meta name="twitter:site" content="@oxchembiohub">
     <meta name="twitter:card" content="summary" />
+    <meta name="twitter:description" content="{% include intro-para.html %}
+{% for post in site.posts %}
+{% assign author = site.authors[post.author] %}
+
+	{{post.title}}
+	posted {{post.date | date_to_string}} by {{author.display_name}}
+	
+		{{ ...">
+    
+	  <meta name="twitter:description" content="{% include intro-para.html %}
+{% for post in site.posts %}
+{% assign author = site.authors[post.author] %}
+
+	{{post.title}}
+	posted {{post.date | date_to_string}} by {{author.display_name}}
+	
+		{{ ...">
+	
     
 	  <meta content="ChemBio Hub Blog" property="og:title">
 	  <meta name="twitter:title" content="ChemBio Hub Blog">
