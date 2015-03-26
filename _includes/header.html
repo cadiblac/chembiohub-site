@@ -7,18 +7,24 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <meta content="{{ site.title }}" property="og:site_name">
+    <meta name="twitter:site" content="@oxchembiohub">
     {% if page.title %}
 	  <meta content="{{ page.title }}" property="og:title">
+	  <meta name="twitter:title" content="{{ page.title }}">
 	{% else %}
 	  <meta content="{{ site.title }}" property="og:title">
+	  <meta name="twitter:title" content="{{ site.title }}">
 	{% endif %}
 	{% if page.image %}
 	  <meta content="{{ site.non_https_url }}/assets/img/{{ page.image }}" property="og:image">
+	  <meta name="twitter:image:src" content="{{ site.non_https_url }}/assets/img/{{ page.image }}">
 	{% else %}
 	  <meta content="{{ site.non_https_url }}/assets/img/cbh_og_logo.png" property="og:image">
+	  <meta name="twitter:image:src" content="{{ site.non_https_url }}/assets/img/cbh_og_logo_thumb.png">
 	{% endif %}
 	{% if page.permalink %}
 	  <meta content="{{ site.url }}{{ page.permalink }}" property="og:url">
+	  <meta name="twitter:url" content="{{ site.url }}{{ page.permalink }}">
 	{% endif %}
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
