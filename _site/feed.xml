@@ -60,9 +60,8 @@
 </item>
 
 <item>
-<title>ChemBio Crunch - A simple tool to analyse and manipulate ChemBio assay data</title>
-<description>&lt;h3 id=&quot;introducing-chemreg-the-chembio-hub-compound-registration-system&quot;&gt;Introducing ChemReg: The ChemBio Hub compound registration system&lt;/h3&gt;
-&lt;p&gt;The ChemBio Hub team is pleased to announce our new compound registration system – &lt;strong&gt;ChemReg&lt;/strong&gt; – &lt;strong&gt;is now open for initial user testing&lt;/strong&gt;. ChemReg is the first step in our mission to capture all chemical biology data from around Oxford University. Following last December’s workshop (see previous &lt;a href=&quot;https://chembiohub.ox.ac.uk/blog/2014/12/15/registration-workshop.html&quot; title=&quot;Workshop on recording and managing data related to small molecules - 9th December 2014&quot;&gt;blog post&lt;/a&gt;) we have developed the key functionality suggested by prospective users. &lt;/p&gt;
+<title>Introducing ChemReg - The ChemBio Hub compound registration system</title>
+<description>&lt;p&gt;The ChemBio Hub team is pleased to announce our new compound registration system – &lt;strong&gt;ChemReg&lt;/strong&gt; – &lt;strong&gt;is now open for initial user testing&lt;/strong&gt;. ChemReg is the first step in our mission to capture all chemical biology data from around Oxford University. Following last December’s workshop (see previous &lt;a href=&quot;https://chembiohub.ox.ac.uk/blog/2014/12/15/registration-workshop.html&quot; title=&quot;Workshop on recording and managing data related to small molecules - 9th December 2014&quot;&gt;blog post&lt;/a&gt;) we have developed the key functionality suggested by prospective users. &lt;/p&gt;
 
 &lt;p&gt;Current features of ChemReg:
 -	Flexible and easy to use
