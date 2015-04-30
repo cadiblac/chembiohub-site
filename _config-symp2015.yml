@@ -231,7 +231,7 @@ symp2015:
       button_link: "/assets/files/conversation-2015-regopen-students.ics"
 
     - message_text: "Registration for Industry, Oxford PIs, Oxford research assistants"
-      date_start: "2015-04-31"
+      date_start: "2015-04-30"
       date_end: "2015-06-01"
       button_text: "Open Now"
       banner_class: "success"
