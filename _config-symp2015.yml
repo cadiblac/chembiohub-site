@@ -109,16 +109,6 @@ speakers2015:
     talk_title: ""
     talk_order: 11
 
-  - first_name: Angela
-    last_name: Russell
-    email: ""
-    link: ""
-    position: "RCUK Fellow in Medicinal Chemistry"
-    dept: "Department of Chemistry"
-    research_interests: "Developing small molecule modulators to study developmental signalling pathways, e.g. Hedgehog, Wnt/wingless and Bone Morphogenetic Protein. Developing inhibitors to target challenging proteins, e.g. phosphatases or proteins where a physiological role is not clearly defined, e.g. acetyl transferases. Developing new techniques and methodologies for compound library design and synthesis."
-    talk_title: ""
-    talk_order: 12
-
   - first_name: Chris
     last_name: Schofield
     email: ""
@@ -127,7 +117,7 @@ speakers2015:
     dept: "Department of Chemistry"
     research_interests: " Current projects involve investigations into how human cells respond to variations in oxygen supply, how complex antibiotics are made by biosynthesis in a few steps, how small molecules regulate transcription in humans, and on the chemical basis of epigenetics."
     talk_title: ""
-    talk_order: 13
+    talk_order: 12
 
   - first_name: Kevin
     last_name: Talbot
@@ -137,7 +127,7 @@ speakers2015:
     dept: "Nuffield Department of Clinical Neuroscience"
     research_interests: "Identifying the earliest pathological pathways activated in motor neuron disease in order to define the most therapeutically tractable areas for drug therapy and to apply these findings to clinical studies in patients."
     talk_title: ""
-    talk_order: 14
+    talk_order: 13
 
   - first_name: Richard
     last_name: "Wade-Martins"
@@ -147,7 +137,7 @@ speakers2015:
     dept: "Department of Physiology, Anatomy and Genetics"
     research_interests: "Understanding molecular mechanisms of age-related neurodegenerative diseases to generate novel molecular therapies."
     talk_title: ""
-    talk_order: 15
+    talk_order: 14
 
   - first_name: Cathy
     last_name: Ye
@@ -157,7 +147,7 @@ speakers2015:
     dept: "Department of Engineering Science"
     research_interests: "Stem cell technologies and stem cell based screening platforms."
     talk_title: ""
-    talk_order: 16
+    talk_order: 15
 
 symp2015:  
   title: Current expertise and future directions in drug discovery
@@ -174,7 +164,7 @@ symp2015:
     - paragraph: "The symposium will bring together 200 delegates including Oxford researchers, industry colleagues and technology transfer professionals. In doing so, it will provide the ideal forum for discussion and lead to lasting collaborative relationships."
       order: 4
 
-    - paragraph: "Networking breaks and poster sessions will allow discussion to continue outside of the lecture theatre. The day will finish with a wine reception in the common room of the Andrew Wiles building, which provides a beautiful view of the 18th century Radcliffe Observatory."
+    - paragraph: "Networking breaks and poster sessions will allow discussion to continue outside of the lecture theatre. There will be opportunities for one-to-one partnering throughout the day. The event will finish with a wine reception in the common room of the Andrew Wiles building, which provides a beautiful view of the 18th century Radcliffe Observatory."
       order: 5
   programme_intro: "Coffee will be served from 9am at the Andrew Wiles Building. Andrew Hamilton (Vice Chancellor of the University of Oxford) will open the event at 9.30am. For full up-to-date details, download the latest programme by clicking the link below."
   why_attend:
