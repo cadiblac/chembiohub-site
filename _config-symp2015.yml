@@ -139,6 +139,16 @@ speakers2015:
     talk_title: ""
     talk_order: 14
 
+  - first_name: Anthony
+    last_name: Watts
+    email: ""
+    link: ""
+    position: "Professor of Biochemistry"
+    dept: "Department of Biochemistry"
+    research_interests: "Resolving structural details of membrane peptides and proteins at high resolution."
+    talk_title: ""
+    talk_order: 15
+
   - first_name: Cathy
     last_name: Ye
     email: ""
@@ -147,7 +157,7 @@ speakers2015:
     dept: "Department of Engineering Science"
     research_interests: "Stem cell technologies and stem cell based screening platforms."
     talk_title: ""
-    talk_order: 15
+    talk_order: 16
 
 symp2015:  
   title: Current expertise and future directions in drug discovery
