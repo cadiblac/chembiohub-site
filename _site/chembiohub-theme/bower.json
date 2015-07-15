@@ -1,0 +1,17 @@
+{
+  "name": "chembiohub-theme",
+  "version": "0.06",
+  "homepage": "https://github.com/thesgc/chembiohub-theme",
+  "authors": [
+    "PaulBarrett79"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "main": "css/main.css"
+}

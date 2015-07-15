@@ -176,6 +176,9 @@ ul.research-eq li {
 	float: left;
 	margin-right:5px;
 }
+p.nexa strong, strong.nexa {
+  font-family:NexaBold;
+}
 @media (max-width: 767px) { 
 	img.floatwrap {
 		width:100%;

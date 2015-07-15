@@ -525,3 +525,21 @@ span.source-name {
 }
 
 .grunt-test { @include border-radius(10px); }
+
+a:hover {
+ cursor:pointer;
+}
+
+.alert {
+margin-top:30px;
+  margin-bottom:30px;
+}
+
+.well .alert {
+  margin-bottom:10px;
+}
+
+.btn {
+  margin-bottom:4px;
+  white-space: normal;
+}

@@ -523,6 +523,19 @@ img.ppl-thumb {
 h2.no-bottom-margin {
   margin-bottom:0;
 }
+
+a:hover {
+ cursor:pointer;
+}
+
+.alert-success {
+margin-top:30px;
+  margin-bottom:30px;
+}
+
+.well .alert-success {
+  margin-bottom:10px;
+}
 h2.entry-point{
   font-size:1.5em;
 }
@@ -544,6 +557,22 @@ form.contact-form {
 .scrollToTop {
   background-color: transparent;
   color: white;
+}
+
+li a svg.svg {
+  fill: #ddd;
+}
+
+li a.active svg.svg {
+  fill: #002147;
+}
+
+li a.active small {
+  color: #002147;
+}
+
+li a small {
+  color: #ddd;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -574,4 +603,708 @@ form.contact-form {
     font-size:3em;
   }
 
+}
+
+a:hover {
+ cursor:pointer;
+}
+
+.alert {
+margin-top:30px;
+  margin-bottom:30px;
+}
+
+.well .alert {
+  margin-bottom:10px;
+}
+
+.btn {
+  white-space: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** crunch styles **/
+
+/*! project specific CSS goes here. */
+.arrow-box { position: relative; 
+  background-color: #002147; 
+  min-height:40px; 
+  color:white;
+    text-align:center;
+    padding-top:10px;
+    
+} 
+/*.dropdown {
+  
+z-index:10000;
+margin-left:50px;
+}
+/*Making button always large
+*/
+/*.btn, .btn-group  {
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: 1.33;
+    padding: 10px 16px;
+}*/
+.container-fluid {
+    width:80%;
+    margin: auto;
+}
+.login {
+     display: inline ;
+}
+.inlineb {
+    display: inline !important;
+    margin-top:10px;
+}
+.fillin{
+display: inline-block;
+  padding: 9px 10px;
+  font-size: @baseFontSize + 2px;
+  line-height: normal;
+  text-align: center !important;
+  width: 100%;
+  
+  vertical-align: middle;
+  .buttonBackground(@white, darken(@white, 10%));
+ 
+  cursor: pointer;
+-webkit-user-select: none; /* Chrome/Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+ */
+
+/* Rules below not implemented in browsers yet */
+-o-user-select: none;
+user-select: none;
+}
+
+.form-control {
+    height: auto;
+}
+.dropdown-toggle {
+  
+z-index:10000;
+}
+/*.btn {
+  min-width:100px;
+  border:none;
+}*/
+.input-block-level {
+  width: 100% !important;
+  
+}
+.arrow-box:after { 
+  left: 100%; 
+  top: 50%; 
+  border: solid transparent; 
+  content: " "; 
+  height: 0; 
+  width: 0; 
+  position: absolute; 
+  pointer-events: none; 
+  border-color: rgba(66, 115, 213, 0); 
+  border-left-color: #002147; 
+  border-width: 20px; 
+  margin-top: -20px; 
+  z-index:100;
+}
+fieldset {
+  margin: 0 2px !important;
+    padding: .35em .625em .75em !important;
+}
+
+/*.form-group {
+  margin: 0 10px;
+}
+.form-horizontal .control-label {
+  font-size:1.4em;
+  margin-bottom: 10px;
+}
+*/
+.spacer {
+    margin-top: 40px; /* define margin as you see fit */
+}
+
+.infobox {
+  min-height: 20px;
+  padding: 19px;
+    background-color: rgb(188,210,195);
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  margin-bottom:20px;
+}
+.errorbox {
+  min-height: 20px;
+  padding: 19px;
+    /*background-color: rgb(135,36,52);*/ /* now using a bootstrap class */
+    color:white;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+  margin-bottom:20px;
+}
+.errorbox ul {
+  list-style: none;
+}
+.sidebar-nav {
+
+  float:right;
+  min-height:100px;
+}
+/* Workflow list item css */
+span.workflow-date {
+  font-size: 0.8em;
+  color: #999;
+}
+a.close{
+  margin-right: 5px;
+  margin-top: 5px;
+}
+a.close{
+    margin-left: 0px;
+    margin-top: 5px;
+}
+/* Breadcrumb progress indicator CSS */
+.arrow-box.not-done{
+  /* same colour as bootstrap alert/error buttons */
+  background-color: #d9534f;
+}
+.arrow-box.not-done:after {
+  border-left-color: #d9534f;
+}
+.arrow-box.in-progress{
+  /* amber colour */
+  background-color: #ec971f;
+}
+.arrow-box.in-progress:after{
+  /* amber colour */
+  border-left-color: #ec971f;
+}
+.arrow-box.done {
+  /* same colour as bootstrap success */
+  background-color: #449d44;
+}
+.arrow-box.done:after {
+  /* same colour as bootstrap success */
+  border-left-color: #449d44;
+}
+.arrow-box.validate, .arrow-box.visualise, .arrow-box.cleanse {
+  margin-left:-30px;
+
+}
+.padded {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+/*
+.btn-primary {
+  background-color: #44687D;
+}
+.btn-primary:hover,.btn-primary:focus,.btn-primary:active,
+
+.btn-primary.active,.open .dropdown-toggle.btn-primary{color:#fff;background-color:#002147;border: none}
+.btn-primary:active,.btn-primary.active,.open .dropdown-toggle.btn-primary{background-image:none}
+.btn-primary.disabled,.btn-primary[disabled],fieldset[disabled] .btn-primary,.btn-primary.disabled:hover,.btn-primary[disabled]:hover,fieldset[disabled] .btn-primary:hover,.btn-primary.disabled:focus,.btn-primary[disabled]:focus,fieldset[disabled] .btn-primary:focus,.btn-primary.disabled:active,.btn-primary[disabled]:active,fieldset[disabled] .btn-primary:active,.btn-primary.disabled.active,.btn-primary[disabled].active,fieldset[disabled] .btn-primary.active{background-color:#002147;border:none}.btn-primary .badge{color:#002147;background-color:#fff}
+*/
+.carousel-control.left, .carousel-control.right {
+  background: none;
+  color: @red;
+  border: none;
+}
+.carousel-control.left {margin-left: -45px; color: black;}
+.carousel-control.right {margin-right: -75px; color: black;}
+.carousel-control {
+  width:10%;
+  top: 50%;
+  font-size: 100px;
+}
+.controls ul {
+
+list-style-type: none;
+list-style-position:inside;
+        margin:0;
+        padding:0;
+}
+.twenty {
+  width:20px;
+}
+.activeitem  {
+  border: 1px solid #002147;
+
+}
+.spacer {
+    margin-top: 20px; /* define margin as you see fit */
+}
+.heatmap {
+    margin-bottom: 10px;
+}
+/* Heatmap plate CSS */
+table.heatmap {
+  width:100%;
+  border:solid 2px #444;
+}
+.heatmap td {
+  /*border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;*/
+  color: #ddd;
+  font-size: 0.7em;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (max-width: 992px) {  
+  .heatmap td {
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    font-size: 0.6em;
+  }
+}
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+  .heatmap td {
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    font-size: 0.5em;
+  }
+}
+
+th.hmp_row_header {
+  min-width: 10px;
+}
+
+th.hmp_header {
+  text-align: center;
+}
+
+
+.heatmap td.hide-checkbox label {
+  margin-left: -20px;
+}
+
+/*colours for heatmap table gradations */
+.heatmap td.hmp10 {background-color:rgb(165,0,38); color: #ddd;}
+.heatmap td.hmp9 {background-color:rgb(215,48,39); color: #ddd;}
+.heatmap td.hmp8 {background-color:rgb(244,109,67); color: #444;}
+.heatmap td.hmp7 {background-color:rgb(253,174,97); color: #444;}
+.heatmap td.hmp6 {background-color:rgb(254,224,139); color:#444;}
+.heatmap td.hmp5 {background-color:rgb(217,239,139); color: #444;}
+.heatmap td.hmp4 {background-color:rgb(166,217,106); color: #444;}
+.heatmap td.hmp3 {background-color:rgb(102,189,99); color: #444;}
+.heatmap td.hmp2 {background-color:rgb(26,152,80); color: #ddd;}
+.heatmap td.hmp1 {background-color:rgb(0,104,55); color: #ddd;}
+
+
+/* Then this class last to override any other colour */
+.heatmap td.unchecked {
+  background-color: #ddd;
+  color:#aaa;
+}
+.heatmap td.hide-checkbox input[type=checkbox], .heatmap th input[type=checkbox]  {
+   position: absolute;
+   /*top: -9999px;*/
+   left: -9999px;
+   /* For mobile, it's typically better to position checkbox on top of clickable
+      area and turn opacity to 0 instead. */
+}
+.ninehundred {
+  margin-bottom: 30px;
+}
+.pieces {
+
+}
+
+   .slide-out-div {
+        z-index:1000;
+          padding: 20px;
+          background: rgba(255,255,255,.95);
+          /*background: #ccc;
+          border: 1px solid #29216d;*/
+      }   
+      .slide-out-div a {
+        z-index:99 !important;
+position
+/* Safari */
+-webkit-transform: rotate(-90deg);
+
+/* Firefox */
+-moz-transform: rotate(-90deg);
+
+/* IE */
+-ms-transform: rotate(-90deg);
+
+/* Opera */
+-o-transform: rotate(-90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+
+
+}   
+
+.slide-out-div-right {
+        z-index:1000;
+          padding: 20px;
+          background: rgba(255,255,255,.95);
+
+          /*background: #ccc;
+          border: 1px solid #29216d;*/
+      }   
+      .slide-out-div-right a {
+        z-index:99 !important;
+position
+/* Safari */
+-webkit-transform: rotate(90deg);
+
+/* Firefox */
+-moz-transform: rotate(90deg);
+
+/* IE */
+-ms-transform: rotate(90deg);
+
+/* Opera */
+-o-transform: rotate(90deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+
+/* General CSS3 compliance */
+transform: rotate(90deg);
+
+}
+/* List view colo(u)rs */
+.ic50workflow, .btn.ic50workflow {
+  background-color: lightcyan;
+}
+
+
+/* IC50 Graph items CSS */
+.expand {
+    position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 0.7em;
+}
+.ic50-error-1 div {
+  background-color: #F5DFE4;
+    color: white;
+}
+.ic50-error-2 div {
+  background-color: lemonchiffon;
+}
+.ic50-error-3 div {
+  background-color: darkorange;
+}
+.ic50-error-4 div {
+    background-color: #ee5f5b;
+    
+}
+
+.ic50-error-4 .well .row-fluid h3 {
+    color : #fff;
+}
+
+.ic50-error-4 .well .row-fluid h3 a {
+    color : #fff;
+}
+.no-margin {
+  margin: 0 !important;
+}
+.full-width {
+  width: 100%;
+}
+/*.well .btn {
+  font-size: 0.9em;
+}*/
+ul.dropdown-menu {
+  width: inherit;
+}
+div#graph-loading-area {
+  margin-top: 20px;
+}
+
+/* Spinner */
+.bubblingG {
+text-align: center;
+width:80px;
+height:50px;
+}
+
+.bubblingG span {
+display: inline-block;
+vertical-align: middle;
+width: 10px;
+height: 10px;
+margin: 25px auto;
+background: #1D72AB;
+-moz-border-radius: 50px;
+-moz-animation: bubblingG 1.6s infinite alternate;
+-webkit-border-radius: 50px;
+-webkit-animation: bubblingG 1.6s infinite alternate;
+-ms-border-radius: 50px;
+-ms-animation: bubblingG 1.6s infinite alternate;
+-o-border-radius: 50px;
+-o-animation: bubblingG 1.6s infinite alternate;
+border-radius: 50px;
+animation: bubblingG 1.6s infinite alternate;
+}
+
+#bubblingG_1 {
+-moz-animation-delay: 0s;
+-webkit-animation-delay: 0s;
+-ms-animation-delay: 0s;
+-o-animation-delay: 0s;
+animation-delay: 0s;
+}
+
+#bubblingG_2 {
+-moz-animation-delay: 0.48s;
+-webkit-animation-delay: 0.48s;
+-ms-animation-delay: 0.48s;
+-o-animation-delay: 0.48s;
+animation-delay: 0.48s;
+}
+
+#bubblingG_3 {
+-moz-animation-delay: 0.96s;
+-webkit-animation-delay: 0.96s;
+-ms-animation-delay: 0.96s;
+-o-animation-delay: 0.96s;
+animation-delay: 0.96s;
+}
+
+@-moz-keyframes bubblingG {
+0% {
+width: 10px;
+height: 10px;
+background-color:#1D72AB;
+-moz-transform: translateY(0);
+}
+
+100% {
+width: 24px;
+height: 24px;
+background-color:#FFFFFF;
+-moz-transform: translateY(-21px);
+}
+
+}
+
+@-webkit-keyframes bubblingG {
+0% {
+width: 10px;
+height: 10px;
+background-color:#1D72AB;
+-webkit-transform: translateY(0);
+}
+
+100% {
+width: 24px;
+height: 24px;
+background-color:#FFFFFF;
+-webkit-transform: translateY(-21px);
+}
+
+}
+
+@-ms-keyframes bubblingG {
+0% {
+width: 10px;
+height: 10px;
+background-color:#1D72AB;
+-ms-transform: translateY(0);
+}
+
+100% {
+width: 24px;
+height: 24px;
+background-color:#FFFFFF;
+-ms-transform: translateY(-21px);
+}
+
+}
+
+@-o-keyframes bubblingG {
+0% {
+width: 10px;
+height: 10px;
+background-color:#1D72AB;
+-o-transform: translateY(0);
+}
+
+100% {
+width: 24px;
+height: 24px;
+background-color:#FFFFFF;
+-o-transform: translateY(-21px);
+}
+
+}
+
+@keyframes bubblingG {
+0% {
+width: 10px;
+height: 10px;
+background-color:#1D72AB;
+transform: translateY(0);
+}
+
+100% {
+width: 24px;
+height: 24px;
+background-color:#FFFFFF;
+transform: translateY(-21px);
+}
+
+}
+
+.table-responsive
+{
+    overflow-x: auto;
+}
+
+
+.expand {
+    cursor:nesw-resize;
+}
+
+
+.row-flex, .row-flex > div[class*='col-'] {  
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-box-flex;
+    display: flex;
+    flex:1 1 auto;
+    margin-bottom : 20px;
+}
+
+
+
+.row-flex-wrap {
+    -webkit-flex-flow: row wrap;
+    align-content: flex-start;
+    flex:0;
+}
+
+.row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
+     margin:-.2px; /* hack adjust for wrapping */
+     margin-bottom : 20px;
+}
+
+.container-flex > div[class*='col-'] div,.row-flex > div[class*='col-'] div {
+    width:100%;
+}
+
+
+.flex-col {
+    display: flex;
+
+    display: -webkit-flex;
+    flex: 1 100%;
+    flex-flow: column nowrap;
+}
+
+.flex-grow {
+    display: flex;
+    -webkit-flex: 2;
+    flex: 2;
+}
+
+
+.bottom-margin {
+    margin-bottom: 20px;
+}
+
+li svg.svg {
+  fill: #ddd;
+}
+
+li.active svg.svg {
+  fill: #002147;
+}
+
+li.active small {
+  color: #002147;
+}
+
+li small {
+  color: #ddd;
+}
+
+div.reg-nav ul.nav li h2 {
+ margin-bottom: 0;
+}
+
+.form-views             { width:auto; }
+    
+/* enter animation */
+.form-views.ng-enter            { 
+    -webkit-animation:fadeIn 0.5s both ease;
+    -moz-animation:fadeIn 0.5s both ease;
+    animation:fadeIn 0.5s both ease; 
+}
+
+/* leave animation */
+
+/* ANIMATIONS
+============================================================================= */
+
+@keyframes fadeIn {
+    1% { opacity: 0; visibility: hidden; }
+    2% { opacity: 0; visibility: visible;}
+    100% { opacity: 1; visibility: visible;}
+}
+@-webkit-keyframes fadeIn {
+    1% { opacity: 0; visibility: hidden; }
+    2% { opacity: 0; visibility: visible;}
+    100% { opacity: 1; visibility: visible;}
+}
+@-moz-keyframes fadeIn {
+    1% { opacity: 0; visibility: hidden; }
+    2% { opacity: 0; visibility: visible;}
+    100% { opacity: 1; visibility: visible;}
+}
+
+.progress-bar {
+  background-color:#002147;
+}
+p.nexa strong, strong.nexa {
+  font-family:NexaBold;
+}
+
+.gridStyle {
+    border: 1px solid rgb(212,212,212);
+    height: 300px
+}
+.chemprop {
+  background-color:#eee;
+  color: #002147;
+  padding:5px;
+  margin-bottom:10px;
+  border-radius:5px;
+}
+.chemprop div {
+  background-color: #2e6da4;
+  color:white;
+  border-radius: 5px;
 }
