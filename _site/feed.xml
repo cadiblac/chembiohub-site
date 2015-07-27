@@ -7,6 +7,35 @@
 <atom:link href="https://chembiohub.ox.ac.uk/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>One week to go! Current Expertise and Future Directions In Drug Discovery</title>
+<description>&lt;h3 id=&quot;an-oxford-industry-conversation&quot;&gt;An Oxford-Industry conversation&lt;/h3&gt;
+
+&lt;p&gt;We are making the final preparations for our symposium “Current Expertise and Future Directions in Drug Discovery: An Oxford-Industry Conversation” taking place in Oxford this Friday, 31st July.&lt;/p&gt;
+
+&lt;p&gt;We will be welcoming &lt;strong&gt;70 industry representatives&lt;/strong&gt; from over 30 organisations at Vice-President and CEO level, as well as &lt;strong&gt;70 Oxford research group leaders from 20 departments&lt;/strong&gt;. 50 post-doctoral researchers and DPhil students will be &lt;strong&gt;presenting posters&lt;/strong&gt;, and we will also be joined by &lt;strong&gt;technology transfer professionals&lt;/strong&gt; from Isis Innovation and specialists in knowledge exchange and business development. The tag cloud below shows the rich diversity of participants that will be there on the day.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/tagcloud_blog.png&quot; style=&quot;width:100%&quot; alt=&quot;Tagcloud of ChemBio Hub converation participants&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The symposium will be a great place to have the &lt;strong&gt;right conversations&lt;/strong&gt; that lead to &lt;strong&gt;new ideas&lt;/strong&gt; and &lt;strong&gt;new research connections&lt;/strong&gt; between Oxford and drug discovery groups from the Thames Valley region as well as national and international representatives.&lt;/p&gt;
+
+&lt;p&gt;After opening remarks from &lt;strong&gt;Professor Andrew Hamilton, FRS&lt;/strong&gt; (Vice Chancellor, University of Oxford), we will hear &lt;strong&gt;13 very different talks&lt;/strong&gt; from speakers from 11 departments across the University with wide-ranging interests in drug discovery including phenotypic screening, target identification, disease pathway elucidation, clinical validation and more. We are also looking forward to hearing &lt;strong&gt;viewpoints from two industry specialists&lt;/strong&gt;. &lt;/p&gt;
+
+&lt;p&gt;You can see the full programme &lt;strong&gt;&lt;a href=&quot;https://chembiohub.ox.ac.uk/conversation/#agenda&quot;&gt;here&lt;/a&gt;&lt;/strong&gt;. Don’t forget to have your say on Twitter using the symposium hashtag &lt;strong&gt;&lt;a href=&quot;https://twitter.com/hashtag/OxCBH?src=hash&quot;&gt;#OxCBH&lt;/a&gt;&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;After the presentation sessions we will have an &lt;strong&gt;open discussion&lt;/strong&gt; between academics from Oxford and colleagues from industry.  Directed by questions from the audience, the panel will explore how Oxford and drug discovery organisations can best work together to translate ideas into new medicines. If you are attending the event, &lt;strong&gt;why not prepare a question to pose to the panel&lt;/strong&gt;?&lt;/p&gt;
+
+&lt;p&gt;The conversation will continue over an &lt;strong&gt;evening reception&lt;/strong&gt; in the upper common room of the Andrew Wiles Mathematics Building. This will provide the ideal opportunity to make more connections over a glass of wine and stunning view of the Radcliffe Observatory (below). What better opportunity to arrange further discussions to explore new collaboration ideas?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/radcliffe-observatory.jpg&quot; class=&quot;img-responsive&quot; alt=&quot;Radcliffe Observatory&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;We hope you are as excited about this unique event as much as we are, and look forward to welcoming you in Oxford next Friday.&lt;/p&gt;
+</description>
+<pubDate>Mon, 27 Jul 2015 00:00:00 +0100</pubDate>
+<link>https://chembiohub.ox.ac.uk/blog/2015/07/27/conversation-warmup.html</link>
+<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2015/07/27/conversation-warmup.html</guid>
+</item>
+
+<item>
 <title>Pan-Assay Interference Compounds (PAINS) - what they are &amp; why they matter</title>
 <description>&lt;p&gt;PAINS compounds are a real issue which we faced as part of developing our ChemReg application - here are some thoughts from Oakley Cox, a Chemistry DPhil student at the University Of Oxford.&lt;/p&gt;
 
@@ -519,52 +548,6 @@ $(document).ready(function() {
 <pubDate>Tue, 11 Nov 2014 00:00:00 +0000</pubDate>
 <link>https://chembiohub.ox.ac.uk/blog/2014/11/11/symp-survey.html</link>
 <guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/11/11/symp-survey.html</guid>
-</item>
-
-<item>
-<title>OOMMPPAA - directed synthesis and data analysis tool</title>
-<description>&lt;h3 id=&quot;motivation&quot;&gt;Motivation&lt;/h3&gt;
-&lt;p&gt;The ambition of this work is to help chemists to decide which compound to make next. Currently a chemist will use the available protein structures and activity data, find trends in this data and use this to inform future compound design. When I started my project it became clear there were two ways this is currently done.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/assets/img/oommppaa.png&quot; style=&quot;width:100%&quot; alt=&quot;Screenshot of Anthony Bradley's OOMMPPAA tool&quot; /&gt;&lt;/p&gt;
-&lt;div&gt;&lt;p class=&quot;text-center&quot;&gt;&lt;em&gt;Screenshot of Anthony Bradley's OOMMPPAA tool&lt;/em&gt;&lt;/p&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;subjective-visualisation&quot;&gt;Subjective visualisation&lt;/h3&gt;
-&lt;p&gt;On one side scientists would look at bound ligands and activity data seperately and manually. They would then juggle the two sides in their mind and use their experience to generate hypotheses and suggestions on which compounds to make next. Clearly this mode of working is highly subjective and reliant on decades of experience.&lt;/p&gt;
-
-&lt;h3 id=&quot;black-boxes&quot;&gt;Black boxes&lt;/h3&gt;
-&lt;p&gt;On the other side computational tools would take in all this data and spit out, using complex algorithms, an answer of what compound to make next. Largely these would be seen as black boxes. If they worked great - if they didn’t what have you learned? &lt;/p&gt;
-
-&lt;h3 id=&quot;a-third-way&quot;&gt;A third way?&lt;/h3&gt;
-&lt;p&gt;It struck me that tools could be applied to work with the chemist. They could run through ever enlarging datasets and condense and visualise this data to allow for easier and more objective analysis. They could highlight conflicting aspects of the data and features the chemist may have missed. In this way experienced chemists could work faster and inexperienced ones could work at all.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-does-oommppaa-do&quot;&gt;What does OOMMPPAA do?&lt;/h3&gt;
-&lt;p&gt;OOMMPPAA uses 3D matched molecular pairs to contextualise both activity and inactivity data in its relevant protein environment. It then identifies pharmacophoric transformations between pairs of compounds and associates them with their relevant activity changes. OOMMPPAA presents this data in an interactive application providing the user with a visual summary of important interactions in the context of the binding site. &lt;/p&gt;
-
-&lt;h3 id=&quot;what-doesnt-it-do&quot;&gt;What doesn’t it do?&lt;/h3&gt;
-&lt;p&gt;It is important to note - OOMMPPAA does not predict anything. It doesn’t itself extrapolate from the data. It doesn’t train a model. It doesn’t do any machine learning. It simply shows the data, as it stands, and highlights the key features within it. We have tips as to how to get the most out of it - but the most important thing is that you use it&lt;/p&gt;
-
-&lt;iframe height=&quot;500&quot; src=&quot;//www.youtube.com/embed/eUm9c_Dlw5o&quot; style=&quot;width:100%;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;h3 id=&quot;how-can-i-use-it&quot;&gt;How can I use it?&lt;/h3&gt;
-&lt;p&gt;Integral to all of this was making the tools user friendly and easy to install.&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Firstly you can trial the &lt;a href=&quot;http://oommppaa.sgc.ox.ac.uk/OOMMPPAA/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;tool online&lt;/a&gt; - we even made a demo!&lt;/li&gt;
-  &lt;li&gt;Secondly windows users can download the tool using our &lt;a href=&quot;https://bitbucket.org/abradley/oommppaa/downloads/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;three click windows installer&lt;/a&gt;. This has full functionality and allows the user to process their own datasets&lt;/li&gt;
-  &lt;li&gt;Thirdly you can get the &lt;a href=&quot;https://bitbucket.org/abradley/oommppaa/src&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;full source code&lt;/a&gt;. Licensed under Apache. Pull it  from bitbucket. Branch it. Merge it. Use it. We’d love anyone to get involved.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;More details about all of these options are &lt;a href=&quot;https://bitbucket.org/abradley/oommppaa/wiki/Home&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;available here&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&quot;how-can-i-learn-more&quot;&gt;How can I learn more?&lt;/h3&gt;
-&lt;p&gt;If you want to know more about the tool. How we’ve used it. How it works in more detail &lt;a href=&quot;http://pubs.acs.org/doi/pdfplus/10.1021/ci500245d&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;go here&lt;/a&gt;. If that’s still not enough, email me at oommppaa.help@gmail.com. &lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Anthony is a DPhil student at the University of Oxford. He works between the Structural Genomics Consortium, Statistics and industrial collaborators GlaxoSmithKline. Anthony develops computational tools to aid drug discovery. &lt;a href=&quot;http://www.dtc.ox.ac.uk/people/11/bradley/&quot;&gt;Learn more here&lt;/a&gt;&lt;/em&gt;.&lt;/p&gt;
-</description>
-<pubDate>Wed, 22 Oct 2014 00:00:00 +0100</pubDate>
-<link>https://chembiohub.ox.ac.uk/blog/2014/10/22/oommppaa-directed-synthesis-data-analysis-tool.html</link>
-<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/10/22/oommppaa-directed-synthesis-data-analysis-tool.html</guid>
 </item>
 
 </channel>
