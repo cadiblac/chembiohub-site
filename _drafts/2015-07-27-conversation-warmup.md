@@ -2,6 +2,7 @@
 published: false
 ---
 
+
 ## One week to go! Current Expertise and Future Directions In Drug Discovery
 
 ### An Oxford-Industry conversation
@@ -20,9 +21,8 @@ You can see the full programme <<here>>. Don’t forget to have your say on Twit
 
 After the presentation sessions we will have an **open discussion** between academics from Oxford and colleagues from industry.  Directed by questions from the audience, the panel will explore how Oxford and drug discovery organisations can best work together to translate ideas into new medicines. If you are attending the event, **why not prepare a question to pose to the panel**?
 
-The conversation will continue over an **evening reception** in the upper common room of the Andrew Wiles Mathematics Building. This will provide the ideal opportunity to make more connections over a glass of wine, and arrange further discussions to explore new collaboration ideas.
+The conversation will continue over an **evening reception** in the upper common room of the Andrew Wiles Mathematics Building. This will provide the ideal opportunity to make more connections over a glass of wine and stunning view of the Radcliffe Observatory (below). What better opportunity to arrange further discussions to explore new collaboration ideas?
 
 <<Pic: view Radcliffe Observatory>>
 
 We hope you are as excited about this unique event as much as we are, and look forward to welcoming you in Oxford next Friday.
-
