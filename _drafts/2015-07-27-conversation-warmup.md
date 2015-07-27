@@ -11,7 +11,7 @@ We are making the final preparations for our symposium “Current Expertise and 
 
 We will be welcoming **70 industry representatives** from over 30 organisations at Vice-President and CEO level, as well as **70 Oxford research group leaders from 20 departments**. 50 post-doctoral researchers and DPhil students will be **presenting posters**, and we will also be joined by **technology transfer professionals** from Isis Innovation and specialists in knowledge exchange and business development. The tag cloud below shows the rich diversity of participants that will be there on the day.
 
-<<Pic: Tag cloud of participants’ research interests>>.
+<img src="/assets/img/tagcloud-blog.png" style="width:100%" alt="Tagcloud of ChemBio Hub converation participants">
 
 The symposium will be a great place to have the **right conversations** that lead to **new ideas** and **new research connections** between Oxford and drug discovery groups from the Thames Valley region as well as national and international representatives.
 
@@ -23,6 +23,6 @@ After the presentation sessions we will have an **open discussion** between acad
 
 The conversation will continue over an **evening reception** in the upper common room of the Andrew Wiles Mathematics Building. This will provide the ideal opportunity to make more connections over a glass of wine and stunning view of the Radcliffe Observatory (below). What better opportunity to arrange further discussions to explore new collaboration ideas?
 
-<<Pic: view Radcliffe Observatory>>
+<img src="/assets/img/radcliffe-observatory.jpg" style="width:100%" alt="Screenshot of Anthony Bradley's OOMMPPAA tool">
 
 We hope you are as excited about this unique event as much as we are, and look forward to welcoming you in Oxford next Friday.
