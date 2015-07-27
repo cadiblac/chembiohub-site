@@ -11,7 +11,7 @@ published: true
 
 We are making the final preparations for our symposium “Current Expertise and Future Directions in Drug Discovery: An Oxford-Industry Conversation” taking place in Oxford this Friday, 31st July.
 
-We will be welcoming **70 industry representatives** from over 50 organisations at Vice-President and CEO level, as well as **70 Oxford research group leaders from 30 departments**. 50 post-doctoral researchers and DPhil students will be **presenting posters**, and we will also be joined by **technology transfer professionals** from Isis Innovation and specialists in knowledge exchange and business development. The tag cloud below shows the rich diversity of participants that will be there on the day.
+We will be welcoming **70 industry representatives** from over 50 organisations at Vice-President and CEO level, as well as **70 Oxford research group leaders from 30 departments**. 50 post-doctoral researchers and DPhil students will be **presenting posters**, and we will also be joined by **technology transfer professionals** from [Isis Innovation](http://isis-innovation.com/) and specialists in knowledge exchange and business development. The tag cloud below shows the rich diversity of participants that will be there on the day.
 
 <img src="/assets/img/tagcloud_blog.png" style="width:100%" alt="Tagcloud of ChemBio Hub converation participants">
 
