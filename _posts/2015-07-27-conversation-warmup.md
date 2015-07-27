@@ -23,6 +23,6 @@ After the presentation sessions we will have an **open discussion** between acad
 
 The conversation will continue over an **evening reception** in the upper common room of the Andrew Wiles Mathematics Building. This will provide the ideal opportunity to make more connections over a glass of wine and stunning view of the Radcliffe Observatory (below). What better opportunity to arrange further discussions to explore new collaboration ideas?
 
-<img src="/assets/img/radcliffe-observatory.jpg" class="img-responsive" alt="Radcliffe Observatory">
+<img src="/assets/img/radcliffe-observatory.jpg" class="img-responsive center-block" alt="Radcliffe Observatory">
 
 We hope you are as excited about this unique event as much as we are, and look forward to welcoming you in Oxford next Friday.
