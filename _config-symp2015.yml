@@ -244,3 +244,18 @@ symp2015:
       banner_class: "info"
       button_link: "https://www.eventbrite.co.uk/e/current-expertise-and-future-directions-in-drug-discovery-an-oxford-industry-conversation-tickets-15943271755"
 
+posters2015:
+
+  - title: In vitro Screening Platforms for the Discovery of Novel Epigenetic Probes
+    firstname: James 
+    surname: Bennett
+    thumbnail: "bennett-poster.png"
+    pdf: "Bennett.pdf"
+    num: 1
+
+  - title: OOMMPPAA&colon; A tool to aid directed synthesis using activity and structural data
+    firstname: Anthony 
+    surname: Bradley
+    thumbnail: "bradley-poster.png"
+    pdf: "Bradley.pdf"
+    num: 2

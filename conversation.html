@@ -45,12 +45,12 @@ description: This event showcased top chemical biology research from labs at Oxf
 						<div class="row hidden-xs">
 							<div class="img-circle blue-bg">
 								<span class="img-helper"></span>
-								<img src="/assets/img/overview.png" alt="Click for Overview" />
+								<img src="/assets/img/overview.png" alt="Click for Summary" />
 							</div>
 						</div>
 						<div class="row">
 							<div>
-								<h2 class="blue">Overview</h2>
+								<h2 class="blue">Summary</h2>
 							</div>
 						</div>
 				</div>
@@ -60,17 +60,17 @@ description: This event showcased top chemical biology research from labs at Oxf
 						<div class="row hidden-xs">
 							<div class="img-circle blue-bg">
 								<span class="img-helper"></span>
-								<img src="/assets/img/stats.png" alt="Click for Event Summary" />
+								<img src="/assets/img/stats.png" alt="Click for Programme" />
 							</div>
 						</div>
 						<div class="row">
 							<div>
-								<h2 class="blue">Event summary<br></h2>
+								<h2 class="blue">Programme</h2>
 							</div>
 						</div>
 				</div>
 			  </a></li>
-			  <!-- <li class="symp-section col-xs-12 col-sm-4"><a href="#registration">
+			  <li class="symp-section col-xs-12 col-sm-4"><a href="#slides">
 			  	<div class="entry-point">
 						<div class="row hidden-xs">
 							<div class="img-circle blue-bg">
@@ -80,26 +80,11 @@ description: This event showcased top chemical biology research from labs at Oxf
 						</div>
 						<div class="row">
 							<div>
-								<h2 class="blue">Registration<br/><small class="text-danger">now closed - fully booked!</small></h2>
+								<h2 class="blue">Slides</h2>
 							</div>
 						</div>
 				</div>
-			  </a></li> -->
-			  <!-- <li class="symp-section col-xs-12 col-sm-3"><a href="#summary">
-			  	<div class="entry-point">
-						<div class="row hidden-xs">
-							<div class="img-circle blue-bg">
-								<span class="img-helper"></span>
-								<img src="/assets/img/stats.png" />
-							</div>
-						</div>
-						<div class="row">
-							<div>
-								<h2 class="blue">Event Summary</h2>
-							</div>
-						</div>
-				</div>
-			  </a></li> -->
+			  </a></li>
 			  <!-- <li class="symp-section col-xs-12 col-sm-3"><a href="#talks">
 			  	<div class="entry-point">
 						<div class="row hidden-xs">
@@ -118,137 +103,180 @@ description: This event showcased top chemical biology research from labs at Oxf
 			  
 			  
 			  
-			</ul>
-			<div class="row centered">
-				<!-- Time sensitive banners -->
-				{% for banner in site.symp2015.banners %}
-					{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-					{% capture starttime %}{{banner.date_start | date: '%s'}}{% endcapture %}
-					{% capture endtime %}{{banner.date_end | date: '%s'}}{% endcapture %}
-
-					{% if starttime < nowunix %}
-						{% if nowunix < endtime %}
-						<div class="alert alert-{{banner.banner_class}}">
-							<h2 class="blue nexa">{{banner.message_text}}&nbsp;&nbsp;<a role="button" class="btn-lg btn-primary" href="{{banner.button_link}}" target="_blank">{{banner.button_text}}</a></h2>
-						</div>
-						{% endif %}
-					{% endif %}
-
-				{% endfor %}
-
-			</div>
-			
+			</ul>			
 
 			<div class="large top-margin row">
 			  	<a id="overview"></a>
 			  	<h2 class="subheading">Overview</h2>
+
+			  	<div class="col-xs-12">
+			  		<p class="nexa">This event showcased top chemical biology research from labs at Oxford. Particular emphasis was placed on linking basic chemical biology research to work in the clinic.</p>
+
+			  		<p class="nexa">11 top speakers from departments across Oxford gave very different talks touching on disease-agnostic technologies and drug discovery platforms, target and pathway expertise, and validating hypotheses in the clinic. Two industry experts also gave their viewpoints and highlights of successful academia-industry collaboration.</p>
+
+			  		<p class="nexa">Our industry guests were unanimously impressed with the diversity and quality of research taking place at Oxford, as well as our collaborative approach.</p>
+			  	</div>
 					
-			  	<div class="col-md-6">
-					{% for para in site.symp2015.overview | sort: "order" %}
-						<p class="nexa">{{para.paragraph}}</p>
-					{% endfor %}
-					<p></p>
-					<iframe src="https://www.google.com/maps/d/embed?mid=z0vsb5Y0B9jw.k7XZuDDtwm8Y" width="550" height="300"></iframe>
-			    </div>
+			  	
 				
-				<div id="sponsors" class="col-md-6">
-
-					<div id="themes">
-						<h2 class="blue centered">Why did people attend?</h2>
-						<p class="centered nexa"><strong>Great discussions</strong> about the best way for Oxford and Industry to work together to speed up drug discovery.</p>
-
-						<!-- New themes please! -->
-						<fieldset style="border: 4px #002147 solid; border-radius: 10px; padding-bottom:20px;">
-							<legend style="  width: inherit; padding: 0 10px; border-bottom: none; text-align: center;">Industry</legend>
-							{% for reason in site.symp2015.why_attend %}
-								{% if reason.category == "industry" %}
-								<div class="col-xs-6">
-									<img src="/assets/img/{{reason.picture_url}}" class="col-xs-12 nomargin" alt="{{reason.caption_header}}&nbsp;{{reason.caption_text}}.">
-									<p class="overlay nexa centered"><strong>{{reason.caption_header}}</strong><br>{{reason.caption_text}}</p>
-								</div>
-								{% endif %}
-							{% endfor %}
-						</fieldset>
-						<fieldset style="border: 4px #002147 solid; border-radius: 10px; padding-bottom:20px;">
-							<legend style="  width: inherit; padding: 0 10px; border-bottom: none; text-align: center;">Oxford</legend>
-							{% for reason in site.symp2015.why_attend %}
-								{% if reason.category == "oxford" %}
-								<div class="col-xs-6">
-									<img src="/assets/img/{{reason.picture_url}}" class="col-xs-12 nomargin" alt="{{reason.caption_header}}&nbsp;{{reason.caption_text}}.">
-									<p class="overlay nexa centered"><strong>{{reason.caption_header}}</strong><br>{{reason.caption_text}}</p>
-								</div>
-								{% endif %}
-							{% endfor %}
-						</fieldset>
-						<div id="contacts" class="centered row mt">
-							<h2 class="blue">
-					    		Contacts
-							</h2>
-							<div class="col-xs-6">
-
-
-								<h4>Michael<br/>O'Hagan</h4><br/>
-								<a href="mailto:michael.ohagan@chembiohub.ox.ac.uk" class="btn btn-default" role="button"><span class="glyphicon glyphicon-envelope"></span> Email Michael</a> <!--   <span class="glyphicon glyphicon-phone-alt"></span> phone -->
-
-
-							</div>
-							<div class="col-xs-6">
-
-
-								<h4>Karen<br/>Porter</h4><br/>
-								<a href="mailto:karen.porter@chembiohub.ox.ac.uk" class="btn btn-default" role="button"><span class="glyphicon glyphicon-envelope"></span> Email Karen</a> <!-- | <span class="glyphicon glyphicon-phone-alt"></span> phone -->
-
-							</div>
-						</div>
-						<div class="row centered">
-						<div>
-							<p></p>
-							<h2 class="blue">To see tweets about the symposium, search for hashtag...</h2>
-							<h1 class="blue">#OxCBH</h1>
-						</div>
-					</div>
-
-					</div>
-
-					
-					
-					
-					
-
-
-
-				</div>
+				
 
 				
 			  </div>
 
+			  <div class="row">
 
-			  <!-- <div class="row mt">
-
-					<div class="col-sm-6">
-				  		<iframe src="https://www.google.com/maps/d/embed?mid=z0vsb5Y0B9jw.k7XZuDDtwm8Y" width="550" height="300"></iframe>
-				  	</div>
-			  		<div id="contacts" class="centered col-sm-6">
-						<h2 class="blue">
-				    		Contacts
-						</h2>
-						<div class="col-xs-6">
-
-
-							<h4>Michael<br/>O'Hagan</h4><br/>
-							<a href="mailto:michael.ohagan@chembiohub.ox.ac.uk" class="btn btn-default" role="button"><span class="glyphicon glyphicon-envelope"></span> Email Michael</a>
-
-
+			  	<div class="col-md-6 clearfix">
+					<div class="row mt">
+						<div class="col-xs-12">
+							<blockquote class="blockquote-reverse">
+							<p><em>“I liked the breadth and high quality of the presentations.”</em></p>
+						  <footer><small>VP Business Development, contract research organisation</small></footer>
+						</blockquote>
 						</div>
-						<div class="col-xs-6">
-
-
-							<h4>Karen<br/>Porter</h4><br/>
-							<a href="mailto:karen.porter@chembiohub.ox.ac.uk" class="btn btn-default" role="button"><span class="glyphicon glyphicon-envelope"></span> Email Karen</a>
-
+						
+					</div>
+					<div class="row mt">
+						<div class="col-xs-12">
+							<blockquote class="blockquote-reverse">
+								<p><em>“Great academic work being done at Oxford University.”</em></p>
+							  <footer><small>CEO, medium-size biotech company</small></footer>
+							</blockquote>
 						</div>
 					</div>
-			  </div> -->
+				</div>
+			  	<div class="col-md-6 clearfix">
+					
+					<div class="row mt">
+						<div class="col-xs-12">
+							<blockquote class="blockquote-reverse">
+								<p><em>“It‘s great to see Oxford leading the way to interact with industry.”</em></p>
+							  <footer><small>Senior Director, multinational pharma organisation</small></footer>
+							</blockquote>
+						</div>
+					</div>
+					<div class="row mt">
+						<div class="col-xs-12">
+							<blockquote class="blockquote-reverse">
+							<p><em>“The sense of collaboration (internally and externally) at Oxford was encouraging to see.”</em></p>
+						  <footer><small>Senior Manager: Open Innovation, multinational pharma organisation</small></footer>
+						</blockquote>
+						</div>
+						
+					</div>
+				</div>
+
+
+			  </div>
+
+			  <div class="row mt">
+
+			  	<div class="col-xs-12">
+			  		<p class="nexa">The symposium brought together over 180 including Oxford researchers, industry colleagues and technology transfer professionals. In doing so, it provided the ideal forum for discussion and will lead to lasting collaborative relationships.</p>
+			  	</div>
+
+			  </div>
+
+			  <div class="row mt text-center" style="padding:10px;">
+					<div class="col-xs-6"><div class="row"><div class="img-circle col-xs-3 blue-bg symp-stat" style="background-color:#038B14">
+																<h2>49</h2>
+															</div>
+															<div class="col-xs-8">
+																<p class="blue nexa vert-middle"><strong>new research connections with academics at Oxford reported by industry</strong></p>
+															</div></div></div>
+					<div class="col-xs-6"><div class="row"><div class="img-circle col-xs-3 blue-bg symp-stat" style="background-color:#038B14">
+																<h2>24</h2>
+															</div>
+															<div class="col-xs-8">
+																<p class="blue nexa vert-middle"><strong>new research connections with colleagues in Industry reported by Oxford</strong></p>
+															</div></div></div>
+				</div>
+
+
+				<div class="row">
+
+					<div class="col-md-6 clearfix">
+					<div class="row ">
+						<div class="col-xs-12">
+							<blockquote class="blockquote-reverse">
+							<p><em>“I had an invaluable introduction and 1:1 with a researcher from Astra Zeneca in which we discussed potential collaboration.”</em></p>
+						  <footer><small>Principal investigator, DPAG, University of Oxford</small></footer>
+						</blockquote>
+						</div>
+						
+					</div>
+				</div>
+			  	<div class="col-md-6 clearfix">
+					
+					<div class="row ">
+						<div class="col-xs-12">
+							<blockquote class="blockquote-reverse">
+								<p><em>“The one-to-one meetings with academics not previously known to me were a great way to initiate discussion.”</em></p>
+							  <footer><small>VP, medium-size biotech company</small></footer>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+				</div>
+
+				<div class="row mt">
+
+					<div class="col-xs-12">
+						<p class="nexa">Following the presentations, delegates were invited to participate in an interactive discussion entitled “How can Oxford best help industry translate new ideas into pioneer medicines?”</p>
+						<p class="nexa">Professor Chris Schofield chaired a panel of four experts from Oxford and Industry with strong track records of academia-industry collaboration.</p>
+					</div>
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<div class="well text-center"><p class="nexa"><strong class="blue ">Jenny Laird<h2><small>Eli Lilly</small></h2></strong></p></div>
+							</div>
+							<div class="col-xs-3">
+								<div class="well text-center"><p class="nexa"><strong class="blue ">Richard Law<h2><small>Evotec</small></h2></strong></p></div>
+							</div>
+							<div class="col-xs-3">
+								<div class="well text-center"><p class="nexa"><strong class="blue ">Raymond Dwek<h2><small>University of Oxford</small></h2></strong></p></div>
+							</div>
+							<div class="col-xs-3">
+								<div class="well text-center"><p class="nexa"><strong class="blue ">Richard Wade-Martins<h2><small>University of Oxford</small></h2></strong></p></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<p class="nexa">The discussion was vibrant, with the audience posing a range of interesting questions to the panel. Key themes that emerged throughout were the importance of communication, training and industry-guided research facilitation in academia.</p>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="col-md-6 clearfix">
+						<div class="row ">
+							<div class="col-xs-12">
+								<blockquote class="blockquote-reverse">
+								<p><em>“Some of the comments and questions during the roundtable discussion were really interesting. I've wanted to have this debate in Oxford for years!!”</em></p>
+							  <footer><small>VP Business Development, Contract Research Organisation</small></footer>
+							</blockquote>
+							</div>
+							
+						</div>
+					</div>
+				  	<div class="col-md-6 clearfix">
+						
+						<div class="row ">
+							<div class="col-xs-12">
+								<blockquote class="blockquote-reverse">
+									<p><em>“The round table discussions with industry representatives explaining how they interact with academia were illuminating.”</em></p>
+								  <footer><small>Senior Post-Doc, University of Oxford</small></footer>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+
 
 				<div class="row" style="margin-top:20px;">
 					<h2 class="blue">This event was generously supported by:</h2>
@@ -276,7 +304,7 @@ description: This event showcased top chemical biology research from labs at Oxf
 				<div class="row">
 					<p class="nexa">{{site.symp2015.programme_intro}}</p>
 					<p class="nexa text-center"><a href="https://drive.google.com/file/d/0B26sagyNQSxENURXMi15NTc5TmM/view?usp=sharing" role="button" class="btn btn-primary" onclick='return !window.open(this.href);' target="_blank"><span class="glyphicon glyphicon-download-alt"></span> Download Programme PDF</a></p>
-					<h2 class="nexa blue centered">Confirmed speakers included:</h2>
+					<h2 class="nexa blue centered">Speakers:</h2>
 					
 					{% for speaker in site.speakers2015 | sort:"talk_order" %}
 						<div class="row mt">
@@ -296,6 +324,13 @@ description: This event showcased top chemical biology research from labs at Oxf
 			</div>
 			<div class="row">
 			  	<button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
+			  </div>
+
+			  <div class="row top-margin">
+			  	<a id="talks"></a>
+			  	<!-- posters page as an include? -->
+			  	{% include talks-conversation.html %}
+
 			  </div>
 
 			<!-- <div class="large top-margin">

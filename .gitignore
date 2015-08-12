@@ -1,4 +1,6 @@
 _site/node_modules/
+start-dev.sh
+_site/start-dev.sh
 _config-local.yml
 node_modules/
 assets/css/min/

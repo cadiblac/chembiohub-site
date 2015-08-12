@@ -1,0 +1,62 @@
+<!-- Talks -->
+<div class="row">
+	
+	<div class="row">
+		<!-- Introductory paragraph -->
+		<h2 class="subheading">Slides</h2>
+	</div>
+
+	<div class="row">
+
+		
+				
+				{% for speaker in site.speakers2015 | sort:"talk_order" %}
+				{% if speaker.embed_code != "" %}
+					<div class="col-xs-6 col-md-3 talkholder">
+						<div class="row">
+							
+							<div class="hidden-xs col-sm-6 col-lg-8">
+								<!-- download link -->
+								<div class="btn-group">
+								  <!-- <button class="btn btn-default" data-toggle="modal" data-target="#slides_{{ speaker.last_name }}">
+								    <span class="glyphicon glyphicon-picture"></span> View slides
+								  </button> -->
+								  <a href="https://chembiohub.ox.ac.uk/assets/files/slides/oxford_only/{{speaker.embed_code}}" class="btn btn-default" role="button" onclick='return !window.open(this.href);'><span class="glyphicon glyphicon-picture" ></span> View Slides</a>
+								</div>
+							</div>
+						</div>
+						<div class="row content-box">
+							<p class="speaker-name"><a href="{{ speaker.link }}" onclick='return !window.open(this.href);'>{{ speaker.first_name }}&nbsp;{{ speaker.last_name }}</a></p>
+							<p>{{ speaker.talk_title }}</p>
+						</div>
+						
+					</div><!-- 
+					<div id="slides_{{speaker.last_name}}" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+
+			    			<div class="modal-content">
+			    				<div class="modal-header">
+									<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+									<h2 class="modal-title blue">Slides by {{speaker.first_name}} {{speaker.last_name}}</h2>
+								</div>
+								<div class="modal-body">
+									<iframe src="//www.slideshare.net/slideshow/embed_code/{{ speaker.embed_code }}" width="100%" height="400px" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="hidden-xs"></iframe>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					{% endif %}
+				{% endfor %}
+
+				
+
+				
+				<!-- name -->
+				<!-- talk title -->
+
+		
+
+	</div>
+	<h2 class="blue centered">More slides from the symposium presentations will be available shortly - check back soon</h2>
+</div>
+
