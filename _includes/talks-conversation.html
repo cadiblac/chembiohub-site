@@ -11,17 +11,17 @@
 		
 				
 				{% for speaker in site.speakers2015 | sort:"talk_order" %}
-				{% if speaker.embed_code != "" %}
+				{% if speaker.embed_code %}
 					<div class="col-xs-6 col-md-3 talkholder">
 						<div class="row">
 							
-							<div class="hidden-xs col-sm-6 col-lg-8">
+							<div class="hidden-xs col-sm-6 col-lg-8 text-center">
 								<!-- download link -->
 								<div class="btn-group">
 								  <!-- <button class="btn btn-default" data-toggle="modal" data-target="#slides_{{ speaker.last_name }}">
 								    <span class="glyphicon glyphicon-picture"></span> View slides
 								  </button> -->
-								  <a href="https://chembiohub.ox.ac.uk/assets/files/slides/oxford_only/{{speaker.embed_code}}" class="btn btn-default" role="button" onclick='return !window.open(this.href);'><span class="glyphicon glyphicon-picture" ></span> View Slides</a>
+								  <a href="https://chembiohub.ox.ac.uk/assets/files/slides/{{speaker.embed_code}}" class="btn btn-default" role="button" onclick='return !window.open(this.href);'><span class="glyphicon glyphicon-picture" ></span> View Slides</a>
 								</div>
 							</div>
 						</div>

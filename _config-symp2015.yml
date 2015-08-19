@@ -36,7 +36,8 @@ speakers2015:
     position: "Head, Protein Degradation Discovery Performance Unit"
     dept: "GlaxoSmithKline"
     research_interests: ""
-    talk_title: ""
+    talk_title: "Maximising benefits for all at the academia-industry interface"
+    embed_code: "churcher.pdf"
     talk_order: 4
 
   - first_name: Daniel
@@ -96,7 +97,8 @@ speakers2015:
     position: "Professor of Translational Neuroscience"
     dept: "Department of Psychiatry"
     research_interests: "Seeking new targets for therapy in Alzheimer's disease by understanding basic mechanisms, in disease modification trials and experimental medicine and in the search for biomarkers for early diagnosis."
-    talk_title: ""
+    talk_title: "Alzheimer’s disease - Platforms for translational research"
+    embed_code: "lovestone.pptx"
     talk_order: 10
 
   - first_name: Frances
