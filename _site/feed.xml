@@ -7,6 +7,37 @@
 <atom:link href="https://chembiohub.ox.ac.uk/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>RDKit UGM 2015 - A ChemBio Hub perspective</title>
+<description>&lt;p&gt;On 2nd-4th September 2015, Paul and Andy from ChemBio Hub attended the 4th &lt;a href=&quot;http://rdkit.org/&quot; target=&quot;_blank&quot;&gt;RDKit&lt;/a&gt; User Group Meeting at &lt;a href=&quot;https://www.ethz.ch/en/campus/locations/zurich-region/hoenggerberg.html&quot; target=&quot;_blank&quot;&gt;ETH Honggerberg&lt;/a&gt; in Zurich, Switzerland.&lt;/p&gt;
+
+&lt;p&gt;The meeting was attended by around 50 RDKit users from across Europe and farther afield.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/greglandrum&quot; target=&quot;_blank&quot;&gt;Greg Landrum&lt;/a&gt;  provided the opening keynote talk, discussing how we can create better compound identifiers that accurately represent tautomers. Inchi based methods for registereing compound uniqueness do have problems, so a mechanism needs to be provided at all times for chemists to be able to specify that their susbstance is new. Specifying stereochem and tautomer information as metadata before providing a unique key was another useful tip. This was all pertinent to us as it mirrors debates we have had when deciding how the compound identifier system for ChemReg should work.&lt;/p&gt;
+
+&lt;p&gt;Another useful tool discussed on the first day was &lt;a href=&quot;https://bitbucket.org/dalke/propbox&quot; target=&quot;_blank&quot;&gt;propbox&lt;/a&gt;  presented by &lt;a href=&quot;http://www.dalkescientific.com/&quot; target=&quot;_blank&quot;&gt;Andrew Dalke&lt;/a&gt;. Propbox is a python table builder which allows dynamic calculation of chemical properties based on data in the table, it can also use the results of other dynamic property calculations to perform others.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://peter-ertl.com/&quot; target=&quot;_blank&quot;&gt;Peter Ertl&lt;/a&gt; gave a very interesting talk about natural product likeness calculations. Natural products are substances such as antibiotics and alkaloids and are an excellent source of substructures for bioactive molecules. Peter has developed natural product likeness calculators trained on a set of 45000 natural products from open source with 1 million compounds from Zinc as non-np-like background for training.&lt;/p&gt;
+
+&lt;p&gt;Paul and Andy also gave talks at the end of the day - Paul presented an overview of the ChemBio Hub project to demonstrate how RDKit is being used and to introduce RDKit users to the ChemBio Hub codebase. Andrew showed how a plugin architecture can be built with the ChemBio Hub ChemReg tool to provide automatic property calculation within results tables.&lt;/p&gt;
+
+&lt;!-- Pic of Paul's slide here --&gt;
+
+&lt;p&gt;The post-talks dinner was hosted in central Zurich, a beautiful city and fantastic place to host debate around the topics of the day.&lt;/p&gt;
+
+&lt;p&gt;The second day of talks included a demo of some work done towards RDKit.js by &lt;a href=&quot;http://www.researchgate.net/profile/Guillaume_Godin&quot; target=&quot;_blank&quot;&gt;Guillaume Godin&lt;/a&gt;, which looks to be a useful project, a talk by &lt;a href=&quot;https://github.com/rvianello&quot; target=&quot;_blank&quot;&gt;Riccardo Vianello&lt;/a&gt; about django.RDKit, which is a fantastic integration of RDKit functionality as directly-available Django models, and a talk by &lt;a href=&quot;https://github.com/samoturk&quot; target=&quot;_blank&quot;&gt;Samo Turk&lt;/a&gt; about hinge binder extraction from structures in the PDB for use as obtaining compound scaffolds to reveal compounds which would act on kinase hinge binder regions.&lt;/p&gt;
+
+&lt;p&gt;To close the day there was a round table discussion centred around communication within the RDKit community and how best to maintain contact, a request for RDKit to natively support Chemaxon chemical formats, and a friendly reminder that the PDB format is being deprecated - &lt;a href=&quot;http://mmcif.wwpdb.org/&quot; target=&quot;_blank&quot;&gt;mmCIF&lt;/a&gt; format, which is xml based, is now preferred.&lt;/p&gt;
+
+&lt;p&gt;The final day of the UGM involved a “hack day” where a number of key improvements or enhancements to RDKit were identified and worked on. Andy got involved with helping to document the deployment process for RDKit involving packer and docker, following discussions with others who were interested in the process. Paul got involved with helping to convert the introductory documentation and RDKit cookbook from plain text to interactive iPython notebooks, to help novice users get to grips with using RDKit.&lt;/p&gt;
+
+&lt;p&gt;The UGM was a great opportunity to talk to a wide range of cheminformaticians from academia and industry and make useful contacts. We learned a great deal about how we can optimise the ways in which we can use RDKit within our own tools and spread the word about the projects we are working on.&lt;/p&gt;
+</description>
+<pubDate>Tue, 08 Sep 2015 00:00:00 +0100</pubDate>
+<link>https://chembiohub.ox.ac.uk/blog/2015/09/08/rdkit-ugm-2105.html</link>
+<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2015/09/08/rdkit-ugm-2105.html</guid>
+</item>
+
+<item>
 <title>One week to go! Current Expertise and Future Directions In Drug Discovery</title>
 <description>&lt;h3 id=&quot;an-oxford-industry-conversation&quot;&gt;An Oxford-Industry conversation&lt;/h3&gt;
 
@@ -376,178 +407,6 @@ Starting here means:&lt;/p&gt;
 <pubDate>Thu, 13 Nov 2014 00:00:00 +0000</pubDate>
 <link>https://chembiohub.ox.ac.uk/blog/2014/11/13/oxcbh-symposium.html</link>
 <guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/11/13/oxcbh-symposium.html</guid>
-</item>
-
-<item>
-<title>ChemBio Hub 2014 Symposium walk-up survey results</title>
-<description>&lt;p&gt;The recent ChemBio Hub symposium - entitled &lt;strong&gt;Chemical Biology across the University of Oxford&lt;/strong&gt; - was a great multidisciplinary event bringing together PIs and researchers with an interest in chemical biology. They represented at least 15 departments. The presentations throughout the day sparked a number of conversations and ideas in the breaks and beyond. You can find out more about how the day progressed in &lt;a href=&quot;/blog/2014/11/13/oxcbh-symposium.html&quot;&gt;this blog post&lt;/a&gt; and you can also find the posters from the day &lt;a href=&quot;https://chembiohub.ox.ac.uk/symposium&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;ChemBio Hub set up a survey to capture interest in aspects of chemical biology research. We used a Yes/No question system on a touchscreen to make it appealing and easy for people to take part. A lot of people were very willing participants - thank you again if you took part! &lt;/p&gt;
-
-&lt;p&gt;The results from respondents on the day were as follows:&lt;/p&gt;
-
-&lt;div class=&quot;row&quot; style=&quot;width:100%;&quot;&gt;
-	&lt;div class=&quot;col-xs-12 col-sm-6 no-padding-right&quot; style=&quot;overflow:hidden; height:250px; vertical-align:bottom;&quot;&gt;
-		&lt;img src=&quot;/assets/img/survey-metaphors/Cleansing_raw_data.jpg&quot; style=&quot;width:100%;&quot; alt=&quot;Validation and Cleansing of raw data&quot; /&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col-xs-12 col-sm-6&quot; style=&quot;background-color:#444; height:250px; color:#fff;&quot;&gt;
-		&lt;h3 class=&quot;centered subheading&quot;&gt;Validation and Cleansing of raw data&lt;/h3&gt;
-		&lt;svg class=&quot;bar-graph&quot; data-graph-values=&quot;[ { &amp;quot;label&amp;quot;: &amp;quot;Yes&amp;quot;, &amp;quot;number&amp;quot;: 22 } , { &amp;quot;label&amp;quot;: &amp;quot;No&amp;quot;, &amp;quot;number&amp;quot;: 10 } ]&quot;&gt;
-
-		&lt;/svg&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;row&quot; style=&quot;width:100%;&quot;&gt;
-	&lt;div class=&quot;col-xs-12 col-sm-6 no-padding-right&quot; style=&quot;overflow:hidden; height:250px; vertical-align:bottom;&quot;&gt;
-		&lt;img src=&quot;/assets/img/survey-metaphors/Comparing_datasets.jpg&quot; style=&quot;width:100%;&quot; alt=&quot;Combining and Comparing Datasets&quot; /&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col-xs-12 col-sm-6&quot; style=&quot;background-color:#444; height:250px; color:#fff;&quot;&gt;
-		&lt;h3 class=&quot;centered subheading&quot;&gt;Combining and Comparing Datasets&lt;/h3&gt;
-		&lt;svg class=&quot;bar-graph&quot; data-graph-values=&quot;[ { &amp;quot;label&amp;quot;: &amp;quot;Yes&amp;quot;, &amp;quot;number&amp;quot;: 24 } , { &amp;quot;label&amp;quot;: &amp;quot;No&amp;quot;, &amp;quot;number&amp;quot;: 8 } ]&quot;&gt;
-
-		&lt;/svg&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;row&quot; style=&quot;width:100%;&quot;&gt;
-	&lt;div class=&quot;col-xs-12 col-sm-6 no-padding-right&quot; style=&quot;overflow:hidden; height:250px; vertical-align:bottom;&quot;&gt;
-		&lt;img src=&quot;/assets/img/survey-metaphors/Curve_fitting.jpg&quot; style=&quot;width:100%;&quot; alt=&quot;Curve Fitting&quot; /&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col-xs-12 col-sm-6&quot; style=&quot;background-color:#444; height:250px; color:#fff;&quot;&gt;
-		&lt;h3 class=&quot;centered subheading&quot;&gt;Curve Fitting&lt;/h3&gt;
-		&lt;svg class=&quot;bar-graph&quot; data-graph-values=&quot;[ { &amp;quot;label&amp;quot;: &amp;quot;Yes&amp;quot;, &amp;quot;number&amp;quot;: 22 } , { &amp;quot;label&amp;quot;: &amp;quot;No&amp;quot;, &amp;quot;number&amp;quot;: 10 } ]&quot;&gt;
-
-		&lt;/svg&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;row&quot; style=&quot;width:100%;&quot;&gt;
-	&lt;div class=&quot;col-xs-12 col-sm-6 no-padding-right&quot; style=&quot;overflow:hidden; height:250px; vertical-align:bottom;&quot;&gt;
-		&lt;img src=&quot;/assets/img/survey-metaphors/Data_visualisation.jpg&quot; style=&quot;width:100%;&quot; alt=&quot;Visualisation of Assay Data&quot; /&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col-xs-12 col-sm-6&quot; style=&quot;background-color:#444; height:250px; color:#fff;&quot;&gt;
-		&lt;h3 class=&quot;centered subheading&quot;&gt;Visualisation of Assay Data&lt;/h3&gt;
-		&lt;svg class=&quot;bar-graph&quot; data-graph-values=&quot;[ { &amp;quot;label&amp;quot;: &amp;quot;Yes&amp;quot;, &amp;quot;number&amp;quot;: 28 } , { &amp;quot;label&amp;quot;: &amp;quot;No&amp;quot;, &amp;quot;number&amp;quot;: 4 } ]&quot;&gt;
-
-		&lt;/svg&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;row&quot; style=&quot;width:100%;&quot;&gt;
-	&lt;div class=&quot;col-xs-12 col-sm-6 no-padding-right&quot; style=&quot;overflow:hidden; height:250px; vertical-align:bottom;&quot;&gt;
-		&lt;img src=&quot;/assets/img/survey-metaphors/Image_analysis.jpg&quot; style=&quot;width:100%;&quot; alt=&quot;Image Analysis&quot; /&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col-xs-12 col-sm-6&quot; style=&quot;background-color:#444; height:250px; color:#fff;&quot;&gt;
-		&lt;h3 class=&quot;centered subheading&quot;&gt;Image Analysis&lt;/h3&gt;
-		&lt;svg class=&quot;bar-graph&quot; data-graph-values=&quot;[ { &amp;quot;label&amp;quot;: &amp;quot;Yes&amp;quot;, &amp;quot;number&amp;quot;: 18 } , { &amp;quot;label&amp;quot;: &amp;quot;No&amp;quot;, &amp;quot;number&amp;quot;: 14 } ]&quot;&gt;
-
-		&lt;/svg&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;row&quot; style=&quot;width:100%;&quot;&gt;
-	&lt;div class=&quot;col-xs-12 col-sm-6 no-padding-right&quot; style=&quot;overflow:hidden; height:250px; vertical-align:bottom;&quot;&gt;
-		&lt;img src=&quot;/assets/img/survey-metaphors/Sharing_data.jpg&quot; style=&quot;width:100%;&quot; alt=&quot;Data Sharing&quot; /&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col-xs-12 col-sm-6&quot; style=&quot;background-color:#444; height:250px; color:#fff;&quot;&gt;
-		&lt;h3 class=&quot;centered subheading&quot;&gt;Data Sharing&lt;/h3&gt;
-		&lt;svg class=&quot;bar-graph&quot; data-graph-values=&quot;[ { &amp;quot;label&amp;quot;: &amp;quot;Yes&amp;quot;, &amp;quot;number&amp;quot;: 30 } , { &amp;quot;label&amp;quot;: &amp;quot;No&amp;quot;, &amp;quot;number&amp;quot;: 2 } ]&quot;&gt;
-
-		&lt;/svg&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;row&quot; style=&quot;width:100%;&quot;&gt;
-	&lt;div class=&quot;col-xs-12 col-sm-6 no-padding-right&quot; style=&quot;overflow:hidden; height:250px; vertical-align:bottom;&quot;&gt;
-		&lt;img src=&quot;/assets/img/survey-metaphors/Assay.jpg&quot; style=&quot;width:100%;&quot; alt=&quot;Assay-specific tools e.g. qPCR or ELISA&quot; /&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;col-xs-12 col-sm-6&quot; style=&quot;background-color:#444; height:250px; color:#fff;&quot;&gt;
-		&lt;h3 class=&quot;centered subheading&quot;&gt;Assay-specific tools e.g. qPCR or ELISA&lt;/h3&gt;
-		&lt;svg class=&quot;bar-graph&quot; data-graph-values=&quot;[ { &amp;quot;label&amp;quot;: &amp;quot;Yes&amp;quot;, &amp;quot;number&amp;quot;: 22 } , { &amp;quot;label&amp;quot;: &amp;quot;No&amp;quot;, &amp;quot;number&amp;quot;: 10 } ]&quot;&gt;
-
-		&lt;/svg&gt;
-	&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;&lt;em&gt;What do these results mean for ChemBio Hub?&lt;/em&gt; - It’s clear that &lt;strong&gt;visualisation of assay results&lt;/strong&gt; is a key requirement of a great many chemical biology researchers - and that &lt;strong&gt;image processing&lt;/strong&gt; is less of a priority for Oxford’s ChemBio community. We will use the survey results, along with other feedback, to determine the order of priorities that we work on in future.&lt;/p&gt;
-
-&lt;p&gt;Did you attend and not have chance to take our survey? Or do you otherwise have a strong wish to see one of these areas prioritised? Let us know in the thread comments below.&lt;/p&gt;
-
-&lt;script type=&quot;text/javascript&quot;&gt;
-
-var labelFn = function(d) { return d.label }
-var numberFn = function(d) { return d.number }
-
-$(document).ready(function() {
-
-	d3.selectAll(&quot;.bar-graph&quot;).each( function(d, i){
-
-		var data = JSON.parse(d3.select(this).attr(&quot;data-graph-values&quot;));
-
-		var width = 320,
-		    barHeight = 40;
-
-		var x = d3.scale.linear()
-		    .domain([0, 40])
-		    .range([0, width]);
-
-		var chart = d3.select(this)
-		    .attr(&quot;width&quot;, width)
-		    .attr(&quot;height&quot;, 150);
-
-		var gradient = chart.append(&quot;linearGradient&quot;)
-		    .attr(&quot;y1&quot;, &quot;0&quot;)
-		    .attr(&quot;y2&quot;, &quot;0&quot;)
-		    .attr(&quot;x1&quot;, &quot;40&quot;)
-		    .attr(&quot;x2&quot;, &quot;200&quot;)
-		    .attr(&quot;id&quot;, &quot;gradient&quot;)
-		    .attr(&quot;gradientUnits&quot;, &quot;userSpaceOnUse&quot;);
-
-		gradient
-		    .append(&quot;stop&quot;)
-		    .attr(&quot;offset&quot;, &quot;0&quot;)
-		    .attr(&quot;stop-color&quot;, &quot;#444&quot;);
-
-		gradient
-		    .append(&quot;stop&quot;)
-		    .attr(&quot;offset&quot;, &quot;0.5&quot;)
-		    .attr(&quot;stop-color&quot;, &quot;#eee&quot;);
-
-		var bar = chart.selectAll(&quot;g&quot;)
-		    .data(data)
-		  .enter().append(&quot;g&quot;)
-		    .attr(&quot;transform&quot;, function(d, i) { return &quot;translate(0,&quot; + i * barHeight + &quot;)&quot;; });
-
-		bar.append(&quot;text&quot;)
-		    .attr(&quot;x&quot;, &quot;0&quot;)
-		    .attr(&quot;y&quot;, barHeight / 2)
-		    .attr(&quot;class&quot;, &quot;white&quot;)
-		    .text(function(d) { return labelFn(d); });
-
-		bar.append(&quot;rect&quot;)
-		    .attr(&quot;width&quot;,function(d) { var num = numberFn(d); return x(num) })
-		    .attr(&quot;height&quot;, barHeight - 10)
-		    .attr(&quot;x&quot;, &quot;50&quot;)
-		    .attr(&quot;fill&quot;, &quot;url(#gradient)&quot;);
-
-		bar.append(&quot;text&quot;)
-		    .attr(&quot;x&quot;, &quot;300px&quot;)
-		    .attr(&quot;y&quot;, barHeight / 2)
-		    .attr(&quot;class&quot;, &quot;white&quot;)
-		    .text(function(d) { return numberFn(d); });
-
-	    
-
-	});
-	
-});
-&lt;/script&gt;
-
-</description>
-<pubDate>Tue, 11 Nov 2014 00:00:00 +0000</pubDate>
-<link>https://chembiohub.ox.ac.uk/blog/2014/11/11/symp-survey.html</link>
-<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/11/11/symp-survey.html</guid>
 </item>
 
 </channel>

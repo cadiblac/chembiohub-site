@@ -152,6 +152,46 @@
 
 
 <div class='post'>
+	<h1><a class="title-link" href='/blog/2015/09/08/rdkit-ugm-2105.html'>RDKit UGM 2015 - A ChemBio Hub perspective</a></h1>
+	<div class='date'>posted 08 Sep 2015 by <a href="mailto:paul.barrett@chembiohub.ox.ac.uk">Paul Barrett</a></div>
+	<div class='body'>
+		<p>On 2nd-4th September 2015, Paul and Andy from ChemBio Hub attended the 4th <a href="http://rdkit.org/" target="_blank">RDKit</a> User Group Meeting at <a href="https://www.ethz.ch/en/campus/locations/zurich-region/hoenggerberg.html" target="_blank">ETH Honggerberg</a> in Zurich, Switzerland.</p>
+
+<p>The meeting was attended by around 50 RDKit users from across Europe and farther afield.</p>
+
+<p><a href="https://github.com/greglandrum" target="_blank">Greg Landrum</a>  provided the opening keynote talk, discussing how we can create better compound identifiers that accurately represent tautomers. Inchi based methods for registereing compound uniqueness do have problems, so a mechanism needs to be provided at all times for chemists to be able to specify that their susbstance is new. Specifying stereochem and tautomer information as metadata before providing a unique key was another useful tip. This was all pertinent to us as it mirrors debates we have had when deciding how the compound identifier system for ChemReg should work.</p>
+
+<p>Another useful tool discussed on the first day was <a href="https://bitbucket.org/dalke/propbox" target="_blank">propbox</a>  presented by <a href="http://www.dalkescientific.com/" target="_blank">Andrew Dalke</a>. Propbox is a python table builder which allows dynamic calculation of chemical properties based on data in the table, it can also use the results of other dynamic property calculations to perform others.</p>
+
+<p><a href="http://peter-ertl.com/" target="_blank">Peter Ertl</a> gave a very interesting talk about natural product likeness calculations. Natural products are substances such as antibiotics and alkaloids and are an excellent source of substructures for bioactive molecules. Peter has developed natural product likeness calculators trained on a set of 45000 natural products from open source with 1 million compounds from Zinc as non-np-like background for training.</p>
+
+<p>Paul and Andy also gave talks at the end of the day - Paul presented an overview of the ChemBio Hub project to demonstrate how RDKit is being used and to introduce RDKit users to the ChemBio Hub codebase. Andrew showed how a plugin architecture can be built with the ChemBio Hub ChemReg tool to provide automatic property calculation within results tables.</p>
+
+<!-- Pic of Paul's slide here -->
+
+<p>The post-talks dinner was hosted in central Zurich, a beautiful city and fantastic place to host debate around the topics of the day.</p>
+
+<p>The second day of talks included a demo of some work done towards RDKit.js by <a href="http://www.researchgate.net/profile/Guillaume_Godin" target="_blank">Guillaume Godin</a>, which looks to be a useful project, a talk by <a href="https://github.com/rvianello" target="_blank">Riccardo Vianello</a> about django.RDKit, which is a fantastic integration of RDKit functionality as directly-available Django models, and a talk by <a href="https://github.com/samoturk" target="_blank">Samo Turk</a> about hinge binder extraction from structures in the PDB for use as obtaining compound scaffolds to reveal compounds which would act on kinase hinge binder regions.</p>
+
+<p>To close the day there was a round table discussion centred around communication within the RDKit community and how best to maintain contact, a request for RDKit to natively support Chemaxon chemical formats, and a friendly reminder that the PDB format is being deprecated - <a href="http://mmcif.wwpdb.org/" target="_blank">mmCIF</a> format, which is xml based, is now preferred.</p>
+
+<p>The final day of the UGM involved a “hack day” where a number of key improvements or enhancements to RDKit were identified and worked on. Andy got involved with helping to document the deployment process for RDKit involving packer and docker, following discussions with others who were interested in the process. Paul got involved with helping to convert the introductory documentation and RDKit cookbook from plain text to interactive iPython notebooks, to help novice users get to grips with using RDKit.</p>
+
+<p>The UGM was a great opportunity to talk to a wide range of cheminformaticians from academia and industry and make useful contacts. We learned a great deal about how we can optimise the ways in which we can use RDKit within our own tools and spread the word about the projects we are working on.</p>
+
+		<div class="pull-right comment-total">
+			<a href="/blog/2015/09/08/rdkit-ugm-2105.html#disqus_thread">Comments loading...</a>
+			 | 
+			<a class="scrollToTop blue">Back to top <span class="glyphicon glyphicon-upload"></span></a>
+			<!-- <button class="btn pull-right scrollToTop btn-lg blue"> </button>  -->
+		</div>
+	</div>
+
+	
+</div>
+
+
+<div class='post'>
 	<h1><a class="title-link" href='/blog/2015/07/27/conversation-warmup.html'>One week to go! Current Expertise and Future Directions In Drug Discovery</a></h1>
 	<div class='date'>posted 27 Jul 2015 by <a href="mailto:michael.ohagan@chembiohub.ox.ac.uk">Michael O'Hagan</a></div>
 	<div class='body'>
@@ -983,6 +1023,8 @@ s.src = 'https://' + disqus_shortname + '.disqus.com/count.js';
 				<div class="archive">
 	<h2 class="blue"><span class="glyphicon glyphicon-home"></span> <a href="/blog/">All posts</a></h2>
 	<ul id="archive">
+	
+		<li><a href="/blog/2015/09/08/rdkit-ugm-2105.html">RDKit UGM 2015 - A ChemBio Hub perspective</a><br/><abbr>08 Sep 2015</abbr></li>
 	
 		<li><a href="/blog/2015/07/27/conversation-warmup.html">One week to go! Current Expertise and Future Directions In Drug Discovery</a><br/><abbr>27 Jul 2015</abbr></li>
 	
