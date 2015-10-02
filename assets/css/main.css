@@ -566,6 +566,40 @@ h2.further.subheading {
   font-size:0.9em;
 }
 
+/* Improvements CSS */
+.usertype {
+    padding: 5px;
+    border: 1px #002147 solid;
+    border-radius: 5px;
+    text-align: center;
+    font-family: NexaBold;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+.usertype:hover  {
+  border-color: #ddd;
+  background-color: #ddd;
+  color: #002147;
+}
+.usertype.selected {
+  border-color: #ddd;
+  background-color: #002147;
+  color: white;
+}
+
+.userstory.hide {
+  display: none;
+}
+.h2underline {
+  border-bottom:1px solid #ddd;
+}
+.techitem {
+  min-height: 150px;
+  border:1px solid #ddd;
+  border-radius: 5px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 

@@ -8,370 +8,257 @@ title: ChemBio Hub
 	<div class="row" id="intro-row">
 
 
-		<div class="col-xs-22">
+		<div class="col-xs-12">
 			<h1 class="intro blue">Supporting world class<br/>chemical biology research.</h1>
 		</div>
 
 
-		<div class="col-md-12">
-			<!-- circles in here -->
-			<div class="row mt centered">
-
-				<div class="col-sm-3 entry-point">
-					<a href="#capabilities">
-						<div class="row hidden-xs">
-							<div class="img-circle blue-bg capabilities">
-								<span class="img-helper"></span>
-								<img src="/assets/img/microscope.png" alt="microscope" />
-							</div>
-						</div>
-						<div class="row">
-							<div>
-								<h2 class="blue">Capabilities</h2>
-								<p class="nexa blue">"I need to find a piece of equipment to help with my work"</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-sm-3 entry-point">
-					<a href="#people">
-						<div class="row hidden-xs">
-							<div class="img-circle blue-bg people">
-								<span class="img-helper"></span>
-								<img src="/assets/img/speech.png" alt="speech bubble"/>
-							</div>
-						</div>
-						<div class="row">
-							<div>
-								<h2 class="blue">People</h2>
-								<p class="nexa blue">"I am looking for expert advice or a new collaborator"</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-sm-3 entry-point">
-					<a href="#data">
-						<div class="row hidden-xs">
-							<div class="img-circle blue-bg data">
-								<span class="img-helper"></span>
-								<img src="/assets/img/benzene.png" alt="benzene ring" />
-							</div>
-						</div>
-						<div class="row">
-							<div>
-								<h2 class="blue">Data</h2>
-								<p class="nexa blue">"I have data that I need to process or share with others"</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="col-sm-3 entry-point extra-div">
-					<a href="/conversation">
-						<div class="row hidden-xs">
-							<div class="img-circle blue-bg extra">
-								<span class="date-month">July</span>
-								<span class="date-number">31</span>
-							</div>
-						</div>
-						<div class="row">
-							<div>
-								<h2 class="blue">Conversation</h2>
-								<p class="nexa blue">Current expertise and future directions in drug discovery</p>
-							</div>
-						</div>
-					</a>
-				</div>   
-
-			</div>
-
-			<div class="row mt centered">
-
-			</div>
-
-		</div>
-
 	</div>
 
-
-
-
-	<!-- Functional content goes here -->
-	<a id="capabilities"></a>
-	<div class="row subheading capabilities">
-		<div class="col-xs-6">
-			<h2 class="pull-left no-bottom-margin entry-point">Capabilities</h2>
-		</div>
-		  <button class="btn pull-right scrollToTop btn-lg">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
-		 
-		 <!-- <div class="scrollToTop pull-right col-xs-1">
-		 	<h2><span class="glyphicon glyphicon-upload"></span></h2>
-		 </div> -->
-
+	<div class="row">
+		<hr>
 	</div>
-	<div class="row subheading">
+
+	<div class="row">
 		<div class="col-xs-12">
-			<h2 class="no-bottom-margin">I need to find a piece of equipment to help with my work</h2>
-		</div>
-	</div>
 
-	<div class="row functional">
+			<h2 class="blue text-center">We are supporting...</h2>
 
-				<div class="col-sm-8">
-					<div class="row">
-						<div class="col-xs-12">
-						<h2 class="blue">Search our Equipment Database</h2>
-						<div class="form-group input-group">
-					      <input id="equip-search" type="text" class="input-lg form-control">
-					      <span class="input-group-btn">
-					        <button id="equip-search-btn" class="btn-lg btn btn-primary" type="button">Search</button>
-					      </span>
-					    </div>
-					    
-					    <h2 class="blue">Useful ChemBio Equipment Categories</h2>
-						<ul class="research-eq nav-collapse">
-							{% for cat in site.equipment_categories %}
-							<li><a class="btn btn-lg btn-default research-eq" href="https://www.research-facilities.ox.ac.uk/browse{{cat.link}}" onclick='return !window.open(this.href);'>{{cat.label}}</a></li>
-							{% endfor %}
-						</ul>
-					</div>
-					</div>
-					<div class="row" style="margin-top:15px;">
-						<div class="col-xs-12">
-							<div class="form-group">
-								<h2 class="blue">Submit Equipment</h2>
-								<p class="blue">Do you have equipment that will help other chemical biologists?</p>
-								<a href="https://www.research-facilities.ox.ac.uk/contribute/" class="btn btn-primary btn-block" style="width: 50%;
-margin: 0 auto;" onclick='return !window.open(this.href);'><span class="glyphicon glyphicon-import"></span> Submit details <span class="hidden-xs">to the University database</span></a>
-							</div>
-						</div>
-					</div>
-
-				</div>
-				<div class="col-sm-4">
-					
-					<div class="form-group">
-						<h2 class="blue">Can't find what you're looking for?</h2>
-						<p class="blue">Tell us what you need and we may be able to facilitate this</p>
-
-						{% include contact-form.html subject_value="Equipment request" form_id_slug="equipment" %}
-<!-- 
-						<textarea class="form-control"  rows="5"></textarea>placeholder="For example, [sample question]"
-						<button class="btn btn-success btn-block top-margin">Submit via Webauth</button> -->
-					</div>
-				</div>
-	</div>
-
-	<a id="people"></a>
-	<div class="row subheading people">
-		<div class="col-xs-6">
-			<h2 class="pull-left no-bottom-margin entry-point">People</h2>
-		</div>
-		<button class="btn pull-right scrollToTop btn-lg">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
-	</div>
-	<div class="row subheading">
-		<div class="col-xs-12">
-			<h2 class="no-bottom-margin">I am looking for expert advice or a new collaborator</h2>
-		</div>
-	</div>
-
-	<div class="row functional">
-		<div class="col-xs-12">
-			
 			<div class="row">
-				<div class="col-sm-8">
-						<h2 class="blue">{{ site.speakers | size }} scientists are benefiting from ChemBio Hub</h2>
 
-						
-							{% assign count = '0' %}
-							{% for speaker in site.speakers %}
-								{% capture count %}{{ count }}{% endcapture %}
-								{% capture currentmod %}{{ count | mod:6 }}{% endcapture %}
-								{% if currentmod == '0' or forloop.first %}
-									<div class="row ppl">
-								{% endif %}
-										<div class="col-sm-2 col-xs-4">
-											<img src="{{ speaker.photo }}" data-name="{{ speaker.first_name }} {{speaker.last_name}}" data-dept="{{ speaker.dept }}" data-weblink="{{ speaker.link }}" class="ppl-thumb" alt="{{ speaker.first_name }} {{speaker.last_name}}"> 
-											<div class="contenthover">
-											    <p class="blue">{% if speaker.link != "" %}<a href="{{ speaker.link }}" onclick='return !window.open(this.href);'>{% endif %}{{ speaker.first_name }}<br/>{{ speaker.last_name }}{% if speaker.link != "" %}</a>{% endif %}</p>
+					<!-- List of people types here -->
+					<div class="col-sm-12 col-lg-3">
+						<div class="usertype" data-usertype="inorganic">
+							<span style="font-size:1.2em">Inorganic Chemists</span>
+						</div>
+					</div>
+					<div class="col-sm-12 col-lg-3">
+						<div class="usertype" data-usertype="medchem">
+							<span style="font-size:1.2em">Medicinal Chemists</span>
+						</div>
+					</div>
+					<div class="col-sm-12 col-lg-3">
+						<div class="usertype" data-usertype="materials">
+							<span style="font-size:1.2em">Materials Scientists</span>
+						</div>
+					</div>
+					<div class="col-sm-12 col-lg-3">
+						<div class="usertype" data-usertype="biologists">
+							<span style="font-size:1.2em">Biologists</span>
+						</div>
+					</div>
+				
+			</div>
+
+			<div class="row mt">
+
+				<div class="userstory" data-usertype="inorganic">
+					<div class="holder">
+						<div class="col-xs-12">
+							<div class="row">
+
+								<!-- Problem Description -->
+								<div class="col-xs-12">
+									<h2 class="subheading">Typical issues for Inorganic Chemists</h2>
+									<p class="nexa">Lorem ipsum etc etc</p>
+								</div>
+
+							</div>
+							<div class="row">
+								<!-- Solution Description -->
+								<div class="col-xs-6">
+									<h2 class="blue h2underline">Tool to use</h2>
+				
+										<h3 class="blue text-center">ChemBio Hub ChemReg</h3>
+										<div class="row">
+											<div class="col-xs-12 text-center">
+												<img src="/assets/img/data-chemreg.png" class="">
 											</div>
 										</div>
-								{% if forloop.last or currentmod == '5' %}
+								</div>
+								<div class="col-xs-6">
+									<h2 class="blue h2underline">Solves the problems by...</h2>
+									<p>Explain how</p>
+								</div>
+								<div class="col-xs-12 text-center" style="margin-top:10px;">
+									<div class="well">
+										
+									<h2 class="blue">Try out the tool for yourself</h2>
+									<a href="http://chembiohub.ox.ac.uk/hub/webauth" role="button" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> University of Oxford login</a>
+									<a href="http://chembiohub.ox.ac.uk/hub/login" role="button" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> Universal login</a>
+
 									</div>
-								{% endif %}
-								{% capture count %}{{ count | plus: '1' }}{% endcapture %}
-							{% endfor %}
-							{% assign count = nil %}
+								</div>
 
+							</div>
+
+						</div>
+					</div>
 				</div>
-				<div class="col-sm-4">
-							<h2 class="blue">Can't find who you're looking for?</h2>
-							<p>Let other users find you by registering your details with ChemBio Hub</p>
+				<div class="userstory" data-usertype="medchem">
+					<div class="holder"><div class="col-xs-12">
+							<div class="row">
 
-							{% include contact-form.html subject_value="Contact" form_id_slug="people" %}
-							
+								<!-- Problem Description -->
+								<div class="col-xs-12">
+									<h2 class="subheading">Typical issues for Medicinal Chemists</h2>
+									<p class="nexa">Lorem ipsum etc etc</p>
+								</div>
+
+							</div>
+							<div class="row">
+								<!-- Solution Description -->
+								<div class="col-xs-6">
+									<h2 class="blue h2underline">Tool to use</h2>
+				
+										<h3 class="blue text-center">ChemBio Hub ChemReg</h3>
+										<div class="row">
+											<div class="col-xs-12 text-center">
+												<img src="/assets/img/data-chemreg.png" class="">
+											</div>
+										</div>
+								</div>
+								<div class="col-xs-6">
+									<h2 class="blue h2underline">Solves the problems by...</h2>
+									<p>Explain how</p>
+								</div>
+								<div class="col-xs-12 text-center" style="margin-top:10px;">
+									<div class="well">
+										
+									<h2 class="blue">Try out the tool for yourself</h2>
+									<a href="http://chembiohub.ox.ac.uk/hub/webauth" role="button" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> University of Oxford login</a>
+									<a href="http://chembiohub.ox.ac.uk/hub/login" role="button" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> Universal login</a>
+
+									</div>
+								</div>
+
+							</div>
+
+						</div></div>
+				</div>
+				<div class="userstory" data-usertype="materials">
+					<div class="holder"><div class="col-xs-12">
+							<div class="row">
+
+								<!-- Problem Description -->
+								<div class="col-xs-12">
+									<h2 class="subheading">Typical issues for Materials Scientists</h2>
+									<p class="nexa">Lorem ipsum etc etc</p>
+								</div>
+
+							</div>
+							<div class="row">
+								<!-- Solution Description -->
+								<div class="col-xs-6">
+									<h2 class="blue h2underline">Tool to use</h2>
+				
+										<h3 class="blue text-center">ChemBio Hub ChemReg</h3>
+										<div class="row">
+											<div class="col-xs-12 text-center">
+												<img src="/assets/img/data-chemreg.png" class="">
+											</div>
+										</div>
+								</div>
+								<div class="col-xs-6">
+									<h2 class="blue h2underline">Solves the problems by...</h2>
+									<p>Explain how</p>
+								</div>
+								<div class="col-xs-12 text-center" style="margin-top:10px;">
+									<div class="well">
+										
+									<h2 class="blue">Try out the tool for yourself</h2>
+									<a href="http://chembiohub.ox.ac.uk/hub/webauth" role="button" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> University of Oxford login</a>
+									<a href="http://chembiohub.ox.ac.uk/hub/login" role="button" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> Universal login</a>
+
+									</div>
+								</div>
+
+							</div>
+
+						</div></div>
+				</div>
+				<div class="userstory" data-usertype="biologists">
+					<div class="holder"><div class="col-xs-12">
+							<div class="row">
+
+								<!-- Problem Description -->
+								<div class="col-xs-12">
+									<h2 class="subheading">Typical issues for Biologists</h2>
+									<p class="nexa">Lorem ipsum etc etc</p>
+								</div>
+
+							</div>
+							<div class="row">
+								<!-- Solution Description -->
+								<div class="col-xs-6">
+									<h2 class="blue h2underline">Tool to use</h2>
+				
+										<h3 class="blue text-center">ChemBio Hub ChemReg</h3>
+										<div class="row">
+											<div class="col-xs-12 text-center">
+												<img src="/assets/img/data-chemreg.png" class="">
+											</div>
+										</div>
+								</div>
+								<div class="col-xs-6">
+									<h2 class="blue h2underline">Solves the problems by...</h2>
+									<p>Explain how</p>
+								</div>
+								<div class="col-xs-12 text-center" style="margin-top:10px;">
+									<div class="well">
+										
+									<h2 class="blue">Try out the tool for yourself</h2>
+									<a href="http://chembiohub.ox.ac.uk/hub/webauth" role="button" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> University of Oxford login</a>
+									<a href="http://chembiohub.ox.ac.uk/hub/login" role="button" class="btn btn-default"><span class="glyphicon glyphicon-user"></span> Universal login</a>
+
+									</div>
+								</div>
+
+							</div>
+
+						</div></div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-center">
+					<p></p>
+					<p class="nexa"><strong>Can't see your situation in this list? <a href="mailto:info@chembiohub.ox.ac.uk" role="button" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> Let us know</a> and we'll let you know how ChemBio Hub can help.</strong></p>
+				</div>
+				<div class="col-xs-12 text-center">
+					<p></p>
+					<p class="nexa"><strong>Are you a developer or want to talk technology? <a href="mailto:info@chembiohub.ox.ac.uk" role="button" class="btn btn-default"><span class="glyphicon glyphicon-envelope"></span> Visit our tech page</a></strong></p>
 				</div>
 			</div>
+
 		</div>
 	</div>
 
-	<a id="data"></a>
-	<div class="row subheading data">
+	
+	<hr>
+	<!-- What we've done -->
+	<div class="row">
 		<div class="col-xs-6">
-			<h2 class="pull-left no-bottom-margin entry-point">Data</h2>
-		</div>
-		<button class="btn pull-right scrollToTop btn-lg">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
-	</div>
-	<div class="row subheading">
-		<div class="col-xs-12">
-			<h2 class="no-bottom-margin">I have data that I need to process or share with others</h2>
-		</div>
-	</div>
-	<div class="row functional" >
-		<div class="col-xs-12">
-			<div class="row">
-				<h2 class="blue text-center">ChemBio Hub continues to develop open source tools to help chemical biologists</h2>
-
+			<h2 class="subheading">What we've achieved</h2>
+			<div class="well">
+				<ul>
+					<li>Symposia - ChemBio Hub have run 2 symposia so far for academia and industry - <a href="/events/">details here</a></li>
+					<li>Conferences attended</li>
+					<li>And Other</li>
+					<li>Stuff Here</li>
+				</ul>
 			</div>
-
-
-			<div class="row">
-
-				<div class="col-md-6">
-				    <div class="thumbnail">
-				    	<div class="row">
-					    	<div class="col-xs-6 text-center">
-					    		<img src="/assets/img/data-crunch.png" class="img-responsive" style="margin:0 auto">
-					    	</div>
-					    	<div class="col-xs-6">
-						      <div class="caption">
-						        <h2 class="blue centered">Crunch</h2>
-						      	<p class="nexa blue centered">Visualise. Interpret. Evaluate.</p>
-						        <p class="text-center"><a href="/data/crunch" role="button" class="btn btn-primary"><span class="glyphicon glyphicon-info-sign"></span> Find out more</a></p>
-					      	  </div>
-					        </div>
-				        </div>
-				    </div>
-				</div>
-				<div class="col-md-6">
-				    <div class="thumbnail">
-				    	<div class="row">
-				    		<div class="col-xs-6 text-center">
-					    		<img src="/assets/img/data-chemreg.png" class="img-responsive" style="margin:0 auto">
-					    	</div>
-					    	<div class="col-xs-6">
-					    		<div class="caption">
-							        <h2 class="blue centered">ChemReg</h2>
-							      	<p class="nexa blue centered">Upload. Store. Search.</p>
-							        <p class="text-center"><a href="/chemreg" role="button" class="btn btn-primary"><span class="glyphicon glyphicon-info-sign"></span> Find out more</a></p>
-							        
-							      </div>
-					    	</div>
-				    	</div>
-				    	
-				      
-				    </div>
-				</div>
-				<div class="col-md-6">
-				    <div class="thumbnail">
-				      <div class="caption">
-				        <h2 class="blue centered">AssayReg</h2>
-				      	<p class="nexa blue centered">An in-progress project to handle assay data</p>
-				        <p class="text-center">More info soon<!-- <a href="/assayreg" role="button" class="btn btn-primary"><span class="glyphicon glyphicon-info-sign"></span> Find out more</a> --></p>
-				        
-				      </div>
-				    </div>
-				</div>
-				<div class="col-md-6">
-				    <div class="thumbnail">
-				      <div class="caption">
-				        <h2 class="blue centered">OOMMPPAA/WONKA</h2>
-				      	<!-- <p class="nexa blue centered"></p> -->
-				        <p class="text-center"><a href="http://oommppaa.sgc.ox.ac.uk/OOMMPPAA/" onclick='return !window.open(this.href);' role="button" class="btn btn-primary"><span class="glyphicon glyphicon-info-sign"></span> Find out more</a></p>
-				        
-				      </div>
-				    </div>
-				</div>
-
-			</div>
-			
-
-			<div class="row hidden">
-				<div class="col-sm-8 ">
-					<div class="row">
-						<h2 class="blue centered">Use our ChemBio Crunch tool to process your data</h2>
-
-					</div>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/39713029" height="400" class="hidden-xs" style="width:100%; border: 0;"></iframe> 
-
-					<!-- Carousel currently hidden-->
-					<div id="carousel-crunch" style="display:none" class="carousel slide" data-ride="carousel">
-					  <!-- Indicators -->
-					  <ol class="carousel-indicators fp">
-					    <li data-target="#carousel-crunch" data-slide-to="0" class="active"></li>
-					    <li data-target="#carousel-crunch" data-slide-to="1"></li>
-					    <li data-target="#carousel-crunch" data-slide-to="2"></li>
-					  </ol>
-
-					  <!-- Wrapper for slides -->
-					  <div class="carousel-inner">
-					    <div class="item active">
-					      <img src="/assets/img/fp-carousel/landing.png" alt="ChemBio Crunch">
-					      <div class="carousel-caption"></div>
-					    </div>
-					    <div class="item">
-					      <img src="/assets/img/fp-carousel/heatmap.png" alt="ChemBio Crunch">
-					      <div class="carousel-caption"></div>
-					    </div>
-					    <div class="item">
-					      <img src="/assets/img/fp-carousel/ic50.png" alt="ChemBio Crunch">
-					      <div class="carousel-caption"></div>
-					    </div>
-					  </div>
-
-					  <!-- Controls -->
-					  <a class="left carousel-control fp" href="#carousel-crunch" role="button" data-slide="prev">
-					    <span class="glyphicon glyphicon-chevron-left"></span>
-					  </a>
-					  <a class="right carousel-control fp" href="#carousel-crunch" role="button" data-slide="next">
-					    <span class="glyphicon glyphicon-chevron-right"></span>
-					  </a>
-					</div>
-					<div>
-						<!-- A button to replace the slideshow for small widths -->
-						<a href="http://www.slideshare.net/slideshow/embed_code/39713029#" onclick='return !window.open(this.href);' class="btn btn-primary btn-block visible-xs" role="button">View slides using Slideshare</a>
-					</div>
-					<div>
-						<!-- <p class="top-margin">Crunch turns your assay readouts into slick visualisations in seconds.</p> -->
-						<a href="https://chembiohub.ox.ac.uk/crunch/" onclick='return !window.open(this.href);' class="btn btn-primary btn-block" role="button">Show me ChemBio Crunch</a>
-					</div>
-					<div class="top-margin">
-						<p></p>
-						<h2 class="subheading centered">OOMMPPAA - directed synthesis and data analysis tool</h2>
-						<p><img src="/assets/img/oommppaa.png" style="width:100%" alt="Screenshot of Anthony Bradley's OOMMPPAA tool"></p>
-						<p>OOMMPPAA is a novel computational tool designed to inform compound design by combining structural and activity data.</p>
-						<p class="small">Citation: <a href="http://pubs.acs.org/doi/pdfplus/10.1021/ci500245d">Anthony R. Bradley, Ian D. Wall, Darren V.S. Green, Charlotte M. Deane, Brian D. Marsden (2014). OOMMPPAA: A tool to aid directed synthesis by the combined analysis of activity and structural data</a></p>
-						
-						<div><a href="http://oommppaa.sgc.ox.ac.uk/OOMMPPAA/" onclick='return !window.open(this.href);' class="btn btn-primary btn-block" role="button">Show me OOMMPPAA</a></div>
-
-					</div>
-				</div>
-				<div class="col-sm-4">
-					<div class="form-group">
-						<p class="blue">Do you need more from ChemBio Crunch? Tell us your idea and we will work with you to make this happen.</p>
-						
-						{% include contact-form.html subject_value="ChemBio Crunch feedback" form_id_slug="crunch" %}
-
-					</div>
-				</div>
+		</div>
+		<div class="col-xs-6">
+			<h2 class="subheading">What's next for ChemBio Hub...</h2>
+			<div class="well">
+				<p>List of current sprint objectives;</p>
+				<p>Community Building - we aim to build a community around our technology tools via GitHub;</p>
+				<p>ChemBio Hub PeopleReg - a tool to help potential collaborators locate each other;</p>
+				<p>Get our tools into both academic and industrial settings to aid collaboration.</p>
 			</div>
 		</div>
 	</div>
-
-
-
 
 
 
@@ -465,34 +352,47 @@ margin: 0 auto;" onclick='return !window.open(this.href);'><span class="glyphico
 
 	</div><!-- /row -->
 
-	<div class="row centered group-photo">
-		<img class="max-image" src="/assets/img/cbh-group-photo.jpg" alt="Group Photo">
+	<div class="row">
+		<div class="col-xs-12 col-sm-6">
+			<div class="row">
+				<div class="col-xs-12">
+					<img src="/assets/img/people/default_user_icon.png" class="pull-left floatwrap img-circle" style="min-width: 10%; width: 15%;">
+					<h2 class="blue">Karen Porter<br><small>Project Manager</small></h2>
+					<p>Brief Biography</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<img src="/assets/img/people/default_user_icon.png" class="pull-left floatwrap img-circle" style="min-width: 10%; width: 15%;">
+					<h2 class="blue">Paul Barrett<br><small>Web Developer</small></h2>
+					<p>Brief Biography</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<img src="/assets/img/people/default_user_icon.png" class="pull-left floatwrap img-circle" style="min-width: 10%; width: 15%;">
+					<h2 class="blue">Andrew Stretton<br><small>Web Developer</small></h2>
+					<p>Brief Biography</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-6">
+			<div class="row">
+				<div class="col-xs-12">
+					<img src="/assets/img/people/default_user_icon.png" class="pull-left floatwrap img-circle" style="min-width: 10%; width: 15%;">
+					<h2 class="blue">Adam Hendry<br><small>Data Scientist</small></h2>
+					<p>Brief Biography</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<img src="/assets/img/people/default_user_icon.png" class="pull-left floatwrap img-circle" style="min-width: 10%; width: 15%;">
+					<h2 class="blue">Brian Marsden<br><small>Principal Investigator, Research Informatics</small></h2>
+					<p>Brief Biography</p>
+				</div>
+			</div>
+		</div>
 	</div>
-	<div class="col-md-2 col-xs-12  centered">
-		<div class="visible-xs visible-sm">(L-R)</div>
-		<h3 class="blue">Michael O'Hagan<br>
-		<small>Knowledge Exchange Coordinator</small>
-		</h3>
-	</div><!--/col-lg-3 -->
-	<div class="col-md-2 col-xs-12 centered">
-		<h3 class="blue">Paul Barrett<br>
-		<small>Developer</small></h3>
-	</div><!--/col-lg-3 -->
-	<div class="col-md-2 col-xs-12  centered">
-		<h3 class="blue">Karen Porter<br>
-		<small>Project Manager</small></h3>
-	</div><!--/col-lg-3 -->
-	<div class="col-md-3 col-xs-12  centered">
-		<h3 class="blue">Dr Brian Marsden<br>
-		<small>Principal Investigator: Research Informatics</small>
-		</h3>
-	</div><!--/col-lg-3 -->
-	<div class="col-md-2 col-xs-12 centered">
-		<h3 class="blue">Andy Stretton<br>
-		<small>Developer</small></h3>
-	</div><!--/col-lg-3 -->
-	<!-- <button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button> -->
-
 
 
     <script type="text/javascript" src="/assets/js/vendorjs/jquery.contenthover.min.js"></script>
@@ -505,3 +405,22 @@ margin: 0 auto;" onclick='return !window.open(this.href);'><span class="glyphico
 	<script type="text/javascript" src="/assets/js/slide-down-links.js"></script> 
 
 	<script type="text/javascript" src="/assets/js/index-functions.js"></script> 
+
+	<script type="text/javascript">
+	$('.userstory div.holder').hide();
+	$('.usertype').click(function(){
+		var itemname = $(this).attr('data-usertype');
+		//remove class selected from wherever it may be
+		$('.usertype').removeClass('selected');
+		$(this).toggleClass('selected');
+		$('.userstory div.holder').hide();
+		var itemtoshow = $('.userstory').filter(function(index){
+			console.log(index);
+			if ($(this).attr('data-usertype') == itemname) {
+				console.log(itemname);
+				$(this).find('div.holder').show();
+			}
+		})
+	})
+
+	</script>
