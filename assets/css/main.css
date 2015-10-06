@@ -596,8 +596,11 @@ h2.further.subheading {
 }
 .techitem {
   min-height: 150px;
-  border:1px solid #ddd;
-  border-radius: 5px;
+  padding:20px;
+  height:200px;
+}
+.opaque {
+  padding:20px;
 }
 
 /* Small devices (tablets, 768px and up) */

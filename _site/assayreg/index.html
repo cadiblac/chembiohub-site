@@ -1,0 +1,622 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta content="ChemBio Hub Website" property="og:site_name">
+    <meta name="twitter:site" content="@oxchembiohub">
+    <meta name="twitter:card" content="summary" />
+    
+	  <meta name="twitter:description" content="
+	ChemBio Hub AssayRegOrganise. Standardise. Contribute.
+
+
+
+			  
+			  	
+						
+							
+								
+								
+							
+						
+						
+							
+								What’s the problem?
+							
+						
+				
+			  
+			  
+	...">
+	
+    
+	  <meta content="ChemBio Hub AssayReg - Open source assay registration software" property="og:title">
+	  <meta name="twitter:title" content="ChemBio Hub AssayReg - Open source assay registration software">
+	
+	
+	  <meta content="http://chembiohub.ox.ac.uk/assets/img/cbh_og_logo.png" property="og:image">
+	  <meta name="twitter:image:src" content="http://chembiohub.ox.ac.uk/assets/img/cbh_og_logo_thumb.png">
+	
+	
+	  <meta content="https://chembiohub.ox.ac.uk/assayreg/" property="og:url">
+	  <meta name="twitter:url" content="https://chembiohub.ox.ac.uk/assayreg/">
+	
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
+<link rel="alternate" type="application/rss+xml" title="Chembio Hub Blog" href="/feed.xml">
+    <title>ChemBio Hub AssayReg - Open source assay registration software - ChemBio Hub</title>
+
+    <!-- concatenate all the used CSS in these files into clean.css -->
+    <!-- build:css /assets/css/clean.css -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/font.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrapValidator.min.css"/>
+    <!-- /build -->
+    <link href="/assets/css/cbh-template-header.css" rel="stylesheet">
+
+
+    <!-- Fonts from Google Fonts -->
+  <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'> -->
+
+  <script src="/assets/js/vendorjs/jquery-1.11.1.min.js"></script>
+    
+  <script src="/assets/js/serialize-form.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  	<!-- Fixed navbar -->
+  	<nav class="navbar navbar-default" role="navigation">
+  		<div class="container">
+
+
+  			<div class="navbar-collapse collapse">
+  				<ul class="nav navbar-nav navbar-right">
+  					<li><a href="/">Home</a></li>
+  					<li><a href="/about">About Us</a></li>
+                    <li><a href="/technology">Technology</a></li>
+  					<li><a href="/blog">Blog</a></li>
+  					<li><a href="/events">Events</a></li>
+  					<li><a href="#contact">Contact</a></li>
+<!--             <li><a href="/whatsnext">What's next?</a></li>
+-->            
+
+			<!--<li><a href="/webauth/login">Login</a></li>-->
+				</ul>
+
+			</div>
+
+
+<div class="navbar-header col-xs-12">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+
+
+	<div class="col-sm-4 col-md-6">
+		<div class="col-xs-6 col-sm-8 col-md-6">
+			<a id="uni-logo" class="logo-oxweb col-6" href="http://www.ox.ac.uk" onclick='return !window.open(this.href);'>
+				<img src="/assets/img/ox_brand1_rev_rect.gif" alt="University of Oxford logo" title="University of Oxford">
+			</a>
+		</div>
+		<div class="col-sm-6 centered">
+			<a id="cbh-logo"  href="/" class="hidden-xs hidden-sm col-6">
+				<img src="/assets/img/CBH_2_2_LowRes.png" alt="ChemBioHub logo" title="ChemBioHub" style="max-height:78px;">
+			</a>
+		</div>
+	</div>
+
+	<div class="col-sm-8 col-md-6">
+		<h1 class="pull-right">
+			ChemBio Hub 
+		</h1>
+	</div>
+</div>
+
+</div>
+</nav>
+
+<nav id="subheading">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-md-6" id="slogan">
+				<!-- <h2>Supporting world-class chemical biology research</h2>-->
+			</div>
+			<div class="col-sm-6 col-md-6" id="social-icons">
+				<a href="mailto:info@chembiohub.ox.ac.uk"><img src="/assets/img/social-icons/mail-icon.png" title="Email" alt="Email"></a>
+				<a href="https://twitter.com/oxchembiohub" onclick='return !window.open(this.href);'><img src="/assets/img/social-icons/twitter.png" title="@OxChemBioHub" alt="@OxChemBioHub"></a>
+				<a href="https://plus.google.com/106725711668905271458" onclick='return !window.open(this.href);'><img src="/assets/img/social-icons/google+.png" title="Google +" alt="Google +"></a>
+				<a href="/blog/"><img src="/assets/img/social-icons/rss.png" title="ChemBio Hub blog" alt="ChemBio Hub Blog"></a>
+				<a href="https://github.com/thesgc" onclick='return !window.open(this.href);'><img src="/assets/img/social-icons/GitHub-Mark-Light-32px.png" title="GitHub" alt="GitHub"></a>
+			</div>
+			<div class="login col-sm-6 hidden">
+
+			</div>
+		</div>
+	</div>
+</nav>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-xs-12">
+
+				<div class="row">
+	<h1 class="intro blue">ChemBio Hub AssayReg<br><small>Organise. Standardise. Contribute.</small></h1>
+</div>
+
+<ul class="nav centered">
+			  <li class="symp-section col-xs-12 col-sm-4"><a href="#registration">
+			  	<div class="entry-point">
+						<div class="row hidden-xs">
+							<div class="img-circle blue-bg">
+								<span class="img-helper"></span>
+								<img src="/assets/img/approach.png" alt="What is assay registration?" />
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<h2 class="blue">What’s the problem?</h2>
+							</div>
+						</div>
+				</div>
+			  </a></li>
+			  <li class="symp-section col-xs-12 col-sm-4"><a href="#cbhassayreg">
+			  	<div class="entry-point">
+						<div class="row hidden-xs">
+							<div class="img-circle blue-bg">
+								<span class="img-helper"></span>
+								<img src="/assets/img/jigsaw.png" alt="What is ChemBio Hub AssayReg?"/>
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<h2 class="blue">What is ChemBio Hub ChemReg?</h2>
+							</div>
+						</div>
+				</div>
+			  </a></li>
+			  
+			  <li class="symp-section col-xs-12 col-sm-4"><a href="#contact">
+			  	<div class="entry-point">
+						<div class="row hidden-xs">
+							<div class="img-circle blue-bg">
+								<span class="img-helper"></span>
+								<img src="/assets/img/speech.png" alt="Help/Contact" />
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<h2 class="blue">Help / Contact</h2>
+							</div>
+						</div>
+				</div>
+			  </a></li>
+			  
+			</ul>
+
+
+<div class="row mt" id="registration">
+<!-- 
+	<div class="col-sm-6">
+		<p class="nexa">&nbsp;</p>
+	</div> -->
+
+	<div class="col-sm-12">
+		<h2 class="subheading">What’s the problem?</h2>
+		<p class="nexa">Text describing the issues around assay method standardisation, records and results capture, and using public repositories such as pubchem and chembl</p>
+		<p class="nexa">AssayReg can be useful to:
+			<ul>
+				<li>Researcher</li>
+				<li>Types</li>
+				<li>Here</li>
+			</ul>
+		</p>
+	</div>
+
+</div>
+
+<div class="row"><hr></div>
+
+<div class="row mt" id="cbhassayreg">
+
+	<div class="col-sm-6">
+		<h2 class="subheading">What is ChemBio Hub AssayReg?</h2>
+		<p class="nexa">Description of what AssayReg does / will do in the near future </p>
+
+		<h2 class="subheading">Want to see AssayReg in action?</h2>
+		<p class="nexa">If you have a University of Oxford Webauth login, you can try the system here:</p>
+		<h2 class="blue text-center"><span class="glyphicon glyphicon-globe"></span> <a href="http://staging.chembiohub.ox.ac.uk/test/webauth/">chembiohub.ox.ac.uk/assayreg/webauth</a></h2>
+		<p class="nexa">Alternatively you can <a href="mailto:info@chembiohub.ox.ac.uk">request a demonstration</a> from a member of the ChemBio Hub team.</p>
+		<p class="nexa">If you are a <strong>developer</strong>, you can pull down the code to customise and run your own instance of ChemReg. The code is Open Source and available on Github.</p>
+
+	</div>
+
+	<div class="col-sm-6">
+
+		<p class="nexa text-center"><small>Cick the thumbnails to see the full picture</small></p>
+
+		<div class="col-xs-6">
+
+			<div class="col-xs-12">
+				<div class="thumbnail">
+			    	<div class="img-holder"  style="overflow-x:hidden">
+			    		<a href="#" data-toggle="modal" data-target="#regshot_1"><img src="/assets/img/chemreg-screens/screen1-thumb.png" title="Upload compounds and view overlaps, duplicates, errors etc." alt="Upload compounds and view overlaps, duplicates, errors etc."></a>
+				    </div>
+			      <div class="caption">
+			      	<p class="nexa blue centered" style="line-height:1.3em;">Upload compounds and view overlaps, duplicates, errors etc.</p>
+			      </div>
+			    </div>
+			    <div id="regshot_1" class="modal modal-lg fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+
+		    			<div class="modal-content">
+		    				<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		    					<h2 class="modal-title blue">Upload compounds and view overlaps, duplicates, errors etc.</h2>
+							</div>
+							<div class="modal-body">
+								
+								<img src="/assets/img/chemreg-screens/screen1.png" style="width:100%" alt="Upload compounds and view overlaps, duplicates, errors etc."/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12">
+				<div class="thumbnail">
+			    	<div class="img-holder"  style="overflow-x:hidden">
+			    		<a href="#" data-toggle="modal" data-target="#regshot_2"><img src="/assets/img/chemreg-screens/screen2-thumb.png" title="Mark individual records within upload files for different processes" alt="Mark individual records within upload files for different processes"></a>
+				    </div>
+			      <div class="caption">
+			      	<p class="nexa blue centered" style="line-height:1.3em;">Mark individual records within upload files for different processes</p>
+			      </div>
+			    </div>
+			    <div id="regshot_2" class="modal modal-lg fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+
+		    			<div class="modal-content">
+		    				<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		    					<h2 class="modal-title blue">Mark individual records within upload files for different processes</h2>
+							</div>
+							<div class="modal-body">
+								
+								<img src="/assets/img/chemreg-screens/screen2.png" style="width:100%" alt="Mark individual records within upload files for different processes"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12">
+				<div class="thumbnail">
+			    	<div class="img-holder"  style="overflow-x:hidden">
+			    		<a href="#" data-toggle="modal" data-target="#regshot_3"><img src="/assets/img/chemreg-screens/screen3-thumb.png" title="Intelligent searching and autocompletes for your metadata" alt="Intelligent searching and autocompletes for your metadata"></a>
+				    </div>
+			      <div class="caption">
+			      	<p class="nexa blue centered" style="line-height:1.3em;">Intelligent searching and autocompletes for your metadata</p>
+			      </div>
+			    </div>
+			    <div id="regshot_3" class="modal modal-lg fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+
+		    			<div class="modal-content">
+		    				<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		    					<h2 class="modal-title blue">Intelligent searching and autocompletes for your metadata</h2>
+							</div>
+							<div class="modal-body">
+								
+								<img src="/assets/img/chemreg-screens/screen3.png" style="width:100%" alt="Intelligent searching and autocompletes for your metadata"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+		<div class="col-xs-6">
+
+			<div class="col-xs-12">
+				<div class="thumbnail">
+			    	<div class="img-holder"  style="overflow-x:hidden">
+			    		<a href="#" data-toggle="modal" data-target="#regshot_4"><img src="/assets/img/chemreg-screens/screen4-thumb.png" title="Easily sort and filter your search hits before export" alt="Easily sort and filter your search hits before export"></a>
+				    </div>
+			      <div class="caption">
+			      	<p class="nexa blue centered" style="line-height:1.3em;">Easily sort and filter your search hits before export</p>
+			      </div>
+			    </div>
+			    <div id="regshot_4" class="modal modal-lg fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+
+		    			<div class="modal-content">
+		    				<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		    					<h2 class="modal-title blue">Easily sort and filter your search hits before export</h2>
+							</div>
+							<div class="modal-body">
+								
+								<img src="/assets/img/chemreg-screens/screen4.png" style="width:100%" alt="Easily sort and filter your search hits before export"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12">
+				<div class="thumbnail">
+			    	<div class="img-holder"  style="overflow-x:hidden">
+			    		<a href="#" data-toggle="modal" data-target="#regshot_5"><img src="/assets/img/chemreg-screens/screen5-thumb.png" title="Organise your data with pre-configured, per-project data fields" alt="Organise your data with pre-configured, per-project data fields"></a>
+				    </div>
+			      <div class="caption">
+			      	<p class="nexa blue centered" style="line-height:1.3em;">Organise your data with pre-configured, per-project data fields</p>
+			      </div>
+			    </div>
+			    <div id="regshot_5" class="modal modal-lg fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+
+		    			<div class="modal-content">
+		    				<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		    					<h2 class="modal-title blue">Organise your data with pre-configured, per-project data fields</h2>
+							</div>
+							<div class="modal-body">
+								
+								<img src="/assets/img/chemreg-screens/screen5.png" style="width:100%" alt="Organise your data with pre-configured, per-project data fields"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12">
+				<div class="thumbnail">
+			    	<div class="img-holder"  style="overflow-x:hidden">
+			    		<a href="#" data-toggle="modal" data-target="#regshot_6"><img src="/assets/img/chemreg-screens/screen6-thumb.png" title="Easy to use chemical search tools" alt="Easy to use chemical search tools"></a>
+				    </div>
+			      <div class="caption">
+			      	<p class="nexa blue centered" style="line-height:1.3em;">Easy to use chemical search tools</p>
+			      </div>
+			    </div>
+			    <div id="regshot_6" class="modal modal-lg fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+
+		    			<div class="modal-content">
+		    				<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		    					<h2 class="modal-title blue">Easy to use chemical search tools</h2>
+							</div>
+							<div class="modal-body">
+								
+								<img src="/assets/img/chemreg-screens/screen6.png" style="width:100%" alt="Easy to use chemical search tools"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+
+
+
+
+
+	</div>
+
+</div>
+
+<div class="row"><hr></div>
+
+<div class="row mt" id="contact">
+
+	<!-- <div class="col-sm-6">
+		
+		
+	</div> -->
+
+	<div class="col-sm-12">
+		<h2 class="subheading">Contact us with your thoughts</h2>
+		<p class="nexa">At ChemBio Hub we want this project to be useful to the people who are using it, not just a polished piece of code. We welcome any feedback you may have - whether that is ideas, feature requests, or problems that you have encountered when using the system. AssayReg is for the chemical biology community and beyond. We also want to hear from developers who work within the areas of chemical biology with their thoughts on the tool.</p>
+		<p class="nexa">You can contact us about AssayReg either by email or tweet @OxChemBioHub and use the hashtag #assayreg.</p>
+	</div>
+
+</div>
+
+<div class="row"><hr></div>
+
+
+
+
+
+
+
+	<script type="text/javascript" src="/assets/js/vendorjs/jquery.githubRepoWidget.min.js"></script>
+
+	<script type="text/javascript" src="/assets/js/slide-down-links.js"></script> 
+
+	<script type="text/javascript" src="/assets/js/index-functions.js"></script> 
+
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+
+    <div id="footer" class="footer">
+    	<div class="container">
+            
+    		<div class="row ">
+
+    			<!-- Postal address -->
+                <a id="contact"></a>
+                <button class="btn pull-right scrollToTop btn-lg">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
+    			<div class="col-md-4 col-sm-6 col-xs-11" id="postal-address">
+    				<div class="row">
+	    				<div class="col-xs-1">
+	    					<span class="glyphicon glyphicon-home"></span>
+	    				</div>
+	    				<div class="col-xs-10">
+	    					<span>ChemBio Hub Project<br/>
+		    				Old Road Campus Research Building<br/>
+		    				Roosevelt Drive<br/>
+		    				Oxford OX3 7DQ</span>
+	    				</div>
+	    			</div>
+
+	    			<div class="row">
+	    				<div class="col-xs-1">
+	    					<span class="glyphicon glyphicon-earphone"></span>
+	    				</div>
+	    				<div class="col-xs-10">
+	    					<span>01865 617577</span>
+	    				</div>
+	    			</div>
+    				
+    			</div>
+
+    			<div class="col-md-3 col-sm-6 hidden-xs">
+    				<div class="row">
+	    				<a href="https://twitter.com/oxchembiohub" onclick='return !window.open(this.href);'><img src="/assets/img/social-icons/twitter.png" class="social-icon" alt="twitter logo" title="twitter logo" /> Follow @OxChemBioHub</a><br/>
+	    				<a href="mailto:info@chembiohub.ox.ac.uk"><img src="/assets/img/social-icons/mail-icon.png" class="social-icon" alt="email logo" title="email logo" /> Email ChemBio Hub</a><br/>
+	    				<a href="https://plus.google.com/106725711668905271458" onclick='return !window.open(this.href);'><img src="/assets/img/social-icons/google+.png" class="social-icon" alt="google+ logo" title="google+ logo" />Follow +OxChemBioHub</a>
+	    			</div>
+    			</div>
+
+                
+
+    		</div>
+
+    		<div class="row center">
+
+
+    			<div class="hidden-xs funding">
+    				<div class="row">
+    					We gratefully acknowledge the support of the following organisations:
+    				</div>
+    				<div class="row">
+
+    					<img src="/assets/img/funders/ndm.png" title="Nuffield Department of Medicine Medical Sciences Division" alt="Nuffield Department of Medicine Medical Sciences Division"/>
+    					<img src="/assets/img/funders/welcome.png" title="Supported by Wellcome Trust" alt="Supported by Wellcome Trust"/>
+    					<img src="/assets/img/funders/hefce.png" title="Higher Education Funding Council For England" alt="Higher Education Funding Council For England" />
+    					<img src="/assets/img/funders/johnfell.png" title="John Fell Fund" alt="John Fell Fund"/>
+
+    				</div>
+    			</div>
+
+    			<div onclick="window.location='/about#funding'" class="visible-xs">
+    				Thank you to our funding partners
+    			</div>
+
+    		</div>
+
+    		<div class="row center copyright">
+
+    			Copyright University of Oxford 2015 <!-- || Accessibility || Sitemap || Cookie policy -->
+
+    		</div>
+
+    	</div>
+    </div>
+
+
+    
+     <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="/assets/js/vendorjs/bootstrapValidator.min.js"></script>
+     <script type="text/javascript" src="/assets/js/vendorjs/d3.min.js"></script>
+    <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+ga('create','UA-55063522-1');ga('send','pageview');
+
+
+/* Track outbound links in Google Analytics */
+(function($) {
+ 
+  "use strict";
+ 
+  // current page host
+  var baseURI = window.location.host;
+ 
+  // click event on body
+  $("body").on("click", function(e) {
+ 
+    // abandon if link already aborted or analytics is not available
+    if (e.isDefaultPrevented() || typeof ga !== "function") return;
+ 
+    // abandon if no active link or link within domain
+    var link = $(e.target).closest("a");
+    if (link.length != 1 || baseURI == link[0].host) return;
+
+    // cancel event and record outbound link
+    e.preventDefault();
+    var href = link[0].href;
+    ga('send', {
+      'hitType': 'event',
+      'eventCategory': 'outbound',
+      'eventAction': 'link',
+      'eventLabel': href,
+      'hitCallback': loadPage
+    });
+ 
+    // redirect after one second if recording takes too long
+    setTimeout(loadPage, 1000);
+ 
+    // redirect to outbound page
+    function loadPage() {
+      document.location = href;
+    }
+ 
+  });
+ 
+})(jQuery); 
+
+$(document).ready(function() {
+    $('.scrollToTop').click(function(){
+        $('html, body').animate({scrollTop : 0},800);
+        return false;
+    });
+    $('#floating-register').affix({
+      /*offset: {
+        top: 100,
+        bottom: function () {
+          return (this.bottom = $('.footer').outerHeight(true) + 40)
+        }
+      }*/
+    })
+
+});
+</script>
+
+   
+
+    <script type="text/javascript" src="/assets/js/vendorjs/jquery.contenthover.min.js"></script>
+
+</body>
+</html>
