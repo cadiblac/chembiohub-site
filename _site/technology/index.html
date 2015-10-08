@@ -20,18 +20,14 @@
 
 	
 		Our Tools built by ChemBio Hub developers
+		{% for tool in site.tools.internal %}
+			{% include tool.html %}
+		{% endfor %}
 
-		
-			
-				
-				ChemBio Hub ChemReg
-				
-					
-						
-						
-					
-					Descriptive paragraph here with links and contact info
-		...">
+
+	
+	
+		Associated Tools of interest to ChemBio ...">
 	
     
 	  <meta content="Technology" property="og:title">
@@ -163,53 +159,146 @@
 <div class="row">
 	<div class="col-xs-6">
 		<h2 class="blue h2underline">Our Tools <br><small>built by ChemBio Hub developers</small></h2>
-
-		<div class="row">
+		
+			<div class="row mt">
 			<div class="col-xs-12">
 				
-				<h3 class="blue">ChemBio Hub ChemReg</h3>
+				<h3 class="blue">ChemReg</h3>
 				<div class="row">
 					<div class="col-xs-6">
-						<a href="https://github.com/thesgc/chembiohub_ws"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
+						
+						<a href="https://github.com/thesgc/chembiohub_ws"  target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
+						
 						<img src="/assets/img/data-chemreg.png" class="img-responsive">
 					</div>
-					<div class="col-xs-6">Descriptive paragraph here with links and contact info</div>
+					<div class="col-xs-6">
+						<p class="nexa">Descriptive paragraph here with links and contact info</p>
+						<p class="nexa text-center">
+							<a href="http://chembiohub.ox.ac.uk/hub/webauth" class="btn btn-primary" target="_blank" onclick="window.open(this.href,'_blank');return false;">Try out ChemReg</a><br><br>
+							
+							<a href="/chemreg" class="btn btn-primary" target="_blank" onclick="window.open(this.href,'_blank');return false;">More Info</a>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
+		
+			<div class="row mt">
+			<div class="col-xs-12">
+				
+				<h3 class="blue">InventoryReg</h3>
+				<div class="row">
+					<div class="col-xs-6">
+						
+						<a href="https://github.com/thesgc/chembiohub_ws"  target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
+						
+						<img src="/assets/img/data-chemreg.png" class="img-responsive">
+					</div>
+					<div class="col-xs-6">
+						<p class="nexa">Descriptive paragraph here with links and contact info</p>
+						<p class="nexa text-center">
+							<a href="http://chembiohub.ox.ac.uk/hub/webauth" class="btn btn-primary" target="_blank" onclick="window.open(this.href,'_blank');return false;">Try out InventoryReg</a><br><br>
+							
+							<a href="/inventoryreg" class="btn btn-primary" target="_blank" onclick="window.open(this.href,'_blank');return false;">More Info</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+			<div class="row mt">
+			<div class="col-xs-12">
+				
+				<h3 class="blue">AssayReg</h3>
+				<div class="row">
+					<div class="col-xs-6">
+						
+						<a href="https://github.com/thesgc/chembiohub_assay"  target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
+						
+						<img src="/assets/img/data-chemreg.png" class="img-responsive">
+					</div>
+					<div class="col-xs-6">
+						<p class="nexa">Descriptive paragraph here with links and contact info</p>
+						<p class="nexa text-center">
+							<a href="http://staging.chembiohub.ox.ac.uk/test/webauth" class="btn btn-primary" target="_blank" onclick="window.open(this.href,'_blank');return false;">Try out AssayReg</a><br><br>
+							
+							<a href="/assayreg" class="btn btn-primary" target="_blank" onclick="window.open(this.href,'_blank');return false;">More Info</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+			<div class="row mt">
+			<div class="col-xs-12">
+				
+				<h3 class="blue">Crunch</h3>
+				<div class="row">
+					<div class="col-xs-6">
+						
+						<a href="https://github.com/thesgc/chembiocrunch"  target="_blank"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/c6625ac1f3ee0a12250227cf83ce904423abf351/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f677261795f3664366436642e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_gray_6d6d6d.png"></a>
+						
+						<img src="/assets/img/data-chemreg.png" class="img-responsive">
+					</div>
+					<div class="col-xs-6">
+						<p class="nexa">Descriptive paragraph here with links and contact info</p>
+						<p class="nexa text-center">
+							<a href="http://chembiohub.ox.ac.uk/crunch/webauth" class="btn btn-primary" target="_blank" onclick="window.open(this.href,'_blank');return false;">Try out Crunch</a><br><br>
+							
+							<a href="/crunch" class="btn btn-primary" target="_blank" onclick="window.open(this.href,'_blank');return false;">More Info</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
 
 
 	</div>
 	<div class="col-xs-6">
 		<h2 class="blue h2underline">Associated Tools <br><small>of interest to ChemBio Hub users</small></h2>
-		<div class="row">
+		
+			<div class="row mt">
 			<div class="col-xs-12">
 				
 				<h3 class="blue">OOMMPPAA</h3>
 				<div class="row">
 					<div class="col-xs-6">
-						<a href="https://bitbucket.org/abradley/oommppaa/fork">
-							<img src="/assets/img/oommppaa.png" class="img-responsive">
-						</a>
+						
+						<img src="/assets/img/oommppaa.png" class="img-responsive">
 					</div>
-					<div class="col-xs-6">Descriptive paragraph here with links and contact info</div>
+					<div class="col-xs-6">
+						<p class="nexa">Descriptive paragraph here with links and contact info</p>
+						<p class="nexa text-center">
+							<a href="http://oommppaa.sgc.ox.ac.uk/OOMMPPAA/" class="btn btn-primary" target="_blank" onclick="window.open(this.href,'_blank');return false;">Try out OOMMPPAA</a><br><br>
+							
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		
+			<div class="row mt">
 			<div class="col-xs-12">
 				
 				<h3 class="blue">Research Equipment Database</h3>
 				<div class="row">
 					<div class="col-xs-6">
-						<a href="https://www.research-facilities.ox.ac.uk/browse">
-							<img src="/assets/img/oommppaa.png" class="img-responsive">
-						</a>
+						
+						<img src="/assets/img/res_equip.png" class="img-responsive">
 					</div>
-					<div class="col-xs-6">Descriptive paragraph here with links and contact info</div>
+					<div class="col-xs-6">
+						<p class="nexa">Descriptive paragraph here with links and contact info</p>
+						<p class="nexa text-center">
+							<a href="https://www.research-facilities.ox.ac.uk/browse" class="btn btn-primary" target="_blank" onclick="window.open(this.href,'_blank');return false;">Try out Research Equipment Database</a><br><br>
+							
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
+		
+		
 	</div>
 </div>
 
@@ -258,7 +347,7 @@
     				<div class="row">
 	    				<a href="https://twitter.com/oxchembiohub" onclick='return !window.open(this.href);'><img src="/assets/img/social-icons/twitter.png" class="social-icon" alt="twitter logo" title="twitter logo" /> Follow @OxChemBioHub</a><br/>
 	    				<a href="mailto:info@chembiohub.ox.ac.uk"><img src="/assets/img/social-icons/mail-icon.png" class="social-icon" alt="email logo" title="email logo" /> Email ChemBio Hub</a><br/>
-	    				<a href="https://plus.google.com/106725711668905271458" onclick='return !window.open(this.href);'><img src="/assets/img/social-icons/google+.png" class="social-icon" alt="google+ logo" title="google+ logo" />Follow +OxChemBioHub</a>
+	    				<a href="https://plus.google.com/106725711668905271458" onclick='return !window.open(this.href);'><img src="/assets/img/social-icons/google+.png" class="social-icon" alt="google+ logo" title="google+ logo" /> Follow +OxChemBioHub</a>
 	    			</div>
     			</div>
 
