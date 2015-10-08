@@ -5,7 +5,7 @@ authors:
     github: paulbarrett79
   michael:
     display_name: Michael O'Hagan
-    email: michael.ohagan@chembiohub.ox.ac.uk
+    email: info@chembiohub.ox.ac.uk
     github: michaelohagan
   karen:
     display_name: Karen Porter
@@ -101,6 +101,15 @@ tools:
       other_repo_link: ""
       thumbnail: "data-chemreg.png"
   external:
+    - title: "WONKA"
+      tagline: "tagline here"
+      key: "wonka"
+      description: "Descriptive paragraph here with links and contact info"
+      info_link: ""
+      cbh_link: "http://wonka.sgc.ox.ac.uk/WONKA"
+      github_link: ""
+      other_repo_link: "https://bitbucket.org/abradley/wonka/fork"
+      thumbnail: "wonka.png"
     - title: "OOMMPPAA"
       tagline: "tagline here"
       key: "oommppaa"
