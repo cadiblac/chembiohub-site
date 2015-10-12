@@ -597,7 +597,6 @@ h2.further.subheading {
 .techitem {
   min-height: 150px;
   padding:20px;
-  height:200px;
 }
 .opaque {
   padding:20px;
@@ -647,6 +646,9 @@ p.overlay {
   
   h2.entry-point{
     font-size:3em;
+  }
+  .techitem {
+    height:200px;
   }
 
 }
