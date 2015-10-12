@@ -14,6 +14,7 @@ title: Technology
 	<div class="col-xs-6">
 		<h2 class="blue h2underline">Our Tools <br><small>built by ChemBio Hub developers</small></h2>
 		{% for tool in site.tools.internal %}
+		
 			{% include tool.html %}
 		{% endfor %}
 
@@ -22,6 +23,7 @@ title: Technology
 	<div class="col-xs-6">
 		<h2 class="blue h2underline">Associated Tools <br><small>of interest to ChemBio Hub users</small></h2>
 		{% for tool in site.tools.external %}
+		
 			{% include tool.html %}
 		{% endfor %}
 		
