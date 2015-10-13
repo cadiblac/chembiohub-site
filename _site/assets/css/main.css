@@ -630,6 +630,9 @@ p.overlay {
   h2.entry-point{
     font-size:1.6em;
   }
+  h2.tech-intro {
+    margin-top:200px;
+  }
 
 }
 
