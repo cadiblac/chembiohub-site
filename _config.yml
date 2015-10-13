@@ -81,16 +81,16 @@ tools:
       cbh_link: "http://chembiohub.ox.ac.uk/hub/webauth"
       github_link: "https://github.com/thesgc/chembiohub_ws"
       other_repo_link: ""
-      thumbnail: "data-chemreg.png"
+      thumbnail: "data-invreg.png"
     - key: 'assayreg'
       title: "AssayReg"
       tagline: "tagline here"
       description: "Descriptive paragraph here with links and contact info"
       info_link: "/assayreg"
       cbh_link: "http://staging.chembiohub.ox.ac.uk/test/webauth"
-      github_link: "https://github.com/thesgc/chembiohub_assay"
+      github_link: "https://github.com/thesgc/chembiohub_ws"
       other_repo_link: ""
-      thumbnail: "data-chemreg.png"
+      thumbnail: "data-assayreg.png"
     - key: 'crunch'
       title: "Crunch"
       tagline: "tagline here"
@@ -99,7 +99,7 @@ tools:
       cbh_link: "http://chembiohub.ox.ac.uk/crunch/webauth"
       github_link: "https://github.com/thesgc/chembiocrunch"
       other_repo_link: ""
-      thumbnail: "data-chemreg.png"
+      thumbnail: "data-crunch.png"
   external:
     - key: 'wonka'
       title: "WONKA"
