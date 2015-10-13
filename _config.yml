@@ -67,7 +67,7 @@ tools:
     - key: 'chemreg'
       title: "ChemReg"
       tagline: "tagline here"
-      description: "Descriptive paragraph here with links and contact info"
+      description: "Manage and search your compounds"
       info_link: "/chemreg"
       cbh_link: "http://chembiohub.ox.ac.uk/hub/webauth"
       github_link: "https://github.com/thesgc/chembiohub_ws"
@@ -76,7 +76,7 @@ tools:
     - key: 'invreg'
       title: "InventoryReg"
       tagline: "tagline here"
-      description: "Descriptive paragraph here with links and contact info"
+      description: "Manage your vectors, peptides and consumables"
       info_link: "/inventoryreg"
       cbh_link: "http://chembiohub.ox.ac.uk/hub/webauth"
       github_link: "https://github.com/thesgc/chembiohub_ws"
@@ -85,26 +85,17 @@ tools:
     - key: 'assayreg'
       title: "AssayReg"
       tagline: "tagline here"
-      description: "Descriptive paragraph here with links and contact info"
+      description: "Manage your assays and method development"
       info_link: "/assayreg"
       cbh_link: "http://staging.chembiohub.ox.ac.uk/test/webauth"
       github_link: "https://github.com/thesgc/chembiohub_ws"
       other_repo_link: ""
       thumbnail: "data-assayreg.png"
-    - key: 'crunch'
-      title: "Crunch"
-      tagline: "tagline here"
-      description: "Descriptive paragraph here with links and contact info"
-      info_link: "/crunch"
-      cbh_link: "http://chembiohub.ox.ac.uk/crunch/webauth"
-      github_link: "https://github.com/thesgc/chembiocrunch"
-      other_repo_link: ""
-      thumbnail: "data-crunch.png"
   external:
     - key: 'wonka'
       title: "WONKA"
       tagline: "tagline here"
-      description: "Descriptive paragraph here with links and contact info"
+      description: "Objective novel complex analysis"
       info_link: ""
       cbh_link: "http://wonka.sgc.ox.ac.uk/WONKA"
       github_link: ""
@@ -113,7 +104,7 @@ tools:
     - key: 'oommppaa'
       title: "OOMMPPAA"
       tagline: "tagline here"
-      description: "Descriptive paragraph here with links and contact info"
+      description: "Aid directed synthesis by the combined analysis of activity and structural data."
       info_link: ""
       cbh_link: "http://oommppaa.sgc.ox.ac.uk/OOMMPPAA/"
       github_link: ""
@@ -122,7 +113,7 @@ tools:
     - key: 'res_equip'
       title: "Research Equipment Database"
       tagline: "tagline here"
-      description: "Descriptive paragraph here with links and contact info"
+      description: "Find bookable technology available for use across the University."
       info_link: ""
       cbh_link: "https://www.research-facilities.ox.ac.uk/browse"
       github_link: ""
