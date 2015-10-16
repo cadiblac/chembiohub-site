@@ -87,6 +87,22 @@ svg.bar-graph{
     font-size: 1.3em;
 }
 
+/* Yes/No table */
+th, td {
+    text-align: center;
+}
+tr {
+    height:50px;
+}
+td.yes {
+    background-color:rgb(105, 145, 59);
+    color:white;
+}
+td.no {
+    background-color:lightsalmon;
+    color:red;
+}
+
 .highlight  { background: #ffffff; }
 .highlight .c { color: #999988; font-style: italic } /* Comment */
 .highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */

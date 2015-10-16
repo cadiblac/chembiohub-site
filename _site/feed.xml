@@ -7,6 +7,79 @@
 <atom:link href="https://chembiohub.ox.ac.uk/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Good data management practice in academia - What are your options?</title>
+<description>&lt;p&gt;Big business takes data management seriously, funnelling millions of pounds into its efficient curation and mining.  Geoffrey Moore (author of ‘Crossing the Chasm’ &amp;amp; ‘Inside the Tornado’) has tweeted that ‘without big data analytics, companies are blind and deaf, wandering out onto the Web like deer on a freeway.’ But how does good data management apply to academia and science in general? Scientists work with data o daily, but is it managed in a way that maximizes its potential? That depends on what you mean by ‘good’ data management.&lt;/p&gt;
+
+&lt;p&gt;A good data management system has several advantages (&lt;em&gt;Figure 1&lt;/em&gt;). Most labs don’t realize they are lacking an effective process until it’s too late. Here’s a simple question: If your senior postdoc left today, how much would you lose? You may have their results and protocols, but could you piece it all together? What about the experiments that didn’t work?  And where are the reagents, compounds, plasmids and antibodies they used? &lt;a href=&quot;businessdictionary.com&quot; target=&quot;_blank&quot;&gt;businessdictionary.com&lt;/a&gt; defines good data management as the ‘administrative process by which the required data is acquired, validated, stored, protected, and processed, and by which its accessibility, reliability, and timeliness is ensured to satisfy the needs of the data users.’ Academic data management practices rarely fit within this definition. More commonly, academic data management is a combination of hand-written lab books combined with files stored on a server. What’s more the format of data entry varies from  individual to individual. It’s a system that is likely to fail. &lt;/p&gt;
+
+&lt;!-- Image here --&gt;
+
+&lt;p&gt;Assuming you want to set up a data management system in your lab  what do you use? There are many options available (Table 1). The humble Excel sheet is a simple way to manage data, and most scientists are familiar with its features. However it lacks the robustness of more specialized software and access is limited to certain computers.  A Google Docs based system has some clear advantages in its similarity to Excel and it being cloud-based (allowing a far greater degree of access). However like Excel, its simple and flat nature mean that comparing multiple projects is difficult and prone to human error. There is also no formalised standardizsation of the data.&lt;/p&gt;
+
+&lt;p&gt;Commercial software allows for searching across many projects whilst enforcing data standards. This in turn makes it extremely accessible to multiple users. It is also likely to provide additional tools to analyse the data. The obvious drawback is the  ongoing subscription cost, which can be prohibitive for many labs. The  final option is using free data management software. A good freely available package will provide most of the functionality of commercial software, but with less of the polish. For most academic labs, this is usually enough.&lt;/p&gt;
+
+&lt;!-- Table here --&gt;
+&lt;div class=&quot;table-responsive&quot;&gt;
+
+    &lt;table width=&quot;100%&quot;&gt;
+        &lt;thead&gt;&lt;tr&gt;
+                    &lt;th width=&quot;20%&quot;&gt;&lt;/th&gt;
+                    &lt;th width=&quot;20%&quot;&gt;Excel&lt;/th&gt;
+                    &lt;th width=&quot;20%&quot;&gt;Google Docs&lt;/th&gt;
+                    &lt;th width=&quot;20%&quot;&gt;Commerical Software&lt;/th&gt;
+                    &lt;th width=&quot;20%&quot;&gt;Free Software&lt;/th&gt;
+                &lt;/tr&gt;&lt;/thead&gt;
+        &lt;tbody&gt;&lt;tr&gt;
+                    &lt;td colspan=&quot;1&quot;&gt;Easy to implement&lt;/td&gt;
+                    &lt;td colspan=&quot;1&quot; class=&quot;yes&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+                    &lt;td colspan=&quot;1&quot; class=&quot;yes&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+                    &lt;td colspan=&quot;1&quot; class=&quot;no&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-remove&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+                    &lt;td colspan=&quot;1&quot; class=&quot;no&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-remove&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Requires time to learn&lt;/td&gt;
+                    &lt;td class=&quot;no&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-remove&quot;&gt;
+                    &lt;td class=&quot;yes&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+                    &lt;td class=&quot;yes&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+                    &lt;td class=&quot;yes&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Data standardised&lt;/td&gt;
+                    &lt;td class=&quot;no&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-remove&quot;&gt;
+                    &lt;td class=&quot;no&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-remove&quot;&gt;
+                    &lt;td class=&quot;yes&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+                    &lt;td class=&quot;yes&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Data easily accessible&lt;/td&gt;
+                    &lt;td class=&quot;no&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-remove&quot;&gt;
+                    &lt;td class=&quot;yes&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+                    &lt;td class=&quot;yes&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+                    &lt;td class=&quot;yes&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Inexpensive&lt;/td&gt;
+                    &lt;td class=&quot;yes&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+                    &lt;td class=&quot;yes&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+                    &lt;td class=&quot;no&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-remove&quot;&gt;
+                    &lt;td class=&quot;no&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-remove&quot;&gt;
+                &lt;tr&gt;
+                    &lt;td&gt;Dedicated Tech Support&lt;/td&gt;
+                    &lt;td class=&quot;no&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-remove&quot;&gt;
+                    &lt;td class=&quot;no&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-remove&quot;&gt;
+                    &lt;td class=&quot;yes&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt;&lt;/td&gt;
+                    &lt;td class=&quot;no&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-remove&quot;&gt;
+                
+            
+    
+
+
+
+
+&lt;/span&gt;&lt;/td&gt;&lt;/span&gt;&lt;/td&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/span&gt;&lt;/td&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/span&gt;&lt;/td&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;
+</description>
+<pubDate>Thu, 15 Oct 2015 00:00:00 +0100</pubDate>
+<link>https://chembiohub.ox.ac.uk/blog/2015/10/15/good-data-management.html</link>
+<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2015/10/15/good-data-management.html</guid>
+</item>
+
+<item>
 <title>RDKit UGM 2015 - A ChemBio Hub perspective</title>
 <description>&lt;p&gt;On 2nd-4th September 2015, Paul and Andy from ChemBio Hub attended the 4th &lt;a href=&quot;http://rdkit.org/&quot; target=&quot;_blank&quot;&gt;RDKit&lt;/a&gt; User Group Meeting at &lt;a href=&quot;https://www.ethz.ch/en/campus/locations/zurich-region/hoenggerberg.html&quot; target=&quot;_blank&quot;&gt;ETH Honggerberg&lt;/a&gt; in Zurich, Switzerland.&lt;!-- more --&gt;&lt;/p&gt;
 
@@ -392,21 +465,6 @@ Starting here means:&lt;/p&gt;
 <pubDate>Thu, 13 Nov 2014 00:00:00 +0000</pubDate>
 <link>https://chembiohub.ox.ac.uk/blog/2014/11/13/rails-development.html</link>
 <guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/11/13/rails-development.html</guid>
-</item>
-
-<item>
-<title>The first ChemBio Hub Symposium - what happened?</title>
-<description>&lt;p&gt;On 10th November 2014 the ChemBio Hub team held a cross-departmental symposium at the Saïd Business School in the centre of Oxford. Attendees from a broad range of departments in the chemical and biological sciences met to hear about cutting-edge research projects happening across the University. This started lots of useful conversations that generated ideas for new research collaborations.&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;We decided to use Twitter as a way to reach out to those who weren’t able to attend the symposium. We chose a hashtag (#OxCBH) in advance and publicised this to participants. This allowed us to use Storify to collate the tweets and images from the event - perfect for embedding into our blog. Take a look at what happened below. If you want to know more, just get in touch with us!&lt;/p&gt;
-
-&lt;div class=&quot;storify&quot;&gt;&lt;iframe src=&quot;//storify.com/OxChemBioHub/chemical-biology-across-the-university-of-oxford-o/embed?border=false&quot; height=&quot;750&quot; style=&quot;width:100%; border: 0;&quot;&gt;&lt;/iframe&gt;&lt;script src=&quot;//storify.com/OxChemBioHub/chemical-biology-across-the-university-of-oxford-o.js?border=false&quot;&gt;&lt;/script&gt;&lt;noscript&gt;[&lt;a href=&quot;//storify.com/OxChemBioHub/chemical-biology-across-the-university-of-oxford-o&quot; target=&quot;_blank&quot;&gt;View the story &quot;Chemical Biology across the University of Oxford - #OxCBH 2014&quot; on Storify&lt;/a&gt;]&lt;/noscript&gt;&lt;/div&gt;
-
-&lt;!-- --&gt;
-</description>
-<pubDate>Thu, 13 Nov 2014 00:00:00 +0000</pubDate>
-<link>https://chembiohub.ox.ac.uk/blog/2014/11/13/oxcbh-symposium.html</link>
-<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/11/13/oxcbh-symposium.html</guid>
 </item>
 
 </channel>
