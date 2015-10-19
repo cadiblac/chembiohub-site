@@ -60,7 +60,7 @@ Commercial software allows for searching across many projects whilst enforcing d
                     <td class="yes"><span class="glyphicon glyphicon-ok"></span></td>
                     <td class="yes"><span class="glyphicon glyphicon-ok"></span></td>
                     <td class="no"><span class="glyphicon glyphicon-remove"></span></td>
-                    <td class="no"><span class="glyphicon glyphicon-remove"></span></td>
+                    <td class="yes"><span class="glyphicon glyphicon-ok"></span></td>
                 </tr><tr>
                     <td>Dedicated Tech Support</td>
                     <td class="no"><span class="glyphicon glyphicon-remove"></span></td>
