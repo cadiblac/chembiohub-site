@@ -620,6 +620,10 @@ p.overlay {
     font-size: 0.8em;
     line-height: 1.4em;
 }
+figure.white-bg {
+  background-color:#fff;
+  padding:10px;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
