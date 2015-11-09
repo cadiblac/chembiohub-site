@@ -12,7 +12,13 @@ title: Applications
 
 <div class="row">
 	<div class="col-sm-6">
-		<img src="/assets/img/cbh_technology.png" class="img-responsive text-center">
+		<img src="/assets/img/cbh_technology.png" class="img-responsive text-center" usemap="#appmap">
+		<map name="appmap">
+			<area shape="rect" coords="370,19,618,198" href="/chemreg" />
+			<area shape="rect" coords="6,180,235,365" href="/assayreg" />
+			<area shape="rect" coords="383,414,614,597" href="/inventoryreg" />
+		</map>
+
 	</div>
 	<div class="col-sm-6">
 		<h2 class="blue tech-intro">ChemBio Hub develops in-house applications and provides links to a variety of useful tools which can help chemical biologists, related scientists and support staff.</h2>
@@ -26,7 +32,6 @@ title: Applications
 	<div class="col-xs-6">
 		<h2 class="blue h2underline">Our Tools <br><small>built by ChemBio Hub developers</small></h2>
 		{% for tool in site.tools.internal %}
-		
 			{% include tool.html %}
 		{% endfor %}
 
@@ -35,7 +40,6 @@ title: Applications
 	<div class="col-xs-6">
 		<h2 class="blue h2underline">Associated Tools <br><small>of interest to ChemBio Hub users</small></h2>
 		{% for tool in site.tools.external %}
-		
 			{% include tool.html %}
 		{% endfor %}
 		
