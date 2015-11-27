@@ -218,7 +218,7 @@
 		<p class="nexa">
 			We aim to make managing of experimental inventory and consumables simple, secure and highly searchable.
 		</p>
-		<p class="nexa">If you have an issue in managing assay data or in keeping tabs on your lab inventory, have a look at the other ChemBio Hub tools <a href="/assayreg"><strong>AssayReg</strong></a> and <a href="/chemreg"><strong>ChemReg</strong></a></p>
+		<p class="nexa">If you have an issue in managing either assay data or chemical data (or both) as part of your lab inventory, have a look at the other ChemBio Hub tools <a href="/assayreg"><strong>AssayReg</strong></a> and <a href="/chemreg"><strong>ChemReg</strong></a></p>
 	</div>
 
 
@@ -231,13 +231,13 @@
 
 	<div class="col-sm-6">
 		<h2 class="subheading">What is ChemBio Hub InventoryReg?</h2>
-		<p class="nexa">InventoryReg allows groups to manage and search their chemical inventory data securely. A simple upload function allows users to import details in a variety of standard formats. Each item is then given a unique identifier, validated and recorded. Built in <strong>security and configuration</strong> features mean you define who has access to your project to create, view and update the compound information, as well as what information is needed as a minimum for each item. The ChemBio Hub team can provide curation support to ensure data is recorded consistently. The web-based system provides <strong>access from any device</strong>, giving flexible access to information about materials in your lab.</p>
+		<p class="nexa">InventoryReg allows groups to manage and search their chemical inventory data securely. A simple upload function allows users to import details in a variety of standard formats. Each item is then given a unique identifier, validated and recorded. Built in <strong>security and configuration</strong> features mean you define who has access to your project to create, view and update the inventory information, as well as what information is needed as a minimum for each item. The ChemBio Hub team can provide curation support to ensure data is recorded consistently. The web-based system provides <strong>access from any device</strong>, giving flexible access to information about materials in your lab.</p>
 
 		<p class="nexa">A sophisticated <strong>search</strong> function means you can be confident of getting back all relevant information about the material you are looking for – whether compound, antibody, plasmid or peptide.</p>
 
 		<h2 class="subheading">Want to see InventoryReg in action?</h2>
 		<p class="nexa">If you have a University of Oxford Webauth login, you can try the system here:</p>
-		<h2 class="blue text-center"><span class="glyphicon glyphicon-globe"></span> <a href="http://chembiohub.ox.ac.uk/hub/webauth/">chembiohub.ox.ac.uk/hub/webauth</a></h2>
+		<h2 class="blue text-center"><span class="glyphicon glyphicon-globe"></span> <a href="http://chembiohub.ox.ac.uk/hub/webauth/" onclick="window.open(this.href,'_blank');return false;">chembiohub.ox.ac.uk/hub/webauth</a></h2>
 		<p class="nexa">Alternatively you can <a class="btn btn-default" href="mailto:info@chembiohub.ox.ac.uk?subject=InventoryReg%20Demo%20Request&body=Hi%0D%0A%0D%0AI%20am%20interested%20in%20seeing%20what%20ChemBioHub%20InventoryReg%20can%20do%20for%20us"><span class="glyphicon glyphicon-envelope"></span> request a demonstration</a> from a member of the ChemBio Hub team.</p>
 		<p class="nexa"><strong><a onclick="window.open(this.href,'_blank');return false;" href="https://github.com/thesgc/chembiohub_ws">If you are a developer</a></strong>, you can pull down the code to customise and run your own instance of InventoryReg. The code is Open Source and available on Github.</p>
 
@@ -250,6 +250,33 @@
 		<div class="col-xs-6">
 
 			<div class="col-xs-12">
+				<div class="thumbnail">
+			    	<div class="img-holder"  style="overflow-x:hidden">
+			    		<a href="#" data-toggle="modal" data-target="#regshot_4"><img src="/assets/img/chemreg-screens/screen4-thumb.png" title="Easily sort and filter your search hits before export" alt="Easily sort and filter your search hits before export"></a>
+				    </div>
+			      <div class="caption">
+			      	<p class="nexa blue centered" style="line-height:1.3em;">Easily sort and filter your search hits before export</p>
+			      </div>
+			    </div>
+			    <div id="regshot_4" class="modal modal-lg fade" tabindex="-1" role="dialog" aria-hidden="true">
+					<div class="modal-dialog modal-lg">
+
+		    			<div class="modal-content">
+		    				<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+		    					<h2 class="modal-title blue">Easily sort and filter your search hits before export</h2>
+							</div>
+							<div class="modal-body">
+								
+								<img src="/assets/img/chemreg-screens/screen4.png" style="width:100%" alt="Easily sort and filter your search hits before export"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- <div class="col-xs-12">
 				<div class="thumbnail">
 			    	<div class="img-holder"  style="overflow-x:hidden">
 			    		<a href="#" data-toggle="modal" data-target="#regshot_1"><img src="/assets/img/chemreg-screens/screen1-thumb.png" title="Upload compounds and view overlaps, duplicates, errors etc." alt="Upload compounds and view overlaps, duplicates, errors etc."></a>
@@ -273,9 +300,9 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
-			<div class="col-xs-12">
+			<!-- <div class="col-xs-12">
 				<div class="thumbnail">
 			    	<div class="img-holder"  style="overflow-x:hidden">
 			    		<a href="#" data-toggle="modal" data-target="#regshot_2"><img src="/assets/img/chemreg-screens/screen2-thumb.png" title="Mark individual records within upload files for different processes" alt="Mark individual records within upload files for different processes"></a>
@@ -299,7 +326,7 @@
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 			<div class="col-xs-12">
 				<div class="thumbnail">
@@ -332,32 +359,7 @@
 
 		<div class="col-xs-6">
 
-			<div class="col-xs-12">
-				<div class="thumbnail">
-			    	<div class="img-holder"  style="overflow-x:hidden">
-			    		<a href="#" data-toggle="modal" data-target="#regshot_4"><img src="/assets/img/chemreg-screens/screen4-thumb.png" title="Easily sort and filter your search hits before export" alt="Easily sort and filter your search hits before export"></a>
-				    </div>
-			      <div class="caption">
-			      	<p class="nexa blue centered" style="line-height:1.3em;">Easily sort and filter your search hits before export</p>
-			      </div>
-			    </div>
-			    <div id="regshot_4" class="modal modal-lg fade" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-dialog modal-lg">
-
-		    			<div class="modal-content">
-		    				<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-		    					<h2 class="modal-title blue">Easily sort and filter your search hits before export</h2>
-							</div>
-							<div class="modal-body">
-								
-								<img src="/assets/img/chemreg-screens/screen4.png" style="width:100%" alt="Easily sort and filter your search hits before export"/>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
+			
 			<div class="col-xs-12">
 				<div class="thumbnail">
 			    	<div class="img-holder"  style="overflow-x:hidden">
