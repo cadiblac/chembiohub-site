@@ -1,0 +1,500 @@
+---
+layout: website
+---
+<link href="/assets/css/symposium.css" rel="stylesheet">
+{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+{% capture registration_deadline_time %}{{page.registration_deadline | date: '%s'}}{% endcapture %}
+{% capture event_date_time %}{{page.event_date | date: '%s'}}{% endcapture %}
+<div class="row mt">
+	<div class="col-lg-12">
+		<div class="row">
+			<div class="col-md-9 col-sm-7 col-xs-12 text-left">
+				<h1 class="intro blue">
+		    		{{page.title}}
+				</h1>
+				<h2 class="silver centered">{{ page.subtitle }}</h2>
+
+			</div>
+			<div class="col-md-3 col-sm-4 col-xs-12 text-left symp-info">
+				<p>
+					<span class="glyphicon glyphicon-calendar"></span> {{ page.event_date | date: "%A %b %d, %Y" }} <!-- <a role="button" class="btn-sm btn-primary" href="/assets/files/conversation-2015.ics">ical</a> --><br/>
+					<!-- <span class="glyphicon glyphicon-time"></span> 09:00 - 17:20<br/> -->
+					<span class="glyphicon glyphicon-map-marker"></span> <a href="{{ page.location_url }}" onclick='return !window.open(this.href);'>{{ page.location }}</a><br/>
+					<img src="/assets/img/social-icons/twitter.png" style="width:28px; margin: -6px -6px 0;" alt="twitter logo"> <a href="https://twitter.com/hashtag/oxcbh?f=realtime" onclick='return !window.open(this.href);'>#OxCBH</a> 
+				</p>
+				<div>
+					<div class="col-xs-12">
+						<a href="https://twitter.com/share" class="twitter-share-button " data-url="{{ page.permalink }}" data-text="{{ page.title }}" data-via="oxchembiohub" data-size="large" data-hashtags="OxCBH">Tweet</a><br><!-- <a class="btn btn-sm btn-primary" role="button"><span class="glyphicon glyphicon-envelope"></span> Tell a friend</a> -->
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+					</div>
+
+
+				</div>
+
+
+			</div>
+			{% if nowunix <= registration_deadline_time %}
+			
+				<div id="floating-register" data-spy="affix" data-offset-top="490" ><div class="row centered"><a href="{{ registration_link }}" role="button" class="btn-lg btn-primary text-center" style="z-index:1000000;"><span class="glyphicon glyphicon-pencil"></span> Sign Up</a></div></div>
+
+			{% endif %}
+
+		</div>
+		{{ content }}
+		<ul class="nav centered">
+
+
+			{% if nowunix <= event_date_time %}
+			  <li class="symp-section col-xs-12 col-sm-4"><a href="#overview">
+			  	<div class="entry-point">
+						<div class="row hidden-xs">
+							<div class="img-circle blue-bg">
+								<span class="img-helper"></span>
+								<img src="/assets/img/overview.png" alt="Click for Overview" />
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<h2 class="blue">Overview</h2>
+							</div>
+						</div>
+				</div>
+			  </a></li>
+			  <li class="symp-section col-xs-12 col-sm-4"><a href="#agenda">
+			  	<div class="entry-point">
+						<div class="row hidden-xs">
+							<div class="img-circle blue-bg">
+								<span class="img-helper"></span>
+								<img src="/assets/img/schedule.png" alt="Click for Programme" />
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<h2 class="blue">Programme<br></h2>
+							</div>
+						</div>
+				</div>
+			  </a></li>
+			  <li class="symp-section col-xs-12 col-sm-4"><a href="#registration">
+			  	<div class="entry-point">
+						<div class="row hidden-xs">
+							<div class="img-circle blue-bg">
+								<span class="img-helper"></span>
+								<img src="/assets/img/registration.png" />
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<h2 class="blue">Registration<br/>
+									{% if nowunix <= registration_deadline_time %}<small class="text-success">now open</small>
+									{% else %}<small class="text-danger">now closed - fully booked!</small>{% endif %}
+								</h2>
+							</div>
+						</div>
+				</div>
+			  </a></li>
+			  
+
+			  {% else %}
+
+			  <li class="symp-section col-xs-12 col-sm-4"><a href="#overview">
+			  	<div class="entry-point">
+						<div class="row hidden-xs">
+							<div class="img-circle blue-bg">
+								<span class="img-helper"></span>
+								<img src="/assets/img/overview.png" alt="Click for Summary" />
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<h2 class="blue">Summary</h2>
+							</div>
+						</div>
+				</div>
+			  </a></li>
+			  <li class="symp-section col-xs-12 col-sm-4"><a href="#agenda">
+			  	<div class="entry-point">
+						<div class="row hidden-xs">
+							<div class="img-circle blue-bg">
+								<span class="img-helper"></span>
+								<img src="/assets/img/stats.png" alt="Click for Programme" />
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<h2 class="blue">Programme</h2>
+							</div>
+						</div>
+				</div>
+			  </a></li>
+			  <li class="symp-section col-xs-12 col-sm-4"><a href="#talks">
+			  	<div class="entry-point">
+						<div class="row hidden-xs">
+							<div class="img-circle blue-bg">
+								<span class="img-helper"></span>
+								<img src="/assets/img/registration.png" />
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<h2 class="blue">Slides</h2>
+							</div>
+						</div>
+				</div>
+			  </a></li>
+
+			  {% endif %}
+			  <!-- <li class="symp-section col-xs-12 col-sm-3"><a href="#talks">
+			  	<div class="entry-point">
+						<div class="row hidden-xs">
+							<div class="img-circle blue-bg">
+								<span class="img-helper"></span>
+								<img src="/assets/img/talks.png" alt="Click for Slides &amp; Posters"/>
+							</div>
+						</div>
+						<div class="row">
+							<div>
+								<h2 class="blue">Slides &amp; Posters</h2>
+							</div>
+						</div>
+				</div>
+			  </a></li> -->
+
+			
+			  
+			  
+			</ul>	
+
+			<div class="row centered">
+				<!-- Time sensitive banners -->
+				{% if nowunix <= event_date_time %}
+					{% for banner in page.banners %}
+						{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
+						{% capture starttime %}{{banner.date_start | date: '%s'}}{% endcapture %}
+						{% capture endtime %}{{banner.date_end | date: '%s'}}{% endcapture %}
+
+						{% if starttime < nowunix %}
+							{% if nowunix < endtime %}
+							<div class="alert alert-{{banner.banner_class}}">
+								<h2 class="blue nexa">{{banner.message_text}}&nbsp;&nbsp;<a role="button" class="btn-lg btn-primary" href="{{banner.button_link}}" target="_blank">{{banner.button_text}}</a></h2>
+							</div>
+							{% endif %}
+						{% endif %}
+
+					{% endfor %}
+				{% endif %}
+
+			</div>		
+
+			<div class="large top-margin row">
+			  	<a id="overview"></a>
+			  	<h2 class="subheading">Overview</h2>
+
+			  	<div class="col-xs-12">
+
+			  		{% for para in page.overview_paras %}
+
+			  		<p class="nexa">{{para}}</p>
+
+			  		{% endfor %}
+			  	</div>
+
+
+					
+			  	
+				
+				
+
+				
+			  </div>
+
+
+			  <div class="row">
+			  	<div id="sponsors" class="col-md-12">
+			  		{% if nowunix <= event_date_time %}
+					<div id="themes">
+						<h2 class="blue centered">Why Attend?</h2>
+						<p class="nexa">{{page.why_attend}}</p>
+						<div id="contacts" class="centered row mt">
+							<h2 class="blue">
+					    		Contacts
+							</h2>
+							{% for contact in page.contacts %}
+							<div class="col-xs-6">
+
+								
+								<h4>{{contact.first_name}}<br>{{contact.last_name}}</h4><br/>
+								<a href="mailto:{{ contact.email }}" class="btn btn-default" role="button"><span class="glyphicon glyphicon-envelope"></span> Email {{ contact.first_name }}</a> <!--   <span class="glyphicon glyphicon-phone-alt"></span> phone -->
+
+
+							</div>
+							{% endfor %}
+							{% if !page.contacts %}
+								<div class="col-xs-6">
+
+									
+									<h4>{{contact.first_name}}<br>{{contact.last_name}}</h4><br/>
+									<a href="mailto:{{ contact.email }}" class="btn btn-default" role="button"><span class="glyphicon glyphicon-envelope"></span> Email {{ contact.first_name }}</a> <!--   <span class="glyphicon glyphicon-phone-alt"></span> phone -->
+
+
+								</div>
+							{% endif %}
+						</div>
+
+					</div>
+					{% endif %}
+
+					
+					
+					
+					
+
+
+
+				</div>
+			  </div>
+
+			  <div class="row">
+
+			  	<div class="col-md-3 clearfix">
+					<div class="row mt">
+						<div class="col-xs-12">
+							<blockquote class="blockquote-reverse">
+							<p><em>“I liked the breadth and high quality of the presentations.”</em></p>
+						  <footer><small>VP Business Development, contract research organisation</small></footer>
+						</blockquote>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-md-3 clearfix">
+					
+					<div class="row mt">
+						<div class="col-xs-12">
+							<blockquote class="blockquote-reverse">
+								<p><em>“Great academic work being done at Oxford University.”</em></p>
+							  <footer><small>CEO, biotech company</small></footer>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+
+			  	<div class="col-md-3 clearfix">
+					
+					<div class="row mt">
+						<div class="col-xs-12">
+							<blockquote class="blockquote-reverse">
+								<p><em>“It‘s great to see Oxford leading the way to interact with industry.”</em></p>
+							  <footer><small>Senior Director, multinational pharma organisation</small></footer>
+							</blockquote>
+						</div>
+					</div>
+				</div>
+
+			  	<div class="col-md-3 clearfix">
+					
+					<div class="row mt">
+						<div class="col-xs-12">
+							<blockquote class="blockquote-reverse">
+							<p><em>“The sense of collaboration (internally and externally) at Oxford was encouraging to see.”</em></p>
+						  <footer><small>Senior Manager: Open Innovation, multinational pharma organisation</small></footer>
+						</blockquote>
+						</div>
+						
+					</div>
+				</div>
+
+
+			  </div>
+
+			  <div class="row mt">
+
+			  	<div class="col-xs-12">
+			  		<p class="nexa">The symposium brought together over 180 delegates including Oxford researchers, industry colleagues and technology transfer professionals. In doing so, it provided the ideal forum for discussion and will lead to lasting collaborative relationships.</p>
+			  	</div>
+
+			  </div>
+
+			  <div class="row mt text-center" style="padding:10px;">
+					<div class="col-xs-6"><div class="row"><div class="img-circle col-xs-3 blue-bg symp-stat" style="background-color:#038B14">
+																<h2>49</h2>
+															</div>
+															<div class="col-xs-8">
+																<p class="blue nexa vert-middle"><strong>Industry delegates reported 49 new research connections with academics at Oxford.</strong></p><br>
+																<div class="row ">
+																	<div class="col-xs-12 text-left">
+																		<blockquote class="blockquote-reverse">
+																		<p><em>“I had an invaluable introduction and 1:1 with a researcher from a major pharma company in which we discussed potential collaboration.”</em></p>
+																	  <footer><small>Principal investigator, DPAG, University of Oxford</small></footer>
+																	</blockquote>
+																	</div>
+																	
+																</div>
+															</div></div></div>
+					<div class="col-xs-6"><div class="row"><div class="img-circle col-xs-3 blue-bg symp-stat" style="background-color:#038B14">
+																<h2>24</h2>
+															</div>
+															<div class="col-xs-8">
+																<p class="blue nexa vert-middle"><strong>Oxford delegates reported 24 new research connections with colleagues in Industry.</strong></p><br>
+																<div class="row ">
+																	<div class="col-xs-12 text-left">
+																		<blockquote class="blockquote-reverse">
+																			<p><em>“The one-to-one meetings with academics not previously known to me were a great way to initiate discussion.”</em></p>
+																		  <footer><small>VP, biotech company</small></footer>
+																		</blockquote>
+																	</div>
+																</div>
+															</div></div></div>
+				</div>
+
+
+				<div class="row">
+
+					<div class="col-md-6 clearfix">
+					
+				</div>
+			  	<div class="col-md-6 clearfix">
+					
+					
+				</div>
+
+				</div>
+
+				<div class="row mt">
+
+					<div class="col-xs-12">
+						<p class="nexa">Following the presentations, delegates were invited to participate in an interactive discussion entitled “How can Oxford best help industry translate new ideas into pioneer medicines?”</p>
+						<p class="nexa">Professor Chris Schofield chaired a panel of four experts from Oxford and Industry with strong track records of academia-industry collaboration.</p>
+					</div>
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<div class="well text-center" style="min-height:200px;"><a href="https://www.linkedin.com/in/jennylaird" target="_blank" title="See Jenny's LinkedIn profile"><p class="nexa"><strong class="blue ">Jenny Laird<h2><small>VP, External R&D (Eli Lilly)</small></h2></strong></p></a></div>
+							</div>
+							<div class="col-xs-3">
+								<div class="well text-center" style="min-height:200px;"><a href="https://www.linkedin.com/in/drrichjlaw" target="_blank" title="See Richard's LinkedIn profile"><p class="nexa"><strong class="blue ">Richard Law<h2><small>VP, Business Development (Evotec)</small></h2></strong></p></a></div>
+							</div>
+							<div class="col-xs-3">
+								<div class="well text-center" style="min-height:200px;"><a href="http://www.bioch.ox.ac.uk/aspsite/index.asp?pageid=574" target="_blank"><p class="nexa" title="See Raymond's University of Oxford profile"><strong class="blue ">Raymond Dwek<h2><small>Director, Oxford Glycobiology Institute (University of Oxford)</small></h2></strong></p></a></div>
+							</div>
+							<div class="col-xs-3">
+								<div class="well text-center" style="min-height:200px;"><a href="http://www.dpag.ox.ac.uk/team/richard-wade-martins" target="_blank" title="See Richard's University of Oxford profile"><p class="nexa"><strong class="blue ">Richard Wade-Martins<h2><small>Principal Investigator, Oxford Parkinson’s Disease Centre (University of Oxford)</small></h2></strong></p></a></div>
+							</div>
+						</div>
+					</div>
+					
+
+				</div>
+
+				<div class="row">
+					<div class="col-xs-6">
+						<p class="nexa">The discussion was vibrant, with the audience posing a range of interesting questions to the panel. Key themes that emerged throughout were the importance of communication, training and industry-guided research facilitation in academia.</p>
+					</div>
+					<div class="col-md-3 clearfix">
+						<div class="row ">
+							<div class="col-xs-12">
+								<blockquote class="blockquote-reverse">
+								<p><em>“Some of the comments and questions during the roundtable discussion were really interesting. I've wanted to have this debate in Oxford for years!!”</em></p>
+							  <footer><small>VP Business Development, contract research organisation</small></footer>
+							</blockquote>
+							</div>
+							
+						</div>
+					</div>
+				  	<div class="col-md-3 clearfix">
+						
+						<div class="row ">
+							<div class="col-xs-12">
+								<blockquote class="blockquote-reverse">
+									<p><em>“The round table discussions with industry representatives explaining how they interact with academia were illuminating.”</em></p>
+								  <footer><small>Senior Post-Doc, University of Oxford</small></footer>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+
+
+
+				<div class="row" style="margin-top:20px;">
+					<h2 class="blue">This event was generously supported by:</h2>
+					<div class="row">
+
+						<div class="col-xs-6 col-sm-3 text-center">
+							<img src="/assets/img/funders/mrc.png" alt="Medical Research Council logo" title="Medical Research Council">
+						</div>
+						<div class="col-xs-6 col-sm-9">
+							<h2 class="blue">MRC Proximity to Discovery Industry Engagement Fund</h2>
+							<p class="nexa"><strong>The Medical Research Council </strong>(MRC) improves human health through world class medical research. The MRC Proximity to Discovery: Industry Engagement Fund provides funding for innovative ways to enable to initial development of academic-industry collaborations.</p>
+						</div>
+					</div>
+					<div class="row">
+
+						<div class="col-xs-6 col-sm-3 text-center">
+							<img src="/assets/img/funders/hefce.png" alt="HEFCE logo" title="Higher Education Funding Council">
+						</div>
+						<div class="col-xs-6 col-sm-9">
+							<h2 class="blue">Higher Education Funding Council For England</h2>
+							<p class="nexa"><strong>The Higher Education Funding Council For England</strong> (HEFCE) provides funding for knowledge exchange through <strong>Higher Education Innovation Funding</strong> (HEIF). HEIF supports and develops a broad range of knowledge-based interactions between universities and colleges and the wider world. These collaborations benefit the UK economically and socially.</p>
+						</div>
+					</div>
+				</div>
+			  <div class="row">
+			  	<button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
+			  </div>
+
+
+
+			  <div class="large top-margin">
+			  	<a id="agenda"></a> 
+			  	<div class="row">
+					<!-- Introductory paragraph -->
+					<h2 class="subheading">Programme</h2>
+				</div>
+				<div class="row">
+					<p class="nexa text-center"><a href="https://drive.google.com/file/d/0B26sagyNQSxENURXMi15NTc5TmM/view?usp=sharing" role="button" class="btn btn-primary" onclick='return !window.open(this.href);' target="_blank"><span class="glyphicon glyphicon-download-alt"></span> Download Programme PDF</a></p>
+					<h2 class="nexa blue centered">Speakers:</h2>
+					
+					{% for speaker in site.speakers2015 | sort:"talk_order" %}
+						<div class="row mt">
+							<div class="centered">
+									<h2 class="nexa blue">{{ speaker.first_name }}&nbsp;{{ speaker.last_name }}<br>
+										<small>{{ speaker.position }}{% if speaker.position != "" %},&nbsp;{% endif %}{{ speaker.dept }}</small>
+									</h2>
+									{% if speaker.research_interests != "" %}
+									<p class="nexa"><strong>Research interests:</strong> <em>{{speaker.research_interests}}</em></p>
+									{% endif %}
+							</div>
+						</div>
+
+					{% endfor %}
+
+				</div>
+			</div>
+			<div class="row">
+			  	<button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
+			  </div>
+
+			  <div class="row top-margin">
+			  	<a id="talks"></a>
+			  	<!-- posters page as an include? -->
+			  	{% include talks-conversation.html %}
+
+			  </div>
+
+			<!-- <div class="large top-margin">
+			  	<a id="registration"></a>
+			  	<h2 class="subheading">Registration</h2>
+			  	<iframe src="https://www.eventbrite.co.uk/e/current-expertise-and-future-directions-in-drug-discovery-an-oxford-industry-conversation-tickets-15943271755" frameborder="0" height="1000" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe>
+			  </div>
+			  <div class="row">
+			  	<button class="btn pull-right scrollToTop btn-lg blue">Back to top <span class="glyphicon glyphicon-upload"></span> </button>
+			  </div> -->
+
+	</div>
+</div>
+<script type="text/javascript" src="/assets/js/slide-down-links.js"></script>
