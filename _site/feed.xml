@@ -7,6 +7,31 @@
 <atom:link href="https://chembiohub.ox.ac.uk/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>UXOxford - consider your network and prepare for failure</title>
+<description>&lt;p&gt;On Thursday 26 November I attended another talk in the UXOxford series at the Old Fire Station in central Oxford. Giving the talk this time was &lt;a href=&quot;https://twitter.com/patrickhamann&quot; target=&quot;_blank&quot;&gt;Patrick Hamann&lt;/a&gt; of the Financial Times, the talk was entitled “Embracing the Network” and was centred around how to provide users with a bettter, less frustrating experience when encountering limiting factors via reduced or non-existent internet connection - a source of great frustration for users.&lt;/p&gt;
+
+&lt;p&gt;The main take home messages which are relevant to the sort of software we are writing as part of ChemBio Hub were:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Using WebPageTest to generate video of Single Point Of Failure restrictions&lt;/strong&gt; - &lt;a href=&quot;http://www.webpagetest.org/&quot; target=&quot;_blank&quot;&gt;WebPageTest&lt;/a&gt; is a great, free resource to replicate real world usage and consitions of websites and webapps. It can help identify Single Point Of Failure problems, which are very often exposed by restrictive internet connections. Ironically, the UX for this tool isn’t as good as it could be - a lot of great functionaliity is well hidden.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Open device labs available to let you test on different devices&lt;/strong&gt; - it is a large cost commitment to have a wide variety of devices to replicate the different systems people will use to access your website or app. &lt;a href=&quot;https://opendevicelab.com/&quot; target=&quot;_blank&quot;&gt;Open Device Labs&lt;/a&gt; is a fantastic resource which makes mobile devices available for people to test on. There are a number of these dotted around the UK (and the rest of the world - 34 countries at time of writing) maintained by web development agencies as part of their efforts to engage with the web development community.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Use errors to provide a give up/try again in context of your site&lt;/strong&gt; - a frustration that many users experience is when something goes wrong with a site or app they are using, is when an error occurs and there is no recourse, or the error is a dead end. An easy way around this is to add a “Try Again” button to repeat the process in case of errors where one process hasn’t quite finished or there is some other temporary blocker in place. Informing the user that the service is down or offline temporarily will also provide a better user experience, they are likely to try again later if they have been told it will be possible later!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;rel=preconnect (crossorigin) and other resource hints are really powerful and useful&lt;/strong&gt; - very often within websites and apps, the order in which resources are loaded, both local and from external sources, can affect performance. Indicating at an early stage that javascript, images and CSS files will need to be loaded in order to render a page can improve load times and by extension user experience. This can be accheived using &lt;a href=&quot;https://w3c.github.io/resource-hints/&quot; target=&quot;_blank&quot;&gt;resource hints&lt;/a&gt;. These are part of the W3C spec and aloow the server delivering pages or app content to see which origins content will need to be served from before any page rendering takes place. This takes a performance limiting step out of the normal page rendering flow.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Images can be loaded out of order if there is a placeholder&lt;/strong&gt; - this is a technique used by well known sites whereby known images locations within the page contain a placholder until the image can be fetched, usually where there are large nummber of images to be loaded or high quality images which may take longer to download. There are two approaches - using the dominant colour for the image (this usually can be calculated on the server side or in advance) or with a simple generic image or loading spinner. This allows the main page content and navigation to be loaded first, with items that the user may be used to waiting for (i.e. images, more dynamic content) left until last.&lt;/p&gt;
+
+&lt;p&gt;We will be attempting to use some of these techniques within the ChemBio Hub platform if posssible to improve its user experience. If you are a developer, then hopefully these tips have given you food for thought and something you can advocate for within your apps.&lt;/p&gt;
+
+&lt;p&gt;Please comment at the bottom of this article if you have any feedback!&lt;/p&gt;
+</description>
+<pubDate>Thu, 24 Dec 2015 00:00:00 +0000</pubDate>
+<link>https://chembiohub.ox.ac.uk/blog/2015/12/24/uxoxford-network-prepare-for-failure.html</link>
+<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2015/12/24/uxoxford-network-prepare-for-failure.html</guid>
+</item>
+
+<item>
 <title>Good data management practice in academia - What are your options?</title>
 <description>&lt;p&gt;Big business takes data management seriously, funnelling millions of pounds into its efficient curation and mining.  Geoffrey Moore (author of ‘Crossing the Chasm’ &amp;amp; ‘Inside the Tornado’) has tweeted that ‘without big data analytics, companies are blind and deaf, wandering out onto the Web like deer on a freeway.’ But how does good data management apply to academia and science in general? Scientists work with data daily, but is it managed in a way that maximizes its potential? That depends on what you mean by ‘good’ data management.&lt;/p&gt;
 
@@ -423,61 +448,6 @@ Starting here means:&lt;/p&gt;
 <pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
 <link>https://chembiohub.ox.ac.uk/blog/2014/12/01/opencon-1.html</link>
 <guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/12/01/opencon-1.html</guid>
-</item>
-
-<item>
-<title>Beginning developing in Rails</title>
-<description>&lt;p&gt;ChemBio Hub is committed to building a wide variety of tools and applications for scientists across the spectrum of chemical biology in Oxford. In order to do this we need to keep up to date in terms of programming techniques and languages.&lt;/p&gt;
-
-&lt;p&gt;An opportunity to do this came up recently when we needed an application to allow a brief walk-up survey at the recent ChemBio Hub symposium. It was decided that a simple yes/no system should be used to ask people about a small number of concepts which ChemBio Hub could provide applications or information for, which we could then narrow down based on the results of the survey.&lt;/p&gt;
-
-&lt;p&gt;Since it was a small application, it fitted well as a tutorial application for Ruby on Rails, additionally, it was similar to one of the existing official Rails tutorials at [link].&lt;/p&gt;
-
-&lt;p&gt;The spec for the application was as follows:
-- users should be able to walk up without entering any personal information to take the survey;
-- the survey should be a linear app, displaying a new question when an answer is given;
-- the survey should have a set number of questions (interests), each with a title, descriptive photo and help text;
-- each question should have multiple true or false (&lt;em&gt;boolean&lt;/em&gt;) answers (preferences) associated with it, which make up the results of the survey;
-- on reaching the end of the survey, the user should be informed they have completed and the next person should use the same screen to start the survey.&lt;/p&gt;
-
-&lt;p&gt;I began by creating a new Rails app via the command line&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;rails&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;questionapp&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;I created objects called interest (the question) and preference (the answer). Each preference belonged to a single interest. An interest could have many preferences. I created these from the command line as directed by the Rails tutorial.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;rails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Interest&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;img_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;help_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;rails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Preference&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;is_preferred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;boolean&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;interest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;references&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;date&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;timestamp&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;I created controllers for interests and preferences to handle the flow of input into the application. Again this was done via the command line.&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;rails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;g&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;interests&lt;/span&gt;
-
-&lt;span class=&quot;n&quot;&gt;rails&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generate&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Preferences&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;The key functionality of the app is located in &lt;code&gt;preferences_controller.rb&lt;/code&gt;. When an answer is given, a preference must be created representing that answer and cause a redirect to the next question - or if this is the last question, direct to the completion page (which is also the start page!):&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;create&lt;/span&gt;
-  &lt;span class=&quot;vi&quot;&gt;@interest&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Interest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:interest_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;n&quot;&gt;pref&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;false&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:submit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;yes&amp;quot;&lt;/span&gt;
-	  &lt;span class=&quot;n&quot;&gt;pref&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-
-  &lt;span class=&quot;vi&quot;&gt;@preference&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@interest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;preferences&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;is_preferred&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pref&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@interest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;redirect_to&lt;/span&gt; &lt;span class=&quot;vi&quot;&gt;@interest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;next&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;redirect_to&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;completed_path&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;All of the code for this application is available at &lt;a href=&quot;https://github.com/thesgc/chembiohub-qanda&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;&lt;/a&gt;. You may fork this code as you wish and use it in your own applications or for learning purposes.&lt;/p&gt;
-</description>
-<pubDate>Thu, 13 Nov 2014 00:00:00 +0000</pubDate>
-<link>https://chembiohub.ox.ac.uk/blog/2014/11/13/rails-development.html</link>
-<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/11/13/rails-development.html</guid>
 </item>
 
 </channel>

@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: "UXOxford - consider your network and prepare for failure"
 author: paul
