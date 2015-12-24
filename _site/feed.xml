@@ -32,6 +32,108 @@
 </item>
 
 <item>
+<title>Managing the ChemBio Hub Platform installation with conda and pip</title>
+<description>&lt;p&gt;There are a number of other steps required to install the system which are noted in our install documents for CentOS and Ubuntu. &lt;/p&gt;
+
+&lt;p&gt;In this blog post I am going to describe how we manage our python packages and our custom PostgreSQL database.&lt;/p&gt;
+
+&lt;p&gt;Developing with Python and JavaScript is often fast and efficient, but once a large number of dependencies are involved it is crucial to get the way you install the product under control. In order to do that, we combine a few package management technologies and develop approroiate scripts to make the package managers work together.&lt;/p&gt;
+
+&lt;p&gt;The 4 package managers used are for Python: conda and pip and for JavaScript npm and bower.&lt;/p&gt;
+
+&lt;p&gt;In our python development we have found the conda package manager to be great for installing large and complex scientific packages for image processing and cheminformatics. Wihtout conda these can take literally hours to compile and install but conda speeds all of these things up. It does this by having a templated binary installation that is tailored to the specific environment that you wish to install it in. &lt;/p&gt;
+
+&lt;p&gt;If the python code in one of your packages would normally call C code from the server shared libraries, these shared libaries can be packaged up with the conda package instead. The advantage nof this approach is that the package on conda can be set up to work across all operating systems. The disadvantage is that if the person who created the original conda package did not specify that C dependency you can get to an unexpected error that may be hard to debug. Another disadvantage is that if you are the only manager of a particular package, you will have to maintain that package and add updates as approapriate.&lt;/p&gt;
+
+&lt;p&gt;With these advantages and disadvantages in mind, the most pragmatic approach is to use Conda for the well-known packages that it is good at and to fill in the other small python packages with pip.&lt;/p&gt;
+
+&lt;p&gt;So how does Conda work?&lt;/p&gt;
+
+&lt;p&gt;Conda is installed using the installers for linux, mac or windows.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda2-2.4.0-Linux-x86_64.sh 
+ bash Anaconda2-2.4.0-Linux-x86_64.sh -b    
+ rm Anaconda2-2.4.0-Linux-x86_64.sh
+ echo &quot;export PATH=$HOME/anaconda2/bin/:\$PATH&quot; &amp;gt;&amp;gt; ~/.bashrc
+ #source ~/.bashrc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We then add the channels that we need for our dependencies - cairocffi, rdkit, rdkit-postgresql and openbabel.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export PATH=$HOME/anaconda2/bin/:$PATH
+conda config --add channels https://conda.anaconda.org/jeprescottroy
+conda config --add channels https://conda.anaconda.org/rdkit
+conda config --add channels https://conda.anaconda.org/clyde_fare
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Following this we create a virtual environment for the project using an exported list of conda dependencies (exported using conda list -e).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;conda create -q -y --file anaconda_requirements.txt -n dev
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The ChemBio Hub system is set up to use an environment called dev when in development, the environment name corresponds to the web folder the project will be hosted on.&lt;/p&gt;
+
+&lt;p&gt;After this is done we can activate the conda environment. This involves setting the system PATH&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;source activate dev
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The bash shell then changes to show you are in that environment&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(dev)chembiohub@chembiohub:~/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now with the environment activated the pip and python we are using will point at anaconda’s version, so even if you are on Mac OS or CentOS the python version will always be the same, in this case 2.7.10.&lt;/p&gt;
+
+&lt;p&gt;Now it is possible to install the other dependencies of ChemBio Hub and pull down all of the submodules:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;pip install -r pip_requirements.txt
+
+git submodule init 
+git submodule update
+git submodule foreach git checkout master 
+git submodule foreach git pull
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;PostgreSQL is also installed with conda and is added to the path in the virtual environment. As we do not want to have lots of different ports listening for postgres connections, we use a unix socket so that any instace of the application can have its own PostgreSQL installation. We do this by setting PostgreSQL to run in the background using supervisor.&lt;/p&gt;
+
+&lt;p&gt;Our install script sets this up by running the initdb command to create a tablespace folder for postgres then creating a socket directory for the PostgreSQL process to communicate with.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir $CONDA_ENV_PATH/var/postgressocket
+initdb -D $CONDA_ENV_PATH/var/postgresdata
+$CONDA_ENV_PATH/bin/postgres  -D  $CONDA_ENV_PATH/var/postgresdata  -c  listen_addresses=''  -c  unix_socket_directories=$CONDA_ENV_PATH/var/postgressocket &amp;amp;
+sleep 5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It is then possible to create a datgabase specifying the socket as a host&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;createdb -h $CONDA_ENV_PATH/var/postgressocket/ dev_db
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The RDKit and HStore extensions that ChemBio Hub Platform uses are ready to set up and use&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;psql  -h $CONDA_ENV_PATH/var/postgressocket -c &quot;create extension hstore;create extension rdkit;&quot; ${ENV_NAME}_db
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;All that remains now is to make the tables to run the ChemBio Hub application&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;python manage.py migrate
+python manage.py reindex_compounds
+python manage.py reindex_datapoint_classifications
+python manage.py createsuperuser
+python manage.py collectstatic
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Once these steps are done, in order to run the system in production, a few more steps are required to link the front end and back end up, to ensure the processes keep running and to secure the application.&lt;/p&gt;
+
+&lt;p&gt;If you have any questions about the procedures described in this post, please contact me my email address is in the link at the top of the post. Alternativley you can leave a comment on this post below.&lt;/p&gt;
+</description>
+<pubDate>Thu, 10 Dec 2015 00:00:00 +0000</pubDate>
+<link>https://chembiohub.ox.ac.uk/blog/2015/12/10/installation.html</link>
+<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2015/12/10/installation.html</guid>
+</item>
+
+<item>
 <title>Good data management practice in academia - What are your options?</title>
 <description>&lt;p&gt;Big business takes data management seriously, funnelling millions of pounds into its efficient curation and mining.  Geoffrey Moore (author of ‘Crossing the Chasm’ &amp;amp; ‘Inside the Tornado’) has tweeted that ‘without big data analytics, companies are blind and deaf, wandering out onto the Web like deer on a freeway.’ But how does good data management apply to academia and science in general? Scientists work with data daily, but is it managed in a way that maximizes its potential? That depends on what you mean by ‘good’ data management.&lt;/p&gt;
 
@@ -421,33 +523,6 @@ Starting here means:&lt;/p&gt;
 <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
 <link>https://chembiohub.ox.ac.uk/blog/2014/12/09/opencon-2.html</link>
 <guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/12/09/opencon-2.html</guid>
-</item>
-
-<item>
-<title>Some thoughts from OpenCon 2014&amp;#58; open data</title>
-<description>&lt;p&gt;Last Wednesday I attended the &lt;a href=&quot;http://www.eventbrite.com/e/opencon-2014-london-tickets-13952172323&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;OpenCon 2014 London meetup&lt;/a&gt;. I went to find out a bit more about how students and early career researchers view open data, and think about how this might fit in with the goals of ChemBio Hub. I also wanted to get an idea of what tools are out there to help people discover science and make their work more efficient!&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;Many aspects of open science were discussed during the day: &lt;a href=&quot;http://en.wikipedia.org/wiki/Open_access&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;open access&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Peer_review#Open_peer_review&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;open peer review&lt;/a&gt; and &lt;a href=&quot;http://en.wikipedia.org/wiki/Open_education&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;open education&lt;/a&gt; all featured at various points. Open data was perhaps the most relevant topic to our work at ChemBio Hub, so here a few thoughts on this. &lt;/p&gt;
-
-&lt;p&gt;What does open data mean in the context of science? It’s the idea that experimental data should be available for everyone to use and republish as they wish. This includes being free from restrictions like copyright and patents. It means ALL data and not just the best results or good story!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/rmounce&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Ross Mounce&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/protohedgehog&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Jon Tennant&lt;/a&gt; talked about the relevance of this to the biological sciences. They argued the benefits of open data include addressing reproducibility issues and building confidence in results. I liked their observation that a PDF is a document meant for reading, not reuse – and so it can’t be the vehicle for open data.&lt;/p&gt;
-
-&lt;p&gt;In the discussion session that followed people spoke about the challenges and opportunities of open data. One point that stuck in my mind was the need to develop infrastructure and standard methods for sharing data. Another was that effective data sharing requires particular skills that might not be routinely taught to early career researchers right now.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-about-chembio-hub&quot;&gt;What about ChemBio Hub?&lt;/h3&gt;
-
-&lt;p&gt;ChemBio Hub aims to become a University-wide resource for researchers to manage their compound and assay data and share it with collaborators. Our approach to this is to provide the right (you guessed it) infrastructure and training. But will all data in the Hub be “open”?&lt;/p&gt;
-
-&lt;p&gt;From talking to the research community, our view is that you should decide what data you share, when you share it and who you share it with. Our job is to provide the simple and secure tools for you to do this with minimal effort and fuss. &lt;/p&gt;
-
-&lt;p&gt;But “open data” is becoming a big thing for public research funding organisations. Some now mandate that data is made publicly available as a condition of their grants (check out the recent announcement from the &lt;a href=&quot;http://www.theregister.co.uk/2014/11/27/gates_foundation_to_insist_on_open_access_science/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Gates Foundation&lt;/a&gt;). The talks at OpenCon suggest a growing recognition of the value of open data, and support for it, amongst the scientific community. So as well as offering secure data management, ChemBio Hub will allow scientists to make their data public available when they choose – such as by publishing straight to &lt;a href=&quot;https://www.ebi.ac.uk/chembl/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;ChEMBL&lt;/a&gt; or &lt;a href=&quot;https://pubchem.ncbi.nlm.nih.gov/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;PubChem&lt;/a&gt; at the press of a button. Best of both worlds!&lt;/p&gt;
-
-&lt;p&gt;If you have any thoughts on open data or research data management, we’d love to hear them. Get in touch at our usual address: &lt;a href=&quot;mailto:info@chembiohub.ox.ac.uk&quot;&gt;info@chembiohub.ox.ac.uk&lt;/a&gt;.&lt;/p&gt;
-</description>
-<pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
-<link>https://chembiohub.ox.ac.uk/blog/2014/12/01/opencon-1.html</link>
-<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/12/01/opencon-1.html</guid>
 </item>
 
 </channel>

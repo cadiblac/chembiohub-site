@@ -11,11 +11,13 @@
     <meta name="twitter:site" content="@oxchembiohub">
     <meta name="twitter:card" content="summary" />
     
-	  <meta name="twitter:description" content="As a part of our commitment to provide quality collaborative tools and outreach to the chemical biology community, we have set up this blog to provide some additional information about how we are c...">
+	  <meta name="twitter:description" content="There are a number of other steps required to install the system which are noted in our install documents for CentOS and Ubuntu. 
+
+In this blog post I am going to describe how we manage our python ...">
 	
     
-	  <meta content="Setting up the ChemBioHub blog" property="og:title">
-	  <meta name="twitter:title" content="Setting up the ChemBioHub blog">
+	  <meta content="Managing the ChemBio Hub Platform installation with conda and pip" property="og:title">
+	  <meta name="twitter:title" content="Managing the ChemBio Hub Platform installation with conda and pip">
 	
 	
 	  <meta content="http://chembiohub.ox.ac.uk/assets/img/cbh_og_logo.png" property="og:image">
@@ -25,7 +27,7 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
 <link rel="alternate" type="application/rss+xml" title="Chembio Hub Blog" href="/feed.xml">
-    <title>Setting up the ChemBioHub blog - ChemBio Hub</title>
+    <title>Managing the ChemBio Hub Platform installation with conda and pip - ChemBio Hub</title>
 
     <!-- concatenate all the used CSS in these files into clean.css -->
     <!-- build:css /assets/css/clean.css -->
@@ -139,17 +141,102 @@
 	visit the <a href="https://chembiohub.ox.ac.uk">ChemBio Hub website</a> and also follow us on Twitter <a href="https://twitter.com/oxchembiohub" onclick='return !window.open(this.href);'>@OxChemBioHub</a>
 </div>
 <div class='post'>
-  <h1>Setting up the ChemBioHub blog</h1>
-  <div class='date'>posted 02 Sep 2014 by <a href="mailto:paul.barrett@chembiohub.ox.ac.uk">Paul Barrett</a></div>
-  <div class='body'><p>As a part of our commitment to provide quality collaborative tools and outreach to the chemical biology community, we have set up this blog to provide some additional information about how we are creating new tools, helping researchers and enabling collaboration.<!-- more --></p>
+  <h1>Managing the ChemBio Hub Platform installation with conda and pip</h1>
+  <div class='date'>posted 10 Dec 2015 by <a href="mailto:andrew.stretton@chembiohub.ox.ac.uk">Andrew Stretton</a></div>
+  <div class='body'><p>There are a number of other steps required to install the system which are noted in our install documents for CentOS and Ubuntu. </p>
 
-<p>We had a look at a number of options for the technology platform we could use for the blog. It had to be something that was lightweight and also editable by the less-technical members of our group. The big CMS platforms, such as Wordpress and Drupal, provide good WYSIWYG (what you see is what you get) tools for text entry but are too heavyweight and complicated for what we wanted to achieve. Also considered was <a href="http://ghost.org">Ghost</a>, a lightweight blogging platform written in javascript and node.js - while this fulfilled the remit of being lightweight, and allows users to add content via Markdown, it required another hosting solution to be set up and configured.</p>
+<p>In this blog post I am going to describe how we manage our python packages and our custom PostgreSQL database.</p>
 
-<p>A good compromise was found with <a href="https://pages.github.com" onclick="return !window.open(this.href);">Github Pages</a> and <a href="http://jekyllrb.com/" onclick="return !window.open(this.href);">Jekyll</a>. Jekyll is a lightweight, blog-aware platform which allows users to draft posts for review, publish them, use templating and all the things which developers expect. Plus it has the advantage of being hosted and run on Github - this enables us to have an open source, transparent blog structure that other users can take away and use themselves! Because it uses Markdown, the less-technical members of our group can easily add blog entries for review before they are published and gain an insight into how version control via Github works. That helps the developers explain their work better!</p>
+<p>Developing with Python and JavaScript is often fast and efficient, but once a large number of dependencies are involved it is crucial to get the way you install the product under control. In order to do that, we combine a few package management technologies and develop approroiate scripts to make the package managers work together.</p>
 
-<p>Setting up the blog was a breeze thanks to the great <a href="https://help.github.com/articles/using-jekyll-with-pages/" onclick="return !window.open(this.href);">documentation</a> and <a href="https://github.com/jekyll/jekyll/wiki/Sites">existing sites</a> that could be used as examples. The most useful of these was <a href="https://github.com/rebase/rebase.github.com" onclick="return !window.open(this.href);">Github Rebase</a>[]() with easy to follow code and simple structure.</p>
+<p>The 4 package managers used are for Python: conda and pip and for JavaScript npm and bower.</p>
 
-<p>So now we have a blog, we need to fill it! There will be more articles added here by different members of the team, if you have questions for any of us, just click the author name and send us an email!</p>
+<p>In our python development we have found the conda package manager to be great for installing large and complex scientific packages for image processing and cheminformatics. Wihtout conda these can take literally hours to compile and install but conda speeds all of these things up. It does this by having a templated binary installation that is tailored to the specific environment that you wish to install it in. </p>
+
+<p>If the python code in one of your packages would normally call C code from the server shared libraries, these shared libaries can be packaged up with the conda package instead. The advantage nof this approach is that the package on conda can be set up to work across all operating systems. The disadvantage is that if the person who created the original conda package did not specify that C dependency you can get to an unexpected error that may be hard to debug. Another disadvantage is that if you are the only manager of a particular package, you will have to maintain that package and add updates as approapriate.</p>
+
+<p>With these advantages and disadvantages in mind, the most pragmatic approach is to use Conda for the well-known packages that it is good at and to fill in the other small python packages with pip.</p>
+
+<p>So how does Conda work?</p>
+
+<p>Conda is installed using the installers for linux, mac or windows.</p>
+
+<pre><code> wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda2-2.4.0-Linux-x86_64.sh 
+ bash Anaconda2-2.4.0-Linux-x86_64.sh -b    
+ rm Anaconda2-2.4.0-Linux-x86_64.sh
+ echo "export PATH=$HOME/anaconda2/bin/:\$PATH" &gt;&gt; ~/.bashrc
+ #source ~/.bashrc
+</code></pre>
+
+<p>We then add the channels that we need for our dependencies - cairocffi, rdkit, rdkit-postgresql and openbabel.</p>
+
+<pre><code>export PATH=$HOME/anaconda2/bin/:$PATH
+conda config --add channels https://conda.anaconda.org/jeprescottroy
+conda config --add channels https://conda.anaconda.org/rdkit
+conda config --add channels https://conda.anaconda.org/clyde_fare
+</code></pre>
+
+<p>Following this we create a virtual environment for the project using an exported list of conda dependencies (exported using conda list -e).</p>
+
+<pre><code>conda create -q -y --file anaconda_requirements.txt -n dev
+</code></pre>
+
+<p>The ChemBio Hub system is set up to use an environment called dev when in development, the environment name corresponds to the web folder the project will be hosted on.</p>
+
+<p>After this is done we can activate the conda environment. This involves setting the system PATH</p>
+
+<pre><code>source activate dev
+</code></pre>
+
+<p>The bash shell then changes to show you are in that environment</p>
+
+<pre><code>(dev)chembiohub@chembiohub:~/
+</code></pre>
+
+<p>Now with the environment activated the pip and python we are using will point at anaconda’s version, so even if you are on Mac OS or CentOS the python version will always be the same, in this case 2.7.10.</p>
+
+<p>Now it is possible to install the other dependencies of ChemBio Hub and pull down all of the submodules:</p>
+
+<pre><code>pip install -r pip_requirements.txt
+
+git submodule init 
+git submodule update
+git submodule foreach git checkout master 
+git submodule foreach git pull
+</code></pre>
+
+<p>PostgreSQL is also installed with conda and is added to the path in the virtual environment. As we do not want to have lots of different ports listening for postgres connections, we use a unix socket so that any instace of the application can have its own PostgreSQL installation. We do this by setting PostgreSQL to run in the background using supervisor.</p>
+
+<p>Our install script sets this up by running the initdb command to create a tablespace folder for postgres then creating a socket directory for the PostgreSQL process to communicate with.</p>
+
+<pre><code>mkdir $CONDA_ENV_PATH/var/postgressocket
+initdb -D $CONDA_ENV_PATH/var/postgresdata
+$CONDA_ENV_PATH/bin/postgres  -D  $CONDA_ENV_PATH/var/postgresdata  -c  listen_addresses=''  -c  unix_socket_directories=$CONDA_ENV_PATH/var/postgressocket &amp;
+sleep 5
+</code></pre>
+
+<p>It is then possible to create a datgabase specifying the socket as a host</p>
+
+<pre><code>createdb -h $CONDA_ENV_PATH/var/postgressocket/ dev_db
+</code></pre>
+
+<p>The RDKit and HStore extensions that ChemBio Hub Platform uses are ready to set up and use</p>
+
+<pre><code>psql  -h $CONDA_ENV_PATH/var/postgressocket -c "create extension hstore;create extension rdkit;" ${ENV_NAME}_db
+</code></pre>
+
+<p>All that remains now is to make the tables to run the ChemBio Hub application</p>
+
+<pre><code>python manage.py migrate
+python manage.py reindex_compounds
+python manage.py reindex_datapoint_classifications
+python manage.py createsuperuser
+python manage.py collectstatic
+</code></pre>
+
+<p>Once these steps are done, in order to run the system in production, a few more steps are required to link the front end and back end up, to ensure the processes keep running and to secure the application.</p>
+
+<p>If you have any questions about the procedures described in this post, please contact me my email address is in the link at the top of the post. Alternativley you can leave a comment on this post below.</p>
  <a class="scrollToTop blue pull-right">Back to top <span class="glyphicon glyphicon-upload"></span></a> <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

@@ -1,11 +1,10 @@
 ---
-published: false
+published: true
 layout: post
 title: Managing the ChemBio Hub Platform installation with conda and pip
 author: andy
 excerpt: "Developing with Python and JavaScript is often fast and efficient, but once a large number of dependencies are involved it is crucial to get the way you install the product under control."
 ---
-
 
 There are a number of other steps required to install the system which are noted in our install documents for CentOS and Ubuntu. 
 
@@ -32,15 +31,15 @@ Conda is installed using the installers for linux, mac or windows.
      #source ~/.bashrc
 
 We then add the channels that we need for our dependencies - cairocffi, rdkit, rdkit-postgresql and openbabel.
-     export PATH=$HOME/anaconda2/bin/:$PATH
-     conda config --add channels https://conda.anaconda.org/jeprescottroy
-     conda config --add channels https://conda.anaconda.org/rdkit
-     conda config --add channels https://conda.anaconda.org/clyde_fare
+
+    export PATH=$HOME/anaconda2/bin/:$PATH
+    conda config --add channels https://conda.anaconda.org/jeprescottroy
+    conda config --add channels https://conda.anaconda.org/rdkit
+    conda config --add channels https://conda.anaconda.org/clyde_fare
 
 Following this we create a virtual environment for the project using an exported list of conda dependencies (exported using conda list -e).
 
     conda create -q -y --file anaconda_requirements.txt -n dev
-
 
 The ChemBio Hub system is set up to use an environment called dev when in development, the environment name corresponds to the web folder the project will be hosted on.
 
@@ -50,7 +49,7 @@ After this is done we can activate the conda environment. This involves setting 
 
 The bash shell then changes to show you are in that environment
 
-   (dev)chembiohub@chembiohub:~/
+    (dev)chembiohub@chembiohub:~/
 
 Now with the environment activated the pip and python we are using will point at anaconda's version, so even if you are on Mac OS or CentOS the python version will always be the same, in this case 2.7.10.
 
@@ -73,9 +72,11 @@ Our install script sets this up by running the initdb command to create a tables
     sleep 5
 
 It is then possible to create a datgabase specifying the socket as a host
+
     createdb -h $CONDA_ENV_PATH/var/postgressocket/ dev_db
 
 The RDKit and HStore extensions that ChemBio Hub Platform uses are ready to set up and use
+
     psql  -h $CONDA_ENV_PATH/var/postgressocket -c "create extension hstore;create extension rdkit;" ${ENV_NAME}_db
 
 All that remains now is to make the tables to run the ChemBio Hub application
@@ -87,3 +88,5 @@ All that remains now is to make the tables to run the ChemBio Hub application
     python manage.py collectstatic
 
 Once these steps are done, in order to run the system in production, a few more steps are required to link the front end and back end up, to ensure the processes keep running and to secure the application.
+
+If you have any questions about the procedures described in this post, please contact me my email address is in the link at the top of the post. Alternativley you can leave a comment on this post below.
