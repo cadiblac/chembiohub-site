@@ -7,6 +7,54 @@
 <atom:link href="https://chembiohub.ox.ac.uk/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Excel Pivot tables - a quick introduction</title>
+<description>&lt;p&gt;The Excel pivot table is a powerful tool for getting the most out of large data sets. Tabulating your data is the best way to collate large amounts of information in a concise and meaningful way. However data in this format is difficult to interrogate, hiding the really interesting results you’re after. Using Excel’s pivot table function, you can rearrange your data according to any parameter you specify. This allows you to ask very complex questions with an instant answer.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-do-they-work&quot;&gt;How do they work?&lt;/h3&gt;
+
+&lt;p&gt;Let’s say you have a table containing all your cell line assay data: &lt;/p&gt;
+
+&lt;figure class=&quot;white-bg&quot;&gt;
+    &lt;img src=&quot;/assets/img/pivot-table-1.png&quot; alt=&quot;Example of some cell line assay data&quot; class=&quot;img-responsive center-block&quot; /&gt;
+&lt;figcaption class=&quot;text-center&quot;&gt;
+    &lt;p&gt;&lt;em&gt;Figure 1: Example of some cell line assay data&lt;/em&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;The data includes information about where the cell lines came from, what mutations they have and what assays they have been run in. Using the data above, we want to know which cell lines featuring the gene 9 mutation have been run in an IC50 assay, and we want only male cell line samples. &lt;/p&gt;
+
+&lt;p&gt;First we click &lt;strong&gt;Insert -&amp;gt; Pivot table&lt;/strong&gt; (your table will be selected automatically):&lt;/p&gt;
+
+&lt;figure class=&quot;white-bg&quot;&gt;
+    &lt;img src=&quot;/assets/img/pivot-table-2.png&quot; alt=&quot;Pivot table menu within Excel&quot; class=&quot;img-responsive center-block&quot; /&gt;
+&lt;figcaption class=&quot;text-center&quot;&gt;
+    &lt;p&gt;&lt;em&gt;Figure 2: Pivot table menu within Excel&lt;/em&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Then we choose which parameters we wish to be displayed (based on the question we were asking):&lt;/p&gt;
+
+&lt;figure class=&quot;white-bg&quot;&gt;
+    &lt;img src=&quot;/assets/img/pivot-table-3.png&quot; alt=&quot;Select pivot table fields in a semantic way&quot; class=&quot;img-responsive center-block&quot; /&gt;
+&lt;figcaption class=&quot;text-center&quot;&gt;
+    &lt;p&gt;&lt;em&gt;Figure 3: Select pivot table fields in a semantic way&lt;/em&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Now we have a table showing only male cell line samples that feature the gene 9 mutation that have also been run in an IC50 assay. Of course you can modify the table to include any parameters you wish, allowing you to very quickly interrogate what was previously an intimidating data set.&lt;/p&gt;
+
+&lt;h3 id=&quot;further-reading--advanced-tips-and-tricks&quot;&gt;Further reading – Advanced tips and tricks&lt;/h3&gt;
+
+&lt;p&gt;Pivot tables are a criminally underused feature in Excel that can save a lot of time and effort. They may seem intimidating at first but once you start using them you’ll never look back. &lt;/p&gt;
+
+&lt;p&gt;If you’re interested in learning more, there’re plenty of &lt;a href=&quot;https://www.youtube.com/watch?v=Vx-Fuw46VbY&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;online help resources&lt;/strong&gt;&lt;/a&gt;. For Oxford university staff and student I recommend the ITservices &lt;a href=&quot;https://courses.it.ox.ac.uk/detail/TMSE5&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;course on pivot tables&lt;/strong&gt;&lt;/a&gt;. &lt;/p&gt;
+</description>
+<pubDate>Fri, 08 Jan 2016 00:00:00 +0000</pubDate>
+<link>https://chembiohub.ox.ac.uk/blog/2016/01/08/pivot-tables.html</link>
+<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2016/01/08/pivot-tables.html</guid>
+</item>
+
+<item>
 <title>UXOxford - consider your network and prepare for failure</title>
 <description>&lt;p&gt;On Thursday 26 November I attended another talk in the UXOxford series at the Old Fire Station in central Oxford. The talk, presented by &lt;a href=&quot;https://twitter.com/patrickhamann&quot; target=&quot;_blank&quot;&gt;Patrick Hamann&lt;/a&gt; of the Financial Times, was entitled “Embracing the Network” and was addressed reducing users frustration when they encounter reduced or non-existent internet connection.&lt;/p&gt;
 
@@ -512,17 +560,6 @@ Starting here means:&lt;/p&gt;
 <pubDate>Mon, 15 Dec 2014 00:00:00 +0000</pubDate>
 <link>https://chembiohub.ox.ac.uk/blog/2014/12/15/registration-workshop.html</link>
 <guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/12/15/registration-workshop.html</guid>
-</item>
-
-<item>
-<title>Some thoughts from Open Con 2014&amp;#58; discovery tools</title>
-<description>&lt;p&gt;ChemBio Hub aims to make life easier for chemical biologists at Oxford. We’ve already designed &lt;a href=&quot;https://chembiohub.ox.ac.uk/crunch/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;ChemBio Crunch&lt;/a&gt; a new app to speed up assay data processing. But sometimes we find out about cool tools that are out there already for people to use for free and we just need to recommend them! We don’t want to reinvent the wheel.&lt;/p&gt;
-
-&lt;p&gt;One thing I heard about at OpenCon is &lt;a href=&quot;http://www.sparrho.com/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Sparrho&lt;/a&gt;. These guys realised that linear keyword searching doesn’t always turn up all the results you need from a scientific literature search. You have to make non-linear connections too. And that’s how it works – Sparrho asks users to rate its search results as relevant to their interests or not. These choices, aggregated and anonymised, allow Sparrho to build a bird’s-eye view of different research disciplines. It then uses this to recommend useful results beyond the confines of the search keywords. Clever stuff – try it out for yourself!&lt;/p&gt;
-</description>
-<pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
-<link>https://chembiohub.ox.ac.uk/blog/2014/12/09/opencon-2.html</link>
-<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/12/09/opencon-2.html</guid>
 </item>
 
 </channel>
