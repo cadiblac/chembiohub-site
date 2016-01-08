@@ -45,4 +45,4 @@ Now we have a table showing only male cell line samples that feature the gene 9 
 
 Pivot tables are a criminally underused feature in Excel that can save a lot of time and effort. They may seem intimidating at first but once you start using them you’ll never look back. 
 
-If you’re interested in learning more, there’re plenty of <a href="https://www.youtube.com/watch?v=Vx-Fuw46VbY" target="_blank"><strong>online help resources</strong></a>. For Oxford university staff and student I recommend the ITservices <a href="https://courses.it.ox.ac.uk/detail/TMSE5" target="_blank"><strong>course on pivot tables</strong></a>. 
+If you’re interested in learning more, there’re plenty of <a href="https://www.youtube.com/watch?v=Vx-Fuw46VbY" target="_blank"><strong>online help resources</strong></a>. For Oxford university staff and students I recommend the IT services <a href="https://courses.it.ox.ac.uk/detail/TMSE5" target="_blank"><strong>course on pivot tables</strong></a>. 
