@@ -17,8 +17,7 @@ If, however you get a different 401 error, perhaps in the generic tastypie code,
 
 Possible things to check:
 
-If you get a blanks screen and 401 errors on all resources:
-------------------------------------------------------
+###If you get a blanks screen and 401 errors on all resources:
 
 Is the user logged in properly? Has the login expired or the cookie name changed? Have you got logins from multiple environments saved in your browser which are all on localhost?
 * If in development environment the redirects may not work so you will just get a blank screen
@@ -29,8 +28,7 @@ python manage.py clearsessions
 ```
 * Head to localhost:9000/dev/login and log in again if you can
 
-If GET requests are working but POST or PATCH requests are not working and not actually calling any of the chembiohub code according to your debug statements
-------------------------------------------------------------------------
+###If GET requests are working but POST or PATCH requests are not working and not actually calling any of the chembiohub code according to your debug statements
 
 Are you setting a header appropriately for cross-site-forgery-prevention (CSRF)? This is done in ChemBio Hub by the following pieces of code:
 
@@ -42,8 +40,7 @@ We set the CSRF header for file uploads in the ng-flow configuration in chemreg 
 
 Note that the app.js code needs to be able to select the cookie by cookie name and then set that as a header to POST requests. This is done by the assumption that the cookie name can be derived from the prefix of the URL of the page which is set globally in [config.js](https://github.com/thesgc/ng-chem/blob/master/app/scripts/config.js). This code also assumes that the api paths will be prefixes with site.com/foo/api where foo is configurable.
 
-If GET requests are working but POST or PATCH requests are not working and you are satisfied that your code is being called:
----------------------------------------------------------------------
+###If GET requests are working but POST or PATCH requests are not working and you are satisfied that your code is being called:
 
 Look through all of the related resources to the one you are PATCHing or POSTing to and check the following things in the Meta class.
 
@@ -53,8 +50,8 @@ For each of the related resources the methods (PATCH, PUT and POST) must be enab
 
 Finally, the specific methods of the authorization class must permit the operation for the type of user that is sending the request. For updating single records, see the example in ProjectListAuthorization. We do not yet support bulk updates.
 
-If you find another way in which a 401 error can be thrown...
--------------------------------------------------------------------------
+###If you find another way in which a 401 error can be thrown...
+
 My suggestion is to implement all of the tastypie ModelResource methods in your own class and debug until you find the line that throws the error. 
 
 
