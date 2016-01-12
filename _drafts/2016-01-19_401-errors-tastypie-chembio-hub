@@ -1,0 +1,61 @@
+---
+title: 401 Unauthorized Errors in Tastypie when developing on ChemBio Hub
+author: andy
+layout:post
+---
+When working with ChemBio Hub and the tastypie api framework there are a number of things to check for when getting a 401 error for a PATCH or POST request.
+
+In ChemBio Hub we throw the 401 error on the following resources:
+
+* CompoundBatchResource (For updates, uploads and listing data on Compound Batches) 
+* ProjectResource (For updates on project names and listing projects)
+* DataPointClassificationResource (For updates and requests on AssayReg data)
+
+The 401 errors in ChemBio Hub are thrown with a message so you will generally know if you have hit one of these.
+
+If, however you get a different 401 error, perhaps in the generic tastypie code, there will be no stack trace - what could it come from?
+
+Possible things to check:
+
+If you get a blanks screen and 401 errors on all resources:
+------------------------------------------------------
+
+Is the user logged in properly? Has the login expired or the cookie name changed? Have you got logins from multiple environments saved in your browser which are all on localhost?
+* If in development environment the redirects may not work so you will just get a blank screen
+* Clear all cookies from localhost
+* Run this command onn the command line
+``` 
+python manage.py clearsessions
+```
+* Head to localhost:9000/dev/login and log in again if you can
+
+If GET requests are working but POST or PATCH requests are not working and not actually calling any of the chembiohub code according to your debug statements
+------------------------------------------------------------------------
+
+Are you setting a header appropriately for cross-site-forgery-prevention (CSRF)? This is done in ChemBio Hub by the following pieces of code:
+
+We force setting of the CSRF cookie on the backend for all login classes in all cases [here](https://github.com/thesgc/cbh_core_ws/search?utf8=%E2%9C%93&q=csrf_token+%3D+get_token%28request%29).
+
+We get this cookie and set it for all cases where $http or $resource are used in the global frontend app configuration [here](https://github.com/thesgc/ng-chem/search?utf8=%E2%9C%93&q=%24cookies%5Bpref+%2B+%22csrftoken%22%5D&type=Code).
+
+We set the CSRF header for file uploads in the ng-flow configuration in chemreg here and assayreg [here](https://github.com/thesgc/ng-chem/search?utf8=%E2%9C%93&q=%22%24scope.csrftoken%22&type=Code).
+
+Note that the app.js code needs to be able to select the cookie by cookie name and then set that as a header to POST requests. This is done by the assumption that the cookie name can be derived from the prefix of the URL of the page which is set globally in [config.js](https://github.com/thesgc/ng-chem/blob/master/app/scripts/config.js). This code also assumes that the api paths will be prefixes with site.com/foo/api where foo is configurable.
+
+If GET requests are working but POST or PATCH requests are not working and you are satisfied that your code is being called:
+---------------------------------------------------------------------
+
+Look through all of the related resources to the one you are PATCHing or POSTing to and check the following things in the Meta class.
+
+Each of the related resources needs to either be readonly or the Meta class must be linked to a subclass of the tastypie Authorization class.
+
+For each of the related resources the methods (PATCH, PUT and POST) must be enabled in the META class - for example see ChemRegProjectResource.
+
+Finally, the specific methods of the authorization class must permit the operation for the type of user that is sending the request. For updating single records, see the example in ProjectListAuthorization. We do not yet support bulk updates.
+
+If you find another way in which a 401 error can be thrown...
+-------------------------------------------------------------------------
+My suggestion is to implement all of the tastypie ModelResource methods in your own class and debug until you find the line that throws the error. 
+
+
+
