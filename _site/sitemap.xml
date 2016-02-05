@@ -50,13 +50,13 @@
     </url>
     <url>
         <loc>
-            https://chembiohub.ox.ac.uk/blog/2015/03/10/introducing-chemreg-compound-registration-system.html
+            https://chembiohub.ox.ac.uk/blog/2015/03/10/introducing-chemireg-compound-registration-system.html
         </loc>
-        <lastmod>2015-04-07T10:45:51+01:00</lastmod>
+        <lastmod>2016-02-05T10:03:52+00:00</lastmod>
     </url>
     <url>
         <loc>https://chembiohub.ox.ac.uk/blog/2015/03/10/pains.html</loc>
-        <lastmod>2015-04-07T10:40:37+01:00</lastmod>
+        <lastmod>2016-02-05T09:29:11+00:00</lastmod>
     </url>
     <url>
         <loc>https://chembiohub.ox.ac.uk/blog/2015/07/27/conversation-warmup.html</loc>
@@ -64,7 +64,7 @@
     </url>
     <url>
         <loc>https://chembiohub.ox.ac.uk/blog/2015/09/08/rdkit-ugm-2105.html</loc>
-        <lastmod>2015-10-01T13:35:55+01:00</lastmod>
+        <lastmod>2016-02-05T09:29:11+00:00</lastmod>
     </url>
     <url>
         <loc>https://chembiohub.ox.ac.uk/blog/2015/10/15/good-data-management.html</loc>
@@ -76,11 +76,11 @@
     </url>
     <url>
         <loc>https://chembiohub.ox.ac.uk/about/</loc>
-        <lastmod>2015-10-13T15:58:56+01:00</lastmod>
+        <lastmod>2016-02-05T09:41:51+00:00</lastmod>
     </url>
     <url>
         <loc>https://chembiohub.ox.ac.uk/assayreg/</loc>
-        <lastmod>2015-11-27T15:50:48+00:00</lastmod>
+        <lastmod>2016-02-05T09:41:51+00:00</lastmod>
     </url>
     <url>
         <loc>https://chembiohub.ox.ac.uk/blog/</loc>
@@ -95,8 +95,8 @@
         <lastmod>2014-11-07T15:16:00+00:00</lastmod>
     </url>
     <url>
-        <loc>https://chembiohub.ox.ac.uk/chemreg/</loc>
-        <lastmod>2015-11-27T15:49:18+00:00</lastmod>
+        <loc>https://chembiohub.ox.ac.uk/chemireg/</loc>
+        <lastmod>2016-02-05T09:41:51+00:00</lastmod>
     </url>
     <url>
         <loc>https://chembiohub.ox.ac.uk/conversation/</loc>
@@ -104,7 +104,7 @@
     </url>
     <url>
         <loc>https://chembiohub.ox.ac.uk/data/crunch/</loc>
-        <lastmod>2015-07-15T17:45:42+01:00</lastmod>
+        <lastmod>2016-02-05T09:41:51+00:00</lastmod>
     </url>
     <url>
         <loc>https://chembiohub.ox.ac.uk/events/</loc>
@@ -112,7 +112,7 @@
     </url>
     <url>
         <loc>https://chembiohub.ox.ac.uk/</loc>
-        <lastmod>2016-01-08T15:54:05+00:00</lastmod>
+        <lastmod>2016-02-05T10:03:52+00:00</lastmod>
     </url>
     <url>
         <loc>https://chembiohub.ox.ac.uk/internship/</loc>
@@ -120,7 +120,7 @@
     </url>
     <url>
         <loc>https://chembiohub.ox.ac.uk/inventoryreg/</loc>
-        <lastmod>2015-11-27T15:54:38+00:00</lastmod>
+        <lastmod>2016-02-05T09:41:51+00:00</lastmod>
     </url>
     <url>
         <loc>https://chembiohub.ox.ac.uk/maintenance/</loc>
@@ -156,6 +156,6 @@
     </url>
     <url>
         <loc>https://chembiohub.ox.ac.uk/applications/</loc>
-        <lastmod>2015-11-27T13:22:10+00:00</lastmod>
+        <lastmod>2016-02-05T09:41:51+00:00</lastmod>
     </url>
 </urlset>

@@ -64,15 +64,15 @@ events:
 
 tools:
   internal:
-    - key: 'chemreg'
-      title: "ChemReg"
+    - key: 'chemireg'
+      title: "ChemiReg"
       tagline: "tagline here"
       description: "Manage and search your compounds"
-      info_link: "/chemreg"
+      info_link: "/chemireg"
       cbh_link: "http://chembiohub.ox.ac.uk/hub/webauth"
       github_link: "https://github.com/thesgc/chembiohub_ws"
       other_repo_link: ""
-      thumbnail: "data-chemreg.png"
+      thumbnail: "data-chemireg.png"
     - key: 'invreg'
       title: "InventoryReg"
       tagline: "tagline here"

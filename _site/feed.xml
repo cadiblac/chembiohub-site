@@ -146,13 +146,13 @@
 
 &lt;p&gt;The meeting was attended by around 50 RDKit users from across Europe and farther afield.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://github.com/greglandrum&quot; target=&quot;_blank&quot;&gt;Greg Landrum&lt;/a&gt;  provided the opening keynote talk, discussing how we can create better compound identifiers that accurately represent tautomers. Inchi based methods for registereing compound uniqueness do have problems, so a mechanism needs to be provided at all times for chemists to be able to specify that their susbstance is new. Specifying stereochem and tautomer information as metadata before providing a unique key was another useful tip. This was all pertinent to us as it mirrors debates we have had when deciding how the compound identifier system for ChemReg should work.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/greglandrum&quot; target=&quot;_blank&quot;&gt;Greg Landrum&lt;/a&gt;  provided the opening keynote talk, discussing how we can create better compound identifiers that accurately represent tautomers. Inchi based methods for registereing compound uniqueness do have problems, so a mechanism needs to be provided at all times for chemists to be able to specify that their susbstance is new. Specifying stereochem and tautomer information as metadata before providing a unique key was another useful tip. This was all pertinent to us as it mirrors debates we have had when deciding how the compound identifier system for ChemiReg should work.&lt;/p&gt;
 
 &lt;p&gt;Another useful tool discussed on the first day was &lt;a href=&quot;https://bitbucket.org/dalke/propbox&quot; target=&quot;_blank&quot;&gt;propbox&lt;/a&gt;  presented by &lt;a href=&quot;http://www.dalkescientific.com/&quot; target=&quot;_blank&quot;&gt;Andrew Dalke&lt;/a&gt;. Propbox is a python table builder which allows dynamic calculation of chemical properties based on data in the table, it can also use the results of other dynamic property calculations to perform others.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://peter-ertl.com/&quot; target=&quot;_blank&quot;&gt;Peter Ertl&lt;/a&gt; gave a very interesting talk about natural product likeness calculations. Natural products are substances such as antibiotics and alkaloids and are an excellent source of substructures for bioactive molecules. Peter has developed natural product likeness calculators trained on a set of 45000 natural products from open source with 1 million compounds from Zinc as non-np-like background for training.&lt;/p&gt;
 
-&lt;p&gt;Paul and Andy also gave talks at the end of the day - Paul presented an overview of the ChemBio Hub project to demonstrate how RDKit is being used and to introduce RDKit users to the ChemBio Hub codebase. Andrew showed how a plugin architecture can be built with the ChemBio Hub ChemReg tool to provide automatic property calculation within results tables.&lt;/p&gt;
+&lt;p&gt;Paul and Andy also gave talks at the end of the day - Paul presented an overview of the ChemBio Hub project to demonstrate how RDKit is being used and to introduce RDKit users to the ChemBio Hub codebase. Andrew showed how a plugin architecture can be built with the ChemBio Hub ChemiReg tool to provide automatic property calculation within results tables.&lt;/p&gt;
 
 &lt;!-- Pic of Paul's slide here --&gt;
 
@@ -202,7 +202,7 @@
 
 <item>
 <title>Pan-Assay Interference Compounds (PAINS) - what they are &amp; why they matter</title>
-<description>&lt;p&gt;PAINS compounds are a real issue which we faced as part of developing our ChemReg application - here are some thoughts from Oakley Cox, a Chemistry DPhil student at the University Of Oxford.&lt;/p&gt;
+<description>&lt;p&gt;PAINS compounds are a real issue which we faced as part of developing our ChemiReg application - here are some thoughts from Oakley Cox, a Chemistry DPhil student at the University Of Oxford.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -254,10 +254,10 @@
 </item>
 
 <item>
-<title>Introducing ChemReg - The ChemBio Hub compound registration system</title>
-<description>&lt;p&gt;The ChemBio Hub team is pleased to announce our new compound registration system – &lt;strong&gt;ChemReg&lt;/strong&gt; – &lt;strong&gt;is now open for initial user testing&lt;/strong&gt;. ChemReg is the first step in our mission to capture all chemical biology data from around Oxford University. Following last December’s workshop (see previous &lt;a href=&quot;https://chembiohub.ox.ac.uk/blog/2014/12/15/registration-workshop.html&quot; title=&quot;Workshop on recording and managing data related to small molecules - 9th December 2014&quot;&gt;blog post&lt;/a&gt;) we have developed the key functionality suggested by prospective users. &lt;/p&gt;
+<title>Introducing ChemiReg - The ChemBio Hub compound registration system</title>
+<description>&lt;p&gt;The ChemBio Hub team is pleased to announce our new compound registration system – &lt;strong&gt;ChemiReg&lt;/strong&gt; – &lt;strong&gt;is now open for initial user testing&lt;/strong&gt;. ChemiReg is the first step in our mission to capture all chemical biology data from around Oxford University. Following last December’s workshop (see previous &lt;a href=&quot;https://chembiohub.ox.ac.uk/blog/2014/12/15/registration-workshop.html&quot; title=&quot;Workshop on recording and managing data related to small molecules - 9th December 2014&quot;&gt;blog post&lt;/a&gt;) we have developed the key functionality suggested by prospective users. &lt;/p&gt;
 
-&lt;p&gt;Current features of ChemReg:
+&lt;p&gt;Current features of ChemiReg:
 -	Flexible and easy to use
 -	Compounds can be uploaded individually or by their thousands in minutes
 -	Compound data is rigorously organised and easily searchable
@@ -265,34 +265,34 @@
 -	Searching and exporting data is quick and simple
 -	Secure login and IP protection&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Upload of compound information is simple.&lt;/strong&gt; You can draw your compound, copy and paste SMILES and InCHIs or upload whole files (we currently accept .xml, .sdf and .cdx formats). This flexibility is key to ensuring ChemReg works for users from any background or discipline. We have developed functionality that is intuitive – to serve chemists and non-chemists alike.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Upload of compound information is simple.&lt;/strong&gt; You can draw your compound, copy and paste SMILES and InCHIs or upload whole files (we currently accept .xml, .sdf and .cdx formats). This flexibility is key to ensuring ChemiReg works for users from any background or discipline. We have developed functionality that is intuitive – to serve chemists and non-chemists alike.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;The goal is not just to capture information, but to make it well defined and easily searchable.&lt;/strong&gt; Organisation and presentation of data is therefore just as important as the quality of information itself, and ChemReg meets these high data management standards. The project management system allows you to organise your data in project folders, and project security settings allow you to control who can see your sensitive information.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The goal is not just to capture information, but to make it well defined and easily searchable.&lt;/strong&gt; Organisation and presentation of data is therefore just as important as the quality of information itself, and ChemiReg meets these high data management standards. The project management system allows you to organise your data in project folders, and project security settings allow you to control who can see your sensitive information.&lt;/p&gt;
 
-&lt;h3 id=&quot;so-why-start-with-chemreg&quot;&gt;So why start with ChemReg?&lt;/h3&gt;
-&lt;p&gt;ChemReg is our first step to capturing all of the University’s chemical biology data.
+&lt;h3 id=&quot;so-why-start-with-chemireg&quot;&gt;So why start with ChemiReg?&lt;/h3&gt;
+&lt;p&gt;ChemiReg is our first step to capturing all of the University’s chemical biology data.
 Starting here means:&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Users will  quickly gain benefit in managing their research data, without having to wait for other functionality to be available&lt;/li&gt;
   &lt;li&gt;We can prove we have the right technology and approach – meaning what we provide next will be sustainable for the future&lt;/li&gt;
-  &lt;li&gt;Users of ChemReg will be able to give their feedback on the sort of functionality we develop – and the community will shape the final set of tools available&lt;/li&gt;
+  &lt;li&gt;Users of ChemiReg will be able to give their feedback on the sort of functionality we develop – and the community will shape the final set of tools available&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;We know from the positive response so far that we are on the right track.  With more feedback and a larger community of users we will be able to deliver regular improvements to ChemReg. We are also in good shape to face the challenge of developing assay capture functionality.&lt;/p&gt;
+&lt;p&gt;We know from the positive response so far that we are on the right track.  With more feedback and a larger community of users we will be able to deliver regular improvements to ChemiReg. We are also in good shape to face the challenge of developing assay capture functionality.&lt;/p&gt;
 
 &lt;h3 id=&quot;back-to-the-future&quot;&gt;Back to the future&lt;/h3&gt;
 &lt;p&gt;ChemBio Hub is developing quickly, and right now we need your help.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;We are currently recruiting pilot users of ChemReg.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;We are currently recruiting pilot users of ChemiReg.&lt;/strong&gt;&lt;/p&gt;
 
-&lt;p&gt;We need researchers to use the ChemReg utility to provide honest feedback on what they wish was (or wasn’t) there. If you would like trial access to ChemReg, then please get in touch. &lt;/p&gt;
+&lt;p&gt;We need researchers to use the ChemiReg utility to provide honest feedback on what they wish was (or wasn’t) there. If you would like trial access to ChemiReg, then please get in touch. &lt;/p&gt;
 
-&lt;p&gt;A number of users have already expressed their interest, a promising sign of things to come. Over the next few months we will continue to listen to your feedback and together shape ChemReg into the perfect tool for organising and sharing your compound data.&lt;/p&gt;
+&lt;p&gt;A number of users have already expressed their interest, a promising sign of things to come. Over the next few months we will continue to listen to your feedback and together shape ChemiReg into the perfect tool for organising and sharing your compound data.&lt;/p&gt;
 </description>
 <pubDate>Tue, 10 Mar 2015 00:00:00 +0000</pubDate>
-<link>https://chembiohub.ox.ac.uk/blog/2015/03/10/introducing-chemreg-compound-registration-system.html</link>
-<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2015/03/10/introducing-chemreg-compound-registration-system.html</guid>
+<link>https://chembiohub.ox.ac.uk/blog/2015/03/10/introducing-chemireg-compound-registration-system.html</link>
+<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2015/03/10/introducing-chemireg-compound-registration-system.html</guid>
 </item>
 
 <item>
