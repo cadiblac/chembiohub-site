@@ -7,6 +7,113 @@
 <atom:link href="https://chembiohub.ox.ac.uk/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>Creating and managing a project in ChemiReg</title>
+<description>&lt;p&gt;A recent update to ChemiReg means that you can now create and manage projects yourself. Creating projects is quick and easy, taking no more than a couple of minutes to set up. Here’s a quick introduction to help get you started.&lt;/p&gt;
+
+&lt;h3 id=&quot;creating-a-project&quot;&gt;Creating a Project&lt;/h3&gt;
+
+&lt;p&gt;On logging in, click the ‘Add Project’ button at the top of the screen to begin creating your new project.&lt;/p&gt;
+
+&lt;figure class=&quot;white-bg&quot;&gt;
+    &lt;img src=&quot;/assets/img/chemireg-projects/chemireg-pr-1.png&quot; alt=&quot;Click Add Project to get started&quot; class=&quot;img-responsive center-block&quot; /&gt;
+&lt;figcaption class=&quot;text-center&quot;&gt;
+    &lt;p&gt;&lt;em&gt;Figure 1: Click Add Project to get started&lt;/em&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;A new pop up box will open providing options to create and customise your new project. Simply enter a project name and few custom fields to get going in seconds, or customise your project further to improve your data’s value:&lt;/p&gt;
+
+&lt;figure class=&quot;white-bg&quot;&gt;
+    &lt;img src=&quot;/assets/img/chemireg-projects/chemireg-pr-2.png&quot; alt=&quot;New Project form explained&quot; class=&quot;img-responsive center-block&quot; /&gt;
+&lt;figcaption class=&quot;text-center&quot;&gt;
+    &lt;p&gt;&lt;em&gt;Figure 2: New Project form explained&lt;/em&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;There are a number of ways you can customise the data in your project:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Copy and paste the custom fields from another project you own. This is helpful if you want to quickly create a project similar to one you already maintain.&lt;/li&gt;
+  &lt;li&gt;Choose your projects name. No special characters are allowed (e.g. -  % ^ etc).&lt;/li&gt;
+  &lt;li&gt;Choose your project type. 
+    &lt;ol&gt;
+      &lt;li&gt;Select ‘&lt;strong&gt;Chemical&lt;/strong&gt;’ if your data has structural information (contains 2D molecular structures or SMILES).&lt;/li&gt;
+      &lt;li&gt;Select ‘&lt;strong&gt;Inventory&lt;/strong&gt;’ if your data contains no structural information.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Add a custom field. Custom fields are the data you wish to be catalogued for each entry and can be anything you want (location, names, etc).
+    &lt;ol&gt;
+      &lt;li&gt;The name of your field (text characters only).&lt;/li&gt;
+      &lt;li&gt;Make this field compulsory – it must be filled in to submit data.&lt;/li&gt;
+      &lt;li&gt;Choose a field type appropriate for the data you’re submitting.&lt;/li&gt;
+      &lt;li&gt;A description of what data this field is for.&lt;/li&gt;
+      &lt;li&gt;Make this field only visible to editors (users with the ‘viewer’ permission on this project will not see this specific custom field data). &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Delete or reorder a field by clicking and dragging. Fields at the top of the list will appear first in the table.&lt;/li&gt;
+  &lt;li&gt;Add additional fields&lt;/li&gt;
+  &lt;li&gt;Disregard / Save project*&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;*Note that you can’t remove or modify a field heading name after you’ve clicked save, but you can add additional ones and reorder them.&lt;/p&gt;
+
+&lt;p&gt;Once you’ve added all your desired fields, simply click save and your project is ready to use.&lt;/p&gt;
+
+&lt;h3 id=&quot;adding-users--changing-user-permissions-on-a-project&quot;&gt;Adding users / changing user permissions on a project&lt;/h3&gt;
+
+&lt;p&gt;So you have your new project and now you want to let other people use it. This is achieved by granting a user a &lt;em&gt;permission&lt;/em&gt;. There are three types of user permissions, &lt;strong&gt;Owner&lt;/strong&gt;, &lt;strong&gt;Editor&lt;/strong&gt; and &lt;strong&gt;Viewer&lt;/strong&gt;. Your assigned permission setting on a project will determine what you can and can’t do:&lt;/p&gt;
+
+&lt;figure class=&quot;white-bg&quot;&gt;
+    &lt;img src=&quot;/assets/img/chemireg-projects/chemireg-pr-table.png&quot; alt=&quot;What different user types can do&quot; class=&quot;img-responsive center-block&quot; /&gt;
+&lt;figcaption class=&quot;text-center&quot;&gt;
+    &lt;p&gt;&lt;em&gt;Figure 3: What different user types can do&lt;/em&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;To add new users to your project or edit current user permissions, go ahead and click the ‘Edit User Roles’ button.&lt;/p&gt;
+
+&lt;figure class=&quot;white-bg&quot;&gt;
+    &lt;img src=&quot;/assets/img/chemireg-projects/chemireg-pr-3.png&quot; alt=&quot;Click Edit User Roles to configure what users can do&quot; class=&quot;img-responsive center-block&quot; /&gt;
+&lt;figcaption class=&quot;text-center&quot;&gt;
+    &lt;p&gt;&lt;em&gt;Figure 4: Click Edit User Roles to configure what users can do&lt;/em&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This opens a new popup window allowing you edit user permissions. Here you can add or remove users based on the permission level you wish to grant them.&lt;/p&gt;
+
+&lt;p&gt;Note: &lt;strong&gt;Users are visible after they log in for the first time&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;figure class=&quot;white-bg&quot;&gt;
+    &lt;img src=&quot;/assets/img/chemireg-projects/chemireg-pr-4.png&quot; alt=&quot;The Edit User Roles form&quot; class=&quot;img-responsive center-block&quot; /&gt;
+&lt;figcaption class=&quot;text-center&quot;&gt;
+    &lt;p&gt;&lt;em&gt;Figure 5: The Edit User Roles form&lt;/em&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;Once you’re done, click save and the new permission settings will be assigned. Users added to the project will need to refresh their page for the changes to take effect.&lt;/p&gt;
+
+&lt;p&gt;An alternative way to quickly add multiple users is to ‘Copy rules from another project’.&lt;/p&gt;
+
+&lt;figure class=&quot;white-bg&quot;&gt;
+    &lt;img src=&quot;/assets/img/chemireg-projects/chemireg-pr-5.png&quot; alt=&quot;You can clone permissions to other projects&quot; class=&quot;img-responsive center-block&quot; /&gt;
+&lt;figcaption class=&quot;text-center&quot;&gt;
+    &lt;p&gt;&lt;em&gt;Figure 6: You can clone permissions to other projects&lt;/em&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;This allows you to rapidly assign multiple users based on another projects permission settings.&lt;/p&gt;
+
+&lt;h3 id=&quot;now-youre-good-to-go&quot;&gt;Now you’re good to go.&lt;/h3&gt;
+
+&lt;p&gt;We’ve been working hard to make the best possible user experience for academics everywhere. If you have any comments or would like to see something improved then let us know by contacting &lt;a href=&quot;mailto:info@chembiohub.ox.ac.uk&quot;&gt;info@chembiohub.ox.ac.uk&lt;/a&gt;.&lt;/p&gt;
+
+</description>
+<pubDate>Mon, 22 Feb 2016 00:00:00 +0000</pubDate>
+<link>https://chembiohub.ox.ac.uk/blog/2016/02/22/creating-managing-project-chemireg.html</link>
+<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2016/02/22/creating-managing-project-chemireg.html</guid>
+</item>
+
+<item>
 <title>Excel Pivot tables - a quick introduction</title>
 <description>&lt;p&gt;The Excel pivot table is a powerful tool for getting the most out of large data sets. Tabulating your data is the best way to collate large amounts of information in a concise and meaningful way. However data in this format is difficult to interrogate, hiding the really interesting results you’re after. Using Excel’s pivot table function, you can rearrange your data according to any parameter you specify. This allows you to ask very complex questions with an instant answer.&lt;/p&gt;
 
@@ -444,33 +551,6 @@ Starting here means:&lt;/p&gt;
 <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
 <link>https://chembiohub.ox.ac.uk/blog/2014/12/09/opencon-2.html</link>
 <guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/12/09/opencon-2.html</guid>
-</item>
-
-<item>
-<title>Some thoughts from OpenCon 2014&amp;#58; open data</title>
-<description>&lt;p&gt;Last Wednesday I attended the &lt;a href=&quot;http://www.eventbrite.com/e/opencon-2014-london-tickets-13952172323&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;OpenCon 2014 London meetup&lt;/a&gt;. I went to find out a bit more about how students and early career researchers view open data, and think about how this might fit in with the goals of ChemBio Hub. I also wanted to get an idea of what tools are out there to help people discover science and make their work more efficient!&lt;!-- more --&gt;&lt;/p&gt;
-
-&lt;p&gt;Many aspects of open science were discussed during the day: &lt;a href=&quot;http://en.wikipedia.org/wiki/Open_access&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;open access&lt;/a&gt;, &lt;a href=&quot;http://en.wikipedia.org/wiki/Peer_review#Open_peer_review&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;open peer review&lt;/a&gt; and &lt;a href=&quot;http://en.wikipedia.org/wiki/Open_education&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;open education&lt;/a&gt; all featured at various points. Open data was perhaps the most relevant topic to our work at ChemBio Hub, so here a few thoughts on this. &lt;/p&gt;
-
-&lt;p&gt;What does open data mean in the context of science? It’s the idea that experimental data should be available for everyone to use and republish as they wish. This includes being free from restrictions like copyright and patents. It means ALL data and not just the best results or good story!&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://twitter.com/rmounce&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Ross Mounce&lt;/a&gt; and &lt;a href=&quot;https://twitter.com/protohedgehog&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Jon Tennant&lt;/a&gt; talked about the relevance of this to the biological sciences. They argued the benefits of open data include addressing reproducibility issues and building confidence in results. I liked their observation that a PDF is a document meant for reading, not reuse – and so it can’t be the vehicle for open data.&lt;/p&gt;
-
-&lt;p&gt;In the discussion session that followed people spoke about the challenges and opportunities of open data. One point that stuck in my mind was the need to develop infrastructure and standard methods for sharing data. Another was that effective data sharing requires particular skills that might not be routinely taught to early career researchers right now.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-about-chembio-hub&quot;&gt;What about ChemBio Hub?&lt;/h3&gt;
-
-&lt;p&gt;ChemBio Hub aims to become a University-wide resource for researchers to manage their compound and assay data and share it with collaborators. Our approach to this is to provide the right (you guessed it) infrastructure and training. But will all data in the Hub be “open”?&lt;/p&gt;
-
-&lt;p&gt;From talking to the research community, our view is that you should decide what data you share, when you share it and who you share it with. Our job is to provide the simple and secure tools for you to do this with minimal effort and fuss. &lt;/p&gt;
-
-&lt;p&gt;But “open data” is becoming a big thing for public research funding organisations. Some now mandate that data is made publicly available as a condition of their grants (check out the recent announcement from the &lt;a href=&quot;http://www.theregister.co.uk/2014/11/27/gates_foundation_to_insist_on_open_access_science/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Gates Foundation&lt;/a&gt;). The talks at OpenCon suggest a growing recognition of the value of open data, and support for it, amongst the scientific community. So as well as offering secure data management, ChemBio Hub will allow scientists to make their data public available when they choose – such as by publishing straight to &lt;a href=&quot;https://www.ebi.ac.uk/chembl/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;ChEMBL&lt;/a&gt; or &lt;a href=&quot;https://pubchem.ncbi.nlm.nih.gov/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;PubChem&lt;/a&gt; at the press of a button. Best of both worlds!&lt;/p&gt;
-
-&lt;p&gt;If you have any thoughts on open data or research data management, we’d love to hear them. Get in touch at our usual address: &lt;a href=&quot;mailto:info@chembiohub.ox.ac.uk&quot;&gt;info@chembiohub.ox.ac.uk&lt;/a&gt;.&lt;/p&gt;
-</description>
-<pubDate>Mon, 01 Dec 2014 00:00:00 +0000</pubDate>
-<link>https://chembiohub.ox.ac.uk/blog/2014/12/01/opencon-1.html</link>
-<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/12/01/opencon-1.html</guid>
 </item>
 
 </channel>

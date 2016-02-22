@@ -11,11 +11,11 @@
     <meta name="twitter:site" content="@oxchembiohub">
     <meta name="twitter:card" content="summary" />
     
-	  <meta name="twitter:description" content="As a part of our commitment to provide quality collaborative tools and outreach to the chemical biology community, we have set up this blog to provide some additional information about how we are c...">
+	  <meta name="twitter:description" content="A recent update to ChemiReg means that you can now create and manage projects yourself. Creating projects is quick and easy, taking no more than a couple of minutes to set up. Here’s a quick introd...">
 	
     
-	  <meta content="Setting up the ChemBioHub blog" property="og:title">
-	  <meta name="twitter:title" content="Setting up the ChemBioHub blog">
+	  <meta content="Creating and managing a project in ChemiReg" property="og:title">
+	  <meta name="twitter:title" content="Creating and managing a project in ChemiReg">
 	
 	
 	  <meta content="http://chembiohub.ox.ac.uk/assets/img/cbh_og_logo.png" property="og:image">
@@ -25,7 +25,7 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> 
 <link rel="alternate" type="application/rss+xml" title="Chembio Hub Blog" href="/feed.xml">
-    <title>Setting up the ChemBioHub blog - ChemBio Hub</title>
+    <title>Creating and managing a project in ChemiReg - ChemBio Hub</title>
 
     <!-- concatenate all the used CSS in these files into clean.css -->
     <!-- build:css /assets/css/clean.css -->
@@ -139,17 +139,107 @@
 	visit the <a href="https://chembiohub.ox.ac.uk">ChemBio Hub website</a> and also follow us on Twitter <a href="https://twitter.com/oxchembiohub" onclick='return !window.open(this.href);'>@OxChemBioHub</a>
 </div>
 <div class='post'>
-  <h1>Setting up the ChemBioHub blog</h1>
-  <div class='date'>posted 02 Sep 2014 by <a href="mailto:paul.barrett@chembiohub.ox.ac.uk">Paul Barrett</a></div>
-  <div class='body'><p>As a part of our commitment to provide quality collaborative tools and outreach to the chemical biology community, we have set up this blog to provide some additional information about how we are creating new tools, helping researchers and enabling collaboration.<!-- more --></p>
+  <h1>Creating and managing a project in ChemiReg</h1>
+  <div class='date'>posted 22 Feb 2016 by <a href="mailto:adam.hendry@chembiohub.ox.ac.uk">Adam Hendry</a></div>
+  <div class='body'><p>A recent update to ChemiReg means that you can now create and manage projects yourself. Creating projects is quick and easy, taking no more than a couple of minutes to set up. Here’s a quick introduction to help get you started.</p>
 
-<p>We had a look at a number of options for the technology platform we could use for the blog. It had to be something that was lightweight and also editable by the less-technical members of our group. The big CMS platforms, such as Wordpress and Drupal, provide good WYSIWYG (what you see is what you get) tools for text entry but are too heavyweight and complicated for what we wanted to achieve. Also considered was <a href="http://ghost.org">Ghost</a>, a lightweight blogging platform written in javascript and node.js - while this fulfilled the remit of being lightweight, and allows users to add content via Markdown, it required another hosting solution to be set up and configured.</p>
+<h3 id="creating-a-project">Creating a Project</h3>
 
-<p>A good compromise was found with <a href="https://pages.github.com" onclick="return !window.open(this.href);">Github Pages</a> and <a href="http://jekyllrb.com/" onclick="return !window.open(this.href);">Jekyll</a>. Jekyll is a lightweight, blog-aware platform which allows users to draft posts for review, publish them, use templating and all the things which developers expect. Plus it has the advantage of being hosted and run on Github - this enables us to have an open source, transparent blog structure that other users can take away and use themselves! Because it uses Markdown, the less-technical members of our group can easily add blog entries for review before they are published and gain an insight into how version control via Github works. That helps the developers explain their work better!</p>
+<p>On logging in, click the ‘Add Project’ button at the top of the screen to begin creating your new project.</p>
 
-<p>Setting up the blog was a breeze thanks to the great <a href="https://help.github.com/articles/using-jekyll-with-pages/" onclick="return !window.open(this.href);">documentation</a> and <a href="https://github.com/jekyll/jekyll/wiki/Sites">existing sites</a> that could be used as examples. The most useful of these was <a href="https://github.com/rebase/rebase.github.com" onclick="return !window.open(this.href);">Github Rebase</a>[]() with easy to follow code and simple structure.</p>
+<figure class="white-bg">
+    <img src="/assets/img/chemireg-projects/chemireg-pr-1.png" alt="Click Add Project to get started" class="img-responsive center-block" />
+<figcaption class="text-center">
+    <p><em>Figure 1: Click Add Project to get started</em></p>
+</figcaption>
+</figure>
 
-<p>So now we have a blog, we need to fill it! There will be more articles added here by different members of the team, if you have questions for any of us, just click the author name and send us an email!</p>
+<p>A new pop up box will open providing options to create and customise your new project. Simply enter a project name and few custom fields to get going in seconds, or customise your project further to improve your data’s value:</p>
+
+<figure class="white-bg">
+    <img src="/assets/img/chemireg-projects/chemireg-pr-2.png" alt="New Project form explained" class="img-responsive center-block" />
+<figcaption class="text-center">
+    <p><em>Figure 2: New Project form explained</em></p>
+</figcaption>
+</figure>
+
+<p>There are a number of ways you can customise the data in your project:</p>
+
+<ol>
+  <li>Copy and paste the custom fields from another project you own. This is helpful if you want to quickly create a project similar to one you already maintain.</li>
+  <li>Choose your projects name. No special characters are allowed (e.g. -  % ^ etc).</li>
+  <li>Choose your project type. 
+    <ol>
+      <li>Select ‘<strong>Chemical</strong>’ if your data has structural information (contains 2D molecular structures or SMILES).</li>
+      <li>Select ‘<strong>Inventory</strong>’ if your data contains no structural information.</li>
+    </ol>
+  </li>
+  <li>Add a custom field. Custom fields are the data you wish to be catalogued for each entry and can be anything you want (location, names, etc).
+    <ol>
+      <li>The name of your field (text characters only).</li>
+      <li>Make this field compulsory – it must be filled in to submit data.</li>
+      <li>Choose a field type appropriate for the data you’re submitting.</li>
+      <li>A description of what data this field is for.</li>
+      <li>Make this field only visible to editors (users with the ‘viewer’ permission on this project will not see this specific custom field data). </li>
+    </ol>
+  </li>
+  <li>Delete or reorder a field by clicking and dragging. Fields at the top of the list will appear first in the table.</li>
+  <li>Add additional fields</li>
+  <li>Disregard / Save project*</li>
+</ol>
+
+<p>*Note that you can’t remove or modify a field heading name after you’ve clicked save, but you can add additional ones and reorder them.</p>
+
+<p>Once you’ve added all your desired fields, simply click save and your project is ready to use.</p>
+
+<h3 id="adding-users--changing-user-permissions-on-a-project">Adding users / changing user permissions on a project</h3>
+
+<p>So you have your new project and now you want to let other people use it. This is achieved by granting a user a <em>permission</em>. There are three types of user permissions, <strong>Owner</strong>, <strong>Editor</strong> and <strong>Viewer</strong>. Your assigned permission setting on a project will determine what you can and can’t do:</p>
+
+<figure class="white-bg">
+    <img src="/assets/img/chemireg-projects/chemireg-pr-table.png" alt="What different user types can do" class="img-responsive center-block" />
+<figcaption class="text-center">
+    <p><em>Figure 3: What different user types can do</em></p>
+</figcaption>
+</figure>
+
+<p>To add new users to your project or edit current user permissions, go ahead and click the ‘Edit User Roles’ button.</p>
+
+<figure class="white-bg">
+    <img src="/assets/img/chemireg-projects/chemireg-pr-3.png" alt="Click Edit User Roles to configure what users can do" class="img-responsive center-block" />
+<figcaption class="text-center">
+    <p><em>Figure 4: Click Edit User Roles to configure what users can do</em></p>
+</figcaption>
+</figure>
+
+<p>This opens a new popup window allowing you edit user permissions. Here you can add or remove users based on the permission level you wish to grant them.</p>
+
+<p>Note: <strong>Users are visible after they log in for the first time</strong>.</p>
+
+<figure class="white-bg">
+    <img src="/assets/img/chemireg-projects/chemireg-pr-4.png" alt="The Edit User Roles form" class="img-responsive center-block" />
+<figcaption class="text-center">
+    <p><em>Figure 5: The Edit User Roles form</em></p>
+</figcaption>
+</figure>
+
+<p>Once you’re done, click save and the new permission settings will be assigned. Users added to the project will need to refresh their page for the changes to take effect.</p>
+
+<p>An alternative way to quickly add multiple users is to ‘Copy rules from another project’.</p>
+
+<figure class="white-bg">
+    <img src="/assets/img/chemireg-projects/chemireg-pr-5.png" alt="You can clone permissions to other projects" class="img-responsive center-block" />
+<figcaption class="text-center">
+    <p><em>Figure 6: You can clone permissions to other projects</em></p>
+</figcaption>
+</figure>
+
+<p>This allows you to rapidly assign multiple users based on another projects permission settings.</p>
+
+<h3 id="now-youre-good-to-go">Now you’re good to go.</h3>
+
+<p>We’ve been working hard to make the best possible user experience for academics everywhere. If you have any comments or would like to see something improved then let us know by contacting <a href="mailto:info@chembiohub.ox.ac.uk">info@chembiohub.ox.ac.uk</a>.</p>
+
  <a class="scrollToTop blue pull-right">Back to top <span class="glyphicon glyphicon-upload"></span></a> <div id="disqus_thread"></div>
     <script type="text/javascript">
         /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
