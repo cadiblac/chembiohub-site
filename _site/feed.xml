@@ -21,7 +21,7 @@
 &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;A new pop up box will open providing options to create and customise your new project. Simply enter a project name and few custom fields to get going in seconds, or customise your project further to improve your data’s value:&lt;/p&gt;
+&lt;p&gt;A new window will open providing options to create and customise your new project. Choose your project name and few custom fields to get going in seconds, or customise your project further to improve your data’s value:&lt;/p&gt;
 
 &lt;figure class=&quot;white-bg&quot;&gt;
     &lt;img src=&quot;/assets/img/chemireg-projects/chemireg-pr-2.png&quot; alt=&quot;New Project form explained&quot; class=&quot;img-responsive center-block&quot; /&gt;
@@ -42,16 +42,16 @@
     &lt;/ol&gt;
   &lt;/li&gt;
   &lt;li&gt;Add a custom field. Custom fields are the data you wish to be catalogued for each entry and can be anything you want (location, names, etc).
-    &lt;ol&gt;
-      &lt;li&gt;The name of your field (text characters only).&lt;/li&gt;
-      &lt;li&gt;Make this field compulsory – it must be filled in to submit data.&lt;/li&gt;
-      &lt;li&gt;Choose a field type appropriate for the data you’re submitting.&lt;/li&gt;
-      &lt;li&gt;A description of what data this field is for.&lt;/li&gt;
-      &lt;li&gt;Make this field only visible to editors (users with the ‘viewer’ permission on this project will not see this specific custom field data). &lt;/li&gt;
-    &lt;/ol&gt;
+    &lt;ul&gt;
+      &lt;li&gt;a) The name of your field (text characters only).&lt;/li&gt;
+      &lt;li&gt;b) Make this field compulsory – it must be filled in to allow data to be saved.&lt;/li&gt;
+      &lt;li&gt;c) Choose a field type appropriate to the data you’re submitting.&lt;/li&gt;
+      &lt;li&gt;d) Describe what this field is for.&lt;/li&gt;
+      &lt;li&gt;e) Make this field only visible to editors (users with the ‘viewer’ permission on this project will not see this specific custom field data). &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;Delete or reorder a field by clicking and dragging. Fields at the top of the list will appear first in the table.&lt;/li&gt;
-  &lt;li&gt;Add additional fields&lt;/li&gt;
+  &lt;li&gt;Add more fields&lt;/li&gt;
   &lt;li&gt;Disregard / Save project*&lt;/li&gt;
 &lt;/ol&gt;
 
@@ -61,7 +61,7 @@
 
 &lt;h3 id=&quot;adding-users--changing-user-permissions-on-a-project&quot;&gt;Adding users / changing user permissions on a project&lt;/h3&gt;
 
-&lt;p&gt;So you have your new project and now you want to let other people use it. This is achieved by granting a user a &lt;em&gt;permission&lt;/em&gt;. There are three types of user permissions, &lt;strong&gt;Owner&lt;/strong&gt;, &lt;strong&gt;Editor&lt;/strong&gt; and &lt;strong&gt;Viewer&lt;/strong&gt;. Your assigned permission setting on a project will determine what you can and can’t do:&lt;/p&gt;
+&lt;p&gt;So you have your new project and now you want to let other people use it. This is achieved by assigning a user a &lt;em&gt;role&lt;/em&gt;. There are three types of user permissions, &lt;strong&gt;Owner&lt;/strong&gt;, &lt;strong&gt;Editor&lt;/strong&gt; and &lt;strong&gt;Viewer&lt;/strong&gt;. Your assigned role setting on a project will determine what you can and can’t do:&lt;/p&gt;
 
 &lt;figure class=&quot;white-bg&quot;&gt;
     &lt;img src=&quot;/assets/img/chemireg-projects/chemireg-pr-table.png&quot; alt=&quot;What different user types can do&quot; class=&quot;img-responsive center-block&quot; /&gt;
@@ -70,7 +70,7 @@
 &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;To add new users to your project or edit current user permissions, go ahead and click the ‘Edit User Roles’ button.&lt;/p&gt;
+&lt;p&gt;To add new users to your project or edit current user roles, go ahead and click the ‘Edit User Roles’ button.&lt;/p&gt;
 
 &lt;figure class=&quot;white-bg&quot;&gt;
     &lt;img src=&quot;/assets/img/chemireg-projects/chemireg-pr-3.png&quot; alt=&quot;Click Edit User Roles to configure what users can do&quot; class=&quot;img-responsive center-block&quot; /&gt;
@@ -79,9 +79,9 @@
 &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;This opens a new popup window allowing you edit user permissions. Here you can add or remove users based on the permission level you wish to grant them.&lt;/p&gt;
+&lt;p&gt;This opens a new popup window allowing you edit user permissions. Here you can add or remove users from the role you wish to grant or remove.&lt;/p&gt;
 
-&lt;p&gt;Note: &lt;strong&gt;Users are visible after they log in for the first time&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Note: &lt;strong&gt;Users are only visible after they log in for the first time&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;figure class=&quot;white-bg&quot;&gt;
     &lt;img src=&quot;/assets/img/chemireg-projects/chemireg-pr-4.png&quot; alt=&quot;The Edit User Roles form&quot; class=&quot;img-responsive center-block&quot; /&gt;
@@ -101,9 +101,9 @@
 &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;This allows you to rapidly assign multiple users based on another projects permission settings.&lt;/p&gt;
+&lt;p&gt;This allows you to rapidly assign multiple users based on another project’s permission settings.&lt;/p&gt;
 
-&lt;h3 id=&quot;now-youre-good-to-go&quot;&gt;Now you’re good to go.&lt;/h3&gt;
+&lt;h3 id=&quot;now-you-and-your-collaborators-can-get-started&quot;&gt;Now you and your collaborators can get started.&lt;/h3&gt;
 
 &lt;p&gt;We’ve been working hard to make the best possible user experience for academics everywhere. If you have any comments or would like to see something improved then let us know by contacting &lt;a href=&quot;mailto:info@chembiohub.ox.ac.uk&quot;&gt;info@chembiohub.ox.ac.uk&lt;/a&gt;.&lt;/p&gt;
 

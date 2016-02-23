@@ -19,7 +19,7 @@ On logging in, click the ‘Add Project’ button at the top of the screen to be
 </figcaption>
 </figure>
 
-A new pop up box will open providing options to create and customise your new project. Simply enter a project name and few custom fields to get going in seconds, or customise your project further to improve your data’s value:
+A new window will open providing options to create and customise your new project. Choose your project name and few custom fields to get going in seconds, or customise your project further to improve your data’s value:
 
 <figure class="white-bg">
     <img src="/assets/img/chemireg-projects/chemireg-pr-2.png" alt="New Project form explained" class="img-responsive center-block">
@@ -36,13 +36,13 @@ There are a number of ways you can customise the data in your project:
     1. Select ‘**Chemical**’ if your data has structural information (contains 2D molecular structures or SMILES).
     2. Select ‘**Inventory**’ if your data contains no structural information.
 4. Add a custom field. Custom fields are the data you wish to be catalogued for each entry and can be anything you want (location, names, etc).
-    1. The name of your field (text characters only).
-    2. Make this field compulsory – it must be filled in to submit data.
-    3. Choose a field type appropriate for the data you’re submitting.
-    4. A description of what data this field is for.
-    5. Make this field only visible to editors (users with the ‘viewer’ permission on this project will not see this specific custom field data). 
+    + a) The name of your field (text characters only).
+    + b) Make this field compulsory – it must be filled in to allow data to be saved.
+    + c) Choose a field type appropriate to the data you’re submitting.
+    + d) Describe what this field is for.
+    + e) Make this field only visible to editors (users with the ‘viewer’ permission on this project will not see this specific custom field data). 
 5. Delete or reorder a field by clicking and dragging. Fields at the top of the list will appear first in the table.
-6. Add additional fields
+6. Add more fields
 7. Disregard / Save project*
 
 *Note that you can’t remove or modify a field heading name after you’ve clicked save, but you can add additional ones and reorder them.
@@ -51,7 +51,7 @@ Once you’ve added all your desired fields, simply click save and your project 
 
 ###Adding users / changing user permissions on a project
 
-So you have your new project and now you want to let other people use it. This is achieved by granting a user a *permission*. There are three types of user permissions, **Owner**, **Editor** and **Viewer**. Your assigned permission setting on a project will determine what you can and can’t do:
+So you have your new project and now you want to let other people use it. This is achieved by assigning a user a *role*. There are three types of user permissions, **Owner**, **Editor** and **Viewer**. Your assigned role setting on a project will determine what you can and can’t do:
 
 <figure class="white-bg">
     <img src="/assets/img/chemireg-projects/chemireg-pr-table.png" alt="What different user types can do" class="img-responsive center-block">
@@ -61,7 +61,7 @@ So you have your new project and now you want to let other people use it. This i
 </figure>
 
 
-To add new users to your project or edit current user permissions, go ahead and click the ‘Edit User Roles’ button.
+To add new users to your project or edit current user roles, go ahead and click the ‘Edit User Roles’ button.
 
 <figure class="white-bg">
     <img src="/assets/img/chemireg-projects/chemireg-pr-3.png" alt="Click Edit User Roles to configure what users can do" class="img-responsive center-block">
@@ -70,9 +70,9 @@ To add new users to your project or edit current user permissions, go ahead and 
 </figcaption>
 </figure>
 
-This opens a new popup window allowing you edit user permissions. Here you can add or remove users based on the permission level you wish to grant them.
+This opens a new popup window allowing you edit user permissions. Here you can add or remove users from the role you wish to grant or remove.
 
-Note: **Users are visible after they log in for the first time**.
+Note: **Users are only visible after they log in for the first time**.
 
 <figure class="white-bg">
     <img src="/assets/img/chemireg-projects/chemireg-pr-4.png" alt="The Edit User Roles form" class="img-responsive center-block">
@@ -92,9 +92,9 @@ An alternative way to quickly add multiple users is to ‘Copy rules from anothe
 </figcaption>
 </figure>
 
-This allows you to rapidly assign multiple users based on another projects permission settings.
+This allows you to rapidly assign multiple users based on another project's permission settings.
 
-###Now you’re good to go.
+###Now you and your collaborators can get started.
 
 We’ve been working hard to make the best possible user experience for academics everywhere. If you have any comments or would like to see something improved then let us know by contacting <a href="mailto:info@chembiohub.ox.ac.uk">info@chembiohub.ox.ac.uk</a>.
 
