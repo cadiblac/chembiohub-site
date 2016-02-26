@@ -21,7 +21,7 @@
 &lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;A new window will open providing options to create and customise your new project. Choose your project name and few custom fields to get going in seconds, or customise your project further to improve your data’s value:&lt;/p&gt;
+&lt;p&gt;A new window will open providing options to create and customise your new project. Choose your project name and a few custom fields to get going in seconds, or customise your project further to improve your data’s value:&lt;/p&gt;
 
 &lt;figure class=&quot;white-bg&quot;&gt;
     &lt;img src=&quot;/assets/img/chemireg-projects/chemireg-pr-2.png&quot; alt=&quot;New Project form explained&quot; class=&quot;img-responsive center-block&quot; /&gt;
@@ -41,7 +41,7 @@
       &lt;li&gt;Select ‘&lt;strong&gt;Inventory&lt;/strong&gt;’ if your data contains no structural information.&lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
-  &lt;li&gt;Add a custom field. Custom fields are the data you wish to be catalogued for each entry and can be anything you want (location, names, etc).
+  &lt;li&gt;Add a custom field. Custom fields are the data you wish to be catalogued for each entry and can be anything you want (location, names, etc). There are a number of options available here:
     &lt;ul&gt;
       &lt;li&gt;a) The name of your field (text characters only).&lt;/li&gt;
       &lt;li&gt;b) Make this field compulsory – it must be filled in to allow data to be saved.&lt;/li&gt;

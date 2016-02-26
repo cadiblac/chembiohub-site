@@ -19,7 +19,7 @@ On logging in, click the ‘Add Project’ button at the top of the screen to be
 </figcaption>
 </figure>
 
-A new window will open providing options to create and customise your new project. Choose your project name and few custom fields to get going in seconds, or customise your project further to improve your data’s value:
+A new window will open providing options to create and customise your new project. Choose your project name and a few custom fields to get going in seconds, or customise your project further to improve your data’s value:
 
 <figure class="white-bg">
     <img src="/assets/img/chemireg-projects/chemireg-pr-2.png" alt="New Project form explained" class="img-responsive center-block">
@@ -35,7 +35,7 @@ There are a number of ways you can customise the data in your project:
 3. Choose your project type. 
     1. Select ‘**Chemical**’ if your data has structural information (contains 2D molecular structures or SMILES).
     2. Select ‘**Inventory**’ if your data contains no structural information.
-4. Add a custom field. Custom fields are the data you wish to be catalogued for each entry and can be anything you want (location, names, etc).
+4. Add a custom field. Custom fields are the data you wish to be catalogued for each entry and can be anything you want (location, names, etc). There are a number of options available here:
     + a) The name of your field (text characters only).
     + b) Make this field compulsory – it must be filled in to allow data to be saved.
     + c) Choose a field type appropriate to the data you’re submitting.
