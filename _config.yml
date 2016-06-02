@@ -82,15 +82,6 @@ tools:
       github_link: "https://github.com/thesgc/chembiohub_ws"
       other_repo_link: ""
       thumbnail: "data-invreg.png"
-    - key: 'assayreg'
-      title: "AssayReg"
-      tagline: "tagline here"
-      description: "Manage your assays and method development"
-      info_link: "/assayreg"
-      cbh_link: "http://staging.chembiohub.ox.ac.uk/test/webauth"
-      github_link: "https://github.com/thesgc/chembiohub_ws"
-      other_repo_link: ""
-      thumbnail: "data-assayreg.png"
   external:
     - key: 'wonka'
       title: "WONKA"
