@@ -12,9 +12,6 @@ title: ChemBio Hub
 			<h1 class="intro blue">Supporting world class research.<br>
 				<small>Developing tools. Promoting standards.</small></h1>
 		</div>
-		<!-- <div class="col-xs-4"><h1><small>Developing tools</small></h1></div>
-		<div class="col-xs-4"><h1><small></small></h1></div>
-		<div class="col-xs-4"><h1><small></small></h1></div> -->
 
 
 	</div>
@@ -29,12 +26,11 @@ title: ChemBio Hub
 			<!-- Section for chemireg-->
 			<div class="row">
 				<a href="/chemireg">
-					<div class="col-xs-12 techitem" style="border:10px solid rgb(190,15,52);  border-radius:50px; background: url(assets/img/PFI-2.png) #fff no-repeat;">
+					<div class="col-xs-12 techitem" style="border:10px solid rgb(190,15,52);  border-radius:50px; background: url(assets/img/PFI-2.png) #fff no-repeat 50%;">
 						
-							<!-- <h2 class="blue">ChemiReg</h2> -->
+							
 							<p class="nexa">
-								<strong>Need to record, index and search compounds? <br><br>ChemiReg can help.</strong>
-								<!-- <a href="/chemireg"><span class="glyphicon glyphicon-info-sign"></span> Find out more</a> -->
+								<strong>Need to record, index and search compounds? <br><br><big>ChemiReg can help.</big></strong>
 							</p>
 						
 					</div>
@@ -47,10 +43,9 @@ title: ChemBio Hub
 			<div class="row">
 				<a href="/inventoryreg">
 					<div class="col-xs-12 techitem" style="border:10px solid rgb(170,179,0); border-radius:50px; background: url(assets/img/615px-Lab_glassware.jpg) #fff no-repeat 50% 80%;">
-						<!-- <h2 class="blue">InventoryReg</h2> -->
+						
 							<p class="nexa">
-								<strong>Need a simple tool to keep track of chemicals in your lab? <br><br>InventoryReg can help.</strong>
-								<!-- <a href="/inventoryreg"><span class="glyphicon glyphicon-info-sign"></span> Find out more</a> -->
+								<strong>Need a simple tool to keep track of items your lab? <br><br><big>InventoryReg can help.</big></strong>
 							</p>
 					</div>
 				</a>
@@ -60,9 +55,49 @@ title: ChemBio Hub
 
 	<div class="row">
 		<div class="col-xs-12 text-center">
-			<h2 class="blue">These tools all form part of the <a href="/applications" style="text-decoration:underline;">ChemBio Hub Platform</a></h2>
+			<h2 class="blue">These tools all form part of the ChemBio Hub Platform</h2>
 		</div>
 	</div>
+
+
+	<div class="row" id="#apps">
+		<div class="col-sm-6">
+			<img src="/assets/img/cbh_technology.png" class="img-responsive text-center" usemap="#appmap">
+			<map name="appmap">
+				<area shape="rect" coords="150,11,410,193" href="/chemireg" />
+				<area shape="rect" coords="133,374,414,597" href="/inventoryreg" />
+			</map>
+		</div>
+		<div class="col-sm-6">
+			<h2 class="blue tech-intro">ChemBio Hub develops in-house applications and provides links to a variety of useful tools which can help chemical biologists, related scientists and support staff.</h2>
+			<p><a href="#techlist" role="btn" class="btn btn-primary pull-right">See our technology</a></p>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="row" id="techlist">
+		<div class="col-xs-6">
+			<h2 class="blue h2underline">Our Tools <br><small>built by ChemBio Hub developers</small></h2>
+			{% for tool in site.tools.internal %}
+				{% include tool.html %}
+			{% endfor %}
+
+
+		</div>
+		<div class="col-xs-6">
+			<h2 class="blue h2underline">Associated Tools <br><small>of interest to ChemBio Hub users</small></h2>
+			{% for tool in site.tools.external %}
+				{% include tool.html %}
+			{% endfor %}
+			
+		</div>
+	</div>
+
+
+
+
+
 
 	
 	<hr>
@@ -70,7 +105,7 @@ title: ChemBio Hub
 	<div class="row">
 		
 		<div class="col-xs-12">
-			<h2 class="subheading">What's next for ChemBio Hub?</h2>
+			<h2 class="subheading">How can ChemBio hub help you?</h2>
 			<div class="well">
 				<p class="nexa">
 					The ChemBio Hub is your one stop shop for free research data management. Researchers from across Oxford have been adopting the ChemBio Hub system to manage everything from compounds and plasmids to antibodies and mouse data. 
@@ -122,16 +157,6 @@ title: ChemBio Hub
 
 
 
-		<!-- <div class="col-md-4 col-sm-6 hidden-xs widget">
-			<h3 class="subheading">
- 				Twitter @oxchembiohub 
- 			</h3>
-			<a class="twitter-timeline" href="https://twitter.com/oxchembiohub" data-widget-id="515124962516930560">Tweets by @oxchembiohub</a>
-			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		</div> -->
-
-
-
 
 		<div class="col-md-4 col-sm-6 hidden-xs widget">
 			
@@ -147,17 +172,10 @@ title: ChemBio Hub
 			<h3 class="subheading">
  				Our code on Github
  		</h3>
-			<div class="github-widget" data-repo="thesgc/chembiocrunch"></div>	
 			<div class="github-widget" data-repo="thesgc/chembiohub_ws"></div>	
+			<div class="github-widget" data-repo="thesgc/ng-chem"></div>	
 			<div class="github-widget" data-repo="thesgc/chembiohub-site"></div>	
 		</div>		
-		<!-- <div class="col-md-4 col-sm-6 hidden-xs widget">
-			<h3 class="subheading">
- 				Social Media mentions for...
- 			</h3>
-				<div id="forum-widget" ><a class="twitter-timeline" href="https://twitter.com/hashtag/oxcbh" data-widget-id="530758711539548161">#oxcbh Tweets</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>	
-		</div> -->
 
 		
 
