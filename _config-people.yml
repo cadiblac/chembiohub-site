@@ -198,3 +198,76 @@ speakers:
     talk_title: Identifying novel small molecule therapeutics by cell phenotype screening - three short stories from brain and heart
     embed_code: ""
     talk_order: 10
+
+casestudies:
+  - name: "Robert Mifflin"
+    dept: "Department of Physiology, Anatomy and Genetics"
+    role: "Mortuary Supervisor"
+    bodytext: > #  
+      A service within the Department of Physiology, Anatomy and Genetics (DPAG) was in need of a centralised database to catalogue samples. 
+      This system needed to be accessible to researchers who require the data for lesson planning. Their current system did not allow images 
+      of the sample to be uploaded and it was difficult to update and navigate through the data that was there. By uploading their data and 
+      attaching their image files into InventoryReg, we have demonstrated that it is now possible to quickly access and view teaching samples. 
+      It is also possible to search information intelligently by sorting based on date added, location, sample type and so on. For those 
+      searching through chemical projects it is possible to use substructure searches to find compounds and even combine this with additional 
+      text based searching. Since trialing our system, this DPAG service has demonstrated increased accessibility of its teaching resources.
+    quote: > #
+      “The ChemBio Hub platform allows us to catalogue and maintain our samples from any computer. The ability for us to manage user 
+      permissions ensures we can easily give access to researchers who want to use our resources, whilst ensuring the security of our data”
+  
+  - name: "Professor James McCullagh"
+    dept: "Department of Chemistry"
+    role: "Head of the Mass Spectrometry Research Facility"
+    bodytext: > #  
+      A service facility within the Chemistry Department had an extensive library of compounds that they needed to locate manually when required. 
+      By uploading their chemical data into the ChemBio Hub system, they can now search for a chemical via text or substructure search. 
+      This improves their laboratory productivity and saves money by allowing them to check what they have in stock.
+    quote: > #
+      “The ChemBio Hub platform has proven to be an effective way to manage our compound inventory. Thanks to its high flexibility, we are also 
+      testing its ability to digitise our facilities sample submission process”
+  
+  - name: "Dr Hidenori Someya"
+    dept: "Department of Chemistry"
+    role: "Postdoctoral Researcher"
+    bodytext: > #  
+      A large group with more than 50 laboratory members based in the University of Oxford Chemistry Department had been looking for a new 
+      chemical registration tool to replace their previous database. A barrier to adopting a more modern system had been the time and effort 
+      required to manually transfer the 2400 compounds from one system to another. Using the ChemBio Hub .SDF file upload feature it was 
+      possible to register all existing compounds quickly and easily.
+    quote: > #
+      “Since adopting the ChemBio Hub I have found it much easier to find chemicals in our inventory that would have been previously 
+      difficult to discover. This helps me to be more productive in my working day”
+  
+  - name: "Professor Darren Dixon"
+    dept: "Department of Chemistry"
+    role: "TBD"
+    bodytext: > #  
+      A recently established Chemistry Doctoral Training Programme (CDT) takes a cohort of 30 students every year. These students participate 
+      in two laboratory placements across the University per year, each synthesising unique compounds in separate laboratories. The programme 
+      required a data management system that ensured all compound structures and their corresponding data were securely stored and tractable, 
+      so that at any point they might be searched and retrieved. All students are funded by external industrial partners who demand a high 
+      level of data security and require access to the students’ data. By adopting the ChemiReg platform the CDT coordinators are able to 
+      securely manage and collate their student data within the same project, despite them being placed in different laboratories. They have 
+      also invited their external collaborators to the project, providing them with access to the data they need.
+    quote: > #
+      “The ChemBio Hub has been effective in helping the CDT to manage and organise the compounds they make. This will make tracking progress 
+      and communicating with sponsors much easier in the future”
+  
+  - name: "Professor Renier van der Hoorn"
+    dept: "Department of Plant Sciences"
+    role: "Associate Professor Plant Sciences"
+    bodytext: > #  
+      Plant Sciences is one of  seven departments across the University of Oxford which have created projects organizing data ranging from 
+      plasmids and antibodies to generic ordering and experimental results. This highlights both the flexibility of the system and the ease 
+      with which it can manipulate data in multiple formats. For example, one Plant Science Department research group has created 7 projects 
+      to organise the various inventories they maintain, ranging from plasmids and mutant seed lines to compounds and antibodies.
+    quote: > #
+      “The ChemBio Hub system allows us to quickly upload and manage numerous inventories. Having easy access to this data in the laboratory 
+      will make my group’s lives easier and more productive”
+  
+  - name: "Ms Marta Jagielowicz"
+    dept: "Nuffield Department of Medicine"
+    role: " Laboratory Manager"
+    bodytext: ""
+    quote: > #
+      "The ChemBio Hub lets me manage multiple inventories. This means whenever I need to look for something I can find it all in the same place"

@@ -1,0 +1,41 @@
+---
+permalink: /casestudies/
+layout: website
+title: Case Studies
+---
+
+<div class="row">
+
+	<h1 class="intro blue">Case Studies</h1>
+	<!-- <div class="col-xs-6" style="background-image: url(/assets/img/badges.png)">
+		<div style="min-height:300px;">
+			<p class="overlay nexa"><strong>As part of our commitment to providing a collaboration-rich network of chemical biology, ChemBio Hub ran a number of events to help networking and awareness.</strong></p>
+		</div>
+
+	</div> -->
+
+</div>
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="well text-center">
+			<big><strong class="nexa blue">ChemBio Hub is being used right now to improve the research of scientists across the university of Oxford. Here are a few success stories...</strong></big>
+		</div>
+	</div>
+</div>
+
+{% for study in site.casestudies %}
+<div class="row">
+	
+	<div class="col-xs-12">
+		<h2 class="blue">{{study.name}} <br> <small>{{study.role}} at {{study.dept}}</small></h2>
+		<p class="nexa">{{study.bodytext}}</p>
+		<blockquote>
+			{{study.quote}}
+		</blockquote>
+		<br><br>
+	</div>
+	
+
+</div>
+{% endfor %}
