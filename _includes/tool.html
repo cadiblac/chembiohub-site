@@ -11,9 +11,13 @@
 					<div class="col-xs-6">
 						<p class="nexa">{{tool.description}}</p>
 						<p class="nexa text-center">
-							<a href="{{tool.cbh_link}}" class="btn btn-primary" target="_blank" onclick="window.open(this.href,'_blank');return false;">Try out {{tool.title}}</a><br><br>
+							<a href="{{tool.cbh_link}}" class="btn btn-primary btn-sm" target="_blank" onclick="window.open(this.href,'_blank');return false;">Try out {{tool.title}}</a>
+							{% if tool.github_link != '' %}
+							&nbsp;<a href="{{tool.github_link}}" class="btn btn-primary btn-sm" target="_blank" onclick="window.open(this.href,'_blank');return false;">GitHub</a>
+							{% endif %}
+							<br><br>
 							{% if tool.info_link != '' %}
-							<a href="{{tool.info_link}}" class="btn btn-primary">More Info</a>{% endif %}
+							<a href="{{tool.info_link}}" class="btn btn-primary btn-sm">More Info</a>{% endif %}
 						</p>
 					</div>
 				</div>

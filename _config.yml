@@ -33,6 +33,7 @@ title: ChemBio Hub Website
 description: A team blog about the technology and stories behind the chembio hub project
 url: https://chembiohub.ox.ac.uk
 non_https_url: http://chembiohub.ox.ac.uk
+github: https://github.com/thesgc/chembiohub_ws
 
 sitemap:
     file: "/sitemap.xml"
