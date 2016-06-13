@@ -240,7 +240,7 @@ casestudies:
   
   - name: "Professor Darren Dixon"
     dept: "Department of Chemistry"
-    role: "TBD"
+    role: "Head of Dixon Group Research"
     bodytext: > #  
       A recently established Chemistry Doctoral Training Programme (CDT) takes a cohort of 30 students every year. These students participate 
       in two laboratory placements across the University per year, each synthesising unique compounds in separate laboratories. The programme 
@@ -267,7 +267,7 @@ casestudies:
   
   - name: "Ms Marta Jagielowicz"
     dept: "Nuffield Department of Medicine"
-    role: " Laboratory Manager"
+    role: "Laboratory Manager"
     bodytext: ""
     quote: > #
       "The ChemBio Hub lets me manage multiple inventories. This means whenever I need to look for something I can find it all in the same place"
