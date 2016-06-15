@@ -7,6 +7,56 @@
 <atom:link href="https://chembiohub.ox.ac.uk/feed.xml" rel="self" type="application/rss+xml" />
 
 <item>
+<title>The future of ChemBio Hub</title>
+<description>&lt;p&gt;As many of you know, funding and development of the ChemBio Hub will soon be ending on the 30th June. Please be reassured that the ChemBio Hub system and all your data will continue to be secured on the SGC servers for the foreseeable future. You can continue to use our services as normal. We do expect to be able to perform very limited fixes to issues. To report a minor issue or suggestion, please use the drop down in the top right of the screen (see figure below). For serious issues or emergencies please contact Dr Brian Marsden (brian.marsden@sgc.ox.ac.uk) who will endeavour to respond as quickly as possible.&lt;/p&gt;
+
+&lt;figure class=&quot;white-bg&quot;&gt;
+    &lt;img src=&quot;/assets/img/blog-report-error.png&quot; alt=&quot;Report an error&quot; class=&quot;img-responsive center-block&quot; /&gt;
+&lt;figcaption class=&quot;text-center&quot;&gt;
+    &lt;p&gt;&lt;em&gt;&quot;Report an Error&quot; is located in the ChemBio Hub menu&lt;/em&gt;&lt;/p&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;We are extremely proud of what we have achieved and truly feel that we have created something that will help scientists for many years to come. We now have 50 active projects in use from nine different departments across the University of Oxford. &lt;/p&gt;
+
+&lt;p&gt;Here are a some testimonials highlighting our success:&lt;/p&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+    &lt;h3 class=&quot;blue&quot;&gt;Professor Renier van der Hoorn - Department of Plant Sciences &lt;br /&gt;
+        &lt;small&gt;Role - Associate Professor Plant Sciences&lt;/small&gt;&lt;/h3&gt;
+    &lt;blockquote class=&quot;white-bg&quot;&gt;
+        &lt;em&gt;“The ChemBio Hub system allows us to quickly upload and manage numerous inventories. Having easy access to this data in the laboratory will make my group’s lives easier and more productive”.&lt;/em&gt;
+    &lt;/blockquote&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+    &lt;h3 class=&quot;blue&quot;&gt;Professor James McCullagh - Department of Chemistry&lt;br /&gt;
+        &lt;small&gt;Role - Head of the Mass Spectrometry Research Facility&lt;/small&gt;&lt;/h3&gt;
+    &lt;blockquote class=&quot;white-bg&quot;&gt;
+        &lt;em&gt;“The ChemBio Hub platform has proven to be an effective way to manage our compound inventory. Thanks to its high flexibility, we are also testing  its ability to digitise our facilities sample submission process”.&lt;/em&gt;
+    &lt;/blockquote&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;well&quot;&gt;
+    &lt;h3 class=&quot;blue&quot;&gt;Department of Physiology, Anatomy and Genetics&lt;br /&gt;
+        &lt;small&gt;Role - Technician&lt;/small&gt;&lt;/h3&gt;
+    &lt;blockquote class=&quot;white-bg&quot;&gt;
+        &lt;em&gt;“The ChemBio Hub platform allows us to catalogue and maintain our samples from any computer. The ability for us to manage user permissions ensures we can easily give access to researchers who want to use our resources, whilst ensuring the security of our data.”&lt;/em&gt;
+    &lt;br /&gt;&lt;br /&gt;
+    &lt;em&gt;“The ChemBio Hub platform has proven to be an effective way to manage our compound inventory. Thanks to its high flexibility, we are also testing  its ability to digitise our facilities sample submission process”&lt;/em&gt;
+    &lt;/blockquote&gt;
+&lt;/div&gt;
+
+&lt;p&gt;These testimonials reflect our success in being truly flexible, enabling us to manage data from a broad variety of research fields. This is largely due to the valuable time and feedback provided by over 100 researchers. As such we would like to thank everyone one of you who took the trouble to speak to us and pass on your thoughts.&lt;/p&gt;
+
+&lt;p&gt;Looking to the future, our first publication outlining the ChemBio Hub’s development challenges and achievements will soon be submitted. We are also continuing our search for additional funding to continue developing the system and take it to the logical next level - a fully fledged academic electronic lab notebook. We have collected sufficient feedback to suggest this is seriously in demand and have now built the prototype tools to implement it. We hope that one day soon we can secure the funding to begin developing a production version of this much requested feature.&lt;/p&gt;
+</description>
+<pubDate>Wed, 15 Jun 2016 00:00:00 +0100</pubDate>
+<link>https://chembiohub.ox.ac.uk/blog/2016/06/15/future-of-chemireg.html</link>
+<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2016/06/15/future-of-chemireg.html</guid>
+</item>
+
+<item>
 <title>Creating and managing a project in ChemiReg</title>
 <description>&lt;p&gt;A recent update to ChemiReg means that you can now create and manage projects yourself. Creating projects is quick and easy, taking no more than a couple of minutes to set up. Here’s a quick introduction to help get you started.&lt;/p&gt;
 
@@ -540,17 +590,6 @@ Starting here means:&lt;/p&gt;
 <pubDate>Mon, 15 Dec 2014 00:00:00 +0000</pubDate>
 <link>https://chembiohub.ox.ac.uk/blog/2014/12/15/registration-workshop.html</link>
 <guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/12/15/registration-workshop.html</guid>
-</item>
-
-<item>
-<title>Some thoughts from Open Con 2014&amp;#58; discovery tools</title>
-<description>&lt;p&gt;ChemBio Hub aims to make life easier for chemical biologists at Oxford. We’ve already designed &lt;a href=&quot;https://chembiohub.ox.ac.uk/crunch/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;ChemBio Crunch&lt;/a&gt; a new app to speed up assay data processing. But sometimes we find out about cool tools that are out there already for people to use for free and we just need to recommend them! We don’t want to reinvent the wheel.&lt;/p&gt;
-
-&lt;p&gt;One thing I heard about at OpenCon is &lt;a href=&quot;http://www.sparrho.com/&quot; onclick=&quot;return !window.open(this.href);&quot;&gt;Sparrho&lt;/a&gt;. These guys realised that linear keyword searching doesn’t always turn up all the results you need from a scientific literature search. You have to make non-linear connections too. And that’s how it works – Sparrho asks users to rate its search results as relevant to their interests or not. These choices, aggregated and anonymised, allow Sparrho to build a bird’s-eye view of different research disciplines. It then uses this to recommend useful results beyond the confines of the search keywords. Clever stuff – try it out for yourself!&lt;/p&gt;
-</description>
-<pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
-<link>https://chembiohub.ox.ac.uk/blog/2014/12/09/opencon-2.html</link>
-<guid isPermaLink="true">https://chembiohub.ox.ac.uk/blog/2014/12/09/opencon-2.html</guid>
 </item>
 
 </channel>
